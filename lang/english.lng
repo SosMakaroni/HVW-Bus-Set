@@ -1,0 +1,114 @@
+﻿##grflangid 0x01
+# This is the English language file
+
+# GRF name and description definitions	
+STR_GRF_NAME					:HVW Bus Set
+STR_GRF_DESC					:{}{LTBLUE}Bus Set{}{BLACK}Code and model:{GREEN}SosMakaroni{} {COPYRIGHT}2022 SosMakaroni{}{GRAY}License: GPLv2{}{BLACK}Ver.20 2024.11.22.
+
+STR_BUG							:HVW Toyland bug, sorry :(
+
+STR_PARAM_BUY_NAME				:Purchase cost
+STR_PARAM_BUY_DESC				:For players who want to choose the purchase cost.
+STR_PARAM_MAINTENANCE_NAME	:Maintenance costs
+STR_PARAM_MAINTENANCE_DESC	:For players who want to choose the cost of maintenance.
+STR_PARAM_GAME_VERY_EASY		:/4
+STR_PARAM_GAME_EASY			:/2
+STR_PARAM_GAME_NORMAL			:1 {SILVER} By default{BLACK}
+STR_PARAM_GAME_HARD			:x2
+STR_PARAM_GAME_VERY_HARD		:x4
+STR_PARAM_CARGOC_NAME			:Cargo capacity (It's not working at the moment, but it's planned.)
+STR_PARAM_CARGOC_DESC			:For players who want to choose the cargo capacity multiplier.
+STR_PARAM_CARGOC_1				:x1 {SILVER} By default{BLACK}
+STR_PARAM_CARGOC_2				:x2
+STR_PARAM_CARGOC_4				:x4
+STR_PARAM_CARGOC_8				:x8
+
+
+STR_MB_Citaro2_c_a_cc1_NAME		:Mercedes-Benz Citaro
+STR_MB_Citaro2_c_a_cc1_ADAT		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Classic, 12m, 3 doors{BLACK}{}Usage: {GOLD}City{BLACK}{}Fuel: {GOLD}Diesel{BLACK}{}{}
+STR_MB_Citaro2_c_a_cc1_INFO		:Mercedes-Benz Citaro {LTBLUE}Classic - 3 doors{BLACK}
+STR_MB_Citaro2_c_a_cc1_BUY		:3 doors - Company Color 1. livery
+STR_MB_Citaro2_c_a_BLT_old_ADAT		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Classic, 12m, 3 doors{BLACK}{}Usage: {GOLD}City{BLACK}{}Fuel: {GOLD}Diesel{BLACK}{}{}Repaint: {GOLD}SweDuke{BLACK}{}{}
+STR_MB_Citaro2_c_a_BLT_old_BUY		:3 doors - BLT older livery
+STR_MB_Citaro2_c_a_BLT_new_ADAT		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Classic, 12m, 3 doors{BLACK}{}Usage: {GOLD}City{BLACK}{}Fuel: {GOLD}Diesel{BLACK}{}{}Repaint: {GOLD}SweDuke{BLACK}{}{}
+STR_MB_Citaro2_c_a_BLT_new_BUY		:3 doors - BLT newer livery
+
+STR_MB_Citaro2_c_b_cc1_NAME		:Mercedes-Benz Citaro
+STR_MB_Citaro2_c_b_cc1_ADAT		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Classic, 12m, 2 doors{BLACK}{}Usage: {GOLD}City{BLACK}{}Fuel: {GOLD}Diesel{BLACK}{}{}
+STR_MB_Citaro2_c_b_cc1_INFO		:Mercedes-Benz Citaro {LTBLUE}Classic - 2 doors{BLACK}
+STR_MB_Citaro2_c_b_cc1_BUY		:2 doors - Company Color 1. livery
+
+STR_MB_Citaro2_k_a_cc1_NAME		:Mercedes-Benz Citaro K
+STR_MB_Citaro2_k_a_cc1_ADAT		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 3 doors{BLACK}{}Usage: {GOLD}City{BLACK}{}Fuel: {GOLD}Diesel{BLACK}{}{}
+STR_MB_Citaro2_k_a_cc1_INFO		:Mercedes-Benz Citaro {LTBLUE}K - 3 doors{BLACK}
+STR_MB_Citaro2_k_a_cc1_BUY		:3 doors - Company Color 1. livery
+
+STR_MB_Citaro2_k_b_cc1_NAME		:Mercedes-Benz Citaro K
+STR_MB_Citaro2_k_b_cc1_ADAT		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 2 doors{BLACK}{}Usage: {GOLD}City{BLACK}{}Fuel: {GOLD}Diesel{BLACK}{}{}
+STR_MB_Citaro2_k_b_cc1_INFO		:Mercedes-Benz Citaro {LTBLUE}K - 2 doors{BLACK}
+STR_MB_Citaro2_k_b_cc1_BUY		:2 doors - Company Color 1. livery
+
+STR_MB_Citaro2_c_ngt_a_cc1_NAME		:Mercedes-Benz Citaro NGT
+STR_MB_Citaro2_c_ngt_a_cc1_ADAT		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Classic, 12m, 3 doors{BLACK}{}Usage: {GOLD}City{BLACK}{}Fuel: {GOLD}NGT{BLACK}{}{}
+STR_MB_Citaro2_c_ngt_a_cc1_INFO		:Mercedes-Benz Citaro {LTBLUE}Classic NGT - 3 doors{BLACK}
+STR_MB_Citaro2_c_ngt_a_cc1_BUY		:3 doors - Company Color 1. livery
+
+STR_MB_Citaro2_c_ngt_b_cc1_NAME		:Mercedes-Benz Citaro NGT
+STR_MB_Citaro2_c_ngt_b_cc1_ADAT		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Classic, 12m, 2 doors{BLACK}{}Usage: {GOLD}City{BLACK}{}Fuel: {GOLD}NGT{BLACK}{}{}
+STR_MB_Citaro2_c_ngt_b_cc1_INFO		:Mercedes-Benz Citaro {LTBLUE}Classic NGT - 2 doors{BLACK}
+STR_MB_Citaro2_c_ngt_b_cc1_BUY		:2 doors - Company Color 1. livery
+
+STR_MB_Citaro2_le_a_cc1_NAME		:Mercedes-Benz Citaro LE
+STR_MB_Citaro2_le_a_cc1_ADAT		:Loading speed: {GOLD}33{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LE, 12m, 3 doors{BLACK}{}Usage: {GOLD}City{BLACK}{}Fuel: {GOLD}Diesel{BLACK}{}{}
+STR_MB_Citaro2_le_a_cc1_INFO		:Mercedes-Benz Citaro {LTBLUE}LE - 3 doors{BLACK}
+STR_MB_Citaro2_le_a_cc1_BUY		:3 doors - Company Color 1. livery
+
+STR_MB_Citaro2_le_b_cc1_NAME		:Mercedes-Benz Citaro LE
+STR_MB_Citaro2_le_b_cc1_ADAT		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LE, 12m, 2 doors{BLACK}{}Usage: {GOLD}City{BLACK}{}Fuel: {GOLD}Diesel{BLACK}{}{}
+STR_MB_Citaro2_le_b_cc1_INFO		:Mercedes-Benz Citaro {LTBLUE}LE - 2 doors{BLACK}
+STR_MB_Citaro2_le_b_cc1_BUY		:2 doors - Company Color 1. livery
+
+STR_MB_Citaro2_u_a_cc1_NAME		:Mercedes-Benz Citaro Ü
+STR_MB_Citaro2_u_a_cc1_ADAT		:Loading speed: {GOLD}19{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Ü, 12m, 2 doors{BLACK}{}Usage: {GOLD}Regional{BLACK}{}Fuel: {GOLD}Diesel{BLACK}{}{}
+STR_MB_Citaro2_u_a_cc1_INFO		:Mercedes-Benz Citaro {LTBLUE}Ü - 3 doors{BLACK}
+STR_MB_Citaro2_u_a_cc1_BUY		:2 doors - Company Color 1. livery
+
+STR_MB_Citaro2_leu_a_cc1_NAME		:Mercedes-Benz Citaro LE Ü
+STR_MB_Citaro2_leu_a_cc1_ADAT		:Loading speed: {GOLD}19{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LE Ü, 12m, 2 doors{BLACK}{}Usage: {GOLD}Regional{BLACK}{}Fuel: {GOLD}Diesel{BLACK}{}{}
+STR_MB_Citaro2_leu_a_cc1_INFO		:Mercedes-Benz Citaro {LTBLUE}LE Ü - 3 doors{BLACK}
+STR_MB_Citaro2_leu_a_cc1_BUY		:2 doors - Company Color 1. livery
+
+STR_MB_Citaro2_lemu_a_cc1_NAME		:Mercedes-Benz Citaro LE MÜ
+STR_MB_Citaro2_lemu_a_cc1_ADAT		:Loading speed: {GOLD}26{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LE MÜ, 13m, 3 doors{BLACK}{}Usage: {GOLD}Regional{BLACK}{}Fuel: {GOLD}Diesel{BLACK}{}{}
+STR_MB_Citaro2_lemu_a_cc1_INFO		:Mercedes-Benz Citaro {LTBLUE}LE MÜ - 3 doors{BLACK}
+STR_MB_Citaro2_lemu_a_cc1_BUY		:3 doors - Company Color 1. livery
+
+STR_MB_Citaro2_lemu_b_cc1_NAME		:Mercedes-Benz Citaro LE MÜ
+STR_MB_Citaro2_lemu_b_cc1_ADAT		:Loading speed: {GOLD}21{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LE MÜ, 13m, 2 doors{BLACK}{}Usage: {GOLD}Regional{BLACK}{}Fuel: {GOLD}Diesel{BLACK}{}{}
+STR_MB_Citaro2_lemu_b_cc1_INFO		:Mercedes-Benz Citaro {LTBLUE}LE MÜ - 2 doors{BLACK}
+STR_MB_Citaro2_lemu_b_cc1_BUY		:2 doors - Company Color 1. livery
+
+STR_MB_CitaroE_c_a_cc1_NAME		:Mercedes-Benz eCitaro
+STR_MB_CitaroE_c_a_cc1_ADAT		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Classic, 12m, 3 doors{BLACK}{}Usage: {GOLD}City{BLACK}{}Fuel: {GOLD}Electric{BLACK}{}{}
+STR_MB_CitaroE_c_a_cc1_INFO		:Mercedes-Benz eCitaro {LTBLUE}Classic - 3 doors{BLACK}
+STR_MB_CitaroE_c_a_cc1_BUY		:3 doors - Company Color 1. livery
+STR_MB_CitaroE_c_a_BLT_old_ADAT		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Classic, 12m, 3 doors{BLACK}{}Usage: {GOLD}City{BLACK}{}Fuel: {GOLD}Electric{BLACK}{}{}Repaint: {GOLD}SweDuke{BLACK}{}{}
+STR_MB_CitaroE_c_a_BLT_old_BUY		:3 doors - BLT older livery
+STR_MB_CitaroE_c_a_BLT_new_ADAT		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Classic, 12m, 3 doors{BLACK}{}Usage: {GOLD}City{BLACK}{}Fuel: {GOLD}Electric{BLACK}{}{}Repaint: {GOLD}SweDuke{BLACK}{}{}
+STR_MB_CitaroE_c_a_BLT_new_BUY		:3 doors - BLT newer livery
+
+STR_MB_CitaroE_c_b_cc1_NAME		:Mercedes-Benz eCitaro
+STR_MB_CitaroE_c_b_cc1_ADAT		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Classic, 12m, 2 doors{BLACK}{}Usage: {GOLD}City{BLACK}{}Fuel: {GOLD}Electric{BLACK}{}{}
+STR_MB_CitaroE_c_b_cc1_INFO		:Mercedes-Benz eCitaro {LTBLUE}Classic - 2 doors{BLACK}
+STR_MB_CitaroE_c_b_cc1_BUY		:2 doors - Company Color 1. livery
+
+STR_MB_CitaroE_k_a_cc1_NAME		:Mercedes-Benz eCitaro K
+STR_MB_CitaroE_k_a_cc1_ADAT		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 3 doors{BLACK}{}Usage: {GOLD}City{BLACK}{}Fuel: {GOLD}Electric{BLACK}{}{}
+STR_MB_CitaroE_k_a_cc1_INFO		:Mercedes-Benz eCitaro {LTBLUE}K - 3 doors{BLACK}
+STR_MB_CitaroE_k_a_cc1_BUY		:3 doors - Company Color 1. livery
+
+STR_MB_CitaroE_k_b_cc1_NAME		:Mercedes-Benz eCitaro K
+STR_MB_CitaroE_k_b_cc1_ADAT		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 2 doors{BLACK}{}Usage: {GOLD}City{BLACK}{}Fuel: {GOLD}Electric{BLACK}{}{}
+STR_MB_CitaroE_k_b_cc1_INFO		:Mercedes-Benz eCitaro {LTBLUE}K - 2 doors{BLACK}
+STR_MB_CitaroE_k_b_cc1_BUY		:2 doors - Company Color 1. livery
+

@@ -1,0 +1,2572 @@
+grf {
+	grfid: "HS\17\01";
+	name: string(STR_GRF_NAME);
+	desc: string(STR_GRF_DESC);
+	version: 10;
+	min_compatible_version: 5722;
+	param 0 {
+        param_cost_factor {
+            type: int;
+            name: string(STR_PARAM_BUY_NAME);
+            desc: string(STR_PARAM_BUY_DESC);
+            min_value: 0;
+            max_value: 4;
+            def_value: 2;
+            names: {
+					0: string(STR_PARAM_GAME_VERY_EASY);
+                    1: string(STR_PARAM_GAME_EASY);
+					2: string(STR_PARAM_GAME_NORMAL);
+					3: string(STR_PARAM_GAME_HARD);
+					4: string(STR_PARAM_GAME_VERY_HARD);
+                    };
+				}
+			}
+	param 1 {
+		param_running_cost_factor {
+            type: int;
+            name: string(STR_PARAM_MAINTENANCE_NAME);
+            desc: string(STR_PARAM_MAINTENANCE_DESC);
+            min_value: 0;
+            max_value: 4;
+            def_value: 2;
+            names: {
+					0: string(STR_PARAM_GAME_VERY_EASY);
+                    1: string(STR_PARAM_GAME_EASY);
+					2: string(STR_PARAM_GAME_NORMAL);
+					3: string(STR_PARAM_GAME_HARD);
+					4: string(STR_PARAM_GAME_VERY_HARD);
+                    };
+				}
+			}
+	param 2 {
+		param_cargo_capacity {
+            type: int;
+            name: string(STR_PARAM_CARGOC_NAME);
+            desc: string(STR_PARAM_CARGOC_DESC);
+            min_value: 0;
+            max_value: 3;
+            def_value: 0;
+            names: {
+					0: string(STR_PARAM_CARGOC_1);
+                    1: string(STR_PARAM_CARGOC_2);
+					2: string(STR_PARAM_CARGOC_4);
+					3: string(STR_PARAM_CARGOC_8);
+                    };
+				}
+			}
+
+}
+
+paracapa = (param_cargo_capacity == 1) ? 2 : (param_cargo_capacity == 2) ? 4 : (param_cargo_capacity == 3) ? 8 : 1;
+parapuco = (param_cost_factor == 1) ? 2 : (param_cost_factor == 2) ? 4 : (param_cost_factor == 3) ? 8 : (param_cost_factor == 4) ? 16 : 1;
+pararuco = (param_running_cost_factor == 1) ? 2 : (param_running_cost_factor == 2) ? 4 : (param_running_cost_factor == 3) ? 8 : (param_running_cost_factor == 4) ? 16 : 1;
+
+
+tramtypetable  {
+	RAIL,	//SIMA
+	NBAN: [RAIL],	//Ufibi's Improved
+	NIAN: [RAIL],	//Ufibi's ISR
+	ELRL,	//FELSOVEZETEK
+	NBAE: [ELRL],	//Ufibi's Improved (EL)
+	NUAE: [ELRL],	//Ufibi's Urban (EL)
+	NUBE: [ELRL],	//Ufibi's Modern Urban (EL)
+	NUCE: [ELRL],	//Ufibi's Green (EL)
+	NIAN: [ELRL]	//Ufibi's ISR (EL)
+}
+
+cargotable {
+PASS, COAL, MAIL, OIL_, LVST, GOOD, GRAI, WOOD, IORE, STEL, VALU, PAPR, WHEA, FOOD, GOLD,RUBR, FRUT, MAIZ, CORE, WATR, DIAM, SUGR, AORE, BDMT, BEAN, BEER, BOOM, BRCK, CBLK,CERA, CERE, CLAY, CMNT, COPR, CSTI, CTAR, DYES, ENSP, FECR, FERT, FICR, FISH, FMSP, GLAS, GRVL, JAVA, KAOL, LIME, MILK, OLSD, PEAT, PETR, PHOS, PLAS, PORE, POTA, TOUR, TYRE, URAN, VEHI, WDPR, WOOL, ZINC, ACID, ALUM, BAKE, CASS, CHLO, CHSE, CIGR, COAT, COBL, COKE, ELTR, EOIL, FRVG, FUEL, FURN, IRON, LYE_, MEAT, METL, MNO2, MNSP, MOLS, MPTS, NH3_, NUTS, NICK, NITR, NKOR, NUKF, NUKW, OILI, OILD, OTI1, OTI2, OYST, O2__, PCL_, PIPE, POWR, QLME, RCYC, SALT, SASH, SEED, SESP, SGBT, SGCN, SLAG, SOAP, STAL, STCB, STSE, STSH, STST, STWR, TATO, TEXT, TBCO, TWOD, VBOD, VENG, VPTS, WSTE
+/*
+//PASSENGERS CLASS
+PASS, TOUR, 
+//MAIL CLASS
+MAIL,
+//EXPRESS CLASS
+GOOD,
+//ARMOURED CLASS
+VALU, GOLD, DIAM, 
+//BULK CLASS
+COAL, GRAI,  IORE, WHEA, MAIZ, CORE, SUGR, AORE, BEAN, GRVL, LIME, SAND, SCMT, 
+//PIECE GOODS CLASS
+LVST, WOOD, STEL, PAPR,  COPR, METL, 
+//LIQUID CLASS
+OIL_, RUBR, WATR, PETR, RFPR, 
+//EXPRESS + REFRIGERATED CLASS
+FOOD, FISH, MEAT, 
+//BULK + REFRIGERATED CLASS
+FRUT, 
+//BULK + COVERED CLASS
+CLAY, CMNT, OLSD, 
+//BULK + PIECE CLASS
+FERT, FICR, WDPR, RCYC, 
+//HAZARDOUS CLASS
+
+//PIECE GOODS + COVERED CLASS
+BDMT, WOOL, TEXT, 
+//OVERSIZED CLASS
+
+//PIECE + OVERSIZED CLASS
+GLAS, VEHI, 
+//POWDERIZED CLASS (COVER)
+
+//EXPRESS + LIQUID + REFRIGERATED
+MILK, 
+//EXPRESS + PIECE + LOQUID CLASS
+BEER, 
+//EXPRESS + PIECE CLASS
+BOOM, ENSP, FMSP, JAVA, VPTS, VENG, VBOD,*/
+}
+
+
+template tmpl_purchase() {
+	[0,	0,	99,	25,	-25,-15]}
+template tmpl_depo() {
+	[98,	0,	90,	25,	-13,-15]}	
+template tmpl_1(z1){
+	[0		*z1,	0,	11	*z1,	49	*z1,	-5	*z1,	-13	*z1,	ANIM]	//
+	[19		*z1,	0,	54	*z1,	40	*z1,	-45	*z1,	-12	*z1,	ANIM]	//-14 -6
+	[81		*z1,	0,	69	*z1,	15	*z1,	-54	*z1,	-10	*z1,	ANIM]	//
+	[158	*z1,	0,	54	*z1,	40	*z1,	-41	*z1,	-29	*z1,	ANIM]	//-10 -9
+	[220	*z1,	0,	11	*z1,	49	*z1,	-6	*z1,	-32	*z1,	ANIM]	//
+	[239	*z1,	0,	54	*z1,	40	*z1,	-15	*z1,	-28	*z1,	ANIM]	//-12 -8
+	[301	*z1,	0,	69	*z1,	15	*z1,	-11	*z1,	-9	*z1,	ANIM]	//
+	[378	*z1,	0,	54	*z1,	40	*z1,	-8	*z1,	-14	*z1,	ANIM]	//-6 -8
+	}
+
+template tmpl_toldat() {
+	[0,	0,	2,	2,	1,	1]
+	}
+
+spriteset(ss_toldat, "src/icons.png")		{tmpl_toldat()}
+
+template tmpl_semmi() {
+	[0,	0,	2,	2,	1,	1]
+	[0,	0,	2,	2,	1,	1]
+	[0,	0,	2,	2,	1,	1]
+	[0,	0,	2,	2,	1,	1]
+	[0,	0,	2,	2,	1,	1]
+	[0,	0,	2,	2,	1,	1]
+	[0,	0,	2,	2,	1,	1]
+	[0,	0,	2,	2,	1,	1]
+	}// --------------------------------------------------------------------------------MB_Citaro2_c_a_BLT_new
+
+spriteset(ss_MB_Citaro2_c_a_BLT_new_purchase, "src/MB/MB_Citaro2_c_a_BLT_new_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+
+spriteset(ss_MB_Citaro2_c_a_BLT_new, "src/MB/MB_Citaro2_c_a_BLT_new_1x_8bpp.png")		{tmpl_1(1)}
+alternative_sprites(ss_MB_Citaro2_c_a_BLT_new, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_c_a_BLT_new_2x_8bpp.png") {tmpl_1(2)}
+alternative_sprites(ss_MB_Citaro2_c_a_BLT_new, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_c_a_BLT_new_4x_8bpp.png") {tmpl_1(4)}
+spriteset(ss_MB_Citaro2_c_a_BLT_newi, "src/MB/MB_Citaro2_c_a_BLT_new_8bpp.png")		{tmpl_depo()}
+
+// Rakodási grafika
+spritegroup sg_MB_Citaro2_c_a_BLT_new {	loaded:  [ss_MB_Citaro2_c_a_BLT_new];	loading: [ss_MB_Citaro2_c_a_BLT_new];}
+
+// Lista grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_c_a_BLT_new_info, position_in_consist ) {
+    1: ss_toldat;
+    ss_MB_Citaro2_c_a_BLT_newi;
+}
+
+// Játék grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_c_a_BLT_new, position_in_consist ) {
+    1: ss_toldat;
+    sg_MB_Citaro2_c_a_BLT_new;
+}
+
+// Rajz
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_a_BLT_new, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_MB_Citaro2_c_a_BLT_new_info; // Depó nézet
+   0x11: sw1_MB_Citaro2_c_a_BLT_new_info; // Jármű infó/Refit nézet
+   0x12: sw1_MB_Citaro2_c_a_BLT_new_info; // Jármű lista nézet
+   0x00: sw1_MB_Citaro2_c_a_BLT_new; // Játék nézet
+}
+
+// Csuklosítás
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_a_BLT_new_articulated, extra_callback_info1) {
+    0: item_MB_Citaro2_c_a_BLT_new;
+    1: item_MB_Citaro2_c_a_BLT_new_T;
+    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Modelhossz
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_a_BLT_new_length, position_in_consist) {
+	1: return 8;
+    return 5;
+}
+
+// Szövegek
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_a_BLT_new_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_MB_Citaro2_c_a_BLT_new_BUY);
+	return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_a_BLT_new_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_MB_Citaro2_c_a_cc1_INFO); // Jármű infóban név
+    0x20: sw_MB_Citaro2_c_a_BLT_new_namep; // Vásárlási lista név
+	0x21: return string(STR_MB_Citaro2_c_a_cc1_NAME); // Elővásárlási név
+	return CB_RESULT_NO_TEXT;
+}
+
+
+item(FEAT_ROADVEHS, item_MB_Citaro2_c_a_BLT_new) {
+	property {
+        name:							string(STR_MB_Citaro2_c_a_cc1_NAME);
+        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:				date(2012,01,01);
+        model_life:					25;
+        vehicle_life:					25;
+        reliability_decay:				20;
+        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					42;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        speed:							80 km/h;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_ROADVEH;
+        power:							260 kW;
+        weight:							12 ton;
+        cargo_capacity:				106;
+		cargo_age_period:				185;
+        sound_effect:					SOUND_DEPARTURE_MODERN_BUS;
+		variant_group:					item_MB_Citaro2_c_a_cc1;
+    }
+    graphics {
+		default:                 		sw_MB_Citaro2_c_a_BLT_new;
+		purchase:						ss_MB_Citaro2_c_a_BLT_new_purchase;
+		articulated_part:        		sw_MB_Citaro2_c_a_BLT_new_articulated;
+		length:                  		sw_MB_Citaro2_c_a_BLT_new_length;
+		cost_factor:					23 * parapuco;
+		running_cost_factor:			37 * pararuco;
+		additional_text: 				string(STR_MB_Citaro2_c_a_BLT_new_ADAT);
+		name:							sw_MB_Citaro2_c_a_BLT_new_name;
+    }
+}
+item(FEAT_ROADVEHS, item_MB_Citaro2_c_a_BLT_new_T) {
+	property {
+        name:							string(STR_BUG);
+        climates_available:			bitmask(NO_CLIMATE);
+        introduction_date:				date(4999999,01,01);
+        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					0;
+        cost_factor:					0;
+        running_cost_factor:			0;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_NONE;
+        power:							0 kW;
+        weight:							0 ton;
+        cargo_capacity:				0;
+		cargo_age_period:				0;
+    }
+    graphics {
+		default:                 		ss_toldat;
+		length:                  		sw_MB_Citaro2_c_a_BLT_new_length;
+    }
+}
+
+// --------------------------------------------------------------------------------MB_Citaro2_c_a_BLT_new End
+// --
+// --
+// --------------------------------------------------------------------------------MB_Citaro2_c_a_BLT_old
+
+spriteset(ss_MB_Citaro2_c_a_BLT_old_purchase, "src/MB/MB_Citaro2_c_a_BLT_old_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+
+spriteset(ss_MB_Citaro2_c_a_BLT_old, "src/MB/MB_Citaro2_c_a_BLT_old_1x_8bpp.png")		{tmpl_1(1)}
+alternative_sprites(ss_MB_Citaro2_c_a_BLT_old, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_c_a_BLT_old_2x_8bpp.png") {tmpl_1(2)}
+alternative_sprites(ss_MB_Citaro2_c_a_BLT_old, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_c_a_BLT_old_4x_8bpp.png") {tmpl_1(4)}
+spriteset(ss_MB_Citaro2_c_a_BLT_oldi, "src/MB/MB_Citaro2_c_a_BLT_old_8bpp.png")		{tmpl_depo()}
+
+// Rakodási grafika
+spritegroup sg_MB_Citaro2_c_a_BLT_old {	loaded:  [ss_MB_Citaro2_c_a_BLT_old];	loading: [ss_MB_Citaro2_c_a_BLT_old];}
+
+// Lista grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_c_a_BLT_old_info, position_in_consist ) {
+    1: ss_toldat;
+    ss_MB_Citaro2_c_a_BLT_oldi;
+}
+
+// Játék grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_c_a_BLT_old, position_in_consist ) {
+    1: ss_toldat;
+    sg_MB_Citaro2_c_a_BLT_old;
+}
+
+// Rajz
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_a_BLT_old, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_MB_Citaro2_c_a_BLT_old_info; // Depó nézet
+   0x11: sw1_MB_Citaro2_c_a_BLT_old_info; // Jármű infó/Refit nézet
+   0x12: sw1_MB_Citaro2_c_a_BLT_old_info; // Jármű lista nézet
+   0x00: sw1_MB_Citaro2_c_a_BLT_old; // Játék nézet
+}
+
+// Csuklosítás
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_a_BLT_old_articulated, extra_callback_info1) {
+    0: item_MB_Citaro2_c_a_BLT_old;
+    1: item_MB_Citaro2_c_a_BLT_old_T;
+    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Modelhossz
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_a_BLT_old_length, position_in_consist) {
+	1: return 8;
+    return 5;
+}
+
+// Szövegek
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_a_BLT_old_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_MB_Citaro2_c_a_BLT_old_BUY);
+	return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_a_BLT_old_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_MB_Citaro2_c_a_cc1_INFO); // Jármű infóban név
+    0x20: sw_MB_Citaro2_c_a_BLT_old_namep; // Vásárlási lista név
+	0x21: return string(STR_MB_Citaro2_c_a_cc1_NAME); // Elővásárlási név
+	return CB_RESULT_NO_TEXT;
+}
+
+
+item(FEAT_ROADVEHS, item_MB_Citaro2_c_a_BLT_old) {
+	property {
+        name:							string(STR_MB_Citaro2_c_a_cc1_NAME);
+        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:				date(2012,01,01);
+        model_life:					25;
+        vehicle_life:					25;
+        reliability_decay:				20;
+        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					42;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        speed:							80 km/h;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_ROADVEH;
+        power:							260 kW;
+        weight:							12 ton;
+        cargo_capacity:				106;
+		cargo_age_period:				185;
+        sound_effect:					SOUND_DEPARTURE_MODERN_BUS;
+		variant_group:					item_MB_Citaro2_c_a_cc1;
+    }
+    graphics {
+		default:                 		sw_MB_Citaro2_c_a_BLT_old;
+		purchase:						ss_MB_Citaro2_c_a_BLT_old_purchase;
+		articulated_part:        		sw_MB_Citaro2_c_a_BLT_old_articulated;
+		length:                  		sw_MB_Citaro2_c_a_BLT_old_length;
+		cost_factor:					23 * parapuco;
+		running_cost_factor:			37 * pararuco;
+		additional_text: 				string(STR_MB_Citaro2_c_a_BLT_old_ADAT);
+		name:							sw_MB_Citaro2_c_a_BLT_old_name;
+    }
+}
+item(FEAT_ROADVEHS, item_MB_Citaro2_c_a_BLT_old_T) {
+	property {
+        name:							string(STR_BUG);
+        climates_available:			bitmask(NO_CLIMATE);
+        introduction_date:				date(4999999,01,01);
+        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					0;
+        cost_factor:					0;
+        running_cost_factor:			0;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_NONE;
+        power:							0 kW;
+        weight:							0 ton;
+        cargo_capacity:				0;
+		cargo_age_period:				0;
+    }
+    graphics {
+		default:                 		ss_toldat;
+		length:                  		sw_MB_Citaro2_c_a_BLT_old_length;
+    }
+}
+
+// --------------------------------------------------------------------------------MB_Citaro2_c_a_BLT_old End
+// --
+// --
+// --------------------------------------------------------------------------------MB_Citaro2_c_a_cc1
+
+spriteset(ss_MB_Citaro2_c_a_cc1_purchase, "src/MB/MB_Citaro2_c_a_cc1_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+
+spriteset(ss_MB_Citaro2_c_a_cc1, "src/MB/MB_Citaro2_c_a_cc1_1x_8bpp.png")		{tmpl_1(1)}
+alternative_sprites(ss_MB_Citaro2_c_a_cc1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_c_a_cc1_2x_8bpp.png") {tmpl_1(2)}
+alternative_sprites(ss_MB_Citaro2_c_a_cc1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_c_a_cc1_4x_8bpp.png") {tmpl_1(4)}
+spriteset(ss_MB_Citaro2_c_a_cc1i, "src/MB/MB_Citaro2_c_a_cc1_8bpp.png")		{tmpl_depo()}
+
+// Rakodási grafika
+spritegroup sg_MB_Citaro2_c_a_cc1 {	loaded:  [ss_MB_Citaro2_c_a_cc1];	loading: [ss_MB_Citaro2_c_a_cc1];}
+
+// Lista grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_c_a_cc1_info, position_in_consist ) {
+    1: ss_toldat;
+    ss_MB_Citaro2_c_a_cc1i;
+}
+
+// Játék grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_c_a_cc1, position_in_consist ) {
+    1: ss_toldat;
+    sg_MB_Citaro2_c_a_cc1;
+}
+
+// Rajz
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_a_cc1, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_MB_Citaro2_c_a_cc1_info; // Depó nézet
+   0x11: sw1_MB_Citaro2_c_a_cc1_info; // Jármű infó/Refit nézet
+   0x12: sw1_MB_Citaro2_c_a_cc1_info; // Jármű lista nézet
+   0x00: sw1_MB_Citaro2_c_a_cc1; // Játék nézet
+}
+
+// Csuklosítás
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_a_cc1_articulated, extra_callback_info1) {
+    0: item_MB_Citaro2_c_a_cc1;
+    1: item_MB_Citaro2_c_a_cc1_T;
+    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Modelhossz
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_a_cc1_length, position_in_consist) {
+	1: return 8;
+    return 5;
+}
+
+// Szövegek
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_a_cc1_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_MB_Citaro2_c_a_cc1_BUY);
+	return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_a_cc1_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_MB_Citaro2_c_a_cc1_INFO); // Jármű infóban név
+    0x20: sw_MB_Citaro2_c_a_cc1_namep; // Vásárlási lista név
+	0x21: return string(STR_MB_Citaro2_c_a_cc1_NAME); // Elővásárlási név
+	return CB_RESULT_NO_TEXT;
+}
+
+
+item(FEAT_ROADVEHS, item_MB_Citaro2_c_a_cc1) {
+	property {
+        name:							string(STR_MB_Citaro2_c_a_cc1_NAME);
+        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:				date(2012,01,01);
+        model_life:					25;
+        vehicle_life:					25;
+        reliability_decay:				20;
+        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					42;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        speed:							80 km/h;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_ROADVEH;
+        power:							260 kW;
+        weight:							12 ton;
+        cargo_capacity:				106;
+		cargo_age_period:				185;
+        sound_effect:					SOUND_DEPARTURE_MODERN_BUS;
+//		variant_group:					item_blabla;
+    }
+    graphics {
+		default:                 		sw_MB_Citaro2_c_a_cc1;
+		purchase:						ss_MB_Citaro2_c_a_cc1_purchase;
+		articulated_part:        		sw_MB_Citaro2_c_a_cc1_articulated;
+		length:                  		sw_MB_Citaro2_c_a_cc1_length;
+		cost_factor:					23 * parapuco;
+		running_cost_factor:			37 * pararuco;
+		additional_text: 				string(STR_MB_Citaro2_c_a_cc1_ADAT);
+		name:							sw_MB_Citaro2_c_a_cc1_name;
+    }
+}
+item(FEAT_ROADVEHS, item_MB_Citaro2_c_a_cc1_T) {
+	property {
+        name:							string(STR_BUG);
+        climates_available:			bitmask(NO_CLIMATE);
+        introduction_date:				date(4999999,01,01);
+        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					0;
+        cost_factor:					0;
+        running_cost_factor:			0;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_NONE;
+        power:							0 kW;
+        weight:							0 ton;
+        cargo_capacity:				0;
+		cargo_age_period:				0;
+    }
+    graphics {
+		default:                 		ss_toldat;
+		length:                  		sw_MB_Citaro2_c_a_cc1_length;
+    }
+}
+
+// --------------------------------------------------------------------------------MB_Citaro2_c_a_cc1 End
+// --
+// --
+// --------------------------------------------------------------------------------MB_Citaro2_c_b_cc1
+
+spriteset(ss_MB_Citaro2_c_b_cc1_purchase, "src/MB/MB_Citaro2_c_b_cc1_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+
+spriteset(ss_MB_Citaro2_c_b_cc1, "src/MB/MB_Citaro2_c_b_cc1_1x_8bpp.png")		{tmpl_1(1)}
+alternative_sprites(ss_MB_Citaro2_c_b_cc1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_c_b_cc1_2x_8bpp.png") {tmpl_1(2)}
+alternative_sprites(ss_MB_Citaro2_c_b_cc1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_c_b_cc1_4x_8bpp.png") {tmpl_1(4)}
+spriteset(ss_MB_Citaro2_c_b_cc1i, "src/MB/MB_Citaro2_c_b_cc1_8bpp.png")		{tmpl_depo()}
+
+// Rakodási grafika
+spritegroup sg_MB_Citaro2_c_b_cc1 {	loaded:  [ss_MB_Citaro2_c_b_cc1];	loading: [ss_MB_Citaro2_c_b_cc1];}
+
+// Lista grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_c_b_cc1_info, position_in_consist ) {
+    1: ss_toldat;
+    ss_MB_Citaro2_c_b_cc1i;
+}
+
+// Játék grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_c_b_cc1, position_in_consist ) {
+    1: ss_toldat;
+    sg_MB_Citaro2_c_b_cc1;
+}
+
+// Rajz
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_b_cc1, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_MB_Citaro2_c_b_cc1_info; // Depó nézet
+   0x11: sw1_MB_Citaro2_c_b_cc1_info; // Jármű infó/Refit nézet
+   0x12: sw1_MB_Citaro2_c_b_cc1_info; // Jármű lista nézet
+   0x00: sw1_MB_Citaro2_c_b_cc1; // Játék nézet
+}
+
+// Csuklosítás
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_b_cc1_articulated, extra_callback_info1) {
+    0: item_MB_Citaro2_c_b_cc1;
+    1: item_MB_Citaro2_c_b_cc1_T;
+    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Modelhossz
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_b_cc1_length, position_in_consist) {
+	1: return 8;
+    return 5;
+}
+
+// Szövegek
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_b_cc1_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_MB_Citaro2_c_b_cc1_BUY);
+	return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_b_cc1_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_MB_Citaro2_c_b_cc1_INFO); // Jármű infóban név
+    0x20: sw_MB_Citaro2_c_b_cc1_namep; // Vásárlási lista név
+	0x21: return string(STR_MB_Citaro2_c_b_cc1_NAME); // Elővásárlási név
+	return CB_RESULT_NO_TEXT;
+}
+
+
+item(FEAT_ROADVEHS, item_MB_Citaro2_c_b_cc1) {
+	property {
+        name:							string(STR_MB_Citaro2_c_b_cc1_NAME);
+        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:				date(2012,01,01);
+        model_life:					25;
+        vehicle_life:					25;
+        reliability_decay:				20;
+        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					28;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        speed:							80 km/h;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_ROADVEH;
+        power:							260 kW;
+        weight:							12 ton;
+        cargo_capacity:				106;
+		cargo_age_period:				185;
+        sound_effect:					SOUND_DEPARTURE_MODERN_BUS;
+		variant_group:					item_MB_Citaro2_c_a_cc1;
+    }
+    graphics {
+		default:                 		sw_MB_Citaro2_c_b_cc1;
+		purchase:						ss_MB_Citaro2_c_b_cc1_purchase;
+		articulated_part:        		sw_MB_Citaro2_c_b_cc1_articulated;
+		length:                  		sw_MB_Citaro2_c_b_cc1_length;
+		cost_factor:					23 * parapuco;
+		running_cost_factor:			37 * pararuco;
+		additional_text: 				string(STR_MB_Citaro2_c_b_cc1_ADAT);
+		name:							sw_MB_Citaro2_c_b_cc1_name;
+    }
+}
+item(FEAT_ROADVEHS, item_MB_Citaro2_c_b_cc1_T) {
+	property {
+        name:							string(STR_BUG);
+        climates_available:			bitmask(NO_CLIMATE);
+        introduction_date:				date(4999999,01,01);
+        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					0;
+        cost_factor:					0;
+        running_cost_factor:			0;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_NONE;
+        power:							0 kW;
+        weight:							0 ton;
+        cargo_capacity:				0;
+		cargo_age_period:				0;
+    }
+    graphics {
+		default:                 		ss_toldat;
+		length:                  		sw_MB_Citaro2_c_b_cc1_length;
+    }
+}
+
+// --------------------------------------------------------------------------------MB_Citaro2_c_b_cc1 End
+// --
+// --
+// --------------------------------------------------------------------------------MB_Citaro2_c_ngt_a_cc1
+
+spriteset(ss_MB_Citaro2_c_ngt_a_cc1_purchase, "src/MB/MB_Citaro2_c_ngt_a_cc1_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+
+spriteset(ss_MB_Citaro2_c_ngt_a_cc1, "src/MB/MB_Citaro2_c_ngt_a_cc1_1x_8bpp.png")		{tmpl_1(1)}
+alternative_sprites(ss_MB_Citaro2_c_ngt_a_cc1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_c_ngt_a_cc1_2x_8bpp.png") {tmpl_1(2)}
+alternative_sprites(ss_MB_Citaro2_c_ngt_a_cc1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_c_ngt_a_cc1_4x_8bpp.png") {tmpl_1(4)}
+spriteset(ss_MB_Citaro2_c_ngt_a_cc1i, "src/MB/MB_Citaro2_c_ngt_a_cc1_8bpp.png")		{tmpl_depo()}
+
+// Rakodási grafika
+spritegroup sg_MB_Citaro2_c_ngt_a_cc1 {	loaded:  [ss_MB_Citaro2_c_ngt_a_cc1];	loading: [ss_MB_Citaro2_c_ngt_a_cc1];}
+
+// Lista grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_c_ngt_a_cc1_info, position_in_consist ) {
+    1: ss_toldat;
+    ss_MB_Citaro2_c_ngt_a_cc1i;
+}
+
+// Játék grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_c_ngt_a_cc1, position_in_consist ) {
+    1: ss_toldat;
+    sg_MB_Citaro2_c_ngt_a_cc1;
+}
+
+// Rajz
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_ngt_a_cc1, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_MB_Citaro2_c_ngt_a_cc1_info; // Depó nézet
+   0x11: sw1_MB_Citaro2_c_ngt_a_cc1_info; // Jármű infó/Refit nézet
+   0x12: sw1_MB_Citaro2_c_ngt_a_cc1_info; // Jármű lista nézet
+   0x00: sw1_MB_Citaro2_c_ngt_a_cc1; // Játék nézet
+}
+
+// Csuklosítás
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_ngt_a_cc1_articulated, extra_callback_info1) {
+    0: item_MB_Citaro2_c_ngt_a_cc1;
+    1: item_MB_Citaro2_c_ngt_a_cc1_T;
+    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Modelhossz
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_ngt_a_cc1_length, position_in_consist) {
+	1: return 8;
+    return 5;
+}
+
+// Szövegek
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_ngt_a_cc1_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_MB_Citaro2_c_ngt_a_cc1_BUY);
+	return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_ngt_a_cc1_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_MB_Citaro2_c_ngt_a_cc1_INFO); // Jármű infóban név
+    0x20: sw_MB_Citaro2_c_ngt_a_cc1_namep; // Vásárlási lista név
+	0x21: return string(STR_MB_Citaro2_c_ngt_a_cc1_NAME); // Elővásárlási név
+	return CB_RESULT_NO_TEXT;
+}
+
+
+item(FEAT_ROADVEHS, item_MB_Citaro2_c_ngt_a_cc1) {
+	property {
+        name:							string(STR_MB_Citaro2_c_ngt_a_cc1_NAME);
+        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:				date(2014,01,01);
+        model_life:					25;
+        vehicle_life:					25;
+        reliability_decay:				20;
+        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					42;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        speed:							80 km/h;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_ROADVEH;
+        power:							220 kW;
+        weight:							12 ton;
+        cargo_capacity:				106;
+		cargo_age_period:				185;
+        sound_effect:					SOUND_DEPARTURE_MODERN_BUS;
+//		variant_group:					item_blabla;
+    }
+    graphics {
+		default:                 		sw_MB_Citaro2_c_ngt_a_cc1;
+		purchase:						ss_MB_Citaro2_c_ngt_a_cc1_purchase;
+		articulated_part:        		sw_MB_Citaro2_c_ngt_a_cc1_articulated;
+		length:                  		sw_MB_Citaro2_c_ngt_a_cc1_length;
+		cost_factor:					26 * parapuco;
+		running_cost_factor:			25 * pararuco;
+		additional_text: 				string(STR_MB_Citaro2_c_ngt_a_cc1_ADAT);
+		name:							sw_MB_Citaro2_c_ngt_a_cc1_name;
+    }
+}
+item(FEAT_ROADVEHS, item_MB_Citaro2_c_ngt_a_cc1_T) {
+	property {
+        name:							string(STR_BUG);
+        climates_available:			bitmask(NO_CLIMATE);
+        introduction_date:				date(4999999,01,01);
+        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					0;
+        cost_factor:					0;
+        running_cost_factor:			0;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_NONE;
+        power:							0 kW;
+        weight:							0 ton;
+        cargo_capacity:				0;
+		cargo_age_period:				0;
+    }
+    graphics {
+		default:                 		ss_toldat;
+		length:                  		sw_MB_Citaro2_c_ngt_a_cc1_length;
+    }
+}
+
+// --------------------------------------------------------------------------------MB_Citaro2_c_ngt_a_cc1 End
+// --
+// --
+// --------------------------------------------------------------------------------MB_Citaro2_c_ngt_b_cc1
+
+spriteset(ss_MB_Citaro2_c_ngt_b_cc1_purchase, "src/MB/MB_Citaro2_c_ngt_b_cc1_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+
+spriteset(ss_MB_Citaro2_c_ngt_b_cc1, "src/MB/MB_Citaro2_c_ngt_b_cc1_1x_8bpp.png")		{tmpl_1(1)}
+alternative_sprites(ss_MB_Citaro2_c_ngt_b_cc1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_c_ngt_b_cc1_2x_8bpp.png") {tmpl_1(2)}
+alternative_sprites(ss_MB_Citaro2_c_ngt_b_cc1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_c_ngt_b_cc1_4x_8bpp.png") {tmpl_1(4)}
+spriteset(ss_MB_Citaro2_c_ngt_b_cc1i, "src/MB/MB_Citaro2_c_ngt_b_cc1_8bpp.png")		{tmpl_depo()}
+
+// Rakodási grafika
+spritegroup sg_MB_Citaro2_c_ngt_b_cc1 {	loaded:  [ss_MB_Citaro2_c_ngt_b_cc1];	loading: [ss_MB_Citaro2_c_ngt_b_cc1];}
+
+// Lista grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_c_ngt_b_cc1_info, position_in_consist ) {
+    1: ss_toldat;
+    ss_MB_Citaro2_c_ngt_b_cc1i;
+}
+
+// Játék grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_c_ngt_b_cc1, position_in_consist ) {
+    1: ss_toldat;
+    sg_MB_Citaro2_c_ngt_b_cc1;
+}
+
+// Rajz
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_ngt_b_cc1, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_MB_Citaro2_c_ngt_b_cc1_info; // Depó nézet
+   0x11: sw1_MB_Citaro2_c_ngt_b_cc1_info; // Jármű infó/Refit nézet
+   0x12: sw1_MB_Citaro2_c_ngt_b_cc1_info; // Jármű lista nézet
+   0x00: sw1_MB_Citaro2_c_ngt_b_cc1; // Játék nézet
+}
+
+// Csuklosítás
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_ngt_b_cc1_articulated, extra_callback_info1) {
+    0: item_MB_Citaro2_c_ngt_b_cc1;
+    1: item_MB_Citaro2_c_ngt_b_cc1_T;
+    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Modelhossz
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_ngt_b_cc1_length, position_in_consist) {
+	1: return 8;
+    return 5;
+}
+
+// Szövegek
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_ngt_b_cc1_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_MB_Citaro2_c_ngt_b_cc1_BUY);
+	return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_c_ngt_b_cc1_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_MB_Citaro2_c_ngt_b_cc1_INFO); // Jármű infóban név
+    0x20: sw_MB_Citaro2_c_ngt_b_cc1_namep; // Vásárlási lista név
+	0x21: return string(STR_MB_Citaro2_c_ngt_b_cc1_NAME); // Elővásárlási név
+	return CB_RESULT_NO_TEXT;
+}
+
+
+item(FEAT_ROADVEHS, item_MB_Citaro2_c_ngt_b_cc1) {
+	property {
+        name:							string(STR_MB_Citaro2_c_ngt_b_cc1_NAME);
+        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:				date(2014,01,01);
+        model_life:					25;
+        vehicle_life:					25;
+        reliability_decay:				20;
+        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					42;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        speed:							80 km/h;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_ROADVEH;
+        power:							220 kW;
+        weight:							12 ton;
+        cargo_capacity:				106;
+		cargo_age_period:				185;
+        sound_effect:					SOUND_DEPARTURE_MODERN_BUS;
+		variant_group:					item_MB_Citaro2_c_ngt_a_cc1;
+    }
+    graphics {
+		default:                 		sw_MB_Citaro2_c_ngt_b_cc1;
+		purchase:						ss_MB_Citaro2_c_ngt_b_cc1_purchase;
+		articulated_part:        		sw_MB_Citaro2_c_ngt_b_cc1_articulated;
+		length:                  		sw_MB_Citaro2_c_ngt_b_cc1_length;
+		cost_factor:					26 * parapuco;
+		running_cost_factor:			25 * pararuco;
+		additional_text: 				string(STR_MB_Citaro2_c_ngt_b_cc1_ADAT);
+		name:							sw_MB_Citaro2_c_ngt_b_cc1_name;
+    }
+}
+item(FEAT_ROADVEHS, item_MB_Citaro2_c_ngt_b_cc1_T) {
+	property {
+        name:							string(STR_BUG);
+        climates_available:			bitmask(NO_CLIMATE);
+        introduction_date:				date(4999999,01,01);
+        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					0;
+        cost_factor:					0;
+        running_cost_factor:			0;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_NONE;
+        power:							0 kW;
+        weight:							0 ton;
+        cargo_capacity:				0;
+		cargo_age_period:				0;
+    }
+    graphics {
+		default:                 		ss_toldat;
+		length:                  		sw_MB_Citaro2_c_ngt_b_cc1_length;
+    }
+}
+
+// --------------------------------------------------------------------------------MB_Citaro2_c_ngt_b_cc1 End
+// --
+// --
+// --------------------------------------------------------------------------------MB_Citaro2_k_a_cc1
+
+spriteset(ss_MB_Citaro2_k_a_cc1_purchase, "src/MB/MB_Citaro2_k_a_cc1_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+
+spriteset(ss_MB_Citaro2_k_a_cc1, "src/MB/MB_Citaro2_k_a_cc1_1x_8bpp.png")		{tmpl_1(1)}
+alternative_sprites(ss_MB_Citaro2_k_a_cc1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_k_a_cc1_2x_8bpp.png") {tmpl_1(2)}
+alternative_sprites(ss_MB_Citaro2_k_a_cc1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_k_a_cc1_4x_8bpp.png") {tmpl_1(4)}
+spriteset(ss_MB_Citaro2_k_a_cc1i, "src/MB/MB_Citaro2_k_a_cc1_8bpp.png")		{tmpl_depo()}
+
+// Rakodási grafika
+spritegroup sg_MB_Citaro2_k_a_cc1 {	loaded:  [ss_MB_Citaro2_k_a_cc1];	loading: [ss_MB_Citaro2_k_a_cc1];}
+
+// Lista grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_k_a_cc1_info, position_in_consist ) {
+    1: ss_toldat;
+    ss_MB_Citaro2_k_a_cc1i;
+}
+
+// Játék grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_k_a_cc1, position_in_consist ) {
+    1: ss_toldat;
+    sg_MB_Citaro2_k_a_cc1;
+}
+
+// Rajz
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_k_a_cc1, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_MB_Citaro2_k_a_cc1_info; // Depó nézet
+   0x11: sw1_MB_Citaro2_k_a_cc1_info; // Jármű infó/Refit nézet
+   0x12: sw1_MB_Citaro2_k_a_cc1_info; // Jármű lista nézet
+   0x00: sw1_MB_Citaro2_k_a_cc1; // Játék nézet
+}
+
+// Csuklosítás
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_k_a_cc1_articulated, extra_callback_info1) {
+    0: item_MB_Citaro2_k_a_cc1;
+    1: item_MB_Citaro2_k_a_cc1_T;
+    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Modelhossz
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_k_a_cc1_length, position_in_consist) {
+	1: return 8;
+    return 4;
+}
+
+// Szövegek
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_k_a_cc1_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_MB_Citaro2_k_a_cc1_BUY);
+	return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_k_a_cc1_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_MB_Citaro2_k_a_cc1_INFO); // Jármű infóban név
+    0x20: sw_MB_Citaro2_k_a_cc1_namep; // Vásárlási lista név
+	0x21: return string(STR_MB_Citaro2_k_a_cc1_NAME); // Elővásárlási név
+	return CB_RESULT_NO_TEXT;
+}
+
+
+item(FEAT_ROADVEHS, item_MB_Citaro2_k_a_cc1) {
+	property {
+        name:							string(STR_MB_Citaro2_k_a_cc1_NAME);
+        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:				date(2012,01,01);
+        model_life:					25;
+        vehicle_life:					25;
+        reliability_decay:				20;
+        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					42;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        speed:							80 km/h;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_ROADVEH;
+        power:							260 kW;
+        weight:							11 ton;
+        cargo_capacity:				86;
+		cargo_age_period:				185;
+        sound_effect:					SOUND_DEPARTURE_MODERN_BUS;
+//		variant_group:					item_MB_Citaro2_c_a_cc1;
+    }
+    graphics {
+		default:                 		sw_MB_Citaro2_k_a_cc1;
+		purchase:						ss_MB_Citaro2_k_a_cc1_purchase;
+		articulated_part:        		sw_MB_Citaro2_k_a_cc1_articulated;
+		length:                  		sw_MB_Citaro2_k_a_cc1_length;
+		cost_factor:					23 * parapuco;
+		running_cost_factor:			37 * pararuco;
+		additional_text: 				string(STR_MB_Citaro2_k_a_cc1_ADAT);
+		name:							sw_MB_Citaro2_k_a_cc1_name;
+    }
+}
+item(FEAT_ROADVEHS, item_MB_Citaro2_k_a_cc1_T) {
+	property {
+        name:							string(STR_BUG);
+        climates_available:			bitmask(NO_CLIMATE);
+        introduction_date:				date(4999999,01,01);
+        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					0;
+        cost_factor:					0;
+        running_cost_factor:			0;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_NONE;
+        power:							0 kW;
+        weight:							0 ton;
+        cargo_capacity:				0;
+		cargo_age_period:				0;
+    }
+    graphics {
+		default:                 		ss_toldat;
+		length:                  		sw_MB_Citaro2_k_a_cc1_length;
+    }
+}
+
+// --------------------------------------------------------------------------------MB_Citaro2_k_a_cc1 End
+// --
+// --
+// --------------------------------------------------------------------------------MB_Citaro2_k_b_cc1
+
+spriteset(ss_MB_Citaro2_k_b_cc1_purchase, "src/MB/MB_Citaro2_k_b_cc1_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+
+spriteset(ss_MB_Citaro2_k_b_cc1, "src/MB/MB_Citaro2_k_b_cc1_1x_8bpp.png")		{tmpl_1(1)}
+alternative_sprites(ss_MB_Citaro2_k_b_cc1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_k_b_cc1_2x_8bpp.png") {tmpl_1(2)}
+alternative_sprites(ss_MB_Citaro2_k_b_cc1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_k_b_cc1_4x_8bpp.png") {tmpl_1(4)}
+spriteset(ss_MB_Citaro2_k_b_cc1i, "src/MB/MB_Citaro2_k_b_cc1_8bpp.png")		{tmpl_depo()}
+
+// Rakodási grafika
+spritegroup sg_MB_Citaro2_k_b_cc1 {	loaded:  [ss_MB_Citaro2_k_b_cc1];	loading: [ss_MB_Citaro2_k_b_cc1];}
+
+// Lista grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_k_b_cc1_info, position_in_consist ) {
+    1: ss_toldat;
+    ss_MB_Citaro2_k_b_cc1i;
+}
+
+// Játék grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_k_b_cc1, position_in_consist ) {
+    1: ss_toldat;
+    sg_MB_Citaro2_k_b_cc1;
+}
+
+// Rajz
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_k_b_cc1, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_MB_Citaro2_k_b_cc1_info; // Depó nézet
+   0x11: sw1_MB_Citaro2_k_b_cc1_info; // Jármű infó/Refit nézet
+   0x12: sw1_MB_Citaro2_k_b_cc1_info; // Jármű lista nézet
+   0x00: sw1_MB_Citaro2_k_b_cc1; // Játék nézet
+}
+
+// Csuklosítás
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_k_b_cc1_articulated, extra_callback_info1) {
+    0: item_MB_Citaro2_k_b_cc1;
+    1: item_MB_Citaro2_k_b_cc1_T;
+    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Modelhossz
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_k_b_cc1_length, position_in_consist) {
+	1: return 8;
+    return 4;
+}
+
+// Szövegek
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_k_b_cc1_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_MB_Citaro2_k_b_cc1_BUY);
+	return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_k_b_cc1_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_MB_Citaro2_k_b_cc1_INFO); // Jármű infóban név
+    0x20: sw_MB_Citaro2_k_b_cc1_namep; // Vásárlási lista név
+	0x21: return string(STR_MB_Citaro2_k_b_cc1_NAME); // Elővásárlási név
+	return CB_RESULT_NO_TEXT;
+}
+
+
+item(FEAT_ROADVEHS, item_MB_Citaro2_k_b_cc1) {
+	property {
+        name:							string(STR_MB_Citaro2_k_b_cc1_NAME);
+        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:				date(2012,01,01);
+        model_life:					25;
+        vehicle_life:					25;
+        reliability_decay:				20;
+        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					28;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        speed:							80 km/h;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_ROADVEH;
+        power:							260 kW;
+        weight:							11 ton;
+        cargo_capacity:				86;
+		cargo_age_period:				185;
+        sound_effect:					SOUND_DEPARTURE_MODERN_BUS;
+		variant_group:					item_MB_Citaro2_k_a_cc1;
+    }
+    graphics {
+		default:                 		sw_MB_Citaro2_k_b_cc1;
+		purchase:						ss_MB_Citaro2_k_b_cc1_purchase;
+		articulated_part:        		sw_MB_Citaro2_k_b_cc1_articulated;
+		length:                  		sw_MB_Citaro2_k_b_cc1_length;
+		cost_factor:					23 * parapuco;
+		running_cost_factor:			37 * pararuco;
+		additional_text: 				string(STR_MB_Citaro2_k_b_cc1_ADAT);
+		name:							sw_MB_Citaro2_k_b_cc1_name;
+    }
+}
+item(FEAT_ROADVEHS, item_MB_Citaro2_k_b_cc1_T) {
+	property {
+        name:							string(STR_BUG);
+        climates_available:			bitmask(NO_CLIMATE);
+        introduction_date:				date(4999999,01,01);
+        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					0;
+        cost_factor:					0;
+        running_cost_factor:			0;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_NONE;
+        power:							0 kW;
+        weight:							0 ton;
+        cargo_capacity:				0;
+		cargo_age_period:				0;
+    }
+    graphics {
+		default:                 		ss_toldat;
+		length:                  		sw_MB_Citaro2_k_b_cc1_length;
+    }
+}
+
+// --------------------------------------------------------------------------------MB_Citaro2_k_b_cc1 End
+// --
+// --
+// --------------------------------------------------------------------------------MB_Citaro2_lemu_a_cc1
+
+spriteset(ss_MB_Citaro2_lemu_a_cc1_purchase, "src/MB/MB_Citaro2_lemu_a_cc1_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+
+spriteset(ss_MB_Citaro2_lemu_a_cc1, "src/MB/MB_Citaro2_lemu_a_cc1_1x_8bpp.png")		{tmpl_1(1)}
+alternative_sprites(ss_MB_Citaro2_lemu_a_cc1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_lemu_a_cc1_2x_8bpp.png") {tmpl_1(2)}
+alternative_sprites(ss_MB_Citaro2_lemu_a_cc1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_lemu_a_cc1_4x_8bpp.png") {tmpl_1(4)}
+spriteset(ss_MB_Citaro2_lemu_a_cc1i, "src/MB/MB_Citaro2_lemu_a_cc1_8bpp.png")		{tmpl_depo()}
+
+// Rakodási grafika
+spritegroup sg_MB_Citaro2_lemu_a_cc1 {	loaded:  [ss_MB_Citaro2_lemu_a_cc1];	loading: [ss_MB_Citaro2_lemu_a_cc1];}
+
+// Lista grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_lemu_a_cc1_info, position_in_consist ) {
+    1: ss_toldat;
+    ss_MB_Citaro2_lemu_a_cc1i;
+}
+
+// Játék grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_lemu_a_cc1, position_in_consist ) {
+    1: ss_toldat;
+    sg_MB_Citaro2_lemu_a_cc1;
+}
+
+// Rajz
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_lemu_a_cc1, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_MB_Citaro2_lemu_a_cc1_info; // Depó nézet
+   0x11: sw1_MB_Citaro2_lemu_a_cc1_info; // Jármű infó/Refit nézet
+   0x12: sw1_MB_Citaro2_lemu_a_cc1_info; // Jármű lista nézet
+   0x00: sw1_MB_Citaro2_lemu_a_cc1; // Játék nézet
+}
+
+// Csuklosítás
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_lemu_a_cc1_articulated, extra_callback_info1) {
+    0: item_MB_Citaro2_lemu_a_cc1;
+    1: item_MB_Citaro2_lemu_a_cc1_T;
+    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Modelhossz
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_lemu_a_cc1_length, position_in_consist) {
+	1: return 8;
+    return 6;
+}
+
+// Szövegek
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_lemu_a_cc1_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_MB_Citaro2_lemu_a_cc1_BUY);
+	return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_lemu_a_cc1_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_MB_Citaro2_lemu_a_cc1_INFO); // Jármű infóban név
+    0x20: sw_MB_Citaro2_lemu_a_cc1_namep; // Vásárlási lista név
+	0x21: return string(STR_MB_Citaro2_lemu_a_cc1_NAME); // Elővásárlási név
+	return CB_RESULT_NO_TEXT;
+}
+
+
+item(FEAT_ROADVEHS, item_MB_Citaro2_lemu_a_cc1) {
+	property {
+        name:							string(STR_MB_Citaro2_lemu_a_cc1_NAME);
+        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:				date(2013,01,01);
+        model_life:					25;
+        vehicle_life:					25;
+        reliability_decay:				20;
+        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					26;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        speed:							100 km/h;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_ROADVEH;
+        power:							260 kW;
+        weight:							13 ton;
+        cargo_capacity:				114;
+		cargo_age_period:				170;
+        sound_effect:					SOUND_DEPARTURE_MODERN_BUS;
+//		variant_group:					item_blabla;
+    }
+    graphics {
+		default:                 		sw_MB_Citaro2_lemu_a_cc1;
+		purchase:						ss_MB_Citaro2_lemu_a_cc1_purchase;
+		articulated_part:        		sw_MB_Citaro2_lemu_a_cc1_articulated;
+		length:                  		sw_MB_Citaro2_lemu_a_cc1_length;
+		cost_factor:					24 * parapuco;
+		running_cost_factor:			37 * pararuco;
+		additional_text: 				string(STR_MB_Citaro2_lemu_a_cc1_ADAT);
+		name:							sw_MB_Citaro2_lemu_a_cc1_name;
+    }
+}
+item(FEAT_ROADVEHS, item_MB_Citaro2_lemu_a_cc1_T) {
+	property {
+        name:							string(STR_BUG);
+        climates_available:			bitmask(NO_CLIMATE);
+        introduction_date:				date(4999999,01,01);
+        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					0;
+        cost_factor:					0;
+        running_cost_factor:			0;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_NONE;
+        power:							0 kW;
+        weight:							0 ton;
+        cargo_capacity:				0;
+		cargo_age_period:				0;
+    }
+    graphics {
+		default:                 		ss_toldat;
+		length:                  		sw_MB_Citaro2_lemu_a_cc1_length;
+    }
+}
+
+// --------------------------------------------------------------------------------MB_Citaro2_lemu_a_cc1 End
+// --
+// --
+// --------------------------------------------------------------------------------MB_Citaro2_lemu_b_cc1
+
+spriteset(ss_MB_Citaro2_lemu_b_cc1_purchase, "src/MB/MB_Citaro2_lemu_b_cc1_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+
+spriteset(ss_MB_Citaro2_lemu_b_cc1, "src/MB/MB_Citaro2_lemu_b_cc1_1x_8bpp.png")		{tmpl_1(1)}
+alternative_sprites(ss_MB_Citaro2_lemu_b_cc1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_lemu_b_cc1_2x_8bpp.png") {tmpl_1(2)}
+alternative_sprites(ss_MB_Citaro2_lemu_b_cc1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_lemu_b_cc1_4x_8bpp.png") {tmpl_1(4)}
+spriteset(ss_MB_Citaro2_lemu_b_cc1i, "src/MB/MB_Citaro2_lemu_b_cc1_8bpp.png")		{tmpl_depo()}
+
+// Rakodási grafika
+spritegroup sg_MB_Citaro2_lemu_b_cc1 {	loaded:  [ss_MB_Citaro2_lemu_b_cc1];	loading: [ss_MB_Citaro2_lemu_b_cc1];}
+
+// Lista grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_lemu_b_cc1_info, position_in_consist ) {
+    1: ss_toldat;
+    ss_MB_Citaro2_lemu_b_cc1i;
+}
+
+// Játék grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_lemu_b_cc1, position_in_consist ) {
+    1: ss_toldat;
+    sg_MB_Citaro2_lemu_b_cc1;
+}
+
+// Rajz
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_lemu_b_cc1, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_MB_Citaro2_lemu_b_cc1_info; // Depó nézet
+   0x11: sw1_MB_Citaro2_lemu_b_cc1_info; // Jármű infó/Refit nézet
+   0x12: sw1_MB_Citaro2_lemu_b_cc1_info; // Jármű lista nézet
+   0x00: sw1_MB_Citaro2_lemu_b_cc1; // Játék nézet
+}
+
+// Csuklosítás
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_lemu_b_cc1_articulated, extra_callback_info1) {
+    0: item_MB_Citaro2_lemu_b_cc1;
+    1: item_MB_Citaro2_lemu_b_cc1_T;
+    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Modelhossz
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_lemu_b_cc1_length, position_in_consist) {
+	1: return 8;
+    return 6;
+}
+
+// Szövegek
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_lemu_b_cc1_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_MB_Citaro2_lemu_b_cc1_BUY);
+	return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_lemu_b_cc1_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_MB_Citaro2_lemu_b_cc1_INFO); // Jármű infóban név
+    0x20: sw_MB_Citaro2_lemu_b_cc1_namep; // Vásárlási lista név
+	0x21: return string(STR_MB_Citaro2_lemu_b_cc1_NAME); // Elővásárlási név
+	return CB_RESULT_NO_TEXT;
+}
+
+
+item(FEAT_ROADVEHS, item_MB_Citaro2_lemu_b_cc1) {
+	property {
+        name:							string(STR_MB_Citaro2_lemu_b_cc1_NAME);
+        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:				date(2013,01,01);
+        model_life:					25;
+        vehicle_life:					25;
+        reliability_decay:				20;
+        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					21;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        speed:							100 km/h;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_ROADVEH;
+        power:							260 kW;
+        weight:							13 ton;
+        cargo_capacity:				114;
+		cargo_age_period:				170;
+        sound_effect:					SOUND_DEPARTURE_MODERN_BUS;
+		variant_group:					item_MB_Citaro2_lemu_a_cc1;
+    }
+    graphics {
+		default:                 		sw_MB_Citaro2_lemu_b_cc1;
+		purchase:						ss_MB_Citaro2_lemu_b_cc1_purchase;
+		articulated_part:        		sw_MB_Citaro2_lemu_b_cc1_articulated;
+		length:                  		sw_MB_Citaro2_lemu_b_cc1_length;
+		cost_factor:					24 * parapuco;
+		running_cost_factor:			37 * pararuco;
+		additional_text: 				string(STR_MB_Citaro2_lemu_b_cc1_ADAT);
+		name:							sw_MB_Citaro2_lemu_b_cc1_name;
+    }
+}
+item(FEAT_ROADVEHS, item_MB_Citaro2_lemu_b_cc1_T) {
+	property {
+        name:							string(STR_BUG);
+        climates_available:			bitmask(NO_CLIMATE);
+        introduction_date:				date(4999999,01,01);
+        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					0;
+        cost_factor:					0;
+        running_cost_factor:			0;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_NONE;
+        power:							0 kW;
+        weight:							0 ton;
+        cargo_capacity:				0;
+		cargo_age_period:				0;
+    }
+    graphics {
+		default:                 		ss_toldat;
+		length:                  		sw_MB_Citaro2_lemu_b_cc1_length;
+    }
+}
+
+// --------------------------------------------------------------------------------MB_Citaro2_lemu_b_cc1 End
+// --
+// --
+// --------------------------------------------------------------------------------MB_Citaro2_leu_a_cc1
+
+spriteset(ss_MB_Citaro2_leu_a_cc1_purchase, "src/MB/MB_Citaro2_leu_a_cc1_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+
+spriteset(ss_MB_Citaro2_leu_a_cc1, "src/MB/MB_Citaro2_leu_a_cc1_1x_8bpp.png")		{tmpl_1(1)}
+alternative_sprites(ss_MB_Citaro2_leu_a_cc1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_leu_a_cc1_2x_8bpp.png") {tmpl_1(2)}
+alternative_sprites(ss_MB_Citaro2_leu_a_cc1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_leu_a_cc1_4x_8bpp.png") {tmpl_1(4)}
+spriteset(ss_MB_Citaro2_leu_a_cc1i, "src/MB/MB_Citaro2_leu_a_cc1_8bpp.png")		{tmpl_depo()}
+
+// Rakodási grafika
+spritegroup sg_MB_Citaro2_leu_a_cc1 {	loaded:  [ss_MB_Citaro2_leu_a_cc1];	loading: [ss_MB_Citaro2_leu_a_cc1];}
+
+// Lista grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_leu_a_cc1_info, position_in_consist ) {
+    1: ss_toldat;
+    ss_MB_Citaro2_leu_a_cc1i;
+}
+
+// Játék grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_leu_a_cc1, position_in_consist ) {
+    1: ss_toldat;
+    sg_MB_Citaro2_leu_a_cc1;
+}
+
+// Rajz
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_leu_a_cc1, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_MB_Citaro2_leu_a_cc1_info; // Depó nézet
+   0x11: sw1_MB_Citaro2_leu_a_cc1_info; // Jármű infó/Refit nézet
+   0x12: sw1_MB_Citaro2_leu_a_cc1_info; // Jármű lista nézet
+   0x00: sw1_MB_Citaro2_leu_a_cc1; // Játék nézet
+}
+
+// Csuklosítás
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_leu_a_cc1_articulated, extra_callback_info1) {
+    0: item_MB_Citaro2_leu_a_cc1;
+    1: item_MB_Citaro2_leu_a_cc1_T;
+    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Modelhossz
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_leu_a_cc1_length, position_in_consist) {
+	1: return 8;
+    return 5;
+}
+
+// Szövegek
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_leu_a_cc1_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_MB_Citaro2_leu_a_cc1_BUY);
+	return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_leu_a_cc1_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_MB_Citaro2_leu_a_cc1_INFO); // Jármű infóban név
+    0x20: sw_MB_Citaro2_leu_a_cc1_namep; // Vásárlási lista név
+	0x21: return string(STR_MB_Citaro2_leu_a_cc1_NAME); // Elővásárlási név
+	return CB_RESULT_NO_TEXT;
+}
+
+
+item(FEAT_ROADVEHS, item_MB_Citaro2_leu_a_cc1) {
+	property {
+        name:							string(STR_MB_Citaro2_leu_a_cc1_NAME);
+        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:				date(2013,01,01);
+        model_life:					25;
+        vehicle_life:					25;
+        reliability_decay:				20;
+        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					19;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        speed:							100 km/h;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_ROADVEH;
+        power:							260 kW;
+        weight:							12 ton;
+        cargo_capacity:				106;
+		cargo_age_period:				170;
+        sound_effect:					SOUND_DEPARTURE_MODERN_BUS;
+//		variant_group:					item_blabla;
+    }
+    graphics {
+		default:                 		sw_MB_Citaro2_leu_a_cc1;
+		purchase:						ss_MB_Citaro2_leu_a_cc1_purchase;
+		articulated_part:        		sw_MB_Citaro2_leu_a_cc1_articulated;
+		length:                  		sw_MB_Citaro2_leu_a_cc1_length;
+		cost_factor:					23 * parapuco;
+		running_cost_factor:			37 * pararuco;
+		additional_text: 				string(STR_MB_Citaro2_leu_a_cc1_ADAT);
+		name:							sw_MB_Citaro2_leu_a_cc1_name;
+    }
+}
+item(FEAT_ROADVEHS, item_MB_Citaro2_leu_a_cc1_T) {
+	property {
+        name:							string(STR_BUG);
+        climates_available:			bitmask(NO_CLIMATE);
+        introduction_date:				date(4999999,01,01);
+        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					0;
+        cost_factor:					0;
+        running_cost_factor:			0;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_NONE;
+        power:							0 kW;
+        weight:							0 ton;
+        cargo_capacity:				0;
+		cargo_age_period:				0;
+    }
+    graphics {
+		default:                 		ss_toldat;
+		length:                  		sw_MB_Citaro2_leu_a_cc1_length;
+    }
+}
+
+// --------------------------------------------------------------------------------MB_Citaro2_leu_a_cc1 End
+// --
+// --
+// --------------------------------------------------------------------------------MB_Citaro2_le_a_cc1
+
+spriteset(ss_MB_Citaro2_le_a_cc1_purchase, "src/MB/MB_Citaro2_le_a_cc1_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+
+spriteset(ss_MB_Citaro2_le_a_cc1, "src/MB/MB_Citaro2_le_a_cc1_1x_8bpp.png")		{tmpl_1(1)}
+alternative_sprites(ss_MB_Citaro2_le_a_cc1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_le_a_cc1_2x_8bpp.png") {tmpl_1(2)}
+alternative_sprites(ss_MB_Citaro2_le_a_cc1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_le_a_cc1_4x_8bpp.png") {tmpl_1(4)}
+spriteset(ss_MB_Citaro2_le_a_cc1i, "src/MB/MB_Citaro2_le_a_cc1_8bpp.png")		{tmpl_depo()}
+
+// Rakodási grafika
+spritegroup sg_MB_Citaro2_le_a_cc1 {	loaded:  [ss_MB_Citaro2_le_a_cc1];	loading: [ss_MB_Citaro2_le_a_cc1];}
+
+// Lista grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_le_a_cc1_info, position_in_consist ) {
+    1: ss_toldat;
+    ss_MB_Citaro2_le_a_cc1i;
+}
+
+// Játék grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_le_a_cc1, position_in_consist ) {
+    1: ss_toldat;
+    sg_MB_Citaro2_le_a_cc1;
+}
+
+// Rajz
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_le_a_cc1, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_MB_Citaro2_le_a_cc1_info; // Depó nézet
+   0x11: sw1_MB_Citaro2_le_a_cc1_info; // Jármű infó/Refit nézet
+   0x12: sw1_MB_Citaro2_le_a_cc1_info; // Jármű lista nézet
+   0x00: sw1_MB_Citaro2_le_a_cc1; // Játék nézet
+}
+
+// Csuklosítás
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_le_a_cc1_articulated, extra_callback_info1) {
+    0: item_MB_Citaro2_le_a_cc1;
+    1: item_MB_Citaro2_le_a_cc1_T;
+    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Modelhossz
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_le_a_cc1_length, position_in_consist) {
+	1: return 8;
+    return 5;
+}
+
+// Szövegek
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_le_a_cc1_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_MB_Citaro2_le_a_cc1_BUY);
+	return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_le_a_cc1_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_MB_Citaro2_le_a_cc1_INFO); // Jármű infóban név
+    0x20: sw_MB_Citaro2_le_a_cc1_namep; // Vásárlási lista név
+	0x21: return string(STR_MB_Citaro2_le_a_cc1_NAME); // Elővásárlási név
+	return CB_RESULT_NO_TEXT;
+}
+
+
+item(FEAT_ROADVEHS, item_MB_Citaro2_le_a_cc1) {
+	property {
+        name:							string(STR_MB_Citaro2_le_a_cc1_NAME);
+        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:				date(2013,01,01);
+        model_life:					25;
+        vehicle_life:					25;
+        reliability_decay:				20;
+        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					33;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        speed:							80 km/h;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_ROADVEH;
+        power:							260 kW;
+        weight:							12 ton;
+        cargo_capacity:				106;
+		cargo_age_period:				185;
+        sound_effect:					SOUND_DEPARTURE_MODERN_BUS;
+//		variant_group:					item_blabla;
+    }
+    graphics {
+		default:                 		sw_MB_Citaro2_le_a_cc1;
+		purchase:						ss_MB_Citaro2_le_a_cc1_purchase;
+		articulated_part:        		sw_MB_Citaro2_le_a_cc1_articulated;
+		length:                  		sw_MB_Citaro2_le_a_cc1_length;
+		cost_factor:					23 * parapuco;
+		running_cost_factor:			37 * pararuco;
+		additional_text: 				string(STR_MB_Citaro2_le_a_cc1_ADAT);
+		name:							sw_MB_Citaro2_le_a_cc1_name;
+    }
+}
+item(FEAT_ROADVEHS, item_MB_Citaro2_le_a_cc1_T) {
+	property {
+        name:							string(STR_BUG);
+        climates_available:			bitmask(NO_CLIMATE);
+        introduction_date:				date(4999999,01,01);
+        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					0;
+        cost_factor:					0;
+        running_cost_factor:			0;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_NONE;
+        power:							0 kW;
+        weight:							0 ton;
+        cargo_capacity:				0;
+		cargo_age_period:				0;
+    }
+    graphics {
+		default:                 		ss_toldat;
+		length:                  		sw_MB_Citaro2_le_a_cc1_length;
+    }
+}
+
+// --------------------------------------------------------------------------------MB_Citaro2_le_a_cc1 End
+// --
+// --
+// --------------------------------------------------------------------------------MB_Citaro2_le_b_cc1
+
+spriteset(ss_MB_Citaro2_le_b_cc1_purchase, "src/MB/MB_Citaro2_le_b_cc1_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+
+spriteset(ss_MB_Citaro2_le_b_cc1, "src/MB/MB_Citaro2_le_b_cc1_1x_8bpp.png")		{tmpl_1(1)}
+alternative_sprites(ss_MB_Citaro2_le_b_cc1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_le_b_cc1_2x_8bpp.png") {tmpl_1(2)}
+alternative_sprites(ss_MB_Citaro2_le_b_cc1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_le_b_cc1_4x_8bpp.png") {tmpl_1(4)}
+spriteset(ss_MB_Citaro2_le_b_cc1i, "src/MB/MB_Citaro2_le_b_cc1_8bpp.png")		{tmpl_depo()}
+
+// Rakodási grafika
+spritegroup sg_MB_Citaro2_le_b_cc1 {	loaded:  [ss_MB_Citaro2_le_b_cc1];	loading: [ss_MB_Citaro2_le_b_cc1];}
+
+// Lista grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_le_b_cc1_info, position_in_consist ) {
+    1: ss_toldat;
+    ss_MB_Citaro2_le_b_cc1i;
+}
+
+// Játék grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_le_b_cc1, position_in_consist ) {
+    1: ss_toldat;
+    sg_MB_Citaro2_le_b_cc1;
+}
+
+// Rajz
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_le_b_cc1, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_MB_Citaro2_le_b_cc1_info; // Depó nézet
+   0x11: sw1_MB_Citaro2_le_b_cc1_info; // Jármű infó/Refit nézet
+   0x12: sw1_MB_Citaro2_le_b_cc1_info; // Jármű lista nézet
+   0x00: sw1_MB_Citaro2_le_b_cc1; // Játék nézet
+}
+
+// Csuklosítás
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_le_b_cc1_articulated, extra_callback_info1) {
+    0: item_MB_Citaro2_le_b_cc1;
+    1: item_MB_Citaro2_le_b_cc1_T;
+    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Modelhossz
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_le_b_cc1_length, position_in_consist) {
+	1: return 8;
+    return 5;
+}
+
+// Szövegek
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_le_b_cc1_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_MB_Citaro2_le_b_cc1_BUY);
+	return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_le_b_cc1_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_MB_Citaro2_le_b_cc1_INFO); // Jármű infóban név
+    0x20: sw_MB_Citaro2_le_b_cc1_namep; // Vásárlási lista név
+	0x21: return string(STR_MB_Citaro2_le_b_cc1_NAME); // Elővásárlási név
+	return CB_RESULT_NO_TEXT;
+}
+
+
+item(FEAT_ROADVEHS, item_MB_Citaro2_le_b_cc1) {
+	property {
+        name:							string(STR_MB_Citaro2_le_b_cc1_NAME);
+        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:				date(2013,01,01);
+        model_life:					25;
+        vehicle_life:					25;
+        reliability_decay:				20;
+        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					28;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        speed:							80 km/h;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_ROADVEH;
+        power:							260 kW;
+        weight:							12 ton;
+        cargo_capacity:				106;
+		cargo_age_period:				185;
+        sound_effect:					SOUND_DEPARTURE_MODERN_BUS;
+		variant_group:					item_MB_Citaro2_le_a_cc1;
+    }
+    graphics {
+		default:                 		sw_MB_Citaro2_le_b_cc1;
+		purchase:						ss_MB_Citaro2_le_b_cc1_purchase;
+		articulated_part:        		sw_MB_Citaro2_le_b_cc1_articulated;
+		length:                  		sw_MB_Citaro2_le_b_cc1_length;
+		cost_factor:					23 * parapuco;
+		running_cost_factor:			37 * pararuco;
+		additional_text: 				string(STR_MB_Citaro2_le_b_cc1_ADAT);
+		name:							sw_MB_Citaro2_le_b_cc1_name;
+    }
+}
+item(FEAT_ROADVEHS, item_MB_Citaro2_le_b_cc1_T) {
+	property {
+        name:							string(STR_BUG);
+        climates_available:			bitmask(NO_CLIMATE);
+        introduction_date:				date(4999999,01,01);
+        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					0;
+        cost_factor:					0;
+        running_cost_factor:			0;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_NONE;
+        power:							0 kW;
+        weight:							0 ton;
+        cargo_capacity:				0;
+		cargo_age_period:				0;
+    }
+    graphics {
+		default:                 		ss_toldat;
+		length:                  		sw_MB_Citaro2_le_b_cc1_length;
+    }
+}
+
+// --------------------------------------------------------------------------------MB_Citaro2_le_b_cc1 End
+// --
+// --
+// --------------------------------------------------------------------------------MB_Citaro2_u_a_cc1
+
+spriteset(ss_MB_Citaro2_u_a_cc1_purchase, "src/MB/MB_Citaro2_u_a_cc1_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+
+spriteset(ss_MB_Citaro2_u_a_cc1, "src/MB/MB_Citaro2_u_a_cc1_1x_8bpp.png")		{tmpl_1(1)}
+alternative_sprites(ss_MB_Citaro2_u_a_cc1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_u_a_cc1_2x_8bpp.png") {tmpl_1(2)}
+alternative_sprites(ss_MB_Citaro2_u_a_cc1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_u_a_cc1_4x_8bpp.png") {tmpl_1(4)}
+spriteset(ss_MB_Citaro2_u_a_cc1i, "src/MB/MB_Citaro2_u_a_cc1_8bpp.png")		{tmpl_depo()}
+
+// Rakodási grafika
+spritegroup sg_MB_Citaro2_u_a_cc1 {	loaded:  [ss_MB_Citaro2_u_a_cc1];	loading: [ss_MB_Citaro2_u_a_cc1];}
+
+// Lista grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_u_a_cc1_info, position_in_consist ) {
+    1: ss_toldat;
+    ss_MB_Citaro2_u_a_cc1i;
+}
+
+// Játék grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_u_a_cc1, position_in_consist ) {
+    1: ss_toldat;
+    sg_MB_Citaro2_u_a_cc1;
+}
+
+// Rajz
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_u_a_cc1, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_MB_Citaro2_u_a_cc1_info; // Depó nézet
+   0x11: sw1_MB_Citaro2_u_a_cc1_info; // Jármű infó/Refit nézet
+   0x12: sw1_MB_Citaro2_u_a_cc1_info; // Jármű lista nézet
+   0x00: sw1_MB_Citaro2_u_a_cc1; // Játék nézet
+}
+
+// Csuklosítás
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_u_a_cc1_articulated, extra_callback_info1) {
+    0: item_MB_Citaro2_u_a_cc1;
+    1: item_MB_Citaro2_u_a_cc1_T;
+    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Modelhossz
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_u_a_cc1_length, position_in_consist) {
+	1: return 8;
+    return 5;
+}
+
+// Szövegek
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_u_a_cc1_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_MB_Citaro2_u_a_cc1_BUY);
+	return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_u_a_cc1_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_MB_Citaro2_u_a_cc1_INFO); // Jármű infóban név
+    0x20: sw_MB_Citaro2_u_a_cc1_namep; // Vásárlási lista név
+	0x21: return string(STR_MB_Citaro2_u_a_cc1_NAME); // Elővásárlási név
+	return CB_RESULT_NO_TEXT;
+}
+
+
+item(FEAT_ROADVEHS, item_MB_Citaro2_u_a_cc1) {
+	property {
+        name:							string(STR_MB_Citaro2_u_a_cc1_NAME);
+        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:				date(2012,01,01);
+        model_life:					25;
+        vehicle_life:					25;
+        reliability_decay:				20;
+        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					19;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        speed:							95 km/h;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_ROADVEH;
+        power:							260 kW;
+        weight:							12 ton;
+        cargo_capacity:				106;
+		cargo_age_period:				170;
+        sound_effect:					SOUND_DEPARTURE_MODERN_BUS;
+//		variant_group:					item_blabla;
+    }
+    graphics {
+		default:                 		sw_MB_Citaro2_u_a_cc1;
+		purchase:						ss_MB_Citaro2_u_a_cc1_purchase;
+		articulated_part:        		sw_MB_Citaro2_u_a_cc1_articulated;
+		length:                  		sw_MB_Citaro2_u_a_cc1_length;
+		cost_factor:					23 * parapuco;
+		running_cost_factor:			37 * pararuco;
+		additional_text: 				string(STR_MB_Citaro2_u_a_cc1_ADAT);
+		name:							sw_MB_Citaro2_u_a_cc1_name;
+    }
+}
+item(FEAT_ROADVEHS, item_MB_Citaro2_u_a_cc1_T) {
+	property {
+        name:							string(STR_BUG);
+        climates_available:			bitmask(NO_CLIMATE);
+        introduction_date:				date(4999999,01,01);
+        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					0;
+        cost_factor:					0;
+        running_cost_factor:			0;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_NONE;
+        power:							0 kW;
+        weight:							0 ton;
+        cargo_capacity:				0;
+		cargo_age_period:				0;
+    }
+    graphics {
+		default:                 		ss_toldat;
+		length:                  		sw_MB_Citaro2_u_a_cc1_length;
+    }
+}
+
+// --------------------------------------------------------------------------------MB_Citaro2_u_a_cc1 End
+// --
+// --
+// --------------------------------------------------------------------------------MB_CitaroE_c_a_BLT_new
+
+spriteset(ss_MB_CitaroE_c_a_BLT_new_purchase, "src/MB/MB_CitaroE_c_a_BLT_new_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+
+spriteset(ss_MB_CitaroE_c_a_BLT_new, "src/MB/MB_CitaroE_c_a_BLT_new_1x_8bpp.png")		{tmpl_1(1)}
+alternative_sprites(ss_MB_CitaroE_c_a_BLT_new, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_CitaroE_c_a_BLT_new_2x_8bpp.png") {tmpl_1(2)}
+alternative_sprites(ss_MB_CitaroE_c_a_BLT_new, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_CitaroE_c_a_BLT_new_4x_8bpp.png") {tmpl_1(4)}
+spriteset(ss_MB_CitaroE_c_a_BLT_newi, "src/MB/MB_CitaroE_c_a_BLT_new_8bpp.png")		{tmpl_depo()}
+
+// Rakodási grafika
+spritegroup sg_MB_CitaroE_c_a_BLT_new {	loaded:  [ss_MB_CitaroE_c_a_BLT_new];	loading: [ss_MB_CitaroE_c_a_BLT_new];}
+
+// Lista grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_CitaroE_c_a_BLT_new_info, position_in_consist ) {
+    1: ss_toldat;
+    ss_MB_CitaroE_c_a_BLT_newi;
+}
+
+// Játék grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_CitaroE_c_a_BLT_new, position_in_consist ) {
+    1: ss_toldat;
+    sg_MB_CitaroE_c_a_BLT_new;
+}
+
+// Rajz
+switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_BLT_new, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_MB_CitaroE_c_a_BLT_new_info; // Depó nézet
+   0x11: sw1_MB_CitaroE_c_a_BLT_new_info; // Jármű infó/Refit nézet
+   0x12: sw1_MB_CitaroE_c_a_BLT_new_info; // Jármű lista nézet
+   0x00: sw1_MB_CitaroE_c_a_BLT_new; // Játék nézet
+}
+
+// Csuklosítás
+switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_BLT_new_articulated, extra_callback_info1) {
+    0: item_MB_CitaroE_c_a_BLT_new;
+    1: item_MB_CitaroE_c_a_BLT_new_T;
+    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Modelhossz
+switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_BLT_new_length, position_in_consist) {
+	1: return 8;
+    return 5;
+}
+
+// Szövegek
+switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_BLT_new_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_MB_CitaroE_c_a_BLT_new_BUY);
+	return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_BLT_new_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_MB_CitaroE_c_a_cc1_INFO); // Jármű infóban név
+    0x20: sw_MB_CitaroE_c_a_BLT_new_namep; // Vásárlási lista név
+	0x21: return string(STR_MB_CitaroE_c_a_cc1_NAME); // Elővásárlási név
+	return CB_RESULT_NO_TEXT;
+}
+
+
+item(FEAT_ROADVEHS, item_MB_CitaroE_c_a_BLT_new) {
+	property {
+        name:							string(STR_MB_CitaroE_c_a_cc1_NAME);
+        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:				date(2018,01,01);
+        model_life:					25;
+        vehicle_life:					25;
+        reliability_decay:				20;
+        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					42;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        speed:							80 km/h;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_ROADVEH;
+        power:							250 kW;
+        weight:							13 ton;
+        cargo_capacity:				106;
+		cargo_age_period:				185;
+        sound_effect:					SOUND_POWER_STATION;
+		variant_group:					item_MB_CitaroE_c_a_cc1;
+    }
+    graphics {
+		default:                 		sw_MB_CitaroE_c_a_BLT_new;
+		purchase:						ss_MB_CitaroE_c_a_BLT_new_purchase;
+		articulated_part:        		sw_MB_CitaroE_c_a_BLT_new_articulated;
+		length:                  		sw_MB_CitaroE_c_a_BLT_new_length;
+		cost_factor:					35 * parapuco;
+		running_cost_factor:			18 * pararuco;
+		additional_text: 				string(STR_MB_CitaroE_c_a_BLT_new_ADAT);
+		name:							sw_MB_CitaroE_c_a_BLT_new_name;
+    }
+}
+item(FEAT_ROADVEHS, item_MB_CitaroE_c_a_BLT_new_T) {
+	property {
+        name:							string(STR_BUG);
+        climates_available:			bitmask(NO_CLIMATE);
+        introduction_date:				date(4999999,01,01);
+        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					0;
+        cost_factor:					0;
+        running_cost_factor:			0;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_NONE;
+        power:							0 kW;
+        weight:							0 ton;
+        cargo_capacity:				0;
+		cargo_age_period:				0;
+    }
+    graphics {
+		default:                 		ss_toldat;
+		length:                  		sw_MB_CitaroE_c_a_BLT_new_length;
+    }
+}
+
+// --------------------------------------------------------------------------------MB_CitaroE_c_a_BLT_new End
+// --
+// --
+// --------------------------------------------------------------------------------MB_CitaroE_c_a_BLT_old
+
+spriteset(ss_MB_CitaroE_c_a_BLT_old_purchase, "src/MB/MB_CitaroE_c_a_BLT_old_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+
+spriteset(ss_MB_CitaroE_c_a_BLT_old, "src/MB/MB_CitaroE_c_a_BLT_old_1x_8bpp.png")		{tmpl_1(1)}
+alternative_sprites(ss_MB_CitaroE_c_a_BLT_old, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_CitaroE_c_a_BLT_old_2x_8bpp.png") {tmpl_1(2)}
+alternative_sprites(ss_MB_CitaroE_c_a_BLT_old, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_CitaroE_c_a_BLT_old_4x_8bpp.png") {tmpl_1(4)}
+spriteset(ss_MB_CitaroE_c_a_BLT_oldi, "src/MB/MB_CitaroE_c_a_BLT_old_8bpp.png")		{tmpl_depo()}
+
+// Rakodási grafika
+spritegroup sg_MB_CitaroE_c_a_BLT_old {	loaded:  [ss_MB_CitaroE_c_a_BLT_old];	loading: [ss_MB_CitaroE_c_a_BLT_old];}
+
+// Lista grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_CitaroE_c_a_BLT_old_info, position_in_consist ) {
+    1: ss_toldat;
+    ss_MB_CitaroE_c_a_BLT_oldi;
+}
+
+// Játék grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_CitaroE_c_a_BLT_old, position_in_consist ) {
+    1: ss_toldat;
+    sg_MB_CitaroE_c_a_BLT_old;
+}
+
+// Rajz
+switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_BLT_old, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_MB_CitaroE_c_a_BLT_old_info; // Depó nézet
+   0x11: sw1_MB_CitaroE_c_a_BLT_old_info; // Jármű infó/Refit nézet
+   0x12: sw1_MB_CitaroE_c_a_BLT_old_info; // Jármű lista nézet
+   0x00: sw1_MB_CitaroE_c_a_BLT_old; // Játék nézet
+}
+
+// Csuklosítás
+switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_BLT_old_articulated, extra_callback_info1) {
+    0: item_MB_CitaroE_c_a_BLT_old;
+    1: item_MB_CitaroE_c_a_BLT_old_T;
+    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Modelhossz
+switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_BLT_old_length, position_in_consist) {
+	1: return 8;
+    return 5;
+}
+
+// Szövegek
+switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_BLT_old_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_MB_CitaroE_c_a_BLT_old_BUY);
+	return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_BLT_old_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_MB_CitaroE_c_a_cc1_INFO); // Jármű infóban név
+    0x20: sw_MB_CitaroE_c_a_BLT_old_namep; // Vásárlási lista név
+	0x21: return string(STR_MB_CitaroE_c_a_cc1_NAME); // Elővásárlási név
+	return CB_RESULT_NO_TEXT;
+}
+
+
+item(FEAT_ROADVEHS, item_MB_CitaroE_c_a_BLT_old) {
+	property {
+        name:							string(STR_MB_CitaroE_c_a_cc1_NAME);
+        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:				date(2018,01,01);
+        model_life:					25;
+        vehicle_life:					25;
+        reliability_decay:				20;
+        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					42;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        speed:							80 km/h;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_ROADVEH;
+        power:							250 kW;
+        weight:							13 ton;
+        cargo_capacity:				106;
+		cargo_age_period:				185;
+        sound_effect:					SOUND_POWER_STATION;
+		variant_group:					item_MB_CitaroE_c_a_cc1;
+    }
+    graphics {
+		default:                 		sw_MB_CitaroE_c_a_BLT_old;
+		purchase:						ss_MB_CitaroE_c_a_BLT_old_purchase;
+		articulated_part:        		sw_MB_CitaroE_c_a_BLT_old_articulated;
+		length:                  		sw_MB_CitaroE_c_a_BLT_old_length;
+		cost_factor:					35 * parapuco;
+		running_cost_factor:			18 * pararuco;
+		additional_text: 				string(STR_MB_CitaroE_c_a_BLT_old_ADAT);
+		name:							sw_MB_CitaroE_c_a_BLT_old_name;
+    }
+}
+item(FEAT_ROADVEHS, item_MB_CitaroE_c_a_BLT_old_T) {
+	property {
+        name:							string(STR_BUG);
+        climates_available:			bitmask(NO_CLIMATE);
+        introduction_date:				date(4999999,01,01);
+        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					0;
+        cost_factor:					0;
+        running_cost_factor:			0;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_NONE;
+        power:							0 kW;
+        weight:							0 ton;
+        cargo_capacity:				0;
+		cargo_age_period:				0;
+    }
+    graphics {
+		default:                 		ss_toldat;
+		length:                  		sw_MB_CitaroE_c_a_BLT_old_length;
+    }
+}
+
+// --------------------------------------------------------------------------------MB_CitaroE_c_a_BLT_old End
+// --
+// --
+// --------------------------------------------------------------------------------MB_CitaroE_c_a_cc1
+
+spriteset(ss_MB_CitaroE_c_a_cc1_purchase, "src/MB/MB_CitaroE_c_a_cc1_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+
+spriteset(ss_MB_CitaroE_c_a_cc1, "src/MB/MB_CitaroE_c_a_cc1_1x_8bpp.png")		{tmpl_1(1)}
+alternative_sprites(ss_MB_CitaroE_c_a_cc1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_CitaroE_c_a_cc1_2x_8bpp.png") {tmpl_1(2)}
+alternative_sprites(ss_MB_CitaroE_c_a_cc1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_CitaroE_c_a_cc1_4x_8bpp.png") {tmpl_1(4)}
+spriteset(ss_MB_CitaroE_c_a_cc1i, "src/MB/MB_CitaroE_c_a_cc1_8bpp.png")		{tmpl_depo()}
+
+// Rakodási grafika
+spritegroup sg_MB_CitaroE_c_a_cc1 {	loaded:  [ss_MB_CitaroE_c_a_cc1];	loading: [ss_MB_CitaroE_c_a_cc1];}
+
+// Lista grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_CitaroE_c_a_cc1_info, position_in_consist ) {
+    1: ss_toldat;
+    ss_MB_CitaroE_c_a_cc1i;
+}
+
+// Játék grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_CitaroE_c_a_cc1, position_in_consist ) {
+    1: ss_toldat;
+    sg_MB_CitaroE_c_a_cc1;
+}
+
+// Rajz
+switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_cc1, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_MB_CitaroE_c_a_cc1_info; // Depó nézet
+   0x11: sw1_MB_CitaroE_c_a_cc1_info; // Jármű infó/Refit nézet
+   0x12: sw1_MB_CitaroE_c_a_cc1_info; // Jármű lista nézet
+   0x00: sw1_MB_CitaroE_c_a_cc1; // Játék nézet
+}
+
+// Csuklosítás
+switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_cc1_articulated, extra_callback_info1) {
+    0: item_MB_CitaroE_c_a_cc1;
+    1: item_MB_CitaroE_c_a_cc1_T;
+    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Modelhossz
+switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_cc1_length, position_in_consist) {
+	1: return 8;
+    return 5;
+}
+
+// Szövegek
+switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_cc1_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_MB_CitaroE_c_a_cc1_BUY);
+	return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_cc1_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_MB_CitaroE_c_a_cc1_INFO); // Jármű infóban név
+    0x20: sw_MB_CitaroE_c_a_cc1_namep; // Vásárlási lista név
+	0x21: return string(STR_MB_CitaroE_c_a_cc1_NAME); // Elővásárlási név
+	return CB_RESULT_NO_TEXT;
+}
+
+
+item(FEAT_ROADVEHS, item_MB_CitaroE_c_a_cc1) {
+	property {
+        name:							string(STR_MB_CitaroE_c_a_cc1_NAME);
+        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:				date(2018,01,01);
+        model_life:					25;
+        vehicle_life:					25;
+        reliability_decay:				20;
+        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					42;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        speed:							80 km/h;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_ROADVEH;
+        power:							250 kW;
+        weight:							13 ton;
+        cargo_capacity:				106;
+		cargo_age_period:				185;
+        sound_effect:					SOUND_POWER_STATION;
+//		variant_group:					item_blabla;
+    }
+    graphics {
+		default:                 		sw_MB_CitaroE_c_a_cc1;
+		purchase:						ss_MB_CitaroE_c_a_cc1_purchase;
+		articulated_part:        		sw_MB_CitaroE_c_a_cc1_articulated;
+		length:                  		sw_MB_CitaroE_c_a_cc1_length;
+		cost_factor:					35 * parapuco;
+		running_cost_factor:			18 * pararuco;
+		additional_text: 				string(STR_MB_CitaroE_c_a_cc1_ADAT);
+		name:							sw_MB_CitaroE_c_a_cc1_name;
+    }
+}
+item(FEAT_ROADVEHS, item_MB_CitaroE_c_a_cc1_T) {
+	property {
+        name:							string(STR_BUG);
+        climates_available:			bitmask(NO_CLIMATE);
+        introduction_date:				date(4999999,01,01);
+        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					0;
+        cost_factor:					0;
+        running_cost_factor:			0;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_NONE;
+        power:							0 kW;
+        weight:							0 ton;
+        cargo_capacity:				0;
+		cargo_age_period:				0;
+    }
+    graphics {
+		default:                 		ss_toldat;
+		length:                  		sw_MB_CitaroE_c_a_cc1_length;
+    }
+}
+
+// --------------------------------------------------------------------------------MB_CitaroE_c_a_cc1 End
+// --
+// --
+// --------------------------------------------------------------------------------MB_CitaroE_c_b_cc1
+
+spriteset(ss_MB_CitaroE_c_b_cc1_purchase, "src/MB/MB_CitaroE_c_b_cc1_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+
+spriteset(ss_MB_CitaroE_c_b_cc1, "src/MB/MB_CitaroE_c_b_cc1_1x_8bpp.png")		{tmpl_1(1)}
+alternative_sprites(ss_MB_CitaroE_c_b_cc1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_CitaroE_c_b_cc1_2x_8bpp.png") {tmpl_1(2)}
+alternative_sprites(ss_MB_CitaroE_c_b_cc1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_CitaroE_c_b_cc1_4x_8bpp.png") {tmpl_1(4)}
+spriteset(ss_MB_CitaroE_c_b_cc1i, "src/MB/MB_CitaroE_c_b_cc1_8bpp.png")		{tmpl_depo()}
+
+// Rakodási grafika
+spritegroup sg_MB_CitaroE_c_b_cc1 {	loaded:  [ss_MB_CitaroE_c_b_cc1];	loading: [ss_MB_CitaroE_c_b_cc1];}
+
+// Lista grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_CitaroE_c_b_cc1_info, position_in_consist ) {
+    1: ss_toldat;
+    ss_MB_CitaroE_c_b_cc1i;
+}
+
+// Játék grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_CitaroE_c_b_cc1, position_in_consist ) {
+    1: ss_toldat;
+    sg_MB_CitaroE_c_b_cc1;
+}
+
+// Rajz
+switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_b_cc1, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_MB_CitaroE_c_b_cc1_info; // Depó nézet
+   0x11: sw1_MB_CitaroE_c_b_cc1_info; // Jármű infó/Refit nézet
+   0x12: sw1_MB_CitaroE_c_b_cc1_info; // Jármű lista nézet
+   0x00: sw1_MB_CitaroE_c_b_cc1; // Játék nézet
+}
+
+// Csuklosítás
+switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_b_cc1_articulated, extra_callback_info1) {
+    0: item_MB_CitaroE_c_b_cc1;
+    1: item_MB_CitaroE_c_b_cc1_T;
+    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Modelhossz
+switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_b_cc1_length, position_in_consist) {
+	1: return 8;
+    return 5;
+}
+
+// Szövegek
+switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_b_cc1_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_MB_CitaroE_c_b_cc1_BUY);
+	return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_b_cc1_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_MB_CitaroE_c_b_cc1_INFO); // Jármű infóban név
+    0x20: sw_MB_CitaroE_c_b_cc1_namep; // Vásárlási lista név
+	0x21: return string(STR_MB_CitaroE_c_b_cc1_NAME); // Elővásárlási név
+	return CB_RESULT_NO_TEXT;
+}
+
+
+item(FEAT_ROADVEHS, item_MB_CitaroE_c_b_cc1) {
+	property {
+        name:							string(STR_MB_CitaroE_c_b_cc1_NAME);
+        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:				date(2018,01,01);
+        model_life:					25;
+        vehicle_life:					25;
+        reliability_decay:				20;
+        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					28;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        speed:							80 km/h;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_ROADVEH;
+        power:							250 kW;
+        weight:							13 ton;
+        cargo_capacity:				106;
+		cargo_age_period:				185;
+        sound_effect:					SOUND_POWER_STATION;
+		variant_group:					item_MB_CitaroE_c_a_cc1;
+    }
+    graphics {
+		default:                 		sw_MB_CitaroE_c_b_cc1;
+		purchase:						ss_MB_CitaroE_c_b_cc1_purchase;
+		articulated_part:        		sw_MB_CitaroE_c_b_cc1_articulated;
+		length:                  		sw_MB_CitaroE_c_b_cc1_length;
+		cost_factor:					35 * parapuco;
+		running_cost_factor:			18 * pararuco;
+		additional_text: 				string(STR_MB_CitaroE_c_b_cc1_ADAT);
+		name:							sw_MB_CitaroE_c_b_cc1_name;
+    }
+}
+item(FEAT_ROADVEHS, item_MB_CitaroE_c_b_cc1_T) {
+	property {
+        name:							string(STR_BUG);
+        climates_available:			bitmask(NO_CLIMATE);
+        introduction_date:				date(4999999,01,01);
+        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					0;
+        cost_factor:					0;
+        running_cost_factor:			0;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_NONE;
+        power:							0 kW;
+        weight:							0 ton;
+        cargo_capacity:				0;
+		cargo_age_period:				0;
+    }
+    graphics {
+		default:                 		ss_toldat;
+		length:                  		sw_MB_CitaroE_c_b_cc1_length;
+    }
+}
+
+// --------------------------------------------------------------------------------MB_CitaroE_c_b_cc1 End
+// --
+// --
+// --------------------------------------------------------------------------------MB_CitaroE_k_a_cc1
+
+spriteset(ss_MB_CitaroE_k_a_cc1_purchase, "src/MB/MB_CitaroE_k_a_cc1_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+
+spriteset(ss_MB_CitaroE_k_a_cc1, "src/MB/MB_CitaroE_k_a_cc1_1x_8bpp.png")		{tmpl_1(1)}
+alternative_sprites(ss_MB_CitaroE_k_a_cc1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_CitaroE_k_a_cc1_2x_8bpp.png") {tmpl_1(2)}
+alternative_sprites(ss_MB_CitaroE_k_a_cc1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_CitaroE_k_a_cc1_4x_8bpp.png") {tmpl_1(4)}
+spriteset(ss_MB_CitaroE_k_a_cc1i, "src/MB/MB_CitaroE_k_a_cc1_8bpp.png")		{tmpl_depo()}
+
+// Rakodási grafika
+spritegroup sg_MB_CitaroE_k_a_cc1 {	loaded:  [ss_MB_CitaroE_k_a_cc1];	loading: [ss_MB_CitaroE_k_a_cc1];}
+
+// Lista grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_CitaroE_k_a_cc1_info, position_in_consist ) {
+    1: ss_toldat;
+    ss_MB_CitaroE_k_a_cc1i;
+}
+
+// Játék grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_CitaroE_k_a_cc1, position_in_consist ) {
+    1: ss_toldat;
+    sg_MB_CitaroE_k_a_cc1;
+}
+
+// Rajz
+switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_k_a_cc1, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_MB_CitaroE_k_a_cc1_info; // Depó nézet
+   0x11: sw1_MB_CitaroE_k_a_cc1_info; // Jármű infó/Refit nézet
+   0x12: sw1_MB_CitaroE_k_a_cc1_info; // Jármű lista nézet
+   0x00: sw1_MB_CitaroE_k_a_cc1; // Játék nézet
+}
+
+// Csuklosítás
+switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_k_a_cc1_articulated, extra_callback_info1) {
+    0: item_MB_CitaroE_k_a_cc1;
+    1: item_MB_CitaroE_k_a_cc1_T;
+    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Modelhossz
+switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_k_a_cc1_length, position_in_consist) {
+	1: return 8;
+    return 4;
+}
+
+// Szövegek
+switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_k_a_cc1_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_MB_CitaroE_k_a_cc1_BUY);
+	return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_k_a_cc1_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_MB_CitaroE_k_a_cc1_INFO); // Jármű infóban név
+    0x20: sw_MB_CitaroE_k_a_cc1_namep; // Vásárlási lista név
+	0x21: return string(STR_MB_CitaroE_k_a_cc1_NAME); // Elővásárlási név
+	return CB_RESULT_NO_TEXT;
+}
+
+
+item(FEAT_ROADVEHS, item_MB_CitaroE_k_a_cc1) {
+	property {
+        name:							string(STR_MB_CitaroE_k_a_cc1_NAME);
+        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:				date(2024,01,01);
+        model_life:					25;
+        vehicle_life:					25;
+        reliability_decay:				20;
+        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					42;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        speed:							80 km/h;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_ROADVEH;
+        power:							250 kW;
+        weight:							12 ton;
+        cargo_capacity:				86;
+		cargo_age_period:				185;
+        sound_effect:					SOUND_POWER_STATION;
+//		variant_group:					item_MB_Citaro2_c_a_cc1;
+    }
+    graphics {
+		default:                 		sw_MB_CitaroE_k_a_cc1;
+		purchase:						ss_MB_CitaroE_k_a_cc1_purchase;
+		articulated_part:        		sw_MB_CitaroE_k_a_cc1_articulated;
+		length:                  		sw_MB_CitaroE_k_a_cc1_length;
+		cost_factor:					34 * parapuco;
+		running_cost_factor:			18 * pararuco;
+		additional_text: 				string(STR_MB_CitaroE_k_a_cc1_ADAT);
+		name:							sw_MB_CitaroE_k_a_cc1_name;
+    }
+}
+item(FEAT_ROADVEHS, item_MB_CitaroE_k_a_cc1_T) {
+	property {
+        name:							string(STR_BUG);
+        climates_available:			bitmask(NO_CLIMATE);
+        introduction_date:				date(4999999,01,01);
+        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					0;
+        cost_factor:					0;
+        running_cost_factor:			0;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_NONE;
+        power:							0 kW;
+        weight:							0 ton;
+        cargo_capacity:				0;
+		cargo_age_period:				0;
+    }
+    graphics {
+		default:                 		ss_toldat;
+		length:                  		sw_MB_CitaroE_k_a_cc1_length;
+    }
+}
+
+// --------------------------------------------------------------------------------MB_CitaroE_k_a_cc1 End
+// --
+// --
+// --------------------------------------------------------------------------------MB_CitaroE_k_b_cc1
+
+spriteset(ss_MB_CitaroE_k_b_cc1_purchase, "src/MB/MB_CitaroE_k_b_cc1_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+
+spriteset(ss_MB_CitaroE_k_b_cc1, "src/MB/MB_CitaroE_k_b_cc1_1x_8bpp.png")		{tmpl_1(1)}
+alternative_sprites(ss_MB_CitaroE_k_b_cc1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_CitaroE_k_b_cc1_2x_8bpp.png") {tmpl_1(2)}
+alternative_sprites(ss_MB_CitaroE_k_b_cc1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_CitaroE_k_b_cc1_4x_8bpp.png") {tmpl_1(4)}
+spriteset(ss_MB_CitaroE_k_b_cc1i, "src/MB/MB_CitaroE_k_b_cc1_8bpp.png")		{tmpl_depo()}
+
+// Rakodási grafika
+spritegroup sg_MB_CitaroE_k_b_cc1 {	loaded:  [ss_MB_CitaroE_k_b_cc1];	loading: [ss_MB_CitaroE_k_b_cc1];}
+
+// Lista grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_CitaroE_k_b_cc1_info, position_in_consist ) {
+    1: ss_toldat;
+    ss_MB_CitaroE_k_b_cc1i;
+}
+
+// Játék grafika
+switch (FEAT_ROADVEHS, SELF, sw1_MB_CitaroE_k_b_cc1, position_in_consist ) {
+    1: ss_toldat;
+    sg_MB_CitaroE_k_b_cc1;
+}
+
+// Rajz
+switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_k_b_cc1, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_MB_CitaroE_k_b_cc1_info; // Depó nézet
+   0x11: sw1_MB_CitaroE_k_b_cc1_info; // Jármű infó/Refit nézet
+   0x12: sw1_MB_CitaroE_k_b_cc1_info; // Jármű lista nézet
+   0x00: sw1_MB_CitaroE_k_b_cc1; // Játék nézet
+}
+
+// Csuklosítás
+switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_k_b_cc1_articulated, extra_callback_info1) {
+    0: item_MB_CitaroE_k_b_cc1;
+    1: item_MB_CitaroE_k_b_cc1_T;
+    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Modelhossz
+switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_k_b_cc1_length, position_in_consist) {
+	1: return 8;
+    return 4;
+}
+
+// Szövegek
+switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_k_b_cc1_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_MB_CitaroE_k_b_cc1_BUY);
+	return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_k_b_cc1_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_MB_CitaroE_k_b_cc1_INFO); // Jármű infóban név
+    0x20: sw_MB_CitaroE_k_b_cc1_namep; // Vásárlási lista név
+	0x21: return string(STR_MB_CitaroE_k_b_cc1_NAME); // Elővásárlási név
+	return CB_RESULT_NO_TEXT;
+}
+
+
+item(FEAT_ROADVEHS, item_MB_CitaroE_k_b_cc1) {
+	property {
+        name:							string(STR_MB_CitaroE_k_b_cc1_NAME);
+        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:				date(2024,01,01);
+        model_life:					25;
+        vehicle_life:					25;
+        reliability_decay:				20;
+        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					28;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        speed:							80 km/h;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_ROADVEH;
+        power:							250 kW;
+        weight:							12 ton;
+        cargo_capacity:				86;
+		cargo_age_period:				185;
+        sound_effect:					SOUND_POWER_STATION;
+		variant_group:					item_MB_CitaroE_k_a_cc1;
+    }
+    graphics {
+		default:                 		sw_MB_CitaroE_k_b_cc1;
+		purchase:						ss_MB_CitaroE_k_b_cc1_purchase;
+		articulated_part:        		sw_MB_CitaroE_k_b_cc1_articulated;
+		length:                  		sw_MB_CitaroE_k_b_cc1_length;
+		cost_factor:					34 * parapuco;
+		running_cost_factor:			18 * pararuco;
+		additional_text: 				string(STR_MB_CitaroE_k_b_cc1_ADAT);
+		name:							sw_MB_CitaroE_k_b_cc1_name;
+    }
+}
+item(FEAT_ROADVEHS, item_MB_CitaroE_k_b_cc1_T) {
+	property {
+        name:							string(STR_BUG);
+        climates_available:			bitmask(NO_CLIMATE);
+        introduction_date:				date(4999999,01,01);
+        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					0;
+        cost_factor:					0;
+        running_cost_factor:			0;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_NONE;
+        power:							0 kW;
+        weight:							0 ton;
+        cargo_capacity:				0;
+		cargo_age_period:				0;
+    }
+    graphics {
+		default:                 		ss_toldat;
+		length:                  		sw_MB_CitaroE_k_b_cc1_length;
+    }
+}
+
+// --------------------------------------------------------------------------------MB_CitaroE_k_b_cc1 End
+// --
+// --
+sort(FEAT_ROADVEHS, [
+	item_MB_Citaro2_k_a_cc1,
+	item_MB_Citaro2_k_b_cc1,
+	item_MB_Citaro2_c_a_cc1,
+	item_MB_Citaro2_c_a_BLT_old,
+	item_MB_Citaro2_c_a_BLT_new,	
+	item_MB_Citaro2_c_b_cc1,
+	item_MB_Citaro2_c_ngt_a_cc1,
+	item_MB_Citaro2_c_ngt_b_cc1,
+	item_MB_Citaro2_le_a_cc1,
+	item_MB_Citaro2_le_b_cc1,
+	item_MB_Citaro2_u_a_cc1,
+	item_MB_Citaro2_leu_a_cc1,
+	item_MB_Citaro2_lemu_a_cc1,
+	item_MB_Citaro2_lemu_b_cc1,
+	item_MB_CitaroE_k_a_cc1,
+	item_MB_CitaroE_k_b_cc1,
+	item_MB_CitaroE_c_a_cc1,
+	item_MB_CitaroE_c_a_BLT_old,
+	item_MB_CitaroE_c_a_BLT_new,
+	item_MB_CitaroE_c_b_cc1
+	]);
