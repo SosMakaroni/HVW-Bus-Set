@@ -49,16 +49,16 @@ switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_BLT_old_namep, (extra_callback_inf
 	return CB_RESULT_NO_TEXT;
 }
 switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_BLT_old_name, extra_callback_info1 & 0xFF) {
-    0x11: return string(STR_MB_CitaroE_c_a_cc1_INFO); // Jármű infóban név
+    0x11: return string(STR_MB_CitaroE_c_a_INFO); // Jármű infóban név
     0x20: sw_MB_CitaroE_c_a_BLT_old_namep; // Vásárlási lista név
-	0x21: return string(STR_MB_CitaroE_c_a_cc1_NAME); // Elővásárlási név
+	0x21: return string(STR_MB_CitaroE_c_a_NAME); // Elővásárlási név
 	return CB_RESULT_NO_TEXT;
 }
 
 
 item(FEAT_ROADVEHS, item_MB_CitaroE_c_a_BLT_old) {
 	property {
-        name:							string(STR_MB_CitaroE_c_a_cc1_NAME);
+        name:							string(STR_MB_CitaroE_c_a_NAME);
         climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
         introduction_date:				date(2018,01,01);
         model_life:					25;
@@ -84,9 +84,9 @@ item(FEAT_ROADVEHS, item_MB_CitaroE_c_a_BLT_old) {
 		purchase:						ss_MB_CitaroE_c_a_BLT_old_purchase;
 		articulated_part:        		sw_MB_CitaroE_c_a_BLT_old_articulated;
 		length:                  		sw_MB_CitaroE_c_a_BLT_old_length;
-		cost_factor:					35 * parapuco;
-		running_cost_factor:			18 * pararuco;
-		additional_text: 				string(STR_MB_CitaroE_c_a_BLT_old_ADAT);
+		cost_factor:					38 * parapuco;
+		running_cost_factor:			21 * pararuco;
+		additional_text: 				string(STR_MB_CitaroE_c_a_ADAT, string(STR_SweDuke_ADAT));
 		name:							sw_MB_CitaroE_c_a_BLT_old_name;
     }
 }

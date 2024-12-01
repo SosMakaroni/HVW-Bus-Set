@@ -1,22 +1,84 @@
 sort(FEAT_ROADVEHS, [
+
+	item_MB_Conecto2_c_a_cc1,
+	item_MB_Conecto2_c_a_cc2,
+
+	item_MB_Conecto2_g_a_cc1,
+	item_MB_Conecto2_g_a_cc2,
+
+	item_MB_Conecto3_c_a_cc1,
+	item_MB_Conecto3_c_a_cc2,
+
+	item_MB_Conecto3_g_a_cc1,
+	item_MB_Conecto3_g_a_cc2,
+
 	item_MB_Citaro2_k_a_cc1,
+	item_MB_Citaro2_k_a_cc2,
 	item_MB_Citaro2_k_b_cc1,
+	item_MB_Citaro2_k_b_cc2,
+	
 	item_MB_Citaro2_c_a_cc1,
+	item_MB_Citaro2_c_a_cc2,
 	item_MB_Citaro2_c_a_BLT_old,
 	item_MB_Citaro2_c_a_BLT_new,	
 	item_MB_Citaro2_c_b_cc1,
+	item_MB_Citaro2_c_b_cc2,
+	
 	item_MB_Citaro2_c_ngt_a_cc1,
+	item_MB_Citaro2_c_ngt_a_cc2,
 	item_MB_Citaro2_c_ngt_b_cc1,
+	item_MB_Citaro2_c_ngt_b_cc2,
+	
 	item_MB_Citaro2_le_a_cc1,
+	item_MB_Citaro2_le_a_cc2,
 	item_MB_Citaro2_le_b_cc1,
+	item_MB_Citaro2_le_b_cc2,
+	
+	item_MB_Citaro2_g_a_cc1,
+	item_MB_Citaro2_g_a_cc2,
+	item_MB_Citaro2_g_b_cc1,
+	item_MB_Citaro2_g_b_cc2,
+
+	item_MB_Citaro2_g_ngt_a_cc1,
+	item_MB_Citaro2_g_ngt_a_cc2,
+	item_MB_Citaro2_g_ngt_b_cc1,
+	item_MB_Citaro2_g_ngt_b_cc2,
+
+	item_MB_Citaro2_cc_a_cc1,
+	item_MB_Citaro2_cc_a_cc2,
+
+	item_MB_Citaro2_ccl_a_cc1,
+	item_MB_Citaro2_ccl_a_cc2,
+	
 	item_MB_Citaro2_u_a_cc1,
+	item_MB_Citaro2_u_a_cc2,
+	
 	item_MB_Citaro2_leu_a_cc1,
+	item_MB_Citaro2_leu_a_cc2,
+	
 	item_MB_Citaro2_lemu_a_cc1,
+	item_MB_Citaro2_lemu_a_cc2,
 	item_MB_Citaro2_lemu_b_cc1,
+	item_MB_Citaro2_lemu_b_cc2,
+
+	item_MB_Citaro2_gu_a_cc1,
+	item_MB_Citaro2_gu_a_cc2,
+	
 	item_MB_CitaroE_k_a_cc1,
+	item_MB_CitaroE_k_a_cc2,
 	item_MB_CitaroE_k_b_cc1,
+	item_MB_CitaroE_k_b_cc2,
+	
 	item_MB_CitaroE_c_a_cc1,
+	item_MB_CitaroE_c_a_cc2,
 	item_MB_CitaroE_c_a_BLT_old,
 	item_MB_CitaroE_c_a_BLT_new,
-	item_MB_CitaroE_c_b_cc1
+	item_MB_CitaroE_c_b_cc1,
+	item_MB_CitaroE_c_b_cc2,
+	
+	item_MB_CitaroE_g_a_cc1,
+	item_MB_CitaroE_g_a_cc2,
+	item_MB_CitaroE_g_b_cc1,
+	item_MB_CitaroE_g_b_cc2
+
 	]);
