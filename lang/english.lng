@@ -3,7 +3,7 @@
 
 # GRF name and description definitions	
 STR_GRF_NAME					:HVW Bus Set
-STR_GRF_DESC					:{}{LTBLUE}Bus Set{}{BLACK}Code and model:{GREEN}SosMakaroni{} {COPYRIGHT}2022 SosMakaroni{}{GRAY}License: GPLv2{}{BLACK}Ver.52 2024.12.01.
+STR_GRF_DESC					:{}{LTBLUE}Bus Set{}{BLACK}Code and model:{GREEN}SosMakaroni{} {COPYRIGHT}2022 SosMakaroni{}{GRAY}License: GPLv2{}{BLACK}Ver.56 2024.12.20.
 
 STR_BUG							:HVW Toyland bug, sorry :(
 
@@ -185,6 +185,9 @@ STR_MB_CitaroE_c_a_cc1_BUY		:3 doors - Company Color 1. livery
 STR_MB_CitaroE_c_a_cc2_BUY		:3 doors - Company Color 2. livery
 STR_MB_CitaroE_c_a_BLT_old_BUY		:3 doors - BLT older livery
 STR_MB_CitaroE_c_a_BLT_new_BUY		:3 doors - BLT newer livery
+STR_MB_CitaroE_c_a_AAGL_BUY		:3 doors - AAGL livery
+STR_MB_CitaroE_c_a_BVB_BUY		:3 doors - BVB livery
+STR_MB_CitaroE_c_a_RBS_BUY		:3 doors - RBS livery
 
 STR_MB_CitaroE_c_b_NAME		:Mercedes-Benz eCitaro
 STR_MB_CitaroE_c_b_ADAT		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Classic, 12m, 2 doors{BLACK}{}Usage: {GOLD}City{BLACK}{}Fuel: {GOLD}Electric{BLACK}{}{}
@@ -197,6 +200,8 @@ STR_MB_CitaroE_g_a_ADAT		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK
 STR_MB_CitaroE_g_a_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 4 doors{BLACK}
 STR_MB_CitaroE_g_a_cc1_BUY		:4 doors - Company Color 1. livery
 STR_MB_CitaroE_g_a_cc2_BUY		:4 doors - Company Color 2. livery
+STR_MB_CitaroE_g_a_BBA_BUY		:4 doors - BBA livery
+STR_MB_CitaroE_g_a_BVB_BUY		:4 doors - BVB livery
 
 STR_MB_CitaroE_g_b_NAME		:Mercedes-Benz eCitaro G
 STR_MB_CitaroE_g_b_ADAT		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 3 doors{BLACK}{}Usage: {GOLD}City{BLACK}{}Fuel: {GOLD}Electric{BLACK}{}{}
