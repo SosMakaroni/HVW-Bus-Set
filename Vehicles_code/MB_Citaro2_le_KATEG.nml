@@ -1,0 +1,40 @@
+// --------------------------------------------------------------------------------MB_Citaro2_le_KATEG
+
+item(FEAT_ROADVEHS, item_MB_Citaro2_le_KATEG) {
+	property {
+        name:							string(STR_MB_Citaro2_le_NAME);
+        climates_available:			bitmask(CLIMATE_TOYLAND);
+        introduction_date:				date(2013,01,01);
+        model_life:					25;
+        vehicle_life:					25;
+        reliability_decay:				20;
+        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+        loading_speed:					33;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        speed:							80 km/h;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_ROADVEH;
+        power:							260 kW;
+        weight:							12 ton;
+        cargo_capacity:				106;
+		cargo_age_period:				185;
+        sound_effect:					SOUND_DEPARTURE_MODERN_BUS;
+//		variant_group:					item_MB_Citaro2_le_KATEG;
+    }
+    graphics {
+		default:                 		sw_MB_Citaro2_le_a_cc1;
+		purchase:						ss_MB_Citaro2_le_a_cc1_purchase;
+		articulated_part:        		sw_MB_Citaro2_le_a_cc1_articulated;
+		length:                  		sw_MB_Citaro2_le_a_cc1_length;
+		cost_factor:					26 * parapuco;
+		running_cost_factor:			39 * pararuco;
+		additional_text: 				string(STR_MB_Citaro2_le_a_ADAT);
+		name:							sw_MB_Citaro2_le_a_cc1_name;
+    }
+}
+
+// --------------------------------------------------------------------------------MB_Citaro2_le_KATEG End
+// --
+// --

@@ -121,7 +121,7 @@ BOOM, ENSP, FMSP, JAVA, VPTS, VENG, VBOD,*/
 template tmpl_purchase() {
 	[0,	0,	99,	25,	-25,-15]}
 template tmpl_depo() {
-	[98,	0,	90,	25,	-13,-15]}	
+	[98,	0,	90,	25,	-13,-15]}
 template tmpl_1(z1){
 	[0		*z1,	0,	11	*z1,	49	*z1,	-5	*z1,	-13	*z1,	ANIM]	//
 	[19		*z1,	0,	54	*z1,	40	*z1,	-45	*z1,	-12	*z1,	ANIM]	//-14 -6
@@ -149,3 +149,19 @@ template tmpl_semmi() {
 	[0,	0,	2,	2,	1,	1]
 	[0,	0,	2,	2,	1,	1]
 	}
+
+template tmpl_diesel() {
+	[20,	110,	33,	9,	-25,	0]	}
+spriteset(ss_Diesel_purchase, "src/icons.png")		{tmpl_diesel()}  // Dízel jármű
+
+template tmpl_hybrid() {
+	[20,	110,	33,	9,	-25,	0]	}
+spriteset(ss_Hybrid_purchase, "src/icons.png")		{tmpl_hybrid()}  // Dízel jármű
+
+template tmpl_akku() {
+	[110,	110,	33,	9,	-25,	0]	}
+spriteset(ss_Akku_purchase, "src/icons.png")		{tmpl_akku()}  // Akkumulátoros jármű
+
+template tmpl_gas() {
+	[20,	140,	33,	9,	-25,	0]	}
+spriteset(ss_Gas_purchase, "src/icons.png")		{tmpl_gas()}  // Dízel jármű
