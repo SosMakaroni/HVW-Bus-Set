@@ -54,13 +54,25 @@ grf {
                     };
 				}
 			}
-
+	param 3 {
+		param_ptemplate {
+            type: int;
+            name: string(STR_PARAM_PTEMPLATE_NAME);
+            desc: string(STR_PARAM_PTEMPLATE_DESC);
+            min_value: 0;
+            max_value: 1;
+            def_value: 0;
+            names: {
+					0: string(STR_PARAM_PTEMPLATE_1);
+                    1: string(STR_PARAM_PTEMPLATE_2);
+                    };
+				}
+			}
 }
 
 paracapa = (param_cargo_capacity == 1) ? 2 : (param_cargo_capacity == 2) ? 4 : (param_cargo_capacity == 3) ? 8 : 1;
 parapuco = (param_cost_factor == 1) ? 2 : (param_cost_factor == 2) ? 4 : (param_cost_factor == 3) ? 8 : (param_cost_factor == 4) ? 16 : 1;
 pararuco = (param_running_cost_factor == 1) ? 2 : (param_running_cost_factor == 2) ? 4 : (param_running_cost_factor == 3) ? 8 : (param_running_cost_factor == 4) ? 16 : 1;
-
 
 tramtypetable  {
 	RAIL,	//SIMA
@@ -118,11 +130,15 @@ BOOM, ENSP, FMSP, JAVA, VPTS, VENG, VBOD,*/
 }
 
 
-template tmpl_purchase() {
-	[0,	0,	99,	25,	-25,-15]}
-template tmpl_depo() {
-	[98,	0,	90,	25,	-13,-15]}
-template tmpl_1(z1){
+template tmpl_purchase_k() { // Kicsi
+	[188,	0,	69,	15,	-25,	-9]}
+
+template tmpl_purchase_n() { // Nagyméretű
+	[0,		0,	99,	25,	-25,	-15]}
+	
+/*template tmpl_depo() {
+	[98,	0,	90,	25,	-13,-15]}*/
+/*template tmpl_1(z1){
 	[0		*z1,	0,	11	*z1,	49	*z1,	-5	*z1,	-13	*z1,	ANIM]	//
 	[19		*z1,	0,	54	*z1,	40	*z1,	-45	*z1,	-12	*z1,	ANIM]	//-14 -6
 	[81		*z1,	0,	69	*z1,	15	*z1,	-54	*z1,	-10	*z1,	ANIM]	//
@@ -131,7 +147,7 @@ template tmpl_1(z1){
 	[239	*z1,	0,	54	*z1,	40	*z1,	-15	*z1,	-28	*z1,	ANIM]	//-12 -8
 	[301	*z1,	0,	69	*z1,	15	*z1,	-11	*z1,	-9	*z1,	ANIM]	//
 	[378	*z1,	0,	54	*z1,	40	*z1,	-8	*z1,	-14	*z1,	ANIM]	//-6 -8
-	}
+	}*/
 
 template tmpl_toldat() {
 	[0,	0,	2,	2,	1,	1]
@@ -150,18 +166,37 @@ template tmpl_semmi() {
 	[0,	0,	2,	2,	1,	1]
 	}
 
-template tmpl_diesel() {
-	[20,	110,	33,	9,	-25,	0]	}
-spriteset(ss_Diesel_purchase, "src/icons.png")		{tmpl_diesel()}  // Dízel jármű
 
-template tmpl_hybrid() {
-	[20,	110,	33,	9,	-25,	0]	}
-spriteset(ss_Hybrid_purchase, "src/icons.png")		{tmpl_hybrid()}  // Dízel jármű
+template tmpl_depo() {
+	[188,	0,	69,	15,	-19,-9]}
 
-template tmpl_akku() {
-	[110,	110,	33,	9,	-25,	0]	}
-spriteset(ss_Akku_purchase, "src/icons.png")		{tmpl_akku()}  // Akkumulátoros jármű
-
-template tmpl_gas() {
-	[20,	140,	33,	9,	-25,	0]	}
-spriteset(ss_Gas_purchase, "src/icons.png")		{tmpl_gas()}  // Dízel jármű
+template tmpl_1(){
+	[107,	0,	11,		49,		-5,		-13,	ANIM]
+	[126,	0,	54,		40,		-45,	-12,	ANIM]
+	[188,	0,	69,		15,		-54,	-10,	ANIM]
+	[265,	0,	54,		40,		-41,	-29,	ANIM]
+	[327,	0,	11,		49,		-6,		-32,	ANIM]
+	[346,	0,	54,		40,		-15,	-28,	ANIM]
+	[408,	0,	69,		15,		-11,	-9,		ANIM]
+	[485,	0,	54,		40,		-8,		-14,	ANIM]
+	}
+template tmpl_2(){
+	[547,	0,	22,		98,		-10,	-26,	ANIM]
+	[577,	0,	108,	80,		-90,	-24,	ANIM]
+	[693,	0,	138,	30,		-108,	-20,	ANIM]
+	[839,	0,	108,	80,		-82,	-58,	ANIM]
+	[955,	0,	22,		98,		-12,	-64,	ANIM]
+	[985,	0,	108,	80,		-30,	-56,	ANIM]
+	[1101,	0,	138,	30,		-22,	-18,	ANIM]
+	[1247,	0,	108,	80,		-16,	-28,	ANIM]
+	}
+template tmpl_4(){
+	[1363,	0,	44,		196,	-20,	-52,	ANIM]
+	[1415,	0,	216,	160,	-180,	-48,	ANIM]
+	[1639,	0,	276,	60,		-216,	-40,	ANIM]
+	[1923,	0,	216,	160,	-164,	-116,	ANIM]
+	[2147,	0,	44,		196,	-24,	-128,	ANIM]
+	[2199,	0,	216,	160,	-60,	-112,	ANIM]
+	[2423,	0,	276,	60,		-44,	-36,	ANIM]
+	[2707,	0,	216,	160,	-32,	-56,	ANIM]
+	}

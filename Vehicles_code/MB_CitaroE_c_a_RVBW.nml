@@ -1,25 +1,31 @@
+
 // --------------------------------------------------------------------------------MB_CitaroE_c_a_RVBW
 
-spriteset(ss_MB_CitaroE_c_a_RVBW_purchase, "src/MB/MB_CitaroE_c_a_RVBW_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+spriteset(ss_MB_CitaroE_c_a_RVBW_purchase_k, "src/MB/Citaro2/MB_CitaroE_c_a_RVBW_8bpp.png")		{tmpl_purchase_k()} // Vásárlási nézet
+spriteset(ss_MB_CitaroE_c_a_RVBW_purchase_n, "src/MB/Citaro2/MB_CitaroE_c_a_RVBW_8bpp.png")		{tmpl_purchase_n()} // Vásárlási nézet
 
-spriteset(ss_MB_CitaroE_c_a_RVBW, "src/MB/MB_CitaroE_c_a_RVBW_1x_8bpp.png")		{tmpl_1(1)}
-alternative_sprites(ss_MB_CitaroE_c_a_RVBW, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_CitaroE_c_a_RVBW_2x_8bpp.png") {tmpl_1(2)}
-alternative_sprites(ss_MB_CitaroE_c_a_RVBW, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_CitaroE_c_a_RVBW_4x_8bpp.png") {tmpl_1(4)}
-spriteset(ss_MB_CitaroE_c_a_RVBWi, "src/MB/MB_CitaroE_c_a_RVBW_8bpp.png")		{tmpl_depo()}
+switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_RVBW_purchase, param_ptemplate ) {
+	1:	ss_MB_CitaroE_c_a_RVBW_purchase_n;
+	ss_MB_CitaroE_c_a_RVBW_purchase_k;
+}
 
-// Rakodási grafika
-spritegroup sg_MB_CitaroE_c_a_RVBW {	loaded:  [ss_MB_CitaroE_c_a_RVBW];	loading: [ss_MB_CitaroE_c_a_RVBW];}
+
+spriteset(ss_MB_CitaroE_c_a_RVBW, "src/MB/Citaro2/MB_CitaroE_c_a_RVBW_8bpp.png")		{tmpl_1()}
+alternative_sprites(ss_MB_CitaroE_c_a_RVBW, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/Citaro2/MB_CitaroE_c_a_RVBW_8bpp.png") {tmpl_2()}
+alternative_sprites(ss_MB_CitaroE_c_a_RVBW, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/Citaro2/MB_CitaroE_c_a_RVBW_8bpp.png") {tmpl_4()}
+
+spriteset(ss_MB_CitaroE_c_a_RVBW_info, "src/MB/Citaro2/MB_CitaroE_c_a_RVBW_8bpp.png")		{tmpl_depo()} // Depo, járműlista, info nézet
 
 // Lista grafika
 switch (FEAT_ROADVEHS, SELF, sw1_MB_CitaroE_c_a_RVBW_info, position_in_consist ) {
-    1: ss_toldat;
-    ss_MB_CitaroE_c_a_RVBWi;
+	1: ss_toldat;
+	ss_MB_CitaroE_c_a_RVBW_info;
 }
 
 // Játék grafika
 switch (FEAT_ROADVEHS, SELF, sw1_MB_CitaroE_c_a_RVBW, position_in_consist ) {
-    1: ss_toldat;
-    sg_MB_CitaroE_c_a_RVBW;
+	1: ss_toldat;
+	ss_MB_CitaroE_c_a_RVBW;
 }
 
 // Rajz
@@ -33,62 +39,60 @@ switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_RVBW, (extra_callback_info1 & 0x12
 // Csuklosítás
 switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_RVBW_articulated, extra_callback_info1) {
     0: item_MB_CitaroE_c_a_RVBW;
-    1: item_MB_CitaroE_c_a_RVBW_T;
+	1: item_MB_CitaroE_c_a_RVBW_T;
     CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
 // Modelhossz
 switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_RVBW_length, position_in_consist) {
-	1: return 8;
-    return 5;
+	1: return 5;
+    return 8;
 }
 
 // Szövegek
 switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_RVBW_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
-    1: return string(STR_electric_3door_BUY);
-    2: return string(STR_RVBW_BUY);
+    1: return string(STR_MB_CitaroE_c_a_RVBW_NAME2);
 	return CB_RESULT_NO_TEXT;
 }
 switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_RVBW_name, extra_callback_info1 & 0xFF) {
-    0x11: return string(STR_MB_CitaroE_c_a_INFO); // Jármű infóban név
+    0x11: return string(STR_MB_CitaroE_c_a_RVBW_INFO); // Jármű infóban név
     0x20: sw_MB_CitaroE_c_a_RVBW_namep; // Vásárlási lista név
-	0x21: return string(STR_MB_CitaroE_c_a_NAME); // Elővásárlási név
+	0x21: return string(STR_MB_CitaroE_c_a_RVBW_NAME); // Elővásárlási név
 	return CB_RESULT_NO_TEXT;
 }
 
-
+// Item
 item(FEAT_ROADVEHS, item_MB_CitaroE_c_a_RVBW) {
-	property {
-        name:							string(STR_MB_CitaroE_c_a_NAME);
-        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
-        introduction_date:				date(2018,01,01);
-        model_life:					25;
-        vehicle_life:					25;
-        reliability_decay:				20;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
-        loading_speed:					42;
-        sprite_id:						SPRITE_ID_NEW_ROADVEH;
-        speed:							80 km/h;
-        misc_flags:					bitmask(/*ROADVEH_FLAG_2CC, */ROADVEH_FLAG_SPRITE_STACK);
-        refit_cost:					0;
-        running_cost_base:				RUNNING_COST_ROADVEH;
-        power:							250 kW;
-        weight:							13 ton;
-        cargo_capacity:				106;
-		cargo_age_period:				185;
-        sound_effect:					SOUND_POWER_STATION;
-		variant_group:					item_MB_CitaroE_c_a_cc1;
+    property { 
+        name:                           string(STR_MB_CitaroE_c_a_RVBW_NAME);
+        climates_available:         bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:              date(2018,01,01);
+        model_life:                 20;
+        vehicle_life:                   25;
+        reliability_decay:              20;
+		cargo_allow_refit:      		[PASS,TOUR];
+        loading_speed:                  42;
+        sprite_id:                      SPRITE_ID_NEW_ROADVEH;
+        speed:                          80 km/h;
+        misc_flags:                 bitmask(ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:                 0;
+        running_cost_base:              RUNNING_COST_ROADVEH;
+        power:                          250 kW;
+        weight:                         13 ton;
+        cargo_capacity:             88;
+        cargo_age_period:               185;
+        sound_effect:                   SOUND_DEPARTURE_MODERN_BUS;
+      variant_group:				item_MB_CitaroE_c_a_CC1;
     }
     graphics {
-		default:                 		sw_MB_CitaroE_c_a_RVBW;
-		purchase:						ss_MB_CitaroE_c_a_RVBW_purchase;
-		articulated_part:        		sw_MB_CitaroE_c_a_RVBW_articulated;
-		length:                  		sw_MB_CitaroE_c_a_RVBW_length;
-		cost_factor:					38 * parapuco;
-		running_cost_factor:			21 * pararuco;
-		additional_text: 				string(STR_MB_CitaroE_c_a_ADAT, string(STR_SweDuke_ADAT));
-		name:							sw_MB_CitaroE_c_a_RVBW_name;
+        default:                        sw_MB_CitaroE_c_a_RVBW;
+        purchase:                       sw_MB_CitaroE_c_a_RVBW_purchase;
+        articulated_part:               sw_MB_CitaroE_c_a_RVBW_articulated;
+        length:                         sw_MB_CitaroE_c_a_RVBW_length;
+        cost_factor:                    38 * parapuco;
+        running_cost_factor:            21 * pararuco;
+        additional_text:                string(STR_MB_CitaroE_c_a_RVBW_DATA);
+        name:                           sw_MB_CitaroE_c_a_RVBW_name;
     }
 }
 item(FEAT_ROADVEHS, item_MB_CitaroE_c_a_RVBW_T) {
@@ -96,8 +100,7 @@ item(FEAT_ROADVEHS, item_MB_CitaroE_c_a_RVBW_T) {
         name:							string(STR_BUG);
         climates_available:			bitmask(NO_CLIMATE);
         introduction_date:				date(4999999,01,01);
-        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
-        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+		cargo_allow_refit:				[PASS,TOUR];
         loading_speed:					0;
         cost_factor:					0;
         running_cost_factor:			0;
@@ -116,6 +119,4 @@ item(FEAT_ROADVEHS, item_MB_CitaroE_c_a_RVBW_T) {
     }
 }
 
-// --------------------------------------------------------------------------------MB_CitaroE_c_a_RVBW End
-// --
-// --
+// ----------------------------------------------------------------End-------------MB_CitaroE_c_a_RVBW

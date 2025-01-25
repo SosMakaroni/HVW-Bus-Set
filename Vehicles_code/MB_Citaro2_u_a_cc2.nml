@@ -1,103 +1,106 @@
-// --------------------------------------------------------------------------------MB_Citaro2_u_a_cc2
 
-spriteset(ss_MB_Citaro2_u_a_cc2_purchase, "src/MB/MB_Citaro2_u_a_cc2_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+// --------------------------------------------------------------------------------MB_Citaro2_u_a_CC2
 
-spriteset(ss_MB_Citaro2_u_a_cc2, "src/MB/MB_Citaro2_u_a_cc2_1x_8bpp.png")		{tmpl_1(1)}
-alternative_sprites(ss_MB_Citaro2_u_a_cc2, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_u_a_cc2_2x_8bpp.png") {tmpl_1(2)}
-alternative_sprites(ss_MB_Citaro2_u_a_cc2, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_Citaro2_u_a_cc2_4x_8bpp.png") {tmpl_1(4)}
-spriteset(ss_MB_Citaro2_u_a_cc2i, "src/MB/MB_Citaro2_u_a_cc2_8bpp.png")		{tmpl_depo()}
+spriteset(ss_MB_Citaro2_u_a_CC2_purchase_k, "src/MB/Citaro2/MB_Citaro2_u_a_CC2_8bpp.png")		{tmpl_purchase_k()} // Vásárlási nézet
+spriteset(ss_MB_Citaro2_u_a_CC2_purchase_n, "src/MB/Citaro2/MB_Citaro2_u_a_CC2_8bpp.png")		{tmpl_purchase_n()} // Vásárlási nézet
 
-// Rakodási grafika
-spritegroup sg_MB_Citaro2_u_a_cc2 {	loaded:  [ss_MB_Citaro2_u_a_cc2];	loading: [ss_MB_Citaro2_u_a_cc2];}
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_u_a_CC2_purchase, param_ptemplate ) {
+	1:	ss_MB_Citaro2_u_a_CC2_purchase_n;
+	ss_MB_Citaro2_u_a_CC2_purchase_k;
+}
+
+
+spriteset(ss_MB_Citaro2_u_a_CC2, "src/MB/Citaro2/MB_Citaro2_u_a_CC2_8bpp.png")		{tmpl_1()}
+alternative_sprites(ss_MB_Citaro2_u_a_CC2, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/Citaro2/MB_Citaro2_u_a_CC2_8bpp.png") {tmpl_2()}
+alternative_sprites(ss_MB_Citaro2_u_a_CC2, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/Citaro2/MB_Citaro2_u_a_CC2_8bpp.png") {tmpl_4()}
+
+spriteset(ss_MB_Citaro2_u_a_CC2_info, "src/MB/Citaro2/MB_Citaro2_u_a_CC2_8bpp.png")		{tmpl_depo()} // Depo, járműlista, info nézet
 
 // Lista grafika
-switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_u_a_cc2_info, position_in_consist ) {
-    1: ss_toldat;
-    ss_MB_Citaro2_u_a_cc2i;
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_u_a_CC2_info, position_in_consist ) {
+	1: ss_toldat;
+	ss_MB_Citaro2_u_a_CC2_info;
 }
 
 // Játék grafika
-switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_u_a_cc2, position_in_consist ) {
-    1: ss_toldat;
-    sg_MB_Citaro2_u_a_cc2;
+switch (FEAT_ROADVEHS, SELF, sw1_MB_Citaro2_u_a_CC2, position_in_consist ) {
+	1: ss_toldat;
+	ss_MB_Citaro2_u_a_CC2;
 }
 
 // Rajz
-switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_u_a_cc2, (extra_callback_info1 & 0x12)) {
-   0x10: sw1_MB_Citaro2_u_a_cc2_info; // Depó nézet
-   0x11: sw1_MB_Citaro2_u_a_cc2_info; // Jármű infó/Refit nézet
-   0x12: sw1_MB_Citaro2_u_a_cc2_info; // Jármű lista nézet
-   0x00: sw1_MB_Citaro2_u_a_cc2; // Játék nézet
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_u_a_CC2, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_MB_Citaro2_u_a_CC2_info; // Depó nézet
+   0x11: sw1_MB_Citaro2_u_a_CC2_info; // Jármű infó/Refit nézet
+   0x12: sw1_MB_Citaro2_u_a_CC2_info; // Jármű lista nézet
+   0x00: sw1_MB_Citaro2_u_a_CC2; // Játék nézet
 }
 
 // Csuklosítás
-switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_u_a_cc2_articulated, extra_callback_info1) {
-    0: item_MB_Citaro2_u_a_cc2;
-    1: item_MB_Citaro2_u_a_cc2_T;
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_u_a_CC2_articulated, extra_callback_info1) {
+    0: item_MB_Citaro2_u_a_CC2;
+	1: item_MB_Citaro2_u_a_CC2_T;
     CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
 // Modelhossz
-switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_u_a_cc2_length, position_in_consist) {
-	1: return 8;
-    return 5;
+switch (FEAT_ROADVEHS, SELF, sw_MB_Citaro2_u_a_CC2_length, position_in_consist) {
+	1: return 5;
+    return 8;
 }
 
 // Szövegek
-switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_u_a_cc2_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
-    1: return string(STR_diesel_2door_BUY);
-    2: return string(STR_2cc_BUY);
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_u_a_CC2_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_MB_Citaro2_u_a_CC2_NAME2);
 	return CB_RESULT_NO_TEXT;
 }
-switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_u_a_cc2_name, extra_callback_info1 & 0xFF) {
-    0x11: return string(STR_MB_Citaro2_u_a_INFO); // Jármű infóban név
-    0x20: sw_MB_Citaro2_u_a_cc2_namep; // Vásárlási lista név
-	0x21: return string(STR_MB_Citaro2_u_a_NAME); // Elővásárlási név
+switch(FEAT_ROADVEHS, SELF, sw_MB_Citaro2_u_a_CC2_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_MB_Citaro2_u_a_CC2_INFO); // Jármű infóban név
+    0x20: sw_MB_Citaro2_u_a_CC2_namep; // Vásárlási lista név
+	0x21: return string(STR_MB_Citaro2_u_a_CC2_NAME); // Elővásárlási név
 	return CB_RESULT_NO_TEXT;
 }
 
-
-item(FEAT_ROADVEHS, item_MB_Citaro2_u_a_cc2) {
-	property {
-        name:							string(STR_MB_Citaro2_u_a_NAME);
-        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
-        introduction_date:				date(2012,01,01);
-        model_life:					25;
-        vehicle_life:					25;
-        reliability_decay:				20;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
-        loading_speed:					19;
-        sprite_id:						SPRITE_ID_NEW_ROADVEH;
-        speed:							95 km/h;
-        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
-        refit_cost:					0;
-        running_cost_base:				RUNNING_COST_ROADVEH;
-        power:							260 kW;
-        weight:							12 ton;
-        cargo_capacity:				82;
-		cargo_age_period:				170;
-        sound_effect:					SOUND_DEPARTURE_MODERN_BUS;
-		variant_group:					item_MB_Citaro2_u_a_cc1;
+// Item
+item(FEAT_ROADVEHS, item_MB_Citaro2_u_a_CC2) {
+    property { 
+        name:                           string(STR_MB_Citaro2_u_a_CC2_NAME);
+        climates_available:         bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:              date(2012,01,01);
+        model_life:                 20;
+        vehicle_life:                   25;
+        reliability_decay:              20;
+		cargo_allow_refit:      		[PASS,TOUR];
+        loading_speed:                  19;
+        sprite_id:                      SPRITE_ID_NEW_ROADVEH;
+        speed:                          95 km/h;
+        misc_flags:                 bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:                 0;
+        running_cost_base:              RUNNING_COST_ROADVEH;
+        power:                          260 kW;
+        weight:                         12 ton;
+        cargo_capacity:             82;
+        cargo_age_period:               170;
+        sound_effect:                   SOUND_DEPARTURE_MODERN_BUS;
+      variant_group:				item_MB_Citaro2_u_a_CC1;
     }
     graphics {
-		default:                 		sw_MB_Citaro2_u_a_cc2;
-		purchase:						ss_MB_Citaro2_u_a_cc2_purchase;
-		articulated_part:        		sw_MB_Citaro2_u_a_cc2_articulated;
-		length:                  		sw_MB_Citaro2_u_a_cc2_length;
-		cost_factor:					25 * parapuco;
-		running_cost_factor:			38 * pararuco;
-		additional_text: 				string(STR_MB_Citaro2_u_a_ADAT);
-		name:							sw_MB_Citaro2_u_a_cc2_name;
+        default:                        sw_MB_Citaro2_u_a_CC2;
+        purchase:                       sw_MB_Citaro2_u_a_CC2_purchase;
+        articulated_part:               sw_MB_Citaro2_u_a_CC2_articulated;
+        length:                         sw_MB_Citaro2_u_a_CC2_length;
+        cost_factor:                    25 * parapuco;
+        running_cost_factor:            38 * pararuco;
+        additional_text:                string(STR_MB_Citaro2_u_a_CC2_DATA);
+        name:                           sw_MB_Citaro2_u_a_CC2_name;
     }
 }
-item(FEAT_ROADVEHS, item_MB_Citaro2_u_a_cc2_T) {
+item(FEAT_ROADVEHS, item_MB_Citaro2_u_a_CC2_T) {
 	property {
         name:							string(STR_BUG);
         climates_available:			bitmask(NO_CLIMATE);
         introduction_date:				date(4999999,01,01);
-        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
-        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+		cargo_allow_refit:				[PASS,TOUR];
         loading_speed:					0;
         cost_factor:					0;
         running_cost_factor:			0;
@@ -112,10 +115,8 @@ item(FEAT_ROADVEHS, item_MB_Citaro2_u_a_cc2_T) {
     }
     graphics {
 		default:                 		ss_toldat;
-		length:                  		sw_MB_Citaro2_u_a_cc2_length;
+		length:                  		sw_MB_Citaro2_u_a_CC2_length;
     }
 }
 
-// --------------------------------------------------------------------------------MB_Citaro2_u_a_cc2 End
-// --
-// --
+// ----------------------------------------------------------------End-------------MB_Citaro2_u_a_CC2

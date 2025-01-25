@@ -1,103 +1,106 @@
-// --------------------------------------------------------------------------------MB_CitaroE_k_a_cc1
 
-spriteset(ss_MB_CitaroE_k_a_cc1_purchase, "src/MB/MB_CitaroE_k_a_cc1_BUY_8bpp.png")		{tmpl_purchase()} // Vásárlási jármű
+// --------------------------------------------------------------------------------MB_CitaroE_k_a_CC1
 
-spriteset(ss_MB_CitaroE_k_a_cc1, "src/MB/MB_CitaroE_k_a_cc1_1x_8bpp.png")		{tmpl_1(1)}
-alternative_sprites(ss_MB_CitaroE_k_a_cc1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/MB_CitaroE_k_a_cc1_2x_8bpp.png") {tmpl_1(2)}
-alternative_sprites(ss_MB_CitaroE_k_a_cc1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/MB_CitaroE_k_a_cc1_4x_8bpp.png") {tmpl_1(4)}
-spriteset(ss_MB_CitaroE_k_a_cc1i, "src/MB/MB_CitaroE_k_a_cc1_8bpp.png")		{tmpl_depo()}
+spriteset(ss_MB_CitaroE_k_a_CC1_purchase_k, "src/MB/Citaro2/MB_CitaroE_k_a_CC1_8bpp.png")		{tmpl_purchase_k()} // Vásárlási nézet
+spriteset(ss_MB_CitaroE_k_a_CC1_purchase_n, "src/MB/Citaro2/MB_CitaroE_k_a_CC1_8bpp.png")		{tmpl_purchase_n()} // Vásárlási nézet
 
-// Rakodási grafika
-spritegroup sg_MB_CitaroE_k_a_cc1 {	loaded:  [ss_MB_CitaroE_k_a_cc1];	loading: [ss_MB_CitaroE_k_a_cc1];}
+switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_k_a_CC1_purchase, param_ptemplate ) {
+	1:	ss_MB_CitaroE_k_a_CC1_purchase_n;
+	ss_MB_CitaroE_k_a_CC1_purchase_k;
+}
+
+
+spriteset(ss_MB_CitaroE_k_a_CC1, "src/MB/Citaro2/MB_CitaroE_k_a_CC1_8bpp.png")		{tmpl_1()}
+alternative_sprites(ss_MB_CitaroE_k_a_CC1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/MB/Citaro2/MB_CitaroE_k_a_CC1_8bpp.png") {tmpl_2()}
+alternative_sprites(ss_MB_CitaroE_k_a_CC1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/MB/Citaro2/MB_CitaroE_k_a_CC1_8bpp.png") {tmpl_4()}
+
+spriteset(ss_MB_CitaroE_k_a_CC1_info, "src/MB/Citaro2/MB_CitaroE_k_a_CC1_8bpp.png")		{tmpl_depo()} // Depo, járműlista, info nézet
 
 // Lista grafika
-switch (FEAT_ROADVEHS, SELF, sw1_MB_CitaroE_k_a_cc1_info, position_in_consist ) {
-    1: ss_toldat;
-    ss_MB_CitaroE_k_a_cc1i;
+switch (FEAT_ROADVEHS, SELF, sw1_MB_CitaroE_k_a_CC1_info, position_in_consist ) {
+	1: ss_toldat;
+	ss_MB_CitaroE_k_a_CC1_info;
 }
 
 // Játék grafika
-switch (FEAT_ROADVEHS, SELF, sw1_MB_CitaroE_k_a_cc1, position_in_consist ) {
-    1: ss_toldat;
-    sg_MB_CitaroE_k_a_cc1;
+switch (FEAT_ROADVEHS, SELF, sw1_MB_CitaroE_k_a_CC1, position_in_consist ) {
+	1: ss_toldat;
+	ss_MB_CitaroE_k_a_CC1;
 }
 
 // Rajz
-switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_k_a_cc1, (extra_callback_info1 & 0x12)) {
-   0x10: sw1_MB_CitaroE_k_a_cc1_info; // Depó nézet
-   0x11: sw1_MB_CitaroE_k_a_cc1_info; // Jármű infó/Refit nézet
-   0x12: sw1_MB_CitaroE_k_a_cc1_info; // Jármű lista nézet
-   0x00: sw1_MB_CitaroE_k_a_cc1; // Játék nézet
+switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_k_a_CC1, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_MB_CitaroE_k_a_CC1_info; // Depó nézet
+   0x11: sw1_MB_CitaroE_k_a_CC1_info; // Jármű infó/Refit nézet
+   0x12: sw1_MB_CitaroE_k_a_CC1_info; // Jármű lista nézet
+   0x00: sw1_MB_CitaroE_k_a_CC1; // Játék nézet
 }
 
 // Csuklosítás
-switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_k_a_cc1_articulated, extra_callback_info1) {
-    0: item_MB_CitaroE_k_a_cc1;
-    1: item_MB_CitaroE_k_a_cc1_T;
+switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_k_a_CC1_articulated, extra_callback_info1) {
+    0: item_MB_CitaroE_k_a_CC1;
+	1: item_MB_CitaroE_k_a_CC1_T;
     CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
 // Modelhossz
-switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_k_a_cc1_length, position_in_consist) {
-	1: return 8;
-    return 4;
+switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_k_a_CC1_length, position_in_consist) {
+	1: return 4;
+    return 8;
 }
 
 // Szövegek
-switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_k_a_cc1_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
-    1: return string(STR_electric_3door_BUY);
-    2: return string(STR_1cc_BUY);
+switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_k_a_CC1_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_MB_CitaroE_k_a_CC1_NAME2);
 	return CB_RESULT_NO_TEXT;
 }
-switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_k_a_cc1_name, extra_callback_info1 & 0xFF) {
-    0x11: return string(STR_MB_CitaroE_k_a_INFO); // Jármű infóban név
-    0x20: sw_MB_CitaroE_k_a_cc1_namep; // Vásárlási lista név
-	0x21: return string(STR_MB_CitaroE_k_a_NAME); // Elővásárlási név
+switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_k_a_CC1_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_MB_CitaroE_k_a_CC1_INFO); // Jármű infóban név
+    0x20: sw_MB_CitaroE_k_a_CC1_namep; // Vásárlási lista név
+	0x21: return string(STR_MB_CitaroE_k_a_CC1_NAME); // Elővásárlási név
 	return CB_RESULT_NO_TEXT;
 }
 
-
-item(FEAT_ROADVEHS, item_MB_CitaroE_k_a_cc1) {
-	property {
-        name:							string(STR_MB_CitaroE_k_a_NAME);
-        climates_available:			bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
-        introduction_date:				date(2024,01,01);
-        model_life:					25;
-        vehicle_life:					25;
-        reliability_decay:				20;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
-        loading_speed:					42;
-        sprite_id:						SPRITE_ID_NEW_ROADVEH;
-        speed:							80 km/h;
-        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
-        refit_cost:					0;
-        running_cost_base:				RUNNING_COST_ROADVEH;
-        power:							250 kW;
-        weight:							12 ton;
-        cargo_capacity:				86;
-		cargo_age_period:				185;
-        sound_effect:					SOUND_POWER_STATION;
-		variant_group:					item_MB_Citaro2_k_KATEG;
+// Item
+item(FEAT_ROADVEHS, item_MB_CitaroE_k_a_CC1) {
+    property { 
+        name:                           string(STR_MB_CitaroE_k_a_CC1_NAME);
+        climates_available:         bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:              date(2024,01,01);
+        model_life:                 20;
+        vehicle_life:                   25;
+        reliability_decay:              20;
+		cargo_allow_refit:      		[PASS,TOUR];
+        loading_speed:                  42;
+        sprite_id:                      SPRITE_ID_NEW_ROADVEH;
+        speed:                          80 km/h;
+        misc_flags:                 bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:                 0;
+        running_cost_base:              RUNNING_COST_ROADVEH;
+        power:                          250 kW;
+        weight:                         12 ton;
+        cargo_capacity:             84;
+        cargo_age_period:               185;
+        sound_effect:                   SOUND_DEPARTURE_MODERN_BUS;
+//      variant_group:				item_MB_CitaroE_k_a_CC1;
     }
     graphics {
-		default:                 		sw_MB_CitaroE_k_a_cc1;
-		purchase:						ss_MB_CitaroE_k_a_cc1_purchase;
-		articulated_part:        		sw_MB_CitaroE_k_a_cc1_articulated;
-		length:                  		sw_MB_CitaroE_k_a_cc1_length;
-		cost_factor:					37 * parapuco;
-		running_cost_factor:			21 * pararuco;
-		additional_text: 				string(STR_MB_CitaroE_k_a_ADAT);
-		name:							sw_MB_CitaroE_k_a_cc1_name;
+        default:                        sw_MB_CitaroE_k_a_CC1;
+        purchase:                       sw_MB_CitaroE_k_a_CC1_purchase;
+        articulated_part:               sw_MB_CitaroE_k_a_CC1_articulated;
+        length:                         sw_MB_CitaroE_k_a_CC1_length;
+        cost_factor:                    37 * parapuco;
+        running_cost_factor:            21 * pararuco;
+        additional_text:                string(STR_MB_CitaroE_k_a_CC1_DATA);
+        name:                           sw_MB_CitaroE_k_a_CC1_name;
     }
 }
-item(FEAT_ROADVEHS, item_MB_CitaroE_k_a_cc1_T) {
+item(FEAT_ROADVEHS, item_MB_CitaroE_k_a_CC1_T) {
 	property {
         name:							string(STR_BUG);
         climates_available:			bitmask(NO_CLIMATE);
         introduction_date:				date(4999999,01,01);
-        refittable_cargo_classes:		bitmask(NO_CARGO_CLASS);
-        non_refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);
+		cargo_allow_refit:				[PASS,TOUR];
         loading_speed:					0;
         cost_factor:					0;
         running_cost_factor:			0;
@@ -112,10 +115,8 @@ item(FEAT_ROADVEHS, item_MB_CitaroE_k_a_cc1_T) {
     }
     graphics {
 		default:                 		ss_toldat;
-		length:                  		sw_MB_CitaroE_k_a_cc1_length;
+		length:                  		sw_MB_CitaroE_k_a_CC1_length;
     }
 }
 
-// --------------------------------------------------------------------------------MB_CitaroE_k_a_cc1 End
-// --
-// --
+// ----------------------------------------------------------------End-------------MB_CitaroE_k_a_CC1
