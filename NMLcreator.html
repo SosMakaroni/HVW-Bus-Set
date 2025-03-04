@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Excelből NML fájlok készítő</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <style>
+        body {
+            background-color: #b0b0b0;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, button {
+            width: 300px;
+            padding: 5px;
+            margin: 5px 0;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Excel feldolgozás</h2>
+        <input type="file" id="fileInput" accept=".xlsx, .xls">
+        <input type="number" id="labelInput" placeholder="Adja meg a címke értékét">
+        <button onclick="feldolgozas()">NML generálás</button>
+        <button onclick="langgen()">LNG generálás</button>
+        <button onclick="sortgen()">Vásárlási sor generálás</button>
+    </div>
+
+    <pre id="output"></pre>
+
+    <script>
+        function feldolgozas() {
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+            const labelValue = document.getElementById('labelInput').value;
+
+            if (!file) {
+                alert('Kérlek töltsd fel az Excel fájlt!');
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                const data = new Uint8Array(e.target.result);
+                const workbook = XLSX.read(data, { type: 'array' });
+                const sheetName = workbook.SheetNames[0];
+                const worksheet = workbook.Sheets[sheetName];
+                const json = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+
+                json.forEach((row, index) => {
+                    if (index === 0 || row.every(cell => cell === undefined || cell === null || cell === '')) return;
+
+                    const Fuel = row[4] || '';
+                    const ItemID = row[5] || '';
+                    const MDate = row[6] || '';
+                    const MPeroid = row[7] || '';
+                    const VLife = row[8] || '';
+                    const Reli = row[9] || '';
+                    const LoadingSpeed = row[15] || '';
+                    const PurchasePriceRow = row[16] || '';
+                    const MaintenanceRow = row[17] || '';
+                    const Speed = row[18] || '';
+                    const Power = row[20] || '';
+                    const Weight = row[21] || '';
+                    const Capacity = row[22] || '';
+                    const Comfort = row[23] || '';
+                    const Color = row[24] || '';
+                    const Hossz1 = row[25] || '';
+                    const Hossz2 = row[26] || '';
+                    const Hossz3 = row[27] || '';
+                    const Hossz4 = row[28] || '';
+                    const Hossz5 = row[29] || '';
+                    const Hossz6 = row[30] || '';
+                    const PFolder = row[31] || '';
+                    const Usage = row[37] || '';
+                    const Flag = row[39] || '';
+// Fájl elnevezés
+					let FName = `${ItemID}_${Color}`;
+// Kerekítés
+					let PurchasePrice = Math.round(PurchasePriceRow)
+					let Maintenance = Math.round(MaintenanceRow)
+					
+<!-- 1 részes jármű esetén a spritesetek -->
+                    let Spriteset1 = `spriteset(ss_${ItemID}_${Color}, "src/${PFolder}/${ItemID}_${Color}_8bpp.png")		{tmpl_1()}
+alternative_sprites(ss_${ItemID}_${Color}, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/${PFolder}/${ItemID}_${Color}_8bpp.png") {tmpl_2()}
+alternative_sprites(ss_${ItemID}_${Color}, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/${PFolder}/${ItemID}_${Color}_8bpp.png") {tmpl_4()}`;
+					let Csuklo0Lista = `\tss_${ItemID}_${Color}_info;`;
+					let Csuklo0Grafika = `\tss_${ItemID}_${Color};`;
+
+// variant_group kapcsoló ha nem cc1 a szín
+                    let Alapszin = '';
+                    if (Color == 'CC1') {
+                        Alapszin = `//`;
+                    }
+// cégszín kapcsoló ha CC elnevezést kap
+                    let FlagCC = '';
+                    let Recolor = '';
+                    if (Color.includes("CC")) {
+                        FlagCC = `ROADVEH_FLAG_2CC, `;
+                    } else {
+                        Recolor = `colour_mapping:	PALETTE_IDENTITY;`;
+                    }
+
+// Hajtás kapcsoló
+                    let BadgeFuel = '';
+                    if (Fuel == 'diesel') {
+                        BadgeFuel = `"power/diesel"`;
+                    } else if (Fuel == 'hybrid') {
+                        BadgeFuel = `"power/steam"`;
+                    } else if (Fuel == 'cng') {
+                        BadgeFuel = `"power/naturgas"`;
+                    } else if (Fuel == 'electric') {
+                        BadgeFuel = `"power/battery"`;
+                    } else if (Fuel == 'petrol') {
+                        BadgeFuel = `"power/diesel"`;
+                    }
+
+// Zászló kapcsoló
+                    let BadgeFlag = '';
+                    if (Flag == '1CC') {
+                        BadgeFlag = `, "livery/1cc"`;
+                    } else if (Flag == '2CC') {
+                        BadgeFlag = `, "livery/2cc"`;
+                    } else if (Flag == 'Europe') {
+                        BadgeFlag = `, "flag/europe"`;
+                    } else if (Flag == 'Hungary') {
+                        BadgeFlag = `, "flag/HU"`;
+                    } else if (Flag == 'Switzerland') {
+                        BadgeFlag = `, "flag/CH"`;
+                    }
+
+// Használat kapcsoló
+                    let BadgeUsage = '';
+                    if (Usage == 'City') {
+                        BadgeUsage = `, "usage/city"`;
+                    } else if (Usage == 'Suburb') {
+                        BadgeUsage = `, "usage/suburb"`;
+                    } else if (Usage == 'Regional') {
+                        BadgeUsage = `, "usage/regional"`;
+                    } else if (Usage == 'Intercity') {
+                        BadgeUsage = `, "usage/intercity"`;
+                    } else if (Usage == 'Tourist') {
+                        BadgeUsage = `, "usage/tourist"`;
+                    }
+
+// Toldat hozzáadása 
+					let Csuklo1Hossz = '';
+                    let Csuklo1Item = '';
+                    let Csuklo1Lista = '';
+					let Csuklo1Grafika = '';
+                    if (Hossz2 > 0) { 
+                        Csuklo1Hossz = `\n\t1: return ${Hossz2};`;
+                        Csuklo1Item = `\n\t1: item_${ItemID}_${Color}_T;`;
+						Csuklo1Lista = `\t1: ss_toldat;`;
+						Csuklo1Grafika = `\t1: ss_toldat;`;
+                    }
+
+// B csukló hozzáadása
+                    let Spriteset2 = '';
+                    let Csuklo2Hossz = '';
+                    let Csuklo2Item = '';
+                    let Csuklo2Lista = '';
+					let Csuklo2Grafika = '';
+                    if (Hossz3 > 0) {
+                        Csuklo2Hossz = `\n\t2: return ${Hossz3};`;
+                        Csuklo2Item = `\n\t2: item_${ItemID}_${Color}_b;`;
+						Csuklo2Lista = `\n\t2: ss_toldat;`;
+						Csuklo0Grafika = `\tss_${ItemID}_${Color}_a;`;
+						Csuklo2Grafika = `\n\t2: ss_${ItemID}_${Color}_b;`;
+						Spriteset1 = `spriteset(ss_${ItemID}_${Color}_a, "src/${PFolder}/${ItemID}_${Color}_a_8bpp.png")		{tmpl_1()} // Első rész
+alternative_sprites(ss_${ItemID}_${Color}_a, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/${PFolder}/${ItemID}_${Color}_a_8bpp.png") {tmpl_2()}
+alternative_sprites(ss_${ItemID}_${Color}_a, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/${PFolder}/${ItemID}_${Color}_a_8bpp.png") {tmpl_4()}`;
+						Spriteset2 = `\nspriteset(ss_${ItemID}_${Color}_b, "src/${PFolder}/${ItemID}_${Color}_b_8bpp.png")		{tmpl_1()} // Második rész
+alternative_sprites(ss_${ItemID}_${Color}_b, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/${PFolder}/${ItemID}_${Color}_b_8bpp.png") {tmpl_2()}
+alternative_sprites(ss_${ItemID}_${Color}_b, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/${PFolder}/${ItemID}_${Color}_b_8bpp.png") {tmpl_4()}`;
+                    }
+
+// B csukló utáni toldat hozzáadása
+                    let Csuklo3Hossz = '';
+                    let Csuklo3Item = '';
+                    let Csuklo3Lista = '';
+					let Csuklo3Grafika = '';
+                    if (Hossz4 > 0) {
+                        Csuklo3Hossz = `\n\t3: return ${Hossz4};`;
+                        Csuklo3Item = `\n\t3: item_${ItemID}_${Color}_T;`;
+						Csuklo3Lista = `\n\t3: ss_toldat;`;
+						Csuklo3Grafika = `\n\t3: ss_toldat;`;
+                    }
+
+// B csukló itemet adja hozzá
+                    let ArticulatedItem = '';
+                    if (Hossz3 > 0) {
+                        ArticulatedItem = `\nitem(FEAT_ROADVEHS, item_${ItemID}_${Color}_b) {
+	property {
+        name:							string(STR_BUG);
+        climates_available:			bitmask(NO_CLIMATE);
+        introduction_date:				date(4999999,01,01);
+		cargo_allow_refit:				[PASS,TOUR];
+        loading_speed:					0;
+        cost_factor:					0;
+        running_cost_factor:			0;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        misc_flags:                 bitmask(${FlagCC}ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_NONE;
+        power:							0 kW;
+        weight:							0 ton;
+        cargo_capacity:				0;
+		cargo_age_period:				0;
+    }
+    graphics {
+		default:                 		sw_${ItemID}_${Color};
+${Recolor}		length:                  		sw_${ItemID}_${Color}_length;
+    }
+}
+`;
+                    }
+// Maga a kiírás
+                    const content = `
+// --------------------------------------------------------------------------------${ItemID}_${Color}
+
+spriteset(ss_${ItemID}_${Color}_purchase_k, "src/${PFolder}/${ItemID}_${Color}_8bpp.png")		{tmpl_purchase_k()} // Vásárlási nézet
+spriteset(ss_${ItemID}_${Color}_purchase_n, "src/${PFolder}/${ItemID}_${Color}_8bpp.png")		{tmpl_purchase_n()} // Vásárlási nézet
+
+switch (FEAT_ROADVEHS, SELF, sw_${ItemID}_${Color}_purchase, param_ptemplate ) {
+	1:	ss_${ItemID}_${Color}_purchase_n;
+	ss_${ItemID}_${Color}_purchase_k;
+}
+
+
+${Spriteset1}${Spriteset2}
+
+spriteset(ss_${ItemID}_${Color}_info, "src/${PFolder}/${ItemID}_${Color}_8bpp.png")		{tmpl_depo()} // Depo, járműlista, info nézet
+
+// Lista grafika
+switch (FEAT_ROADVEHS, SELF, sw1_${ItemID}_${Color}_info, position_in_consist ) {
+${Csuklo1Lista}${Csuklo2Lista}${Csuklo3Lista}
+${Csuklo0Lista}
+}
+
+// Játék grafika
+switch (FEAT_ROADVEHS, SELF, sw1_${ItemID}_${Color}, position_in_consist ) {
+${Csuklo1Grafika}${Csuklo2Grafika}${Csuklo3Grafika}
+${Csuklo0Grafika}
+}
+
+// Rajz
+switch(FEAT_ROADVEHS, SELF, sw_${ItemID}_${Color}, (extra_callback_info1 & 0x12)) {
+   0x10: sw1_${ItemID}_${Color}_info; // Depó nézet
+   0x11: sw1_${ItemID}_${Color}_info; // Jármű infó/Refit nézet
+   0x12: sw1_${ItemID}_${Color}_info; // Jármű lista nézet
+   0x00: sw1_${ItemID}_${Color}; // Játék nézet
+}
+
+// Csuklosítás
+switch (FEAT_ROADVEHS, SELF, sw_${ItemID}_${Color}_articulated, extra_callback_info1) {
+    0: item_${ItemID}_${Color};${Csuklo1Item}${Csuklo2Item}${Csuklo3Item}
+    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Modelhossz
+switch (FEAT_ROADVEHS, SELF, sw_${ItemID}_${Color}_length, position_in_consist) {${Csuklo1Hossz}${Csuklo2Hossz}${Csuklo3Hossz}
+    return ${Hossz1};
+}
+
+// Szövegek
+switch(FEAT_ROADVEHS, SELF, sw_${ItemID}_${Color}_namep, (extra_callback_info1 >> 8) & 0xFFFF) {
+    1: return string(STR_${ItemID}_${Color}_NAME2);
+	return CB_RESULT_NO_TEXT;
+}
+switch(FEAT_ROADVEHS, SELF, sw_${ItemID}_${Color}_name, extra_callback_info1 & 0xFF) {
+    0x11: return string(STR_${ItemID}_${Color}_INFO); // Jármű infóban név
+    0x20: sw_${ItemID}_${Color}_namep; // Vásárlási lista név
+	0x21: return string(STR_${ItemID}_${Color}_NAME); // Elővásárlási név
+	return CB_RESULT_NO_TEXT;
+}
+
+// Item
+item(FEAT_ROADVEHS, item_${ItemID}_${Color}) {
+    property { 
+        name:                           string(STR_${ItemID}_${Color}_NAME);
+        climates_available:         bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        introduction_date:              date(${MDate},01,01);
+        model_life:                 ${MPeroid};
+        vehicle_life:                   ${VLife};
+        reliability_decay:              ${Reli};
+		cargo_allow_refit:      		[PASS,TOUR];
+        loading_speed:                  ${LoadingSpeed};
+        sprite_id:                      SPRITE_ID_NEW_ROADVEH;
+        speed:                          ${Speed} km/h;
+        misc_flags:                 bitmask(${FlagCC}ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:                 0;
+        running_cost_base:              RUNNING_COST_ROADVEH;
+        power:                          ${Power} kW;
+        weight:                         ${Weight} ton;
+        cargo_capacity:             ${Capacity};
+        cargo_age_period:               ${Comfort};
+        sound_effect:                   SOUND_DEPARTURE_MODERN_BUS;
+${Alapszin}      variant_group:				item_${ItemID}_CC1;
+		badges: 						[${BadgeFuel}${BadgeFlag}${BadgeUsage}];
+    }
+    graphics {
+        default:                        sw_${ItemID}_${Color};
+${Recolor}        purchase:                       sw_${ItemID}_${Color}_purchase;
+        articulated_part:               sw_${ItemID}_${Color}_articulated;
+        length:                         sw_${ItemID}_${Color}_length;
+        cost_factor:                    ${PurchasePrice} * parapuco;
+        running_cost_factor:            ${Maintenance} * pararuco;
+        additional_text:                string(STR_${ItemID}_${Color}_DATA);
+        name:                           sw_${ItemID}_${Color}_name;
+    }
+}${ArticulatedItem}
+item(FEAT_ROADVEHS, item_${ItemID}_${Color}_T) {
+	property {
+        name:							string(STR_BUG);
+        climates_available:			bitmask(NO_CLIMATE);
+        introduction_date:				date(4999999,01,01);
+		cargo_allow_refit:				[PASS,TOUR];
+        loading_speed:					0;
+        cost_factor:					0;
+        running_cost_factor:			0;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:					0;
+        running_cost_base:				RUNNING_COST_NONE;
+        power:							0 kW;
+        weight:							0 ton;
+        cargo_capacity:				0;
+		cargo_age_period:				0;
+    }
+    graphics {
+		default:                 		ss_toldat;
+		length:                  		sw_${ItemID}_${Color}_length;
+    }
+}
+
+// ----------------------------------------------------------------End-------------${ItemID}_${Color}
+`;
+
+                    const fileName = FName;
+                    const blob = new Blob([content], { type: 'text/plain' });
+                    const anchor = document.createElement('a');
+                    anchor.download = `${fileName}.nml`;
+                    anchor.href = window.URL.createObjectURL(blob);
+                    anchor.target = '_blank';
+                    anchor.style.display = 'none';
+                    document.body.appendChild(anchor);
+                    anchor.click();
+                    document.body.removeChild(anchor);
+                });
+                alert('Feldolgozás kész!');
+            };
+            reader.readAsArrayBuffer(file);
+        }
+        function langgen() {
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+
+            if (!file) {
+                alert('Kérlek töltsd fel az Excel fájlt!');
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                const data = new Uint8Array(e.target.result);
+                const workbook = XLSX.read(data, { type: 'array' });
+                const sheetName = workbook.SheetNames[0];
+                const worksheet = workbook.Sheets[sheetName];
+                const json = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+
+                let outputText = '';
+
+                json.forEach((row, index) => {
+                    if (index === 0 || row.every(cell => cell === undefined || cell === null || cell === '')) return;
+
+                    const ItemID = row[5] || '';
+                    const LoadingSpeed = row[15] || '';
+                    const Color = row[24] || '';
+                    const TextType = row[32] || '';
+                    const TextSType1 = row[33] || '';
+                    const TextSType2 = row[34] || '';
+                    const TextOther1 = row[35] || '';
+                    const TextOther2 = row[36] || '';
+                    const Fuel = row[4] || '';
+// üres kapcsoló ha nincs subtype 2 szöveg
+                    let TextSType21 = `${TextSType2}, `;
+                    if (TextSType2 == '') {
+                        TextSType21 = ``;
+                    }
+// Hajtás kapcsoló
+                    let TextFuel = '';
+                    if (Fuel == 'diesel') {
+                        TextFuel = `{GRAY}Diesel{BLACK}`;
+                    } else if (Fuel == 'hybrid') {
+                        TextFuel = `{BLUE}Hybrid{BLACK}`;
+                    } else if (Fuel == 'cng') {
+                        TextFuel = `{ORANGE}CNG{BLACK}`;
+                    } else if (Fuel == 'electric') {
+                        TextFuel = `{GREEN}Electric{BLACK}`;
+                    } else if (Fuel == 'petrol') {
+                        TextFuel = `{GRAY}Petrol{BLACK}`;
+                    }
+
+// Maga a kiírás
+
+                    outputText += `\n
+STR_${ItemID}_${Color}_NAME		:${TextType} ${TextSType1} ${TextSType2}
+STR_${ItemID}_${Color}_NAME2	:${Color} livery
+STR_${ItemID}_${Color}_DATA		:Loading speed: {GOLD}${LoadingSpeed}{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}${TextSType21}${TextOther2}, ${TextOther1}{BLACK}{}{}{STRING}
+STR_${ItemID}_${Color}_INFO		:${TextType} {LTBLUE}${TextSType2} - ${TextOther1}{BLACK}`;
+                });
+
+                const blob = new Blob([outputText], { type: 'text/plain' });
+                const anchor = document.createElement('a');
+                anchor.download = 'jarmuszovegek.lng';
+                anchor.href = window.URL.createObjectURL(blob);
+                anchor.target = '_blank';
+                anchor.style.display = 'none';
+                document.body.appendChild(anchor);
+                anchor.click();
+                document.body.removeChild(anchor);
+            };
+            reader.readAsArrayBuffer(file);
+        }
+		function sortgen() {
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+
+            if (!file) {
+                alert('Kérlek töltsd fel az Excel fájlt!');
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                const data = new Uint8Array(e.target.result);
+                const workbook = XLSX.read(data, { type: 'array' });
+                const sheetName = workbook.SheetNames[0];
+                const worksheet = workbook.Sheets[sheetName];
+                const json = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+
+                let outputText = '';
+
+                json.forEach((row, index) => {
+                    if (index === 0 || row.every(cell => cell === undefined || cell === null || cell === '')) return;
+
+                    const ItemID = row[5] || '';
+                    const Color = row[24] || '';
+
+// Maga a kiírás
+
+                    outputText += `\n\titem_${ItemID}_${Color},`;
+                });
+
+                const blob = new Blob([outputText], { type: 'text/plain' });
+                const anchor = document.createElement('a');
+                anchor.download = 'sort.nml';
+                anchor.href = window.URL.createObjectURL(blob);
+                anchor.target = '_blank';
+                anchor.style.display = 'none';
+                document.body.appendChild(anchor);
+                anchor.click();
+                document.body.removeChild(anchor);
+            };
+            reader.readAsArrayBuffer(file);
+        }
+    </script>
+
+</body>
+</html>

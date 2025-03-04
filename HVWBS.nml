@@ -131,7 +131,7 @@ BOOM, ENSP, FMSP, JAVA, VPTS, VENG, VBOD,*/
 
 
 template tmpl_purchase_k() { // Kicsi
-	[188,	0,	69,	15,	-25,	-9]}
+	[193,	0,	72,	15,	-25,	-9]}
 
 template tmpl_purchase_n() { // Nagyméretű
 	[0,		0,	99,	25,	-25,	-15]}
@@ -168,37 +168,37 @@ template tmpl_semmi() {
 
 
 template tmpl_depo() {
-	[188,	0,	69,	15,	-19,-9]}
+	[193,	0,	72,	15,	-19,-9]}
 
 template tmpl_1(){
-	[107,	0,	11,		49,		-5,		-13,	ANIM]
-	[126,	0,	54,		40,		-45,	-12,	ANIM]
-	[188,	0,	69,		15,		-54,	-10,	ANIM]
-	[265,	0,	54,		40,		-41,	-29,	ANIM]
-	[327,	0,	11,		49,		-6,		-32,	ANIM]
-	[346,	0,	54,		40,		-15,	-28,	ANIM]
-	[408,	0,	69,		15,		-11,	-9,		ANIM]
-	[485,	0,	54,		40,		-8,		-14,	ANIM]
+	[107,	0,	11,	49,	-5,	-15,	ANIM]
+	[126,	0,	59,	44,	-49,	-16,	ANIM]
+	[193,	0,	72,	15,	-54,	-10,	ANIM]
+	[273,	0,	59,	44,	-44,	-33,	ANIM]
+	[340,	0,	11,	49,	-6,	-37,	ANIM]
+	[359,	0,	59,	44,	-14,	-33,	ANIM]
+	[426,	0,	72,	15,	-11,	-9,	ANIM]
+	[506,	0,	59,	44,	-8,	-14,	ANIM]
 	}
 template tmpl_2(){
-	[547,	0,	22,		98,		-10,	-26,	ANIM]
-	[577,	0,	108,	80,		-90,	-24,	ANIM]
-	[693,	0,	138,	30,		-108,	-20,	ANIM]
-	[839,	0,	108,	80,		-82,	-58,	ANIM]
-	[955,	0,	22,		98,		-12,	-64,	ANIM]
-	[985,	0,	108,	80,		-30,	-56,	ANIM]
-	[1101,	0,	138,	30,		-22,	-18,	ANIM]
-	[1247,	0,	108,	80,		-16,	-28,	ANIM]
+	[573,	0,	22,	98,	-10,	-30,	ANIM]
+	[603,	0,	118,	88,	-98,	-32,	ANIM]
+	[729,	0,	144,	30,	-108,	-20,	ANIM]
+	[881,	0,	118,	88,	-88,	-66,	ANIM]
+	[1007,	0,	22,	98,	-12,	-74,	ANIM]
+	[1037,	0,	118,	88,	-28,	-66,	ANIM]
+	[1163,	0,	144,	30,	-22,	-18,	ANIM]
+	[1315,	0,	118,	88,	-16,	-28,	ANIM]
 	}
 template tmpl_4(){
-	[1363,	0,	44,		196,	-20,	-52,	ANIM]
-	[1415,	0,	216,	160,	-180,	-48,	ANIM]
-	[1639,	0,	276,	60,		-216,	-40,	ANIM]
-	[1923,	0,	216,	160,	-164,	-116,	ANIM]
-	[2147,	0,	44,		196,	-24,	-128,	ANIM]
-	[2199,	0,	216,	160,	-60,	-112,	ANIM]
-	[2423,	0,	276,	60,		-44,	-36,	ANIM]
-	[2707,	0,	216,	160,	-32,	-56,	ANIM]
+	[1441,	0,	44,	196,	-20,	-60,	ANIM]
+	[1493,	0,	236,	175,	-196,	-64,	ANIM]
+	[1737,	0,	288,	60,	-216,	-40,	ANIM]
+	[2033,	0,	236,	175,	-176,	-132,	ANIM]
+	[2277,	0,	44,	196,	-24,	-148,	ANIM]
+	[2329,	0,	236,	175,	-56,	-132,	ANIM]
+	[2573,	0,	288,	60,	-44,	-36,	ANIM]
+	[2869,	0,	236,	175,	-32,	-56,	ANIM]
 	}
 
 // --------------------------------------------------------------------------------Credo_Econell_10_a_CC1
@@ -566,6 +566,7 @@ item(FEAT_ROADVEHS, item_Credo_Econell_12_b_CC1_T) {
 }
 
 // ----------------------------------------------------------------End-------------Credo_Econell_12_b_CC1
+
 
 // --------------------------------------------------------------------------------Credo_Econell_13_a_CC1
 
@@ -11210,6 +11211,18 @@ switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_CC1_name, extra_callback_info1 & 0
 	0x21: return string(STR_MB_CitaroE_c_a_CC1_NAME); // Elővásárlási név
 	return CB_RESULT_NO_TEXT;
 }
+// Motion counter
+switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_c_a_CC1_speed, motion_counter % 1024 ) {
+	0..127: return 100;
+	128..255: return 90;
+	256..383: return 80;
+	384..511: return 70;
+	512..639: return 60;
+	640..767: return 50;
+	768..895: return 40;
+	896..1023: return 30;
+}
+
 
 // Item
 item(FEAT_ROADVEHS, item_MB_CitaroE_c_a_CC1) {
@@ -11223,7 +11236,7 @@ item(FEAT_ROADVEHS, item_MB_CitaroE_c_a_CC1) {
 		cargo_allow_refit:      		[PASS,TOUR];
         loading_speed:                  42;
         sprite_id:                      SPRITE_ID_NEW_ROADVEH;
-        speed:                          80 km/h;
+        speed:                          5 km/h;
         misc_flags:                 bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
         refit_cost:                 0;
         running_cost_base:              RUNNING_COST_ROADVEH;
@@ -11243,6 +11256,7 @@ item(FEAT_ROADVEHS, item_MB_CitaroE_c_a_CC1) {
         running_cost_factor:            21 * pararuco;
         additional_text:                string(STR_MB_CitaroE_c_a_CC1_DATA);
         name:                           sw_MB_CitaroE_c_a_CC1_name;
+		speed:	sw_MB_CitaroE_c_a_CC1_speed;
     }
 }
 item(FEAT_ROADVEHS, item_MB_CitaroE_c_a_CC1_T) {

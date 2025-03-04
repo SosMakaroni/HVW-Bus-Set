@@ -54,9 +54,9 @@ switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_g_a_BBA_articulated, extra_callback_i
 
 // Modelhossz
 switch (FEAT_ROADVEHS, SELF, sw_MB_CitaroE_g_a_BBA_length, position_in_consist) {
-	1: return 1;
+	1: return 2;
 	2: return 8;
-	3: return 1;
+	3: return 2;
     return 8;
 }
 
@@ -94,10 +94,11 @@ item(FEAT_ROADVEHS, item_MB_CitaroE_g_a_BBA) {
         cargo_age_period:               185;
         sound_effect:                   SOUND_DEPARTURE_MODERN_BUS;
       variant_group:				item_MB_CitaroE_g_a_CC1;
+		badges: 						["power/battery", "flag/CH", "usage/city"];
     }
     graphics {
         default:                        sw_MB_CitaroE_g_a_BBA;
-        purchase:                       sw_MB_CitaroE_g_a_BBA_purchase;
+colour_mapping:	PALETTE_IDENTITY;        purchase:                       sw_MB_CitaroE_g_a_BBA_purchase;
         articulated_part:               sw_MB_CitaroE_g_a_BBA_articulated;
         length:                         sw_MB_CitaroE_g_a_BBA_length;
         cost_factor:                    44 * parapuco;
@@ -116,7 +117,7 @@ item(FEAT_ROADVEHS, item_MB_CitaroE_g_a_BBA_b) {
         cost_factor:					0;
         running_cost_factor:			0;
         sprite_id:						SPRITE_ID_NEW_ROADVEH;
-        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        misc_flags:                 bitmask(ROADVEH_FLAG_SPRITE_STACK);
         refit_cost:					0;
         running_cost_base:				RUNNING_COST_NONE;
         power:							0 kW;
@@ -126,7 +127,7 @@ item(FEAT_ROADVEHS, item_MB_CitaroE_g_a_BBA_b) {
     }
     graphics {
 		default:                 		sw_MB_CitaroE_g_a_BBA;
-		length:                  		sw_MB_CitaroE_g_a_BBA_length;
+colour_mapping:	PALETTE_IDENTITY;		length:                  		sw_MB_CitaroE_g_a_BBA_length;
     }
 }
 

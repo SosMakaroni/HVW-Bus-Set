@@ -83,10 +83,11 @@ item(FEAT_ROADVEHS, item_MB_Citaro2_c_a_AVA) {
         cargo_age_period:               185;
         sound_effect:                   SOUND_DEPARTURE_MODERN_BUS;
       variant_group:				item_MB_Citaro2_c_a_CC1;
+		badges: 						["power/diesel", "flag/CH", "usage/city"];
     }
     graphics {
         default:                        sw_MB_Citaro2_c_a_AVA;
-        purchase:                       sw_MB_Citaro2_c_a_AVA_purchase;
+colour_mapping:	PALETTE_IDENTITY;        purchase:                       sw_MB_Citaro2_c_a_AVA_purchase;
         articulated_part:               sw_MB_Citaro2_c_a_AVA_articulated;
         length:                         sw_MB_Citaro2_c_a_AVA_length;
         cost_factor:                    26 * parapuco;

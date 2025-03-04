@@ -83,6 +83,7 @@ item(FEAT_ROADVEHS, item_MB_Citaro2_leu_a_CC1) {
         cargo_age_period:               170;
         sound_effect:                   SOUND_DEPARTURE_MODERN_BUS;
 //      variant_group:				item_MB_Citaro2_leu_a_CC1;
+		badges: 						["power/diesel", "livery/1cc", "usage/regional"];
     }
     graphics {
         default:                        sw_MB_Citaro2_leu_a_CC1;

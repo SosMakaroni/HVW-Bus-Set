@@ -1,5 +1,5 @@
 grf {
-	grfid: "HS\17\01";
+	grfid: "HS\17\02";
 	name: string(STR_GRF_NAME);
 	desc: string(STR_GRF_DESC);
 	version: 10;
@@ -70,9 +70,38 @@ grf {
 			}
 }
 
-paracapa = (param_cargo_capacity == 1) ? 2 : (param_cargo_capacity == 2) ? 4 : (param_cargo_capacity == 3) ? 8 : 1;
+/*paracapa = (param_cargo_capacity == 1) ? 2 : (param_cargo_capacity == 2) ? 4 : (param_cargo_capacity == 3) ? 8 : 1;*/
 parapuco = (param_cost_factor == 1) ? 2 : (param_cost_factor == 2) ? 4 : (param_cost_factor == 3) ? 8 : (param_cost_factor == 4) ? 16 : 1;
 pararuco = (param_running_cost_factor == 1) ? 2 : (param_running_cost_factor == 2) ? 4 : (param_running_cost_factor == 3) ? 8 : (param_running_cost_factor == 4) ? 16 : 1;
+
+badgetable {
+	"flag",
+    "flag/GB",
+    "flag/US",
+    "flag/HU",
+	"flag/CH",
+	"flag/europe",
+	"flag/flag_1CC",
+	"flag/flag_2CC",
+	"power",
+    "power/steam",
+    "power/diesel",
+    "power/electric",
+    "power/turbine",
+    "power/naturgas",
+	"power/battery",
+	"livery",
+	"livery/1cc",
+	"livery/2cc",
+	"livery/random/1cc",
+	"livery/random/2cc",
+	"usage",
+	"usage/city",
+	"usage/suburb",
+	"usage/regional",
+	"usage/intercity",
+	"usage/tourist"
+}
 
 tramtypetable  {
 	RAIL,	//SIMA
@@ -129,9 +158,8 @@ BEER,
 BOOM, ENSP, FMSP, JAVA, VPTS, VENG, VBOD,*/
 }
 
-
 template tmpl_purchase_k() { // Kicsi
-	[188,	0,	69,	15,	-25,	-9]}
+	[193,	0,	72,	20,	-25,	-13]}
 
 template tmpl_purchase_n() { // Nagyméretű
 	[0,		0,	99,	25,	-25,	-15]}
@@ -168,35 +196,151 @@ template tmpl_semmi() {
 
 
 template tmpl_depo() {
-	[188,	0,	69,	15,	-19,-9]}
+	[193,	0,	72,	20,	-19,-12]}
 
 template tmpl_1(){
-	[107,	0,	11,		49,		-5,		-13,	ANIM]
-	[126,	0,	54,		40,		-45,	-12,	ANIM]
-	[188,	0,	69,		15,		-54,	-10,	ANIM]
-	[265,	0,	54,		40,		-41,	-29,	ANIM]
-	[327,	0,	11,		49,		-6,		-32,	ANIM]
-	[346,	0,	54,		40,		-15,	-28,	ANIM]
-	[408,	0,	69,		15,		-11,	-9,		ANIM]
-	[485,	0,	54,		40,		-8,		-14,	ANIM]
+	[107,	0,	11,	49,	-5,	-15,	ANIM]
+	[126,	0,	59,	44,	-49,	-16,	ANIM]
+	[193,	0,	72,	20,	-54,	-13,	ANIM]
+	[273,	0,	59,	44,	-44,	-33,	ANIM]
+	[340,	0,	11,	49,	-6,	-37,	ANIM]
+	[359,	0,	59,	44,	-14,	-33,	ANIM]
+	[426,	0,	72,	20,	-11,	-13,	ANIM]
+	[506,	0,	59,	44,	-8,	-14,	ANIM]
 	}
 template tmpl_2(){
-	[547,	0,	22,		98,		-10,	-26,	ANIM]
-	[577,	0,	108,	80,		-90,	-24,	ANIM]
-	[693,	0,	138,	30,		-108,	-20,	ANIM]
-	[839,	0,	108,	80,		-82,	-58,	ANIM]
-	[955,	0,	22,		98,		-12,	-64,	ANIM]
-	[985,	0,	108,	80,		-30,	-56,	ANIM]
-	[1101,	0,	138,	30,		-22,	-18,	ANIM]
-	[1247,	0,	108,	80,		-16,	-28,	ANIM]
+	[573,	0,	22,	98,	-10,	-30,	ANIM]
+	[603,	0,	118,	88,	-98,	-32,	ANIM]
+	[729,	0,	144,	40,	-108,	-26,	ANIM]
+	[881,	0,	118,	88,	-88,	-66,	ANIM]
+	[1007,	0,	22,	98,	-12,	-74,	ANIM]
+	[1037,	0,	118,	88,	-28,	-66,	ANIM]
+	[1163,	0,	144,	40,	-22,	-26,	ANIM]
+	[1315,	0,	118,	88,	-16,	-28,	ANIM]
 	}
 template tmpl_4(){
-	[1363,	0,	44,		196,	-20,	-52,	ANIM]
-	[1415,	0,	216,	160,	-180,	-48,	ANIM]
-	[1639,	0,	276,	60,		-216,	-40,	ANIM]
-	[1923,	0,	216,	160,	-164,	-116,	ANIM]
-	[2147,	0,	44,		196,	-24,	-128,	ANIM]
-	[2199,	0,	216,	160,	-60,	-112,	ANIM]
-	[2423,	0,	276,	60,		-44,	-36,	ANIM]
-	[2707,	0,	216,	160,	-32,	-56,	ANIM]
+	[1441,	0,	44,	196,	-20,	-60,	ANIM]
+	[1493,	0,	236,	175,	-196,	-64,	ANIM]
+	[1737,	0,	288,	79,	-216,	-52,	ANIM]
+	[2033,	0,	236,	175,	-176,	-132,	ANIM]
+	[2277,	0,	44,	196,	-24,	-148,	ANIM]
+	[2329,	0,	236,	175,	-56,	-132,	ANIM]
+	[2573,	0,	288,	79,	-44,	-52,	ANIM]
+	[2869,	0,	236,	175,	-32,	-56,	ANIM]
 	}
+
+// ----------------------badges:
+template tmpl_badge_big(x, y) {
+	[x,	y,	13,	10,	0,	0]}
+template tmpl_badge_small(x, y) {
+	[x,	y,	10,	10,	0,	0]}
+// ---power
+item (FEAT_BADGES, power) {
+    property {
+        label: "power";
+        name: string(STR_POWER);
+    }
+}
+
+
+spriteset(ss_power_naturgas, "src/icons.png")		{tmpl_badge_small(20, 100)}
+
+item (FEAT_BADGES, power_naturgas) {
+    property {
+        label: "power/naturgas";
+        name: string(STR_NATURGAS);
+    }
+	graphics {
+		default: ss_power_naturgas;
+	}
+}
+
+// ---livery
+spriteset(ss_livery_1cc, "src/icons.png")		{tmpl_badge_big(20, 80)}
+spriteset(ss_livery_2cc, "src/icons.png")		{tmpl_badge_big(40, 80)}
+
+item (FEAT_BADGES, livery) {
+    property {
+        label: "livery";
+        name: string(STR_LIVERY);
+    }
+}
+
+item (FEAT_BADGES, livery_1cc) {
+    property {
+        label: "livery/1cc";
+        name: string(STR_1CC);
+		flags: bitmask(3);
+    }
+	graphics {
+		default: ss_livery_1cc;
+	}
+}
+item (FEAT_BADGES, livery_2cc) {
+    property {
+        label: "livery/2cc";
+        name: string(STR_2CC);
+		flags: bitmask(3);
+    }
+	graphics {
+		default: ss_livery_2cc;
+	}
+}
+// ---Usage
+spriteset(ss_usage_city, "src/icons.png")		{tmpl_badge_big(20, 120)}
+spriteset(ss_usage_suburb, "src/icons.png")		{tmpl_badge_big(40, 120)}
+spriteset(ss_usage_regional, "src/icons.png")		{tmpl_badge_big(60, 120)}
+spriteset(ss_usage_intercity, "src/icons.png")		{tmpl_badge_big(80, 120)}
+spriteset(ss_usage_tourist, "src/icons.png")		{tmpl_badge_big(100, 120)}
+
+item (FEAT_BADGES, usage) {
+    property {
+        label: "usage";
+        name: string(STR_USAGE);
+    }
+}
+item (FEAT_BADGES, city) {
+    property {
+        label: "usage/city";
+        name: string(STR_USAGE_CITY);
+    }
+	graphics {
+		default: ss_usage_city;
+	}
+}
+item (FEAT_BADGES, suburb) {
+    property {
+        label: "usage/suburb";
+        name: string(STR_USAGE_SUBURB);
+    }
+	graphics {
+		default: ss_usage_suburb;
+	}
+}
+item (FEAT_BADGES, regional) {
+    property {
+        label: "usage/regional";
+        name: string(STR_USAGE_REGIONAL);
+    }
+	graphics {
+		default: ss_usage_regional;
+	}
+}
+item (FEAT_BADGES, intercity) {
+    property {
+        label: "usage/intercity";
+        name: string(STR_USAGE_INTERCITY);
+    }
+	graphics {
+		default: ss_usage_intercity;
+	}
+}
+item (FEAT_BADGES, tourist) {
+    property {
+        label: "usage/tourist";
+        name: string(STR_USAGE_TOURIST);
+    }
+	graphics {
+		default: ss_usage_tourist;
+	}
+}

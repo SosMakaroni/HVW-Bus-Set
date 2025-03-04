@@ -83,6 +83,7 @@ item(FEAT_ROADVEHS, item_Credo_Inovell_12IC_a_CC1) {
         cargo_age_period:               170;
         sound_effect:                   SOUND_DEPARTURE_MODERN_BUS;
 //      variant_group:				item_Credo_Inovell_12IC_a_CC1;
+		badges: 						["power/diesel", "livery/1cc", "usage/intercity"];
     }
     graphics {
         default:                        sw_Credo_Inovell_12IC_a_CC1;

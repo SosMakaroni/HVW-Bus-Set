@@ -3,7 +3,7 @@
 
 # GRF name and description definitions	
 STR_GRF_NAME					:HVW Bus Set
-STR_GRF_DESC					:{}{LTBLUE}Bus Set{}{BLACK}Code and model:{GREEN}SosMakaroni{} {COPYRIGHT}2022 SosMakaroni{}{GRAY}License: GPLv2{}{BLACK}Ver.177 2025.01.25.
+STR_GRF_DESC					:{}{LTBLUE}Bus Set{}{BLACK}Code and model:{GREEN}SosMakaroni{} {COPYRIGHT}2025 SosMakaroni{}{GRAY}License: GPLv2{}{BLACK}Ver.263 2025.03.02.
 
 STR_BUG							:HVW Toyland bug, sorry :(
 
@@ -27,562 +27,713 @@ STR_PARAM_PTEMPLATE_DESC			:For players who want to choose between the regular s
 STR_PARAM_PTEMPLATE_1				:Regular {SILVER} By default{BLACK}
 STR_PARAM_PTEMPLATE_2				:Larger {SILVER} for HVW sets{BLACK}
 
+STR_POWER						:Propulsion
+STR_NATURGAS					:Natural gas
+
+STR_USAGE						:Usage
+STR_USAGE_CITY					:City
+STR_USAGE_SUBURB				:Suburb
+STR_USAGE_REGIONAL				:Regional
+STR_USAGE_INTERCITY			:InterCity
+STR_USAGE_TOURIST				:Tourist
+
+STR_REPAINT					:Repaint
+STR_REPAINT_SweDuke			:SweDuke
+STR_REPAINT_Colossal404		:Colossal404
+
+STR_LIVERY						:Livery
+STR_1CC					:Company colour (1CC)
+STR_2CC					:Dual company colour (2CC)
 
 STR_SweDuke_ADAT		:Repaint: {GOLD}SweDuke{BLACK}{}{}
 
 
-
-STR_Csepel_Union_a_CC1_NAME		:Csepel-Union   {GRAY}Diesel{BLACK}
+STR_Csepel_Union_a_CC1_NAME		:Csepel-Union  
 STR_Csepel_Union_a_CC1_NAME2	:CC1 livery
-STR_Csepel_Union_a_CC1_DATA		:Loading speed: {GOLD}8{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_Csepel_Union_a_CC1_DATA		:Loading speed: {GOLD}8{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{}{STRING}
 STR_Csepel_Union_a_CC1_INFO		:Csepel-Union {LTBLUE} - 2 doors{BLACK}
 
-STR_Csepel_Union_a_CC2_NAME		:Csepel-Union   {GRAY}Diesel{BLACK}
+STR_Csepel_Union_a_CC2_NAME		:Csepel-Union  
 STR_Csepel_Union_a_CC2_NAME2	:CC2 livery
-STR_Csepel_Union_a_CC2_DATA		:Loading speed: {GOLD}8{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_Csepel_Union_a_CC2_DATA		:Loading speed: {GOLD}8{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{}{STRING}
 STR_Csepel_Union_a_CC2_INFO		:Csepel-Union {LTBLUE} - 2 doors{BLACK}
 
-STR_Csepel_Union_a_CC3_NAME		:Csepel-Union   {GRAY}Diesel{BLACK}
+STR_Csepel_Union_a_CC3_NAME		:Csepel-Union  
 STR_Csepel_Union_a_CC3_NAME2	:CC3 livery
-STR_Csepel_Union_a_CC3_DATA		:Loading speed: {GOLD}8{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_Csepel_Union_a_CC3_DATA		:Loading speed: {GOLD}8{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{}{STRING}
 STR_Csepel_Union_a_CC3_INFO		:Csepel-Union {LTBLUE} - 2 doors{BLACK}
 
-STR_MB_Conecto2_c_a_CC2_NAME		:Mercedes-Benz Conecto 2  {GRAY}Diesel{BLACK}
-STR_MB_Conecto2_c_a_CC2_NAME2	:CC2 livery
-STR_MB_Conecto2_c_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
-STR_MB_Conecto2_c_a_CC2_INFO		:Mercedes-Benz Conecto {LTBLUE} - 3 doors{BLACK}
+STR_Credo_BC95_a_CC1_NAME		:Credo BC  9.5
+STR_Credo_BC95_a_CC1_NAME2	:CC1 livery
+STR_Credo_BC95_a_CC1_DATA		:Loading speed: {GOLD}22{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}9.5, 9,5m, 3 doors{BLACK}{}{}{STRING}
+STR_Credo_BC95_a_CC1_INFO		:Credo BC {LTBLUE}9.5 - 3 doors{BLACK}
 
-STR_MB_Conecto2_c_a_CC1_NAME		:Mercedes-Benz Conecto 2  {GRAY}Diesel{BLACK}
-STR_MB_Conecto2_c_a_CC1_NAME2	:CC1 livery
-STR_MB_Conecto2_c_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
-STR_MB_Conecto2_c_a_CC1_INFO		:Mercedes-Benz Conecto {LTBLUE} - 3 doors{BLACK}
+STR_Credo_BC11_a_CC1_NAME		:Credo BC  11
+STR_Credo_BC11_a_CC1_NAME2	:CC1 livery
+STR_Credo_BC11_a_CC1_DATA		:Loading speed: {GOLD}22{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11, 10,5m, 3 doors{BLACK}{}{}{STRING}
+STR_Credo_BC11_a_CC1_INFO		:Credo BC {LTBLUE}11 - 3 doors{BLACK}
 
-STR_MB_Conecto2_g_a_CC1_NAME		:Mercedes-Benz Conecto 2 G {GRAY}Diesel{BLACK}
-STR_MB_Conecto2_g_a_CC1_NAME2	:CC1 livery
-STR_MB_Conecto2_g_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
-STR_MB_Conecto2_g_a_CC1_INFO		:Mercedes-Benz Conecto {LTBLUE}G - 4 doors{BLACK}
-
-STR_MB_Conecto2_g_a_CC2_NAME		:Mercedes-Benz Conecto 2 G {GRAY}Diesel{BLACK}
-STR_MB_Conecto2_g_a_CC2_NAME2	:CC2 livery
-STR_MB_Conecto2_g_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
-STR_MB_Conecto2_g_a_CC2_INFO		:Mercedes-Benz Conecto {LTBLUE}G - 4 doors{BLACK}
-
-STR_Credo_Econell_10_a_CC1_NAME		:Credo Econell  10 {GRAY}Diesel{BLACK}
+STR_Credo_Econell_10_a_CC1_NAME		:Credo Econell  10
 STR_Credo_Econell_10_a_CC1_NAME2	:CC1 livery
-STR_Credo_Econell_10_a_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10, 10m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_Credo_Econell_10_a_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10, 10m, 2 doors{BLACK}{}{}{STRING}
 STR_Credo_Econell_10_a_CC1_INFO		:Credo Econell {LTBLUE}10 - 2 doors{BLACK}
 
-STR_Credo_Econell_12_a_CC1_NAME		:Credo Econell  12 City {GRAY}Diesel{BLACK}
+STR_Credo_Econell_12_a_CC1_NAME		:Credo Econell  12 City
 STR_Credo_Econell_12_a_CC1_NAME2	:CC1 livery
-STR_Credo_Econell_12_a_CC1_DATA		:Loading speed: {GOLD}40{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12 City, 12m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_Credo_Econell_12_a_CC1_DATA		:Loading speed: {GOLD}40{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12 City, 12m, 3 doors{BLACK}{}{}{STRING}
 STR_Credo_Econell_12_a_CC1_INFO		:Credo Econell {LTBLUE}12 City - 3 doors{BLACK}
 
-STR_Credo_Econell_12_b_CC1_NAME		:Credo Econell  12 {GRAY}Diesel{BLACK}
+STR_Credo_Econell_12_b_CC1_NAME		:Credo Econell  12
 STR_Credo_Econell_12_b_CC1_NAME2	:CC1 livery
-STR_Credo_Econell_12_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12, 12m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_Credo_Econell_12_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12, 12m, 2 doors{BLACK}{}{}{STRING}
 STR_Credo_Econell_12_b_CC1_INFO		:Credo Econell {LTBLUE}12 - 2 doors{BLACK}
 
-STR_Credo_Econell_13_a_CC1_NAME		:Credo Econell  13 City {GRAY}Diesel{BLACK}
+STR_Credo_Econell_13_a_CC1_NAME		:Credo Econell  13 City
 STR_Credo_Econell_13_a_CC1_NAME2	:CC1 livery
-STR_Credo_Econell_13_a_CC1_DATA		:Loading speed: {GOLD}40{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}13 City, 13m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_Credo_Econell_13_a_CC1_DATA		:Loading speed: {GOLD}40{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}13 City, 13m, 3 doors{BLACK}{}{}{STRING}
 STR_Credo_Econell_13_a_CC1_INFO		:Credo Econell {LTBLUE}13 City - 3 doors{BLACK}
 
-STR_Credo_Econell_13_b_CC1_NAME		:Credo Econell  13 {GRAY}Diesel{BLACK}
+STR_Credo_Econell_13_b_CC1_NAME		:Credo Econell  13
 STR_Credo_Econell_13_b_CC1_NAME2	:CC1 livery
-STR_Credo_Econell_13_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}13, 13m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_Credo_Econell_13_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}13, 13m, 2 doors{BLACK}{}{}{STRING}
 STR_Credo_Econell_13_b_CC1_INFO		:Credo Econell {LTBLUE}13 - 2 doors{BLACK}
 
-STR_Credo_Inovell_12EC_a_CC1_NAME		:Credo Inovell  12EC {GRAY}Diesel{BLACK}
+STR_Credo_LC95_a_CC1_NAME		:Credo LC  9.5
+STR_Credo_LC95_a_CC1_NAME2	:CC1 livery
+STR_Credo_LC95_a_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}9.5, 9,5m, 2 doors{BLACK}{}{}{STRING}
+STR_Credo_LC95_a_CC1_INFO		:Credo LC {LTBLUE}9.5 - 2 doors{BLACK}
+
+STR_Credo_EC11_a_CC1_NAME		:Credo EC  11
+STR_Credo_EC11_a_CC1_NAME2	:CC1 livery
+STR_Credo_EC11_a_CC1_DATA		:Loading speed: {GOLD}15{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11, 10,5m, 2 doors{BLACK}{}{}{STRING}
+STR_Credo_EC11_a_CC1_INFO		:Credo EC {LTBLUE}11 - 2 doors{BLACK}
+
+STR_Credo_EC12_a_CC1_NAME		:Credo EC  12
+STR_Credo_EC12_a_CC1_NAME2	:CC1 livery
+STR_Credo_EC12_a_CC1_DATA		:Loading speed: {GOLD}15{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12, 12m, 2 doors{BLACK}{}{}{STRING}
+STR_Credo_EC12_a_CC1_INFO		:Credo EC {LTBLUE}12 - 2 doors{BLACK}
+
+STR_Credo_Inovell_12EC_a_CC1_NAME		:Credo Inovell  12EC
 STR_Credo_Inovell_12EC_a_CC1_NAME2	:CC1 livery
-STR_Credo_Inovell_12EC_a_CC1_DATA		:Loading speed: {GOLD}16{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12EC, 12m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Suburb{BLACK}{}{}{STRING}
+STR_Credo_Inovell_12EC_a_CC1_DATA		:Loading speed: {GOLD}16{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12EC, 12m, 2 doors{BLACK}{}{}{STRING}
 STR_Credo_Inovell_12EC_a_CC1_INFO		:Credo Inovell {LTBLUE}12EC - 2 doors{BLACK}
 
-STR_Credo_Inovell_12IC_a_CC1_NAME		:Credo Inovell  12IC {GRAY}Diesel{BLACK}
+STR_Credo_IC95_a_CC1_NAME		:Credo IC  9.5
+STR_Credo_IC95_a_CC1_NAME2	:CC1 livery
+STR_Credo_IC95_a_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}9.5, 9,5m, 2 doors{BLACK}{}{}{STRING}
+STR_Credo_IC95_a_CC1_INFO		:Credo IC {LTBLUE}9.5 - 2 doors{BLACK}
+
+STR_Credo_IC11_a_CC1_NAME		:Credo IC  11
+STR_Credo_IC11_a_CC1_NAME2	:CC1 livery
+STR_Credo_IC11_a_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11, 10,5m, 2 doors{BLACK}{}{}{STRING}
+STR_Credo_IC11_a_CC1_INFO		:Credo IC {LTBLUE}11 - 2 doors{BLACK}
+
+STR_Credo_IC12_a_CC1_NAME		:Credo IC  12
+STR_Credo_IC12_a_CC1_NAME2	:CC1 livery
+STR_Credo_IC12_a_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12, 12m, 2 doors{BLACK}{}{}{STRING}
+STR_Credo_IC12_a_CC1_INFO		:Credo IC {LTBLUE}12 - 2 doors{BLACK}
+
+STR_Credo_Inovell_12IC_a_CC1_NAME		:Credo Inovell  12IC
 STR_Credo_Inovell_12IC_a_CC1_NAME2	:CC1 livery
-STR_Credo_Inovell_12IC_a_CC1_DATA		:Loading speed: {GOLD}11{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12IC, 12m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Regional{BLACK}{}{}{STRING}
+STR_Credo_Inovell_12IC_a_CC1_DATA		:Loading speed: {GOLD}11{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12IC, 12m, 2 doors{BLACK}{}{}{STRING}
 STR_Credo_Inovell_12IC_a_CC1_INFO		:Credo Inovell {LTBLUE}12IC - 2 doors{BLACK}
 
-STR_Credo_Optinell_10_a_CC1_NAME		:Credo Optinell  10 {GRAY}Diesel{BLACK}
+STR_Credo_LC95_b_CC1_NAME		:Credo LH  9.5
+STR_Credo_LC95_b_CC1_NAME2	:CC1 livery
+STR_Credo_LC95_b_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}9.5, 9,5m, 2 doors{BLACK}{}{}{STRING}
+STR_Credo_LC95_b_CC1_INFO		:Credo LH {LTBLUE}9.5 - 2 doors{BLACK}
+
+STR_Credo_LC11_a_CC1_NAME		:Credo LH  11
+STR_Credo_LC11_a_CC1_NAME2	:CC1 livery
+STR_Credo_LC11_a_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11, 10,5m, 2 doors{BLACK}{}{}{STRING}
+STR_Credo_LC11_a_CC1_INFO		:Credo LH {LTBLUE}11 - 2 doors{BLACK}
+
+STR_Credo_LH12_a_CC1_NAME		:Credo LH  12
+STR_Credo_LH12_a_CC1_NAME2	:CC1 livery
+STR_Credo_LH12_a_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12, 12m, 2 doors{BLACK}{}{}{STRING}
+STR_Credo_LH12_a_CC1_INFO		:Credo LH {LTBLUE}12 - 2 doors{BLACK}
+
+STR_Credo_Optinell_10_a_CC1_NAME		:Credo Optinell  10
 STR_Credo_Optinell_10_a_CC1_NAME2	:CC1 livery
-STR_Credo_Optinell_10_a_CC1_DATA		:Loading speed: {GOLD}11{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10, 10m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Regional{BLACK}{}{}{STRING}
+STR_Credo_Optinell_10_a_CC1_DATA		:Loading speed: {GOLD}11{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10, 10m, 2 doors{BLACK}{}{}{STRING}
 STR_Credo_Optinell_10_a_CC1_INFO		:Credo Optinell {LTBLUE}10 - 2 doors{BLACK}
 
-STR_Credo_Optinell_12_a_CC1_NAME		:Credo Optinell  12 {GRAY}Diesel{BLACK}
+STR_Credo_Optinell_12_a_CC1_NAME		:Credo Optinell  12
 STR_Credo_Optinell_12_a_CC1_NAME2	:CC1 livery
-STR_Credo_Optinell_12_a_CC1_DATA		:Loading speed: {GOLD}11{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12, 12m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Regional{BLACK}{}{}{STRING}
+STR_Credo_Optinell_12_a_CC1_DATA		:Loading speed: {GOLD}11{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12, 12m, 2 doors{BLACK}{}{}{STRING}
 STR_Credo_Optinell_12_a_CC1_INFO		:Credo Optinell {LTBLUE}12 - 2 doors{BLACK}
 
-STR_MB_Citaro2_k_a_CC1_NAME		:Mercedes-Benz Citaro C2 K {GRAY}Diesel{BLACK}
+STR_MB_Conecto2_c_a_CC1_NAME		:Mercedes-Benz Conecto 2 
+STR_MB_Conecto2_c_a_CC1_NAME2	:CC1 livery
+STR_MB_Conecto2_c_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
+STR_MB_Conecto2_c_a_CC1_INFO		:Mercedes-Benz Conecto {LTBLUE} - 3 doors{BLACK}
+
+STR_MB_Conecto2_c_a_CC2_NAME		:Mercedes-Benz Conecto 2 
+STR_MB_Conecto2_c_a_CC2_NAME2	:CC2 livery
+STR_MB_Conecto2_c_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
+STR_MB_Conecto2_c_a_CC2_INFO		:Mercedes-Benz Conecto {LTBLUE} - 3 doors{BLACK}
+
+STR_MB_Conecto2_g_a_CC1_NAME		:Mercedes-Benz Conecto 2 G
+STR_MB_Conecto2_g_a_CC1_NAME2	:CC1 livery
+STR_MB_Conecto2_g_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{}{STRING}
+STR_MB_Conecto2_g_a_CC1_INFO		:Mercedes-Benz Conecto {LTBLUE}G - 4 doors{BLACK}
+
+STR_MB_Conecto2_g_a_CC2_NAME		:Mercedes-Benz Conecto 2 G
+STR_MB_Conecto2_g_a_CC2_NAME2	:CC2 livery
+STR_MB_Conecto2_g_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{}{STRING}
+STR_MB_Conecto2_g_a_CC2_INFO		:Mercedes-Benz Conecto {LTBLUE}G - 4 doors{BLACK}
+
+STR_MB_Citaro2_k_a_CC1_NAME		:Mercedes-Benz Citaro C2 K
 STR_MB_Citaro2_k_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_k_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_k_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_k_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}K - 3 doors{BLACK}
 
-STR_MB_Citaro2_k_a_CC2_NAME		:Mercedes-Benz Citaro C2 K {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_k_a_CC2_NAME		:Mercedes-Benz Citaro C2 K
 STR_MB_Citaro2_k_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_k_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_k_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_k_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}K - 3 doors{BLACK}
 
-STR_MB_Citaro2_k_a_Bernmobil_NAME		:Mercedes-Benz Citaro C2 K {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_k_a_Bernmobil_NAME		:Mercedes-Benz Citaro C2 K
 STR_MB_Citaro2_k_a_Bernmobil_NAME2	:Bernmobil livery
-STR_MB_Citaro2_k_a_Bernmobil_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_k_a_Bernmobil_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_k_a_Bernmobil_INFO		:Mercedes-Benz Citaro {LTBLUE}K - 3 doors{BLACK}
 
-STR_MB_CitaroE_k_a_CC1_NAME		:Mercedes-Benz Citaro C2 K {GREEN}Electric{BLACK}
+STR_MB_CitaroE_k_a_CC1_NAME		:Mercedes-Benz Citaro C2 K
 STR_MB_CitaroE_k_a_CC1_NAME2	:CC1 livery
-STR_MB_CitaroE_k_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 3 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_k_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_k_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}K - 3 doors{BLACK}
 
-STR_MB_CitaroE_k_a_CC2_NAME		:Mercedes-Benz Citaro C2 K {GREEN}Electric{BLACK}
+STR_MB_CitaroE_k_a_CC2_NAME		:Mercedes-Benz Citaro C2 K
 STR_MB_CitaroE_k_a_CC2_NAME2	:CC2 livery
-STR_MB_CitaroE_k_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 3 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_k_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_k_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}K - 3 doors{BLACK}
 
-STR_MB_Citaro2_k_b_CC1_NAME		:Mercedes-Benz Citaro C2 K {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_k_b_CC1_NAME		:Mercedes-Benz Citaro C2 K
 STR_MB_Citaro2_k_b_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_k_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_k_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 2 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_k_b_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}K - 2 doors{BLACK}
 
-STR_MB_Citaro2_k_b_CC2_NAME		:Mercedes-Benz Citaro C2 K {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_k_b_CC2_NAME		:Mercedes-Benz Citaro C2 K
 STR_MB_Citaro2_k_b_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_k_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_k_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 2 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_k_b_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}K - 2 doors{BLACK}
 
-STR_MB_CitaroE_k_b_CC1_NAME		:Mercedes-Benz Citaro C2 K {GREEN}Electric{BLACK}
+STR_MB_CitaroE_k_b_CC1_NAME		:Mercedes-Benz Citaro C2 K
 STR_MB_CitaroE_k_b_CC1_NAME2	:CC1 livery
-STR_MB_CitaroE_k_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 2 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_k_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 2 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_k_b_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}K - 2 doors{BLACK}
 
-STR_MB_CitaroE_k_b_CC2_NAME		:Mercedes-Benz Citaro C2 K {GREEN}Electric{BLACK}
+STR_MB_CitaroE_k_b_CC2_NAME		:Mercedes-Benz Citaro C2 K
 STR_MB_CitaroE_k_b_CC2_NAME2	:CC2 livery
-STR_MB_CitaroE_k_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 2 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_k_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 2 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_k_b_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}K - 2 doors{BLACK}
 
-STR_MB_Citaro2_c_a_CC1_NAME		:Mercedes-Benz Citaro C2  {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_c_a_CC1_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_Citaro2_c_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_c_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_c_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_c_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE} - 3 doors{BLACK}
 
-STR_MB_Citaro2_c_a_CC2_NAME		:Mercedes-Benz Citaro C2  {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_c_a_CC2_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_Citaro2_c_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_c_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_c_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_c_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE} - 3 doors{BLACK}
 
-STR_MB_Citaro2_c_a_AVA_NAME		:Mercedes-Benz Citaro C2  {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_c_a_AVA_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_Citaro2_c_a_AVA_NAME2	:AVA livery
-STR_MB_Citaro2_c_a_AVA_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_c_a_AVA_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_c_a_AVA_INFO		:Mercedes-Benz Citaro {LTBLUE} - 3 doors{BLACK}
 
-STR_MB_Citaro2_c_a_BLT_new_NAME		:Mercedes-Benz Citaro C2  {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_c_a_BLT_new_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_Citaro2_c_a_BLT_new_NAME2	:BLT_new livery
-STR_MB_Citaro2_c_a_BLT_new_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_c_a_BLT_new_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_c_a_BLT_new_INFO		:Mercedes-Benz Citaro {LTBLUE} - 3 doors{BLACK}
 
-STR_MB_Citaro2_c_a_BLT_old_NAME		:Mercedes-Benz Citaro C2  {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_c_a_BLT_old_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_Citaro2_c_a_BLT_old_NAME2	:BLT_old livery
-STR_MB_Citaro2_c_a_BLT_old_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_c_a_BLT_old_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_c_a_BLT_old_INFO		:Mercedes-Benz Citaro {LTBLUE} - 3 doors{BLACK}
 
-STR_MB_Citaro2_c_a_VBSH_NAME		:Mercedes-Benz Citaro C2  {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_c_a_VBSH_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_Citaro2_c_a_VBSH_NAME2	:VBSH livery
-STR_MB_Citaro2_c_a_VBSH_DATA		:Loading speed: {GOLD}35{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_c_a_VBSH_DATA		:Loading speed: {GOLD}35{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_c_a_VBSH_INFO		:Mercedes-Benz Citaro {LTBLUE} - 3 doors{BLACK}
 
-STR_MB_Citaro2_c_ngt_a_CC1_NAME		:Mercedes-Benz Citaro C2  {ORANGE}CNG{BLACK}
+STR_MB_Citaro2_c_ngt_a_CC1_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_Citaro2_c_ngt_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_c_ngt_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {ORANGE}CNG{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_c_ngt_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_c_ngt_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE} - 3 doors{BLACK}
 
-STR_MB_Citaro2_c_ngt_a_CC2_NAME		:Mercedes-Benz Citaro C2  {ORANGE}CNG{BLACK}
+STR_MB_Citaro2_c_ngt_a_CC2_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_Citaro2_c_ngt_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_c_ngt_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {ORANGE}CNG{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_c_ngt_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_c_ngt_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE} - 3 doors{BLACK}
 
-STR_MB_CitaroE_c_a_CC1_NAME		:Mercedes-Benz Citaro C2  {GREEN}Electric{BLACK}
+STR_MB_CitaroE_c_a_CC1_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_CitaroE_c_a_CC1_NAME2	:CC1 livery
-STR_MB_CitaroE_c_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_c_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_c_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE} - 3 doors{BLACK}
 
-STR_MB_CitaroE_c_a_CC2_NAME		:Mercedes-Benz Citaro C2  {GREEN}Electric{BLACK}
+STR_MB_CitaroE_c_a_CC2_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_CitaroE_c_a_CC2_NAME2	:CC2 livery
-STR_MB_CitaroE_c_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_c_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_c_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE} - 3 doors{BLACK}
 
-STR_MB_CitaroE_c_a_AAGL_NAME		:Mercedes-Benz Citaro C2  {GREEN}Electric{BLACK}
+STR_MB_CitaroE_c_a_AAGL_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_CitaroE_c_a_AAGL_NAME2	:AAGL livery
-STR_MB_CitaroE_c_a_AAGL_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_c_a_AAGL_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_c_a_AAGL_INFO		:Mercedes-Benz Citaro {LTBLUE} - 3 doors{BLACK}
 
-STR_MB_CitaroE_c_a_BLT_old_NAME		:Mercedes-Benz Citaro C2  {GREEN}Electric{BLACK}
+STR_MB_CitaroE_c_a_BLT_old_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_CitaroE_c_a_BLT_old_NAME2	:BLT_old livery
-STR_MB_CitaroE_c_a_BLT_old_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_c_a_BLT_old_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_c_a_BLT_old_INFO		:Mercedes-Benz Citaro {LTBLUE} - 3 doors{BLACK}
 
-STR_MB_CitaroE_c_a_BLT_new_NAME		:Mercedes-Benz Citaro C2  {GREEN}Electric{BLACK}
+STR_MB_CitaroE_c_a_BLT_new_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_CitaroE_c_a_BLT_new_NAME2	:BLT_new livery
-STR_MB_CitaroE_c_a_BLT_new_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_c_a_BLT_new_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_c_a_BLT_new_INFO		:Mercedes-Benz Citaro {LTBLUE} - 3 doors{BLACK}
 
-STR_MB_CitaroE_c_a_BOS_NAME		:Mercedes-Benz Citaro C2  {GREEN}Electric{BLACK}
+STR_MB_CitaroE_c_a_BOS_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_CitaroE_c_a_BOS_NAME2	:BOS livery
-STR_MB_CitaroE_c_a_BOS_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_c_a_BOS_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_c_a_BOS_INFO		:Mercedes-Benz Citaro {LTBLUE} - 3 doors{BLACK}
 
-STR_MB_CitaroE_c_a_BVB_NAME		:Mercedes-Benz Citaro C2  {GREEN}Electric{BLACK}
+STR_MB_CitaroE_c_a_BVB_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_CitaroE_c_a_BVB_NAME2	:BVB livery
-STR_MB_CitaroE_c_a_BVB_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_c_a_BVB_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_c_a_BVB_INFO		:Mercedes-Benz Citaro {LTBLUE} - 3 doors{BLACK}
 
-STR_MB_CitaroE_c_a_PostAuto_NAME		:Mercedes-Benz Citaro C2  {GREEN}Electric{BLACK}
+STR_MB_CitaroE_c_a_PostAuto_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_CitaroE_c_a_PostAuto_NAME2	:PostAuto livery
-STR_MB_CitaroE_c_a_PostAuto_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_c_a_PostAuto_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_c_a_PostAuto_INFO		:Mercedes-Benz Citaro {LTBLUE} - 3 doors{BLACK}
 
-STR_MB_CitaroE_c_a_RBS_NAME		:Mercedes-Benz Citaro C2  {GREEN}Electric{BLACK}
+STR_MB_CitaroE_c_a_RBS_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_CitaroE_c_a_RBS_NAME2	:RBS livery
-STR_MB_CitaroE_c_a_RBS_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_c_a_RBS_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_c_a_RBS_INFO		:Mercedes-Benz Citaro {LTBLUE} - 3 doors{BLACK}
 
-STR_MB_CitaroE_c_a_RVBW_NAME		:Mercedes-Benz Citaro C2  {GREEN}Electric{BLACK}
+STR_MB_CitaroE_c_a_RVBW_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_CitaroE_c_a_RVBW_NAME2	:RVBW livery
-STR_MB_CitaroE_c_a_RVBW_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_c_a_RVBW_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_c_a_RVBW_INFO		:Mercedes-Benz Citaro {LTBLUE} - 3 doors{BLACK}
 
-STR_MB_CitaroE_c_a_TPG_NAME		:Mercedes-Benz Citaro C2  {GREEN}Electric{BLACK}
+STR_MB_CitaroE_c_a_TPG_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_CitaroE_c_a_TPG_NAME2	:TPG livery
-STR_MB_CitaroE_c_a_TPG_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_c_a_TPG_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_c_a_TPG_INFO		:Mercedes-Benz Citaro {LTBLUE} - 3 doors{BLACK}
 
-STR_MB_CitaroE_c_a_VBG_NAME		:Mercedes-Benz Citaro C2  {GREEN}Electric{BLACK}
+STR_MB_CitaroE_c_a_VBG_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_CitaroE_c_a_VBG_NAME2	:VBG livery
-STR_MB_CitaroE_c_a_VBG_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_c_a_VBG_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_c_a_VBG_INFO		:Mercedes-Benz Citaro {LTBLUE} - 3 doors{BLACK}
 
-STR_MB_Citaro2_c_b_CC1_NAME		:Mercedes-Benz Citaro C2  {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_c_b_CC1_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_Citaro2_c_b_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_c_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_c_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_c_b_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE} - 2 doors{BLACK}
 
-STR_MB_Citaro2_c_b_CC2_NAME		:Mercedes-Benz Citaro C2  {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_c_b_CC2_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_Citaro2_c_b_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_c_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_c_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_c_b_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE} - 2 doors{BLACK}
 
-STR_MB_Citaro2_c_b_Sernftal_NAME		:Mercedes-Benz Citaro C2  {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_c_b_Sernftal_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_Citaro2_c_b_Sernftal_NAME2	:Sernftal livery
-STR_MB_Citaro2_c_b_Sernftal_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_c_b_Sernftal_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_c_b_Sernftal_INFO		:Mercedes-Benz Citaro {LTBLUE} - 2 doors{BLACK}
 
-STR_MB_Citaro2_c_ngt_b_CC1_NAME		:Mercedes-Benz Citaro C2  {ORANGE}CNG{BLACK}
+STR_MB_Citaro2_c_ngt_b_CC1_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_Citaro2_c_ngt_b_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_c_ngt_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}Fuel: {ORANGE}CNG{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_c_ngt_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_c_ngt_b_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE} - 2 doors{BLACK}
 
-STR_MB_Citaro2_c_ngt_b_CC2_NAME		:Mercedes-Benz Citaro C2  {ORANGE}CNG{BLACK}
+STR_MB_Citaro2_c_ngt_b_CC2_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_Citaro2_c_ngt_b_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_c_ngt_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}Fuel: {ORANGE}CNG{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_c_ngt_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_c_ngt_b_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE} - 2 doors{BLACK}
 
-STR_MB_CitaroE_c_b_CC1_NAME		:Mercedes-Benz Citaro C2  {GREEN}Electric{BLACK}
+STR_MB_CitaroE_c_b_CC1_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_CitaroE_c_b_CC1_NAME2	:CC1 livery
-STR_MB_CitaroE_c_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_c_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_c_b_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE} - 2 doors{BLACK}
 
-STR_MB_CitaroE_c_b_CC2_NAME		:Mercedes-Benz Citaro C2  {GREEN}Electric{BLACK}
+STR_MB_CitaroE_c_b_CC2_NAME		:Mercedes-Benz Citaro C2 
 STR_MB_CitaroE_c_b_CC2_NAME2	:CC2 livery
-STR_MB_CitaroE_c_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_c_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_c_b_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE} - 2 doors{BLACK}
 
-STR_MB_Citaro2_le_a_CC1_NAME		:Mercedes-Benz Citaro C2 LE {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_le_a_CC1_NAME		:Mercedes-Benz Citaro C2 LE
 STR_MB_Citaro2_le_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_le_a_CC1_DATA		:Loading speed: {GOLD}33{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LE, 12m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Suburb{BLACK}{}{}{STRING}
+STR_MB_Citaro2_le_a_CC1_DATA		:Loading speed: {GOLD}33{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LE, 12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_le_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}LE - 3 doors{BLACK}
 
-STR_MB_Citaro2_le_a_CC2_NAME		:Mercedes-Benz Citaro C2 LE {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_le_a_CC2_NAME		:Mercedes-Benz Citaro C2 LE
 STR_MB_Citaro2_le_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_le_a_CC2_DATA		:Loading speed: {GOLD}33{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LE, 12m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Suburb{BLACK}{}{}{STRING}
+STR_MB_Citaro2_le_a_CC2_DATA		:Loading speed: {GOLD}33{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LE, 12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_le_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}LE - 3 doors{BLACK}
 
-STR_MB_Citaro2_le_b_CC1_NAME		:Mercedes-Benz Citaro C2 LE {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_le_b_CC1_NAME		:Mercedes-Benz Citaro C2 LE
 STR_MB_Citaro2_le_b_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_le_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LE, 12m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Suburb{BLACK}{}{}{STRING}
+STR_MB_Citaro2_le_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LE, 12m, 2 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_le_b_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}LE - 2 doors{BLACK}
 
-STR_MB_Citaro2_le_b_CC2_NAME		:Mercedes-Benz Citaro C2 LE {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_le_b_CC2_NAME		:Mercedes-Benz Citaro C2 LE
 STR_MB_Citaro2_le_b_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_le_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LE, 12m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Suburb{BLACK}{}{}{STRING}
+STR_MB_Citaro2_le_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LE, 12m, 2 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_le_b_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}LE - 2 doors{BLACK}
 
-STR_MB_Citaro2_g_a_CC1_NAME		:Mercedes-Benz Citaro C2 G {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_g_a_CC1_NAME		:Mercedes-Benz Citaro C2 G
 STR_MB_Citaro2_g_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_g_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_g_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_g_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 4 doors{BLACK}
 
-STR_MB_Citaro2_g_a_CC2_NAME		:Mercedes-Benz Citaro C2 G {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_g_a_CC2_NAME		:Mercedes-Benz Citaro C2 G
 STR_MB_Citaro2_g_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_g_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_g_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_g_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 4 doors{BLACK}
 
-STR_MB_Citaro2_g_ngt_a_CC1_NAME		:Mercedes-Benz Citaro C2 G {ORANGE}CNG{BLACK}
+STR_MB_Citaro2_g_ngt_a_CC1_NAME		:Mercedes-Benz Citaro C2 G
 STR_MB_Citaro2_g_ngt_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_g_ngt_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}Fuel: {ORANGE}CNG{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_g_ngt_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_g_ngt_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 4 doors{BLACK}
 
-STR_MB_Citaro2_g_ngt_a_CC2_NAME		:Mercedes-Benz Citaro C2 G {ORANGE}CNG{BLACK}
+STR_MB_Citaro2_g_ngt_a_CC2_NAME		:Mercedes-Benz Citaro C2 G
 STR_MB_Citaro2_g_ngt_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_g_ngt_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}Fuel: {ORANGE}CNG{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_g_ngt_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_g_ngt_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 4 doors{BLACK}
 
-STR_MB_CitaroE_g_a_CC1_NAME		:Mercedes-Benz Citaro C2 G {GREEN}Electric{BLACK}
+STR_MB_CitaroE_g_a_CC1_NAME		:Mercedes-Benz Citaro C2 G
 STR_MB_CitaroE_g_a_CC1_NAME2	:CC1 livery
-STR_MB_CitaroE_g_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_g_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_g_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 4 doors{BLACK}
 
-STR_MB_CitaroE_g_a_CC2_NAME		:Mercedes-Benz Citaro C2 G {GREEN}Electric{BLACK}
+STR_MB_CitaroE_g_a_CC2_NAME		:Mercedes-Benz Citaro C2 G
 STR_MB_CitaroE_g_a_CC2_NAME2	:CC2 livery
-STR_MB_CitaroE_g_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_g_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_g_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 4 doors{BLACK}
 
-STR_MB_CitaroE_g_a_BBA_NAME		:Mercedes-Benz Citaro C2 G {GREEN}Electric{BLACK}
+STR_MB_CitaroE_g_a_BBA_NAME		:Mercedes-Benz Citaro C2 G
 STR_MB_CitaroE_g_a_BBA_NAME2	:BBA livery
-STR_MB_CitaroE_g_a_BBA_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_g_a_BBA_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_g_a_BBA_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 4 doors{BLACK}
 
-STR_MB_CitaroE_g_a_BVB_NAME		:Mercedes-Benz Citaro C2 G {GREEN}Electric{BLACK}
+STR_MB_CitaroE_g_a_BVB_NAME		:Mercedes-Benz Citaro C2 G
 STR_MB_CitaroE_g_a_BVB_NAME2	:BVB livery
-STR_MB_CitaroE_g_a_BVB_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_g_a_BVB_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_g_a_BVB_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 4 doors{BLACK}
 
-STR_MB_Citaro2_g_b_CC1_NAME		:Mercedes-Benz Citaro C2 G {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_g_b_CC1_NAME		:Mercedes-Benz Citaro C2 G
 STR_MB_Citaro2_g_b_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_g_b_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_g_b_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_g_b_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 3 doors{BLACK}
 
-STR_MB_Citaro2_g_b_CC2_NAME		:Mercedes-Benz Citaro C2 G {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_g_b_CC2_NAME		:Mercedes-Benz Citaro C2 G
 STR_MB_Citaro2_g_b_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_g_b_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_g_b_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_g_b_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 3 doors{BLACK}
 
-STR_MB_Citaro2_g_ngt_b_CC1_NAME		:Mercedes-Benz Citaro C2 G {ORANGE}CNG{BLACK}
+STR_MB_Citaro2_g_ngt_b_CC1_NAME		:Mercedes-Benz Citaro C2 G
 STR_MB_Citaro2_g_ngt_b_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_g_ngt_b_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 3 doors{BLACK}{}Fuel: {ORANGE}CNG{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_g_ngt_b_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_g_ngt_b_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 3 doors{BLACK}
 
-STR_MB_Citaro2_g_ngt_b_CC2_NAME		:Mercedes-Benz Citaro C2 G {ORANGE}CNG{BLACK}
+STR_MB_Citaro2_g_ngt_b_CC2_NAME		:Mercedes-Benz Citaro C2 G
 STR_MB_Citaro2_g_ngt_b_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_g_ngt_b_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 3 doors{BLACK}{}Fuel: {ORANGE}CNG{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_g_ngt_b_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_g_ngt_b_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 3 doors{BLACK}
 
-STR_MB_CitaroE_g_b_CC1_NAME		:Mercedes-Benz Citaro C2 G {GREEN}Electric{BLACK}
+STR_MB_CitaroE_g_b_CC1_NAME		:Mercedes-Benz Citaro C2 G
 STR_MB_CitaroE_g_b_CC1_NAME2	:CC1 livery
-STR_MB_CitaroE_g_b_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 3 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_g_b_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_g_b_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 3 doors{BLACK}
 
-STR_MB_CitaroE_g_b_CC2_NAME		:Mercedes-Benz Citaro C2 G {GREEN}Electric{BLACK}
+STR_MB_CitaroE_g_b_CC2_NAME		:Mercedes-Benz Citaro C2 G
 STR_MB_CitaroE_g_b_CC2_NAME2	:CC2 livery
-STR_MB_CitaroE_g_b_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 3 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_CitaroE_g_b_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_CitaroE_g_b_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 3 doors{BLACK}
 
-STR_MB_Citaro2_cc_a_CC1_NAME		:Mercedes-Benz Citaro C2 CC {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_cc_a_CC1_NAME		:Mercedes-Benz Citaro C2 CC
 STR_MB_Citaro2_cc_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_cc_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}CC, 20m, 4 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_cc_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}CC, 20m, 4 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_cc_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}CC - 4 doors{BLACK}
 
-STR_MB_Citaro2_cc_a_CC2_NAME		:Mercedes-Benz Citaro C2 CC {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_cc_a_CC2_NAME		:Mercedes-Benz Citaro C2 CC
 STR_MB_Citaro2_cc_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_cc_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}CC, 20m, 4 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_cc_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}CC, 20m, 4 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_cc_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}CC - 4 doors{BLACK}
 
-STR_MB_Citaro2_ccl_a_CC1_NAME		:Mercedes-Benz Citaro C2 CCL {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_ccl_a_CC1_NAME		:Mercedes-Benz Citaro C2 CCL
 STR_MB_Citaro2_ccl_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_ccl_a_CC1_DATA		:Loading speed: {GOLD}70{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}CCL, 21m, 5 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_ccl_a_CC1_DATA		:Loading speed: {GOLD}70{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}CCL, 21m, 5 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_ccl_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}CCL - 5 doors{BLACK}
 
-STR_MB_Citaro2_ccl_a_CC2_NAME		:Mercedes-Benz Citaro C2 CCL {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_ccl_a_CC2_NAME		:Mercedes-Benz Citaro C2 CCL
 STR_MB_Citaro2_ccl_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_ccl_a_CC2_DATA		:Loading speed: {GOLD}70{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}CCL, 21m, 5 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Citaro2_ccl_a_CC2_DATA		:Loading speed: {GOLD}70{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}CCL, 21m, 5 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_ccl_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}CCL - 5 doors{BLACK}
 
-STR_MB_Citaro2_u_a_CC1_NAME		:Mercedes-Benz Citaro C2 Ü {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_u_a_CC1_NAME		:Mercedes-Benz Citaro C2 Ü
 STR_MB_Citaro2_u_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_u_a_CC1_DATA		:Loading speed: {GOLD}19{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Ü, 12m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Regional{BLACK}{}{}{STRING}
+STR_MB_Citaro2_u_a_CC1_DATA		:Loading speed: {GOLD}19{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Ü, 12m, 2 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_u_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}Ü - 2 doors{BLACK}
 
-STR_MB_Citaro2_u_a_CC2_NAME		:Mercedes-Benz Citaro C2 Ü {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_u_a_CC2_NAME		:Mercedes-Benz Citaro C2 Ü
 STR_MB_Citaro2_u_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_u_a_CC2_DATA		:Loading speed: {GOLD}19{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Ü, 12m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Regional{BLACK}{}{}{STRING}
+STR_MB_Citaro2_u_a_CC2_DATA		:Loading speed: {GOLD}19{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Ü, 12m, 2 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_u_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}Ü - 2 doors{BLACK}
 
-STR_MB_Citaro2_leu_a_CC1_NAME		:Mercedes-Benz Citaro C2 LEÜ {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_leu_a_CC1_NAME		:Mercedes-Benz Citaro C2 LEÜ
 STR_MB_Citaro2_leu_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_leu_a_CC1_DATA		:Loading speed: {GOLD}19{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LEÜ, 12m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Regional{BLACK}{}{}{STRING}
+STR_MB_Citaro2_leu_a_CC1_DATA		:Loading speed: {GOLD}19{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LEÜ, 12m, 2 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_leu_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}LEÜ - 2 doors{BLACK}
 
-STR_MB_Citaro2_leu_a_CC2_NAME		:Mercedes-Benz Citaro C2 LEÜ {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_leu_a_CC2_NAME		:Mercedes-Benz Citaro C2 LEÜ
 STR_MB_Citaro2_leu_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_leu_a_CC2_DATA		:Loading speed: {GOLD}19{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LEÜ, 12m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Regional{BLACK}{}{}{STRING}
+STR_MB_Citaro2_leu_a_CC2_DATA		:Loading speed: {GOLD}19{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LEÜ, 12m, 2 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_leu_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}LEÜ - 2 doors{BLACK}
 
-STR_MB_Citaro2_lemu_a_CC1_NAME		:Mercedes-Benz Citaro C2 LEMÜ {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_lemu_a_CC1_NAME		:Mercedes-Benz Citaro C2 LEMÜ
 STR_MB_Citaro2_lemu_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_lemu_a_CC1_DATA		:Loading speed: {GOLD}26{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LEMÜ, 13m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Regional{BLACK}{}{}{STRING}
+STR_MB_Citaro2_lemu_a_CC1_DATA		:Loading speed: {GOLD}26{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LEMÜ, 13m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_lemu_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}LEMÜ - 3 doors{BLACK}
 
-STR_MB_Citaro2_lemu_a_CC2_NAME		:Mercedes-Benz Citaro C2 LEMÜ {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_lemu_a_CC2_NAME		:Mercedes-Benz Citaro C2 LEMÜ
 STR_MB_Citaro2_lemu_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_lemu_a_CC2_DATA		:Loading speed: {GOLD}26{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LEMÜ, 13m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Regional{BLACK}{}{}{STRING}
+STR_MB_Citaro2_lemu_a_CC2_DATA		:Loading speed: {GOLD}26{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LEMÜ, 13m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_lemu_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}LEMÜ - 3 doors{BLACK}
 
-STR_MB_Citaro2_lemu_b_CC1_NAME		:Mercedes-Benz Citaro C2 LEMÜ {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_lemu_b_CC1_NAME		:Mercedes-Benz Citaro C2 LEMÜ
 STR_MB_Citaro2_lemu_b_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_lemu_b_CC1_DATA		:Loading speed: {GOLD}21{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LEMÜ, 13m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Regional{BLACK}{}{}{STRING}
+STR_MB_Citaro2_lemu_b_CC1_DATA		:Loading speed: {GOLD}21{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LEMÜ, 13m, 2 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_lemu_b_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}LEMÜ - 2 doors{BLACK}
 
-STR_MB_Citaro2_lemu_b_CC2_NAME		:Mercedes-Benz Citaro C2 LEMÜ {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_lemu_b_CC2_NAME		:Mercedes-Benz Citaro C2 LEMÜ
 STR_MB_Citaro2_lemu_b_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_lemu_b_CC2_DATA		:Loading speed: {GOLD}21{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LEMÜ, 13m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Regional{BLACK}{}{}{STRING}
+STR_MB_Citaro2_lemu_b_CC2_DATA		:Loading speed: {GOLD}21{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LEMÜ, 13m, 2 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_lemu_b_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}LEMÜ - 2 doors{BLACK}
 
-STR_MB_Citaro2_gu_a_CC1_NAME		:Mercedes-Benz Citaro C2 GÜ {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_gu_a_CC1_NAME		:Mercedes-Benz Citaro C2 GÜ
 STR_MB_Citaro2_gu_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_gu_a_CC1_DATA		:Loading speed: {GOLD}33{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}GÜ, 18m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Regional{BLACK}{}{}{STRING}
+STR_MB_Citaro2_gu_a_CC1_DATA		:Loading speed: {GOLD}33{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}GÜ, 18m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_gu_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}GÜ - 3 doors{BLACK}
 
-STR_MB_Citaro2_gu_a_CC2_NAME		:Mercedes-Benz Citaro C2 GÜ {GRAY}Diesel{BLACK}
+STR_MB_Citaro2_gu_a_CC2_NAME		:Mercedes-Benz Citaro C2 GÜ
 STR_MB_Citaro2_gu_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_gu_a_CC2_DATA		:Loading speed: {GOLD}33{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}GÜ, 18m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Regional{BLACK}{}{}{STRING}
+STR_MB_Citaro2_gu_a_CC2_DATA		:Loading speed: {GOLD}33{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}GÜ, 18m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Citaro2_gu_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}GÜ - 3 doors{BLACK}
 
-STR_MB_Conecto3_c_a_CC1_NAME		:Mercedes-Benz Conecto 3  {GRAY}Diesel{BLACK}
+STR_MB_Conecto3_c_a_CC1_NAME		:Mercedes-Benz Conecto 3 
 STR_MB_Conecto3_c_a_CC1_NAME2	:CC1 livery
-STR_MB_Conecto3_c_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Conecto3_c_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Conecto3_c_a_CC1_INFO		:Mercedes-Benz Conecto {LTBLUE} - 3 doors{BLACK}
 
-STR_MB_Conecto3_c_a_CC2_NAME		:Mercedes-Benz Conecto 3  {GRAY}Diesel{BLACK}
+STR_MB_Conecto3_c_a_CC2_NAME		:Mercedes-Benz Conecto 3 
 STR_MB_Conecto3_c_a_CC2_NAME2	:CC2 livery
-STR_MB_Conecto3_c_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Conecto3_c_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{}{STRING}
 STR_MB_Conecto3_c_a_CC2_INFO		:Mercedes-Benz Conecto {LTBLUE} - 3 doors{BLACK}
 
-STR_MB_Conecto3_g_a_CC1_NAME		:Mercedes-Benz Conecto 3 G {GRAY}Diesel{BLACK}
+STR_MB_Conecto3_g_a_CC1_NAME		:Mercedes-Benz Conecto 3 G
 STR_MB_Conecto3_g_a_CC1_NAME2	:CC1 livery
-STR_MB_Conecto3_g_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Conecto3_g_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{}{STRING}
 STR_MB_Conecto3_g_a_CC1_INFO		:Mercedes-Benz Conecto {LTBLUE}G - 4 doors{BLACK}
 
-STR_MB_Conecto3_g_a_CC2_NAME		:Mercedes-Benz Conecto 3 G {GRAY}Diesel{BLACK}
+STR_MB_Conecto3_g_a_CC2_NAME		:Mercedes-Benz Conecto 3 G
 STR_MB_Conecto3_g_a_CC2_NAME2	:CC2 livery
-STR_MB_Conecto3_g_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MB_Conecto3_g_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{}{STRING}
 STR_MB_Conecto3_g_a_CC2_INFO		:Mercedes-Benz Conecto {LTBLUE}G - 4 doors{BLACK}
 
-STR_MAN_LC3e_10_a_CC1_NAME		:MAN Lion's City 3 10E {GREEN}Electric{BLACK}
+STR_MAN_LC3e_10_a_CC1_NAME		:MAN Lion's City 3 10E
 STR_MAN_LC3e_10_a_CC1_NAME2	:CC1 livery
-STR_MAN_LC3e_10_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10E, 10m, 3 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MAN_LC3e_10_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10E, 10m, 3 doors{BLACK}{}{}{STRING}
 STR_MAN_LC3e_10_a_CC1_INFO		:MAN Lion's City {LTBLUE}10E - 3 doors{BLACK}
 
-STR_MAN_LC3e_10_a_BVB_NAME		:MAN Lion's City 3 10E {GREEN}Electric{BLACK}
+STR_MAN_LC3e_10_a_CC2_NAME		:MAN Lion's City 3 10E
+STR_MAN_LC3e_10_a_CC2_NAME2	:CC2 livery
+STR_MAN_LC3e_10_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10E, 10m, 3 doors{BLACK}{}{}{STRING}
+STR_MAN_LC3e_10_a_CC2_INFO		:MAN Lion's City {LTBLUE}10E - 3 doors{BLACK}
+
+STR_MAN_LC3e_10_a_BVB_NAME		:MAN Lion's City 3 10E
 STR_MAN_LC3e_10_a_BVB_NAME2	:BVB livery
-STR_MAN_LC3e_10_a_BVB_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10E, 10m, 3 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MAN_LC3e_10_a_BVB_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10E, 10m, 3 doors{BLACK}{}{}{STRING}
 STR_MAN_LC3e_10_a_BVB_INFO		:MAN Lion's City {LTBLUE}10E - 3 doors{BLACK}
 
-STR_MAN_LC3e_10_a_Roadshow_NAME		:MAN Lion's City 3 10E {GREEN}Electric{BLACK}
+STR_MAN_LC3e_10_a_Roadshow_NAME		:MAN Lion's City 3 10E
 STR_MAN_LC3e_10_a_Roadshow_NAME2	:Roadshow livery
-STR_MAN_LC3e_10_a_Roadshow_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10E, 10m, 3 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MAN_LC3e_10_a_Roadshow_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10E, 10m, 3 doors{BLACK}{}{}{STRING}
 STR_MAN_LC3e_10_a_Roadshow_INFO		:MAN Lion's City {LTBLUE}10E - 3 doors{BLACK}
 
-STR_MAN_LC3e_10_b_CC1_NAME		:MAN Lion's City 3 10E {GREEN}Electric{BLACK}
+STR_MAN_LC3e_10_b_CC1_NAME		:MAN Lion's City 3 10E
 STR_MAN_LC3e_10_b_CC1_NAME2	:CC1 livery
-STR_MAN_LC3e_10_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10E, 10m, 2 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MAN_LC3e_10_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10E, 10m, 2 doors{BLACK}{}{}{STRING}
 STR_MAN_LC3e_10_b_CC1_INFO		:MAN Lion's City {LTBLUE}10E - 2 doors{BLACK}
 
-STR_MAN_LC3e_10_b_BLT_NAME		:MAN Lion's City 3 10E {GREEN}Electric{BLACK}
+STR_MAN_LC3e_10_b_CC2_NAME		:MAN Lion's City 3 10E
+STR_MAN_LC3e_10_b_CC2_NAME2	:CC2 livery
+STR_MAN_LC3e_10_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10E, 10m, 2 doors{BLACK}{}{}{STRING}
+STR_MAN_LC3e_10_b_CC2_INFO		:MAN Lion's City {LTBLUE}10E - 2 doors{BLACK}
+
+STR_MAN_LC3e_10_b_BLT_NAME		:MAN Lion's City 3 10E
 STR_MAN_LC3e_10_b_BLT_NAME2	:BLT livery
-STR_MAN_LC3e_10_b_BLT_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10E, 10m, 2 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MAN_LC3e_10_b_BLT_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10E, 10m, 2 doors{BLACK}{}{}{STRING}
 STR_MAN_LC3e_10_b_BLT_INFO		:MAN Lion's City {LTBLUE}10E - 2 doors{BLACK}
 
-STR_MAN_LC3_12_a_CC1_NAME		:MAN Lion's City 3 12C {GRAY}Diesel{BLACK}
+STR_MAN_LC3_12_a_CC1_NAME		:MAN Lion's City 3 12C
 STR_MAN_LC3_12_a_CC1_NAME2	:CC1 livery
-STR_MAN_LC3_12_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12C, 12m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MAN_LC3_12_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12C, 12m, 3 doors{BLACK}{}{}{STRING}
 STR_MAN_LC3_12_a_CC1_INFO		:MAN Lion's City {LTBLUE}12C - 3 doors{BLACK}
 
-STR_MAN_LC3ngt_12_a_CC1_NAME		:MAN Lion's City 3 12G {ORANGE}CNG{BLACK}
+STR_MAN_LC3_12_a_CC2_NAME		:MAN Lion's City 3 12C
+STR_MAN_LC3_12_a_CC2_NAME2	:CC2 livery
+STR_MAN_LC3_12_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12C, 12m, 3 doors{BLACK}{}{}{STRING}
+STR_MAN_LC3_12_a_CC2_INFO		:MAN Lion's City {LTBLUE}12C - 3 doors{BLACK}
+
+STR_MAN_LC3ngt_12_a_CC1_NAME		:MAN Lion's City 3 12G
 STR_MAN_LC3ngt_12_a_CC1_NAME2	:CC1 livery
-STR_MAN_LC3ngt_12_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12G, 12m, 3 doors{BLACK}{}Fuel: {ORANGE}CNG{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MAN_LC3ngt_12_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12G, 12m, 3 doors{BLACK}{}{}{STRING}
 STR_MAN_LC3ngt_12_a_CC1_INFO		:MAN Lion's City {LTBLUE}12G - 3 doors{BLACK}
 
-STR_MAN_LC3e_12_a_CC1_NAME		:MAN Lion's City 3 12E {GREEN}Electric{BLACK}
+STR_MAN_LC3ngt_12_a_CC2_NAME		:MAN Lion's City 3 12G
+STR_MAN_LC3ngt_12_a_CC2_NAME2	:CC2 livery
+STR_MAN_LC3ngt_12_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12G, 12m, 3 doors{BLACK}{}{}{STRING}
+STR_MAN_LC3ngt_12_a_CC2_INFO		:MAN Lion's City {LTBLUE}12G - 3 doors{BLACK}
+
+STR_MAN_LC3e_12_a_CC1_NAME		:MAN Lion's City 3 12E
 STR_MAN_LC3e_12_a_CC1_NAME2	:CC1 livery
-STR_MAN_LC3e_12_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12E, 12m, 3 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MAN_LC3e_12_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12E, 12m, 3 doors{BLACK}{}{}{STRING}
 STR_MAN_LC3e_12_a_CC1_INFO		:MAN Lion's City {LTBLUE}12E - 3 doors{BLACK}
 
-STR_MAN_LC3_12_b_CC1_NAME		:MAN Lion's City 3 12C {GRAY}Diesel{BLACK}
+STR_MAN_LC3e_12_a_CC2_NAME		:MAN Lion's City 3 12E
+STR_MAN_LC3e_12_a_CC2_NAME2	:CC2 livery
+STR_MAN_LC3e_12_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12E, 12m, 3 doors{BLACK}{}{}{STRING}
+STR_MAN_LC3e_12_a_CC2_INFO		:MAN Lion's City {LTBLUE}12E - 3 doors{BLACK}
+
+STR_MAN_LC3_12_b_CC1_NAME		:MAN Lion's City 3 12C
 STR_MAN_LC3_12_b_CC1_NAME2	:CC1 livery
-STR_MAN_LC3_12_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12C, 12m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MAN_LC3_12_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12C, 12m, 2 doors{BLACK}{}{}{STRING}
 STR_MAN_LC3_12_b_CC1_INFO		:MAN Lion's City {LTBLUE}12C - 2 doors{BLACK}
 
-STR_MAN_LC3ngt_12_b_CC1_NAME		:MAN Lion's City 3 12G {ORANGE}CNG{BLACK}
+STR_MAN_LC3_12_b_CC2_NAME		:MAN Lion's City 3 12C
+STR_MAN_LC3_12_b_CC2_NAME2	:CC2 livery
+STR_MAN_LC3_12_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12C, 12m, 2 doors{BLACK}{}{}{STRING}
+STR_MAN_LC3_12_b_CC2_INFO		:MAN Lion's City {LTBLUE}12C - 2 doors{BLACK}
+
+STR_MAN_LC3ngt_12_b_CC1_NAME		:MAN Lion's City 3 12G
 STR_MAN_LC3ngt_12_b_CC1_NAME2	:CC1 livery
-STR_MAN_LC3ngt_12_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12G, 12m, 2 doors{BLACK}{}Fuel: {ORANGE}CNG{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MAN_LC3ngt_12_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12G, 12m, 2 doors{BLACK}{}{}{STRING}
 STR_MAN_LC3ngt_12_b_CC1_INFO		:MAN Lion's City {LTBLUE}12G - 2 doors{BLACK}
 
-STR_MAN_LC3e_12_b_CC1_NAME		:MAN Lion's City 3 12E {GREEN}Electric{BLACK}
+STR_MAN_LC3ngt_12_b_CC2_NAME		:MAN Lion's City 3 12G
+STR_MAN_LC3ngt_12_b_CC2_NAME2	:CC2 livery
+STR_MAN_LC3ngt_12_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12G, 12m, 2 doors{BLACK}{}{}{STRING}
+STR_MAN_LC3ngt_12_b_CC2_INFO		:MAN Lion's City {LTBLUE}12G - 2 doors{BLACK}
+
+STR_MAN_LC3e_12_b_CC1_NAME		:MAN Lion's City 3 12E
 STR_MAN_LC3e_12_b_CC1_NAME2	:CC1 livery
-STR_MAN_LC3e_12_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12E, 12m, 2 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MAN_LC3e_12_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12E, 12m, 2 doors{BLACK}{}{}{STRING}
 STR_MAN_LC3e_12_b_CC1_INFO		:MAN Lion's City {LTBLUE}12E - 2 doors{BLACK}
 
-STR_MAN_LC3_18_a_CC1_NAME		:MAN Lion's City 3 18C {GRAY}Diesel{BLACK}
+STR_MAN_LC3e_12_b_CC2_NAME		:MAN Lion's City 3 12E
+STR_MAN_LC3e_12_b_CC2_NAME2	:CC2 livery
+STR_MAN_LC3e_12_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12E, 12m, 2 doors{BLACK}{}{}{STRING}
+STR_MAN_LC3e_12_b_CC2_INFO		:MAN Lion's City {LTBLUE}12E - 2 doors{BLACK}
+
+STR_MAN_LC3_18_a_CC1_NAME		:MAN Lion's City 3 18C
 STR_MAN_LC3_18_a_CC1_NAME2	:CC1 livery
-STR_MAN_LC3_18_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18C, 18m, 4 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MAN_LC3_18_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18C, 18m, 4 doors{BLACK}{}{}{STRING}
 STR_MAN_LC3_18_a_CC1_INFO		:MAN Lion's City {LTBLUE}18C - 4 doors{BLACK}
 
-STR_MAN_LC3ngt_18_a_CC1_NAME		:MAN Lion's City 3 18G {ORANGE}CNG{BLACK}
+STR_MAN_LC3_18_a_CC2_NAME		:MAN Lion's City 3 18C
+STR_MAN_LC3_18_a_CC2_NAME2	:CC2 livery
+STR_MAN_LC3_18_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18C, 18m, 4 doors{BLACK}{}{}{STRING}
+STR_MAN_LC3_18_a_CC2_INFO		:MAN Lion's City {LTBLUE}18C - 4 doors{BLACK}
+
+STR_MAN_LC3ngt_18_a_CC1_NAME		:MAN Lion's City 3 18G
 STR_MAN_LC3ngt_18_a_CC1_NAME2	:CC1 livery
-STR_MAN_LC3ngt_18_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18G, 18m, 4 doors{BLACK}{}Fuel: {ORANGE}CNG{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MAN_LC3ngt_18_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18G, 18m, 4 doors{BLACK}{}{}{STRING}
 STR_MAN_LC3ngt_18_a_CC1_INFO		:MAN Lion's City {LTBLUE}18G - 4 doors{BLACK}
 
-STR_MAN_LC3e_18_a_CC1_NAME		:MAN Lion's City 3 18E {GREEN}Electric{BLACK}
+STR_MAN_LC3ngt_18_a_CC2_NAME		:MAN Lion's City 3 18G
+STR_MAN_LC3ngt_18_a_CC2_NAME2	:CC2 livery
+STR_MAN_LC3ngt_18_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18G, 18m, 4 doors{BLACK}{}{}{STRING}
+STR_MAN_LC3ngt_18_a_CC2_INFO		:MAN Lion's City {LTBLUE}18G - 4 doors{BLACK}
+
+STR_MAN_LC3e_18_a_CC1_NAME		:MAN Lion's City 3 18E
 STR_MAN_LC3e_18_a_CC1_NAME2	:CC1 livery
-STR_MAN_LC3e_18_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18E, 18m, 4 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MAN_LC3e_18_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18E, 18m, 4 doors{BLACK}{}{}{STRING}
 STR_MAN_LC3e_18_a_CC1_INFO		:MAN Lion's City {LTBLUE}18E - 4 doors{BLACK}
 
-STR_MAN_LC3_18_b_CC1_NAME		:MAN Lion's City 3 18C {GRAY}Diesel{BLACK}
+STR_MAN_LC3e_18_a_CC2_NAME		:MAN Lion's City 3 18E
+STR_MAN_LC3e_18_a_CC2_NAME2	:CC2 livery
+STR_MAN_LC3e_18_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18E, 18m, 4 doors{BLACK}{}{}{STRING}
+STR_MAN_LC3e_18_a_CC2_INFO		:MAN Lion's City {LTBLUE}18E - 4 doors{BLACK}
+
+STR_MAN_LC3_18_b_CC1_NAME		:MAN Lion's City 3 18C
 STR_MAN_LC3_18_b_CC1_NAME2	:CC1 livery
-STR_MAN_LC3_18_b_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18C, 18m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MAN_LC3_18_b_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18C, 18m, 3 doors{BLACK}{}{}{STRING}
 STR_MAN_LC3_18_b_CC1_INFO		:MAN Lion's City {LTBLUE}18C - 3 doors{BLACK}
 
-STR_MAN_LC3ngt_18_b_CC1_NAME		:MAN Lion's City 3 18G {ORANGE}CNG{BLACK}
+STR_MAN_LC3_18_b_CC2_NAME		:MAN Lion's City 3 18C
+STR_MAN_LC3_18_b_CC2_NAME2	:CC2 livery
+STR_MAN_LC3_18_b_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18C, 18m, 3 doors{BLACK}{}{}{STRING}
+STR_MAN_LC3_18_b_CC2_INFO		:MAN Lion's City {LTBLUE}18C - 3 doors{BLACK}
+
+STR_MAN_LC3ngt_18_b_CC1_NAME		:MAN Lion's City 3 18G
 STR_MAN_LC3ngt_18_b_CC1_NAME2	:CC1 livery
-STR_MAN_LC3ngt_18_b_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18G, 18m, 3 doors{BLACK}{}Fuel: {ORANGE}CNG{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MAN_LC3ngt_18_b_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18G, 18m, 3 doors{BLACK}{}{}{STRING}
 STR_MAN_LC3ngt_18_b_CC1_INFO		:MAN Lion's City {LTBLUE}18G - 3 doors{BLACK}
 
-STR_MAN_LC3e_18_b_CC1_NAME		:MAN Lion's City 3 18E {GREEN}Electric{BLACK}
+STR_MAN_LC3ngt_18_b_CC2_NAME		:MAN Lion's City 3 18G
+STR_MAN_LC3ngt_18_b_CC2_NAME2	:CC2 livery
+STR_MAN_LC3ngt_18_b_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18G, 18m, 3 doors{BLACK}{}{}{STRING}
+STR_MAN_LC3ngt_18_b_CC2_INFO		:MAN Lion's City {LTBLUE}18G - 3 doors{BLACK}
+
+STR_MAN_LC3e_18_b_CC1_NAME		:MAN Lion's City 3 18E
 STR_MAN_LC3e_18_b_CC1_NAME2	:CC1 livery
-STR_MAN_LC3e_18_b_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18E, 18m, 3 doors{BLACK}{}Fuel: {GREEN}Electric{BLACK}{}Usage: {GOLD}City{BLACK}{}{}{STRING}
+STR_MAN_LC3e_18_b_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18E, 18m, 3 doors{BLACK}{}{}{STRING}
 STR_MAN_LC3e_18_b_CC1_INFO		:MAN Lion's City {LTBLUE}18E - 3 doors{BLACK}
 
-STR_MAN_LIC3le_12_a_CC1_NAME		:MAN Lion's Intercity 3 32C {GRAY}Diesel{BLACK}
+STR_MAN_LC3e_18_b_CC2_NAME		:MAN Lion's City 3 18E
+STR_MAN_LC3e_18_b_CC2_NAME2	:CC2 livery
+STR_MAN_LC3e_18_b_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18E, 18m, 3 doors{BLACK}{}{}{STRING}
+STR_MAN_LC3e_18_b_CC2_INFO		:MAN Lion's City {LTBLUE}18E - 3 doors{BLACK}
+
+STR_MAN_LIC3le_12_a_CC1_NAME		:MAN Lion's Intercity 3 32C
 STR_MAN_LIC3le_12_a_CC1_NAME2	:CC1 livery
-STR_MAN_LIC3le_12_a_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}32C, 12m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Suburb{BLACK}{}{}{STRING}
+STR_MAN_LIC3le_12_a_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}32C, 12m, 2 doors{BLACK}{}{}{STRING}
 STR_MAN_LIC3le_12_a_CC1_INFO		:MAN Lion's Intercity {LTBLUE}32C - 2 doors{BLACK}
 
-STR_MAN_LIC3leu_12_a_CC1_NAME		:MAN Lion's Intercity 3 42C {GRAY}Diesel{BLACK}
+STR_MAN_LIC3leu_12_a_CC1_NAME		:MAN Lion's Intercity 3 42C
 STR_MAN_LIC3leu_12_a_CC1_NAME2	:CC1 livery
-STR_MAN_LIC3leu_12_a_CC1_DATA		:Loading speed: {GOLD}21{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}42C, 12m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Regional{BLACK}{}{}{STRING}
+STR_MAN_LIC3leu_12_a_CC1_DATA		:Loading speed: {GOLD}21{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}42C, 12m, 2 doors{BLACK}{}{}{STRING}
 STR_MAN_LIC3leu_12_a_CC1_INFO		:MAN Lion's Intercity {LTBLUE}42C - 2 doors{BLACK}
 
-STR_MAN_LIC3le_13_a_CC1_NAME		:MAN Lion's Intercity 3 33C {GRAY}Diesel{BLACK}
+STR_MAN_LIC3le_13_a_CC1_NAME		:MAN Lion's Intercity 3 33C
 STR_MAN_LIC3le_13_a_CC1_NAME2	:CC1 livery
-STR_MAN_LIC3le_13_a_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}33C, 13m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Suburb{BLACK}{}{}{STRING}
+STR_MAN_LIC3le_13_a_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}33C, 13m, 2 doors{BLACK}{}{}{STRING}
 STR_MAN_LIC3le_13_a_CC1_INFO		:MAN Lion's Intercity {LTBLUE}33C - 2 doors{BLACK}
 
-STR_MAN_LIC3leu_13_a_CC1_NAME		:MAN Lion's Intercity 3 43C {GRAY}Diesel{BLACK}
+STR_MAN_LIC3leu_13_a_CC1_NAME		:MAN Lion's Intercity 3 43C
 STR_MAN_LIC3leu_13_a_CC1_NAME2	:CC1 livery
-STR_MAN_LIC3leu_13_a_CC1_DATA		:Loading speed: {GOLD}21{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}43C, 13m, 2 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Regional{BLACK}{}{}{STRING}
+STR_MAN_LIC3leu_13_a_CC1_DATA		:Loading speed: {GOLD}21{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}43C, 13m, 2 doors{BLACK}{}{}{STRING}
 STR_MAN_LIC3leu_13_a_CC1_INFO		:MAN Lion's Intercity {LTBLUE}43C - 2 doors{BLACK}
 
-STR_MAN_LIC3le_14_a_CC1_NAME		:MAN Lion's Intercity 3 34C {GRAY}Diesel{BLACK}
+STR_MAN_LIC3leu_13_a_CC3_NAME		:MAN Lion's Intercity 3 43C
+STR_MAN_LIC3leu_13_a_CC3_NAME2	:CC3 livery
+STR_MAN_LIC3leu_13_a_CC3_DATA		:Loading speed: {GOLD}21{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}43C, 13m, 2 doors{BLACK}{}{}{STRING}
+STR_MAN_LIC3leu_13_a_CC3_INFO		:MAN Lion's Intercity {LTBLUE}43C - 2 doors{BLACK}
+
+STR_MAN_LIC3leu_13_a_Volan_NAME		:MAN Lion's Intercity 3 43C
+STR_MAN_LIC3leu_13_a_Volan_NAME2	:Volan livery
+STR_MAN_LIC3leu_13_a_Volan_DATA		:Loading speed: {GOLD}21{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}43C, 13m, 2 doors{BLACK}{}{}{STRING}
+STR_MAN_LIC3leu_13_a_Volan_INFO		:MAN Lion's Intercity {LTBLUE}43C - 2 doors{BLACK}
+
+STR_MAN_LIC3le_14_a_CC1_NAME		:MAN Lion's Intercity 3 34C
 STR_MAN_LIC3le_14_a_CC1_NAME2	:CC1 livery
-STR_MAN_LIC3le_14_a_CC1_DATA		:Loading speed: {GOLD}35{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}34C, 14m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Suburb{BLACK}{}{}{STRING}
+STR_MAN_LIC3le_14_a_CC1_DATA		:Loading speed: {GOLD}35{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}34C, 14m, 3 doors{BLACK}{}{}{STRING}
 STR_MAN_LIC3le_14_a_CC1_INFO		:MAN Lion's Intercity {LTBLUE}34C - 3 doors{BLACK}
 
-STR_MAN_LIC3leu_14_a_CC1_NAME		:MAN Lion's Intercity 3 44C {GRAY}Diesel{BLACK}
+STR_MAN_LIC3leu_14_a_CC1_NAME		:MAN Lion's Intercity 3 44C
 STR_MAN_LIC3leu_14_a_CC1_NAME2	:CC1 livery
-STR_MAN_LIC3leu_14_a_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}44C, 14m, 3 doors{BLACK}{}Fuel: {GRAY}Diesel{BLACK}{}Usage: {GOLD}Regional{BLACK}{}{}{STRING}
+STR_MAN_LIC3leu_14_a_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}44C, 14m, 3 doors{BLACK}{}{}{STRING}
 STR_MAN_LIC3leu_14_a_CC1_INFO		:MAN Lion's Intercity {LTBLUE}44C - 3 doors{BLACK}
