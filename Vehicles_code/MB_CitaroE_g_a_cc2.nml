@@ -75,83 +75,83 @@ switch(FEAT_ROADVEHS, SELF, sw_MB_CitaroE_g_a_CC2_name, extra_callback_info1 & 0
 // Item
 item(FEAT_ROADVEHS, item_MB_CitaroE_g_a_CC2) {
     property { 
-        name:                           string(STR_MB_CitaroE_g_a_CC2_NAME);
-        climates_available:         bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+        name:							string(STR_MB_CitaroE_g_a_CC2_NAME);
+        climates_available:				bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
         introduction_date:              date(2020,01,01);
-        model_life:                 20;
-        vehicle_life:                   25;
-        reliability_decay:              20;
-		cargo_allow_refit:      		[PASS,TOUR];
-        loading_speed:                  56;
-        sprite_id:                      SPRITE_ID_NEW_ROADVEH;
-        speed:                          80 km/h;
-        misc_flags:                 bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
-        refit_cost:                 0;
-        running_cost_base:              RUNNING_COST_ROADVEH;
-        power:                          250 kW;
-        weight:                         20 ton;
-        cargo_capacity:             146;
-        cargo_age_period:               185;
-        sound_effect:                   SOUND_DEPARTURE_MODERN_BUS;
-      variant_group:				item_MB_CitaroE_g_a_CC1;
-		badges: 						["power/battery", "livery/2cc", "usage/city"];
+        model_life:						20;
+        vehicle_life:					25;
+        reliability_decay:				20;
+		cargo_allow_refit:				[PASS,TOUR];
+        loading_speed:					56;
+        sprite_id:						SPRITE_ID_NEW_ROADVEH;
+        speed:							80 km/h;
+        misc_flags:						bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:						0;
+        running_cost_base:				RUNNING_COST_ROADVEH;
+        power:							250 kW;
+        weight:							20 ton;
+        cargo_capacity:					146;
+        cargo_age_period:				185;
+        sound_effect:					SOUND_DEPARTURE_MODERN_BUS;
+      variant_group:						item_MB_CitaroE_g_a_CC1;
+		badges:							["type/bus", "power/battery", "flag/flag_CC", "usage/city"];
     }
     graphics {
-        default:                        sw_MB_CitaroE_g_a_CC2;
-        purchase:                       sw_MB_CitaroE_g_a_CC2_purchase;
-        articulated_part:               sw_MB_CitaroE_g_a_CC2_articulated;
-        length:                         sw_MB_CitaroE_g_a_CC2_length;
-        cost_factor:                    44 * parapuco;
-        running_cost_factor:            22 * pararuco;
-        additional_text:                string(STR_MB_CitaroE_g_a_CC2_DATA);
-        name:                           sw_MB_CitaroE_g_a_CC2_name;
+        default:						sw_MB_CitaroE_g_a_CC2;
+        purchase:							sw_MB_CitaroE_g_a_CC2_purchase;
+        articulated_part:				sw_MB_CitaroE_g_a_CC2_articulated;
+        length:							sw_MB_CitaroE_g_a_CC2_length;
+        cost_factor:					44 * parapuco;
+        running_cost_factor:			22 * pararuco;
+        additional_text:				string(STR_MB_CitaroE_g_a_CC2_DATA);
+        name:							sw_MB_CitaroE_g_a_CC2_name;
     }
 }
 item(FEAT_ROADVEHS, item_MB_CitaroE_g_a_CC2_b) {
 	property {
         name:							string(STR_BUG);
-        climates_available:			bitmask(NO_CLIMATE);
+        climates_available:				bitmask(NO_CLIMATE);
         introduction_date:				date(4999999,01,01);
 		cargo_allow_refit:				[PASS,TOUR];
         loading_speed:					0;
         cost_factor:					0;
         running_cost_factor:			0;
         sprite_id:						SPRITE_ID_NEW_ROADVEH;
-        misc_flags:                 bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
-        refit_cost:					0;
+        misc_flags:						bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:						0;
         running_cost_base:				RUNNING_COST_NONE;
         power:							0 kW;
         weight:							0 ton;
-        cargo_capacity:				0;
+        cargo_capacity:					0;
 		cargo_age_period:				0;
     }
     graphics {
-		default:                 		sw_MB_CitaroE_g_a_CC2;
-		length:                  		sw_MB_CitaroE_g_a_CC2_length;
+		default:						sw_MB_CitaroE_g_a_CC2;
+		length:							sw_MB_CitaroE_g_a_CC2_length;
     }
 }
 
 item(FEAT_ROADVEHS, item_MB_CitaroE_g_a_CC2_T) {
 	property {
         name:							string(STR_BUG);
-        climates_available:			bitmask(NO_CLIMATE);
+        climates_available:				bitmask(NO_CLIMATE);
         introduction_date:				date(4999999,01,01);
 		cargo_allow_refit:				[PASS,TOUR];
         loading_speed:					0;
         cost_factor:					0;
         running_cost_factor:			0;
         sprite_id:						SPRITE_ID_NEW_ROADVEH;
-        misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
-        refit_cost:					0;
+        misc_flags:						bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+        refit_cost:						0;
         running_cost_base:				RUNNING_COST_NONE;
         power:							0 kW;
         weight:							0 ton;
-        cargo_capacity:				0;
+        cargo_capacity:					0;
 		cargo_age_period:				0;
     }
     graphics {
-		default:                 		ss_toldat;
-		length:                  		sw_MB_CitaroE_g_a_CC2_length;
+		default:						ss_toldat;
+		length:							sw_MB_CitaroE_g_a_CC2_length;
     }
 }
 

@@ -75,14 +75,17 @@ parapuco = (param_cost_factor == 1) ? 2 : (param_cost_factor == 2) ? 4 : (param_
 pararuco = (param_running_cost_factor == 1) ? 2 : (param_running_cost_factor == 2) ? 4 : (param_running_cost_factor == 3) ? 8 : (param_running_cost_factor == 4) ? 16 : 1;
 
 badgetable {
+	"type",
+	"type/tram",
+	"type/bus",
+	"type/truck",
 	"flag",
     "flag/GB",
     "flag/US",
     "flag/HU",
 	"flag/CH",
 	"flag/europe",
-	"flag/flag_1CC",
-	"flag/flag_2CC",
+	"flag/flag_CC",
 	"power",
     "power/steam",
     "power/diesel",
@@ -90,11 +93,6 @@ badgetable {
     "power/turbine",
     "power/naturgas",
 	"power/battery",
-	"livery",
-	"livery/1cc",
-	"livery/2cc",
-	"livery/random/1cc",
-	"livery/random/2cc",
 	"usage",
 	"usage/city",
 	"usage/suburb",
@@ -230,10 +228,50 @@ template tmpl_4(){
 	}
 
 // ----------------------badges:
-template tmpl_badge_big(x, y) {
+template tmpl_badge_1310(x, y) {
 	[x,	y,	13,	10,	0,	0]}
-template tmpl_badge_small(x, y) {
+template tmpl_badge_1010(x, y) {
 	[x,	y,	10,	10,	0,	0]}
+template tmpl_badge_1112(x, y) {
+	[x,	y,	11,	12,	0,	0]}
+template tmpl_badge_1110(x, y) {
+	[x,	y,	11,	10,	0,	0]}
+// ---type
+spriteset(ss_type_tram, "src/icons.png")		{tmpl_badge_1110(20, 180)}
+spriteset(ss_type_bus, "src/icons.png")		{tmpl_badge_1110(40, 180)}
+spriteset(ss_type_truck, "src/icons.png")		{tmpl_badge_1110(60, 180)}
+
+item (FEAT_BADGES, type) {
+    property {
+        label: "type";
+    }
+}
+
+item (FEAT_BADGES, type_tram) {
+    property {
+        label: "type/tram";
+    }
+	graphics {
+		default: ss_type_tram;
+	}
+}
+item (FEAT_BADGES, type_bus) {
+    property {
+        label: "type/bus";
+    }
+	graphics {
+		default: ss_type_bus;
+	}
+}
+item (FEAT_BADGES, type_truck) {
+    property {
+        label: "type/truck";
+    }
+	graphics {
+		default: ss_type_truck;
+	}
+}
+
 // ---power
 item (FEAT_BADGES, power) {
     property {
@@ -243,7 +281,7 @@ item (FEAT_BADGES, power) {
 }
 
 
-spriteset(ss_power_naturgas, "src/icons.png")		{tmpl_badge_small(20, 100)}
+spriteset(ss_power_naturgas, "src/icons.png")		{tmpl_badge_1010(20, 100)}
 
 item (FEAT_BADGES, power_naturgas) {
     property {
@@ -255,43 +293,32 @@ item (FEAT_BADGES, power_naturgas) {
 	}
 }
 
-// ---livery
-spriteset(ss_livery_1cc, "src/icons.png")		{tmpl_badge_big(20, 80)}
-spriteset(ss_livery_2cc, "src/icons.png")		{tmpl_badge_big(40, 80)}
-
-item (FEAT_BADGES, livery) {
+// ---flag
+item (FEAT_BADGES, flag) {
     property {
-        label: "livery";
-        name: string(STR_LIVERY);
+        label: "flag";
+        name: string(STR_FLAG);
     }
 }
 
-item (FEAT_BADGES, livery_1cc) {
+spriteset(ss_flag_CC, "src/icons.png")		{tmpl_badge_1310(120, 80)}
+
+item (FEAT_BADGES, flag_CC) {
     property {
-        label: "livery/1cc";
-        name: string(STR_1CC);
-		flags: bitmask(3);
-    }
-	graphics {
-		default: ss_livery_1cc;
-	}
-}
-item (FEAT_BADGES, livery_2cc) {
-    property {
-        label: "livery/2cc";
+        label: "flag/flag_CC";
         name: string(STR_2CC);
 		flags: bitmask(3);
     }
 	graphics {
-		default: ss_livery_2cc;
+		default: ss_flag_CC;
 	}
 }
 // ---Usage
-spriteset(ss_usage_city, "src/icons.png")		{tmpl_badge_big(20, 120)}
-spriteset(ss_usage_suburb, "src/icons.png")		{tmpl_badge_big(40, 120)}
-spriteset(ss_usage_regional, "src/icons.png")		{tmpl_badge_big(60, 120)}
-spriteset(ss_usage_intercity, "src/icons.png")		{tmpl_badge_big(80, 120)}
-spriteset(ss_usage_tourist, "src/icons.png")		{tmpl_badge_big(100, 120)}
+spriteset(ss_usage_city, "src/icons.png")		{tmpl_badge_1310(20, 120)}
+spriteset(ss_usage_suburb, "src/icons.png")		{tmpl_badge_1310(40, 120)}
+spriteset(ss_usage_regional, "src/icons.png")		{tmpl_badge_1310(60, 120)}
+spriteset(ss_usage_intercity, "src/icons.png")		{tmpl_badge_1310(80, 120)}
+spriteset(ss_usage_tourist, "src/icons.png")		{tmpl_badge_1310(100, 120)}
 
 item (FEAT_BADGES, usage) {
     property {
