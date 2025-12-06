@@ -1,0 +1,217 @@
+badgetable {
+	"type",
+	"type/tram",
+	"type/bus",
+	"type/truck",
+	"flag",
+	"flag/AT",
+	"flag/AU",
+	"flag/CA",
+	"flag/CH",
+	"flag/CZ",
+    "flag/DE",
+	"flag/FR",
+    "flag/GB",
+    "flag/HU",
+	"flag/RO",
+	"flag/RU",
+	"flag/SI",
+	"flag/SK",
+    "flag/US",
+	"flag/europe",
+	"flag/flag_CC",
+	"power",
+    "power/steam",
+    "power/diesel",
+    "power/electric",
+    "power/turbine",
+    "power/naturgas",
+	"power/battery",
+	"power/eldiesel",
+	"power/hydrogen",
+	"power/petrol",
+	"usage",
+	"usage/city",
+	"usage/suburb",
+	"usage/regional",
+	"usage/intercity",
+	"usage/tourist"
+}
+
+// ----------------------badges:
+template tmpl_badge_1310(x, y) {
+	[x,	y,	13,	10,	0,	0]}
+template tmpl_badge_1010(x, y) {
+	[x,	y,	10,	10,	0,	0]}
+template tmpl_badge_1112(x, y) {
+	[x,	y,	11,	12,	0,	0]}
+template tmpl_badge_1110(x, y) {
+	[x,	y,	11,	10,	0,	0]}
+// ---type
+spriteset(ss_type_tram, "src/icons.png")		{tmpl_badge_1110(20, 180)}
+spriteset(ss_type_bus, "src/icons.png")		{tmpl_badge_1110(40, 180)}
+spriteset(ss_type_truck, "src/icons.png")		{tmpl_badge_1110(60, 180)}
+
+item (FEAT_BADGES, type) {
+    property {
+        label: "type";
+    }
+}
+
+item (FEAT_BADGES, type_tram) {
+    property {
+        label: "type/tram";
+    }
+	graphics {
+		default: ss_type_tram;
+	}
+}
+item (FEAT_BADGES, type_bus) {
+    property {
+        label: "type/bus";
+    }
+	graphics {
+		default: ss_type_bus;
+	}
+}
+item (FEAT_BADGES, type_truck) {
+    property {
+        label: "type/truck";
+    }
+	graphics {
+		default: ss_type_truck;
+	}
+}
+
+// ---power
+item (FEAT_BADGES, power) {
+    property {
+        label: "power";
+        name: string(STR_POWER);
+    }
+}
+
+
+spriteset(ss_power_naturgas, "src/icons.png")		{tmpl_badge_1010(20, 100)}
+
+item (FEAT_BADGES, power_naturgas) {
+    property {
+        label: "power/naturgas";
+        name: string(STR_NATURGAS);
+    }
+	graphics {
+		default: ss_power_naturgas;
+	}
+}
+spriteset(ss_power_eldiesel, "src/icons.png")		{tmpl_badge_1310(40, 100)}
+
+item (FEAT_BADGES, power_eldiesel) {
+    property {
+        label: "power/eldiesel";
+        name: string(STR_NATURGAS);
+    }
+	graphics {
+		default: ss_power_eldiesel;
+	}
+}
+spriteset(ss_power_hydrogen, "src/icons.png")		{tmpl_badge_1010(60, 100)}
+
+item (FEAT_BADGES, power_hydrogen) {
+    property {
+        label: "power/hydrogen";
+        name: string(STR_HYDROGEN);
+    }
+	graphics {
+		default: ss_power_hydrogen;
+	}
+}
+spriteset(ss_power_petrol, "src/icons.png")		{tmpl_badge_1310(160, 100)}
+
+item (FEAT_BADGES, power_petrol) {
+    property {
+        label: "power/petrol";
+        name: string(STR_PETROL);
+    }
+	graphics {
+		default: ss_power_petrol;
+	}
+}
+
+// ---flag
+item (FEAT_BADGES, flag) {
+    property {
+        label: "flag";
+        name: string(STR_FLAG);
+    }
+}
+
+spriteset(ss_flag_CC, "src/icons.png")		{tmpl_badge_1310(120, 80)}
+
+item (FEAT_BADGES, flag_CC) {
+    property {
+        label: "flag/flag_CC";
+        name: string(STR_2CC);
+		flags: bitmask(3);
+    }
+	graphics {
+		default: ss_flag_CC;
+	}
+}
+// ---Usage
+spriteset(ss_usage_city, "src/icons.png")		{tmpl_badge_1310(20, 120)}
+spriteset(ss_usage_suburb, "src/icons.png")		{tmpl_badge_1310(40, 120)}
+spriteset(ss_usage_regional, "src/icons.png")		{tmpl_badge_1310(60, 120)}
+spriteset(ss_usage_intercity, "src/icons.png")		{tmpl_badge_1310(80, 120)}
+spriteset(ss_usage_tourist, "src/icons.png")		{tmpl_badge_1310(100, 120)}
+
+item (FEAT_BADGES, usage) {
+    property {
+        label: "usage";
+        name: string(STR_USAGE);
+    }
+}
+item (FEAT_BADGES, city) {
+    property {
+        label: "usage/city";
+        name: string(STR_USAGE_CITY);
+    }
+	graphics {
+		default: ss_usage_city;
+	}
+}
+item (FEAT_BADGES, suburb) {
+    property {
+        label: "usage/suburb";
+        name: string(STR_USAGE_SUBURB);
+    }
+	graphics {
+		default: ss_usage_suburb;
+	}
+}
+item (FEAT_BADGES, regional) {
+    property {
+        label: "usage/regional";
+        name: string(STR_USAGE_REGIONAL);
+    }
+	graphics {
+		default: ss_usage_regional;
+	}
+}
+item (FEAT_BADGES, intercity) {
+    property {
+        label: "usage/intercity";
+        name: string(STR_USAGE_INTERCITY);
+    }
+	graphics {
+		default: ss_usage_intercity;
+	}
+}
+item (FEAT_BADGES, tourist) {
+    property {
+        label: "usage/tourist";
+        name: string(STR_USAGE_TOURIST);
+    }
+	graphics {
+		default: ss_usage_tourist;
+	}
+}
