@@ -3,7 +3,7 @@
 
 # GRF name and description definitions	
 STR_GRF_NAME					:HVW Bus Set
-STR_GRF_DESC					:{}{LTBLUE}Bus Set{}{BLACK}Code and model:{GREEN}SosMakaroni{} {COPYRIGHT}2025 SosMakaroni{}{GRAY}License: GPLv2{}{BLACK}Ver.333 2025.12.06.
+STR_GRF_DESC					:{}{LTBLUE}Bus Set{}{BLACK}Code and model:{GREEN}SosMakaroni{} {COPYRIGHT}2025 SosMakaroni{}{GRAY}License: GPLv2{}{BLACK}Ver.334 2025.12.06.
 
 STR_BUG							:HVW Toyland bug, sorry :(
 
