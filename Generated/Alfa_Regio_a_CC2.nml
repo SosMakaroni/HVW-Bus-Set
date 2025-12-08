@@ -61,8 +61,16 @@ item(FEAT_ROADVEHS, item_Alfa_Regio_a_CC2) {
         cargo_age_period:              185;
         sound_effect:                  SOUND_DEPARTURE_MODERN_BUS;
         variant_group:                   item_Alfa_Regio_a_CC1;
-        badges:                        ["type/bus", "power/diesel", "flag/flag_CC", "usage/regional"];
     }
+}
+if (param[2] == 0) {
+ item(FEAT_ROADVEHS, item_Alfa_Regio_a_CC2) {
+    property {
+         badges:                        ["type/bus", "power/diesel", "flag/flag_CC", "usage/regional"];
+    }
+  }
+}
+item(FEAT_ROADVEHS, item_Alfa_Regio_a_CC2) {
     graphics {
         default:                       sw_Alfa_Regio_a_CC2;
         

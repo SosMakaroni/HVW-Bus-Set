@@ -61,8 +61,16 @@ item(FEAT_ROADVEHS, item_Ikarus260_b_Volan) {
         cargo_age_period:              200;
         sound_effect:                  SOUND_DEPARTURE_MODERN_BUS;
         variant_group:                   item_Ikarus260_b_CC1;
-        badges:                        ["type/bus", "power/diesel", "flag/HU", "usage/suburb"];
     }
+}
+if (param[2] == 0) {
+ item(FEAT_ROADVEHS, item_Ikarus260_b_Volan) {
+    property {
+         badges:                        ["type/bus", "power/diesel", "flag/HU", "usage/suburb"];
+    }
+  }
+}
+item(FEAT_ROADVEHS, item_Ikarus260_b_Volan) {
     graphics {
         default:                       sw_Ikarus260_b_Volan;
         colour_mapping:	PALETTE_IDENTITY;

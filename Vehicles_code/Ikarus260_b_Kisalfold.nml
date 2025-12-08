@@ -61,8 +61,16 @@ item(FEAT_ROADVEHS, item_Ikarus260_b_Kisalfold) {
         cargo_age_period:              200;
         sound_effect:                  SOUND_DEPARTURE_MODERN_BUS;
         variant_group:                   item_Ikarus260_b_CC1;
-        badges:                        ["type/bus", "power/diesel", "flag/HU", "usage/suburb"];
     }
+}
+if (param[2] == 0) {
+ item(FEAT_ROADVEHS, item_Ikarus260_b_Kisalfold) {
+    property {
+         badges:                        ["type/bus", "power/diesel", "flag/HU", "usage/suburb"];
+    }
+  }
+}
+item(FEAT_ROADVEHS, item_Ikarus260_b_Kisalfold) {
     graphics {
         default:                       sw_Ikarus260_b_Kisalfold;
         colour_mapping:	PALETTE_IDENTITY;

@@ -61,8 +61,16 @@ item(FEAT_ROADVEHS, item_Volvo_7700fl_hybrid_a_CC1) {
         cargo_age_period:              200;
         sound_effect:                  SOUND_DEPARTURE_MODERN_BUS;
         // variant_group:                   item_Volvo_7700fl_hybrid_a_CC1;
-        badges:                        ["type/bus", "power/diesel", "flag/flag_CC", "usage/city"];
     }
+}
+if (param[2] == 0) {
+ item(FEAT_ROADVEHS, item_Volvo_7700fl_hybrid_a_CC1) {
+    property {
+         badges:                        ["type/bus", "power/diesel", "flag/flag_CC", "usage/city"];
+    }
+  }
+}
+item(FEAT_ROADVEHS, item_Volvo_7700fl_hybrid_a_CC1) {
     graphics {
         default:                       sw_Volvo_7700fl_hybrid_a_CC1;
         

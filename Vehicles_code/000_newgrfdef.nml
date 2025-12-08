@@ -39,24 +39,21 @@ grf {
 				}
 			}
 	param 2 {
-		param_cargo_capacity {
+		param_badge {
             type: int;
-            name: string(STR_PARAM_CARGOC_NAME);
-            desc: string(STR_PARAM_CARGOC_DESC);
+            name: string(STR_PARAM_BADGE_NAME);
+            desc: string(STR_PARAM_BADGE_DESC);
             min_value: 0;
-            max_value: 3;
+            max_value: 1;
             def_value: 0;
             names: {
-					0: string(STR_PARAM_CARGOC_1);
-                    1: string(STR_PARAM_CARGOC_2);
-					2: string(STR_PARAM_CARGOC_4);
-					3: string(STR_PARAM_CARGOC_8);
+					0: string(STR_PARAM_BADGE_1);
+                    1: string(STR_PARAM_BADGE_2);
                     };
 				}
 			}
 }
 
-/*paracapa = (param_cargo_capacity == 1) ? 2 : (param_cargo_capacity == 2) ? 4 : (param_cargo_capacity == 3) ? 8 : 1;*/
 parapuco = (param_cost_factor == 1) ? 2 : (param_cost_factor == 2) ? 4 : (param_cost_factor == 3) ? 8 : (param_cost_factor == 4) ? 16 : 1;
 pararuco = (param_running_cost_factor == 1) ? 2 : (param_running_cost_factor == 2) ? 4 : (param_running_cost_factor == 3) ? 8 : (param_running_cost_factor == 4) ? 16 : 1;
 

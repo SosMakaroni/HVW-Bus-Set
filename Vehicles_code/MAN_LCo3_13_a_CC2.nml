@@ -61,8 +61,16 @@ item(FEAT_ROADVEHS, item_MAN_LCo3_13_a_CC2) {
         cargo_age_period:              150;
         sound_effect:                  SOUND_DEPARTURE_MODERN_BUS;
         variant_group:                   item_MAN_LCo3_13_a_CC1;
-        badges:                        ["type/bus", "power/diesel", "flag/flag_CC", "usage/intercity"];
     }
+}
+if (param[2] == 0) {
+ item(FEAT_ROADVEHS, item_MAN_LCo3_13_a_CC2) {
+    property {
+         badges:                        ["type/bus", "power/diesel", "flag/flag_CC", "usage/intercity"];
+    }
+  }
+}
+item(FEAT_ROADVEHS, item_MAN_LCo3_13_a_CC2) {
     graphics {
         default:                       sw_MAN_LCo3_13_a_CC2;
         

@@ -319,10 +319,19 @@ def generate_nml(row, cm):
         f"        cargo_age_period:              {Comfort};",
         "        sound_effect:                  SOUND_DEPARTURE_MODERN_BUS;",
         f"        {Alapszin}variant_group:                   item_{ItemID}_CC1;",
-        f"        badges:                        [\"type/bus\"{BadgeFuel}{BadgeFlag}{BadgeUsage}];",
     ]
     lines.extend(props)
     lines.append("    }")
+    lines.append("}")
+    lines.append("if (param[2] == 0) {")
+    lines.append(f" item(FEAT_ROADVEHS, item_{ItemID}_{Color}) {{")
+    lines.append("    property {")
+    lines.append(f"         badges:                        [\"type/bus\"{BadgeFuel}{BadgeFlag}{BadgeUsage}];")
+    lines.append("    }")
+    lines.append("  }")
+    lines.append("}")
+
+    lines.append(f"item(FEAT_ROADVEHS, item_{ItemID}_{Color}) {{")
     lines.append("    graphics {")
     gfx = [
         f"        default:                       sw_{ItemID}_{Color};",

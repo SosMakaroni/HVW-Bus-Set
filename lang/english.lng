@@ -3,7 +3,7 @@
 
 # GRF name and description definitions	
 STR_GRF_NAME					:HVW Bus Set
-STR_GRF_DESC					:{}{LTBLUE}Bus Set{}{BLACK}Code and model:{GREEN}SosMakaroni{} {COPYRIGHT}2025 SosMakaroni{}{GRAY}License: GPLv2{}{BLACK}Ver.334 2025.12.06.
+STR_GRF_DESC					:{}{LTBLUE}Bus Set{BLACK}{}{}If you’re playing with a version older than OpenTTD 15.0‑beta2, switch {RED}OFF{BLACK} the Badge parameter to avoid an error.{}If you want to play with badges, it’s recommended to also add the {GOLD}PeterN's Default Badge Set{BLACK} GRF for the best gameplay experience.{}{}{BLACK}Code and model:{GREEN}SosMakaroni{} {COPYRIGHT}2025 SosMakaroni{}{GRAY}License: GPLv2{}{BLACK}Ver.344 2025.12.08.
 
 STR_BUG							:HVW Toyland bug, sorry :(
 
@@ -16,17 +16,10 @@ STR_PARAM_GAME_EASY			:/2
 STR_PARAM_GAME_NORMAL			:1 {SILVER} By default{BLACK}
 STR_PARAM_GAME_HARD			:x2
 STR_PARAM_GAME_VERY_HARD		:x4
-STR_PARAM_CARGOC_NAME			:Cargo capacity (It's not working at the moment, but it's planned.)
-STR_PARAM_CARGOC_DESC			:For players who want to choose the cargo capacity multiplier.
-STR_PARAM_CARGOC_1				:x1 {SILVER} By default{BLACK}
-STR_PARAM_CARGOC_2				:x2
-STR_PARAM_CARGOC_4				:x4
-STR_PARAM_CARGOC_8				:x8
-STR_PARAM_PTEMPLATE_NAME			:Shopping List Alignment
-STR_PARAM_PTEMPLATE_DESC			:For players who want to choose where to align the vehicle images in the shopping list.
-STR_PARAM_PTEMPLATE_A				:Regular {SILVER} By default{BLACK}
-STR_PARAM_PTEMPLATE_B				:Right alignment {SILVER} for long vehicles{BLACK}
-STR_PARAM_PTEMPLATE_C				:Center alignment {SILVER} for compatible other sets{BLACK}
+STR_PARAM_BADGE_NAME			:Badges 
+STR_PARAM_BADGE_DESC			:For players who want to choose whether the set uses these badges.{}If you’re playing with a version older than OpenTTD 15.0‑beta2, switch {RED}OFF{BLACK} the Badge parameter to avoid an error.{}If {GREEN}ON{BLACK}, use {GOLD}PeterN's Default Badge Set{BLACK} GRF for the best gaming experience!
+STR_PARAM_BADGE_1				:{GREEN}ON {SILVER} By default{BLACK}
+STR_PARAM_BADGE_2				:{RED}OFF{BLACK}
 
 STR_POWER						:Propulsion
 STR_NATURGAS					:Natural gas

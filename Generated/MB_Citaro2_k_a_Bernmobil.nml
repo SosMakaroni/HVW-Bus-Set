@@ -61,8 +61,16 @@ item(FEAT_ROADVEHS, item_MB_Citaro2_k_a_Bernmobil) {
         cargo_age_period:              200;
         sound_effect:                  SOUND_DEPARTURE_MODERN_BUS;
         variant_group:                   item_MB_Citaro2_k_a_CC1;
-        badges:                        ["type/bus", "power/diesel", "flag/CH", "usage/city"];
     }
+}
+if (param[2] == 0) {
+ item(FEAT_ROADVEHS, item_MB_Citaro2_k_a_Bernmobil) {
+    property {
+         badges:                        ["type/bus", "power/diesel", "flag/CH", "usage/city"];
+    }
+  }
+}
+item(FEAT_ROADVEHS, item_MB_Citaro2_k_a_Bernmobil) {
     graphics {
         default:                       sw_MB_Citaro2_k_a_Bernmobil;
         colour_mapping:	PALETTE_IDENTITY;
