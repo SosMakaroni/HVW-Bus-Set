@@ -503,6 +503,12 @@ STR_MAN_LC2_DD_a_CC1_NAME2	:CC1 livery
 STR_MAN_LC2_DD_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}DD, 13,7m, 3 doors{BLACK}{}{STRING}
 STR_MAN_LC2_DD_a_CC1_INFO		:MAN Lion's City {LTBLUE}DD - 3 doors{BLACK}
 
+# ---- MAN Lion's City 2 DD BVG
+STR_MAN_LC2_DD_a_BVG_NAME		:MAN Lion's City 2 DD
+STR_MAN_LC2_DD_a_BVG_NAME2	:BVG livery
+STR_MAN_LC2_DD_a_BVG_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}DD, 13,7m, 3 doors{BLACK}{}{STRING}
+STR_MAN_LC2_DD_a_BVG_INFO		:MAN Lion's City {LTBLUE}DD - 3 doors{BLACK}
+
 # ---- MAN Lion's City 3 10E CC1
 STR_MAN_LC3e_10_a_CC1_NAME		:MAN Lion's City 3 10E
 STR_MAN_LC3e_10_a_CC1_NAME2	:CC1 livery
@@ -698,8 +704,14 @@ STR_MAN_LC3e_18_b_CC2_INFO		:MAN Lion's City {LTBLUE}18E - 3 doors{BLACK}
 # ---- MAN Lion's Intercity 3 32C CC1
 STR_MAN_LIC3le_12_a_CC1_NAME		:MAN Lion's Intercity 3 32C
 STR_MAN_LIC3le_12_a_CC1_NAME2	:CC1 livery
-STR_MAN_LIC3le_12_a_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}32C, 12m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LIC3le_12_a_CC1_INFO		:MAN Lion's Intercity {LTBLUE}32C - 2 doors{BLACK}
+STR_MAN_LIC3le_12_a_CC1_DATA		:Loading speed: {GOLD}35{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}32C, 12m, 3 doors{BLACK}{}{STRING}
+STR_MAN_LIC3le_12_a_CC1_INFO		:MAN Lion's Intercity {LTBLUE}32C - 3 doors{BLACK}
+
+# ---- MAN Lion's Intercity 3 32C CC1
+STR_MAN_LIC3le_12_b_CC1_NAME		:MAN Lion's Intercity 3 32C
+STR_MAN_LIC3le_12_b_CC1_NAME2	:CC1 livery
+STR_MAN_LIC3le_12_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}32C, 12m, 2 doors{BLACK}{}{STRING}
+STR_MAN_LIC3le_12_b_CC1_INFO		:MAN Lion's Intercity {LTBLUE}32C - 2 doors{BLACK}
 
 # ---- MAN Lion's Intercity 3 33C CC1
 STR_MAN_LIC3le_13_a_CC1_NAME		:MAN Lion's Intercity 3 33C
@@ -1304,7 +1316,7 @@ STR_Solaris_Urbino2_18_b_CC1_INFO		:Solaris Urbino {LTBLUE}- 3 doors{BLACK}
 # ---- Solaris Urbino 18 BVG
 STR_Solaris_Urbino2_18_b_BVG_NAME		:Solaris Urbino 18 
 STR_Solaris_Urbino2_18_b_BVG_NAME2	:BVG livery
-STR_Solaris_Urbino2_18_b_BVG_DATA		:Loading speed: {GOLD}32{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18m, 3 doors{BLACK}{}{STRING}
+STR_Solaris_Urbino2_18_b_BVG_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18m, 3 doors{BLACK}{}{STRING}
 STR_Solaris_Urbino2_18_b_BVG_INFO		:Solaris Urbino {LTBLUE}- 3 doors{BLACK}
 
 # ---- New Flyer D40LF CC1

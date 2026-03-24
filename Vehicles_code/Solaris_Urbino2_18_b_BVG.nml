@@ -59,7 +59,7 @@ item(FEAT_ROADVEHS, item_Solaris_Urbino2_18_b_BVG) {
         vehicle_life:                  25;
         reliability_decay:             20;
         cargo_allow_refit:             [PASS,TOUR];
-        loading_speed:                 32;
+        loading_speed:                 42;
         sprite_id:                     SPRITE_ID_NEW_ROADVEH;
         speed:                    70 km/h;
         misc_flags:                    bitmask(ROADVEH_FLAG_SPRITE_STACK);
@@ -87,7 +87,7 @@ item(FEAT_ROADVEHS, item_Solaris_Urbino2_18_b_BVG) {
         purchase:                      ss_Solaris_Urbino2_18_b_BVG_purchase;
         articulated_part:             sw_Solaris_Urbino2_18_b_BVG_articulated;
         length:                       sw_Solaris_Urbino2_18_b_BVG_length;
-        cost_factor:                  27 * parapuco;
+        cost_factor:                  28 * parapuco;
         running_cost_factor:          38 * pararuco;
         additional_text:              string(STR_Solaris_Urbino2_18_b_BVG_DATA);
         name:                         sw_Solaris_Urbino2_18_b_BVG_texts;
