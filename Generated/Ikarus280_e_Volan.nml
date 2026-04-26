@@ -10,7 +10,6 @@ spriteset(ss_Ikarus280_e_Volan_b, "src/Ikarus/2xx/Ikarus280_e_Volan_b_8bpp.png")
 alternative_sprites(ss_Ikarus280_e_Volan_b, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/Ikarus/2xx/Ikarus280_e_Volan_b_8bpp.png") {tmpl7_2()}
 alternative_sprites(ss_Ikarus280_e_Volan_b, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/Ikarus/2xx/Ikarus280_e_Volan_b_8bpp.png") {tmpl7_4()}
 
-
 // Játékban grafika
 switch (FEAT_ROADVEHS, SELF, sw_Ikarus280_e_Volan, position_in_consist ) {
 	1: ss_Ikarus280_e_Volan_a;
@@ -23,7 +22,7 @@ switch (FEAT_ROADVEHS, SELF, sw_Ikarus280_e_Volan_articulated, extra_callback_in
 	0: item_Ikarus280_e_Volan;
 	1: item_Ikarus280_e_Volan_t;
 	2: item_Ikarus280_e_Volan_t;
-    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
 // Modelhossz
@@ -35,86 +34,77 @@ switch (FEAT_ROADVEHS, SELF, sw_Ikarus280_e_Volan_length, position_in_consist) {
 
 // Szövegek
 switch(FEAT_ROADVEHS, SELF, sw_Ikarus280_e_Volan_names, (extra_callback_info1 >> 8) & 0xFFFF) {
-	1: return string(STR_Ikarus280_e_Volan_NAME2); // Almenü 1 név
+	1: return string(STR_GEN_LIVERY, string(STR_LIV_VOLAN)); // Almenü 1 név
 	return CB_RESULT_NO_TEXT;
 }
 
 switch(FEAT_ROADVEHS, SELF, sw_Ikarus280_e_Volan_texts, extra_callback_info1 & 0xFF) {
-	0x11: return string(STR_Ikarus280_e_Volan_INFO); // Jármű infóban név
+	0x11: return string(STR_GEN_INFO, string(STR_MFR_IKARUS), string(STR_T1_280), string(STR_O1_3_DOORS)); // Jármű infóban név (Gyártó-Típus-Ajtó)
 	0x20: sw_Ikarus280_e_Volan_names; // Vásárlási lista név
-	0x21: return string(STR_Ikarus280_e_Volan_NAME); // Elővásárlási név
+	0x21: return string(STR_GEN_NAME, string(STR_MFR_IKARUS), string(STR_T1_280), string(STR_EMPTY), string(STR_EMPTY)); // Elővásárlási név
 	return CB_RESULT_NO_TEXT;
 }
 
 // Item
 item(FEAT_ROADVEHS, item_Ikarus280_e_Volan) {
-    property {
-        name:                          string(STR_Ikarus280_e_Volan_NAME);
-        climates_available:            bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
-        introduction_date:             date(1979,01,01);
-        model_life:                    20;
-        vehicle_life:                  25;
-        reliability_decay:             20;
-        cargo_allow_refit:             [PASS,TOUR];
-        loading_speed:                 30;
-        sprite_id:                     SPRITE_ID_NEW_ROADVEH;
-        speed:                    70 km/h;
-        misc_flags:                    bitmask(ROADVEH_FLAG_SPRITE_STACK);
-        refit_cost:                    0;
-        running_cost_base:             RUNNING_COST_ROADVEH;
-        power:                         162 kW;
-        weight:                        12 ton;
-        cargo_capacity:                95;
-        cargo_age_period:              200;
-        sound_effect:                  SOUND_DEPARTURE_MODERN_BUS;
-        variant_group:                   item_Ikarus280_e_CC1;
-    }
+	property {
+		name:                string(STR_GEN_NAME, string(STR_MFR_IKARUS), string(STR_T1_280), string(STR_EMPTY), string(STR_EMPTY));
+		climates_available:  bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+		introduction_date:   date(1979,01,01);
+		model_life:          20;
+		vehicle_life:        25;
+		reliability_decay:   20;
+		cargo_allow_refit:   [PASS,TOUR];
+		loading_speed:       30;
+		sprite_id:           SPRITE_ID_NEW_ROADVEH;
+		speed:               70 km/h;
+		misc_flags:          bitmask(ROADVEH_FLAG_SPRITE_STACK);
+		refit_cost:          0;
+		running_cost_base:   RUNNING_COST_ROADVEH;
+		power:               162 kW;
+		weight:              12 ton;
+		cargo_capacity:      95;
+		cargo_age_period:    200;
+		sound_effect:        SOUND_DEPARTURE_MODERN_BUS;
+		badges:              ["type/bus", "power/diesel", "flag/HU", "usage/suburb"];
+		variant_group:             item_Ikarus280_e_CC1;
+	}
+	graphics {
+		default:             sw_Ikarus280_e_Volan;
+		colour_mapping:	PALETTE_IDENTITY;    // Cégszín deaktiválás, ha valós színű jármű
+		purchase:            ss_Ikarus280_e_Volan_purchase;
+		articulated_part:    sw_Ikarus280_e_Volan_articulated;
+		length:              sw_Ikarus280_e_Volan_length;
+		cost_factor:         19 * parapuco;
+		running_cost_factor: 26 * pararuco;
+		additional_text:     string(STR_GEN_DATA, 30, string(STR_EMPTY), string(STR_O2_17M), string(STR_O1_3_DOORS));
+		name:                sw_Ikarus280_e_Volan_texts; // Vásárlási almenü switch
+	}
 }
-if (param[2] == 0) {
- item(FEAT_ROADVEHS, item_Ikarus280_e_Volan) {
-    property {
-         badges:                        ["type/bus", "power/diesel", "flag/HU", "usage/suburb"];
-    }
-  }
-}
-item(FEAT_ROADVEHS, item_Ikarus280_e_Volan) {
-    graphics {
-        default:                       sw_Ikarus280_e_Volan;
-        colour_mapping:	PALETTE_IDENTITY;
-        purchase:                      ss_Ikarus280_e_Volan_purchase;
-        articulated_part:             sw_Ikarus280_e_Volan_articulated;
-        length:                       sw_Ikarus280_e_Volan_length;
-        cost_factor:                  19 * parapuco;
-        running_cost_factor:          26 * pararuco;
-        additional_text:              string(STR_Ikarus280_e_Volan_DATA);
-        name:                         sw_Ikarus280_e_Volan_texts;
-    }
-}
-
 // Csukló item
 item(FEAT_ROADVEHS, item_Ikarus280_e_Volan_t) {
-  property {
-      name:							string(STR_BUG);
-      climates_available:				bitmask(NO_CLIMATE);
-      introduction_date:				date(4999999,01,01);
-      cargo_allow_refit:				[PASS,TOUR];
-      loading_speed:					0;
-      cost_factor:					0;
-      running_cost_factor:			0;
-      sprite_id:						SPRITE_ID_NEW_ROADVEH;
-      misc_flags:						bitmask(ROADVEH_FLAG_SPRITE_STACK);
-      refit_cost:						0;
-      running_cost_base:				RUNNING_COST_NONE;
-      power:							0 kW;
-      weight:							0 ton;
-      cargo_capacity:					0;
-      cargo_age_period:				0;
-   }
-   graphics {
-      default:						sw_Ikarus280_e_Volan;
-      colour_mapping:	PALETTE_IDENTITY;
-      length:							sw_Ikarus280_e_Volan_length;
-   }
+	property {
+		name:							string(STR_BUG);
+		climates_available:			bitmask(NO_CLIMATE);
+		introduction_date:				date(4999999,01,01);
+		cargo_allow_refit:				[PASS,TOUR];
+		loading_speed:					0;
+		cost_factor:					0;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_ROADVEH;
+		misc_flags:					bitmask(ROADVEH_FLAG_SPRITE_STACK);
+		refit_cost:					0;
+		running_cost_base:				RUNNING_COST_NONE;
+		power:							0 kW;
+		weight:						0 ton;
+		cargo_capacity:				0;
+		cargo_age_period:				0;
+	}
+	graphics {
+		default:						sw_Ikarus280_e_Volan;
+		colour_mapping:	PALETTE_IDENTITY; // Cégszín deaktiválás, ha valós színű jármű
+		length:						sw_Ikarus280_e_Volan_length;
+	}
 }
 // ---------- Ikarus280_e_Volan --- End
 

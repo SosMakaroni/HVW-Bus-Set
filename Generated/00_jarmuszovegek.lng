@@ -1,1428 +1,182 @@
 
-# ---- Raba LHo CC1
-STR_Raba_LHo_a_CC1_NAME		:Raba LHo 
-STR_Raba_LHo_a_CC1_NAME2	:CC1 livery
-STR_Raba_LHo_a_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}7m, 2 doors{BLACK}{}{STRING}
-STR_Raba_LHo_a_CC1_INFO		:Raba LHo {LTBLUE}- 2 doors{BLACK}
-
-# ---- Raba LHo CC1
-STR_Raba_LHo_b_CC1_NAME		:Raba LHo 
-STR_Raba_LHo_b_CC1_NAME2	:CC1 livery
-STR_Raba_LHo_b_CC1_DATA		:Loading speed: {GOLD}5{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}7m, 1 door{BLACK}{}{STRING}
-STR_Raba_LHo_b_CC1_INFO		:Raba LHo {LTBLUE}- 1 door{BLACK}
-
-# ---- Mávag N2h CC1
-STR_Mavag_N2h_a_CC1_NAME		:Mávag N2h 
-STR_Mavag_N2h_a_CC1_NAME2	:CC1 livery
-STR_Mavag_N2h_a_CC1_DATA		:Loading speed: {GOLD}5{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}7,9m, 1 door{BLACK}{}{STRING}
-STR_Mavag_N2h_a_CC1_INFO		:Mávag {LTBLUE}- 1 door{BLACK}
-
-# ---- Mávag N26 CC1
-STR_Mavag_N26_a_CC1_NAME		:Mávag N26 
-STR_Mavag_N26_a_CC1_NAME2	:CC1 livery
-STR_Mavag_N26_a_CC1_DATA		:Loading speed: {GOLD}5{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}8,7m, 1 door{BLACK}{}{STRING}
-STR_Mavag_N26_a_CC1_INFO		:Mávag {LTBLUE}- 1 door{BLACK}
-
-# ---- Mávag NI56 CC1
-STR_Mavag_NI56_a_CC1_NAME		:Mávag NI56 
-STR_Mavag_NI56_a_CC1_NAME2	:CC1 livery
-STR_Mavag_NI56_a_CC1_DATA		:Loading speed: {GOLD}5{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10,4m, 1 door{BLACK}{}{STRING}
-STR_Mavag_NI56_a_CC1_INFO		:Mávag {LTBLUE}- 1 door{BLACK}
-
-# ---- Ikarus 30 CC1
-STR_Ikarus30_0_a_CC1_NAME		:Ikarus 30 
-STR_Ikarus30_0_a_CC1_NAME2	:CC1 livery
-STR_Ikarus30_0_a_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}8,4m, 2 doors{BLACK}{}{STRING}
-STR_Ikarus30_0_a_CC1_INFO		:Ikarus 30 {LTBLUE}- 2 doors{BLACK}
-
-# ---- Ikarus 30 CC1
-STR_Ikarus30_1_a_CC1_NAME		:Ikarus 30 
-STR_Ikarus30_1_a_CC1_NAME2	:CC livery
-STR_Ikarus30_1_a_CC1_DATA		:Loading speed: {GOLD}5{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}8,4m, 1 door{BLACK}{}{STRING}
-STR_Ikarus30_1_a_CC1_INFO		:Ikarus 30 {LTBLUE}- 1 door{BLACK}
-
-# ---- Ikarus 30 CC2
-STR_Ikarus30_1_a_CC2_NAME		:Ikarus 30 
-STR_Ikarus30_1_a_CC2_NAME2	:CC two tone livery
-STR_Ikarus30_1_a_CC2_DATA		:Loading speed: {GOLD}5{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}8,4m, 1 door{BLACK}{}{STRING}
-STR_Ikarus30_1_a_CC2_INFO		:Ikarus 30 {LTBLUE}- 1 door{BLACK}
-
-# ---- Ikarus 31 CC1
-STR_Ikarus31_0_a_CC1_NAME		:Ikarus 31 
-STR_Ikarus31_0_a_CC1_NAME2	:CC livery
-STR_Ikarus31_0_a_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}8,5m, 2 doors{BLACK}{}{STRING}
-STR_Ikarus31_0_a_CC1_INFO		:Ikarus 31 {LTBLUE}- 2 doors{BLACK}
-
-# ---- Ikarus 31 CC1
-STR_Ikarus31_1_a_CC1_NAME		:Ikarus 31 
-STR_Ikarus31_1_a_CC1_NAME2	:CC livery
-STR_Ikarus31_1_a_CC1_DATA		:Loading speed: {GOLD}5{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}8,5m, 1 door{BLACK}{}{STRING}
-STR_Ikarus31_1_a_CC1_INFO		:Ikarus 31 {LTBLUE}- 1 door{BLACK}
-
-# ---- Ikarus 31 CC1
-STR_Ikarus31_2_a_CC1_NAME		:Ikarus 31 
-STR_Ikarus31_2_a_CC1_NAME2	:CC livery
-STR_Ikarus31_2_a_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}8,5m, 2 doors{BLACK}{}{STRING}
-STR_Ikarus31_2_a_CC1_INFO		:Ikarus 31 {LTBLUE}- 2 doors{BLACK}
-
-# ---- Ikarus 31 CC1
-STR_Ikarus31_3_a_CC1_NAME		:Ikarus 31 
-STR_Ikarus31_3_a_CC1_NAME2	:CC livery
-STR_Ikarus31_3_a_CC1_DATA		:Loading speed: {GOLD}5{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}8,5m, 1 door{BLACK}{}{STRING}
-STR_Ikarus31_3_a_CC1_INFO		:Ikarus 31 {LTBLUE}- 1 door{BLACK}
-
-# ---- Ikarus 256 CC1
-STR_Ikarus256_a_CC1_NAME		:Ikarus 256 
-STR_Ikarus256_a_CC1_NAME2	:CC two tone livery
-STR_Ikarus256_a_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11m, 2 doors{BLACK}{}{STRING}
-STR_Ikarus256_a_CC1_INFO		:Ikarus 256 {LTBLUE}- 2 doors{BLACK}
-
-# ---- Ikarus 256 CC2
-STR_Ikarus256_a_CC2_NAME		:Ikarus 256 
-STR_Ikarus256_a_CC2_NAME2	:CC stripe livery
-STR_Ikarus256_a_CC2_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11m, 2 doors{BLACK}{}{STRING}
-STR_Ikarus256_a_CC2_INFO		:Ikarus 256 {LTBLUE}- 2 doors{BLACK}
-
-# ---- Ikarus 256 Volan1
-STR_Ikarus256_a_Volan1_NAME		:Ikarus 256 
-STR_Ikarus256_a_Volan1_NAME2	:Volán livery
-STR_Ikarus256_a_Volan1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11m, 2 doors{BLACK}{}{STRING}
-STR_Ikarus256_a_Volan1_INFO		:Ikarus 256 {LTBLUE}- 2 doors{BLACK}
-
-# ---- Ikarus 256 CC1
-STR_Ikarus256_b_CC1_NAME		:Ikarus 256 
-STR_Ikarus256_b_CC1_NAME2	:CC two tone livery
-STR_Ikarus256_b_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11m, 2 doors{BLACK}{}{STRING}
-STR_Ikarus256_b_CC1_INFO		:Ikarus 256 {LTBLUE}- 2 doors{BLACK}
-
-# ---- Ikarus 256 CC2
-STR_Ikarus256_b_CC2_NAME		:Ikarus 256 
-STR_Ikarus256_b_CC2_NAME2	:CC stripe livery
-STR_Ikarus256_b_CC2_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11m, 2 doors{BLACK}{}{STRING}
-STR_Ikarus256_b_CC2_INFO		:Ikarus 256 {LTBLUE}- 2 doors{BLACK}
-
-# ---- Ikarus 260 CC1
-STR_Ikarus260_a_CC1_NAME		:Ikarus 260 
-STR_Ikarus260_a_CC1_NAME2	:CC two tone livery
-STR_Ikarus260_a_CC1_DATA		:Loading speed: {GOLD}30{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11m, 3 doors{BLACK}{}{STRING}
-STR_Ikarus260_a_CC1_INFO		:Ikarus 260 {LTBLUE}- 3 doors{BLACK}
-
-# ---- Ikarus 260 CC2
-STR_Ikarus260_a_CC2_NAME		:Ikarus 260 
-STR_Ikarus260_a_CC2_NAME2	:CC stripe livery
-STR_Ikarus260_a_CC2_DATA		:Loading speed: {GOLD}30{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11m, 3 doors{BLACK}{}{STRING}
-STR_Ikarus260_a_CC2_INFO		:Ikarus 260 {LTBLUE}- 3 doors{BLACK}
-
-# ---- Ikarus 260 BKV
-STR_Ikarus260_a_BKV_NAME		:Ikarus 260 
-STR_Ikarus260_a_BKV_NAME2	:BKV livery
-STR_Ikarus260_a_BKV_DATA		:Loading speed: {GOLD}30{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11m, 3 doors{BLACK}{}{STRING}
-STR_Ikarus260_a_BKV_INFO		:Ikarus 260 {LTBLUE}- 3 doors{BLACK}
-
-# ---- Ikarus 260 CC1
-STR_Ikarus260_b_CC1_NAME		:Ikarus 260 
-STR_Ikarus260_b_CC1_NAME2	:CC two tone livery
-STR_Ikarus260_b_CC1_DATA		:Loading speed: {GOLD}20{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11m, 2 doors{BLACK}{}{STRING}
-STR_Ikarus260_b_CC1_INFO		:Ikarus 260 {LTBLUE}- 2 doors{BLACK}
-
-# ---- Ikarus 260 CC2
-STR_Ikarus260_b_CC2_NAME		:Ikarus 260 
-STR_Ikarus260_b_CC2_NAME2	:CC stripe livery
-STR_Ikarus260_b_CC2_DATA		:Loading speed: {GOLD}20{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11m, 2 doors{BLACK}{}{STRING}
-STR_Ikarus260_b_CC2_INFO		:Ikarus 260 {LTBLUE}- 2 doors{BLACK}
-
-# ---- Ikarus 260 Kisalfold
-STR_Ikarus260_b_Kisalfold_NAME		:Ikarus 260 
-STR_Ikarus260_b_Kisalfold_NAME2	:Kisalföld livery
-STR_Ikarus260_b_Kisalfold_DATA		:Loading speed: {GOLD}20{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11m, 2 doors{BLACK}{}{STRING}
-STR_Ikarus260_b_Kisalfold_INFO		:Ikarus 260 {LTBLUE}- 2 doors{BLACK}
-
-# ---- Ikarus 260 Volan
-STR_Ikarus260_b_Volan_NAME		:Ikarus 260 
-STR_Ikarus260_b_Volan_NAME2	:Volán livery
-STR_Ikarus260_b_Volan_DATA		:Loading speed: {GOLD}20{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11m, 2 doors{BLACK}{}{STRING}
-STR_Ikarus260_b_Volan_INFO		:Ikarus 260 {LTBLUE}- 2 doors{BLACK}
-
-# ---- Ikarus 260 CC1
-STR_Ikarus260_c_CC1_NAME		:Ikarus 260 
-STR_Ikarus260_c_CC1_NAME2	:CC two tone livery
-STR_Ikarus260_c_CC1_DATA		:Loading speed: {GOLD}20{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11m, 2 doors{BLACK}{}{STRING}
-STR_Ikarus260_c_CC1_INFO		:Ikarus 260 {LTBLUE}- 2 doors{BLACK}
-
-# ---- Ikarus 260 CC2
-STR_Ikarus260_c_CC2_NAME		:Ikarus 260 
-STR_Ikarus260_c_CC2_NAME2	:CC stripe livery
-STR_Ikarus260_c_CC2_DATA		:Loading speed: {GOLD}20{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11m, 2 doors{BLACK}{}{STRING}
-STR_Ikarus260_c_CC2_INFO		:Ikarus 260 {LTBLUE}- 2 doors{BLACK}
-
-# ---- Ikarus 260 CC1
-STR_Ikarus260_d_CC1_NAME		:Ikarus 260 
-STR_Ikarus260_d_CC1_NAME2	:CC two tone livery
-STR_Ikarus260_d_CC1_DATA		:Loading speed: {GOLD}30{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11m, 3 doors{BLACK}{}{STRING}
-STR_Ikarus260_d_CC1_INFO		:Ikarus 260 {LTBLUE}- 3 doors{BLACK}
-
-# ---- Ikarus 260 CC2
-STR_Ikarus260_d_CC2_NAME		:Ikarus 260 
-STR_Ikarus260_d_CC2_NAME2	:CC stripe livery
-STR_Ikarus260_d_CC2_DATA		:Loading speed: {GOLD}30{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11m, 3 doors{BLACK}{}{STRING}
-STR_Ikarus260_d_CC2_INFO		:Ikarus 260 {LTBLUE}- 3 doors{BLACK}
-
-# ---- Ikarus 260 BKV
-STR_Ikarus260_d_BKV_NAME		:Ikarus 260 
-STR_Ikarus260_d_BKV_NAME2	:BKV livery
-STR_Ikarus260_d_BKV_DATA		:Loading speed: {GOLD}30{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11m, 3 doors{BLACK}{}{STRING}
-STR_Ikarus260_d_BKV_INFO		:Ikarus 260 {LTBLUE}- 3 doors{BLACK}
-
-# ---- Ikarus 260 CC1
-STR_Ikarus260_e_CC1_NAME		:Ikarus 260 
-STR_Ikarus260_e_CC1_NAME2	:CC two tone livery
-STR_Ikarus260_e_CC1_DATA		:Loading speed: {GOLD}30{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11m, 3 doors{BLACK}{}{STRING}
-STR_Ikarus260_e_CC1_INFO		:Ikarus 260 {LTBLUE}- 3 doors{BLACK}
-
-# ---- Ikarus 260 CC2
-STR_Ikarus260_e_CC2_NAME		:Ikarus 260 
-STR_Ikarus260_e_CC2_NAME2	:CC stripe livery
-STR_Ikarus260_e_CC2_DATA		:Loading speed: {GOLD}30{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11m, 3 doors{BLACK}{}{STRING}
-STR_Ikarus260_e_CC2_INFO		:Ikarus 260 {LTBLUE}- 3 doors{BLACK}
-
-# ---- Ikarus 260 Szeged
-STR_Ikarus260_e_Szeged_NAME		:Ikarus 260 
-STR_Ikarus260_e_Szeged_NAME2	:Szeged livery
-STR_Ikarus260_e_Szeged_DATA		:Loading speed: {GOLD}30{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}11m, 3 doors{BLACK}{}{STRING}
-STR_Ikarus260_e_Szeged_INFO		:Ikarus 260 {LTBLUE}- 3 doors{BLACK}
-
-# ---- Ikarus 263 CC1
-STR_Ikarus263_a_CC1_NAME		:Ikarus 263 
-STR_Ikarus263_a_CC1_NAME2	:CC two tone livery
-STR_Ikarus263_a_CC1_DATA		:Loading speed: {GOLD}30{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_Ikarus263_a_CC1_INFO		:Ikarus 263 {LTBLUE}- 3 doors{BLACK}
-
-# ---- Ikarus 263 CC2
-STR_Ikarus263_a_CC2_NAME		:Ikarus 263 
-STR_Ikarus263_a_CC2_NAME2	:CC stripe livery
-STR_Ikarus263_a_CC2_DATA		:Loading speed: {GOLD}30{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_Ikarus263_a_CC2_INFO		:Ikarus 263 {LTBLUE}- 3 doors{BLACK}
-
-# ---- Ikarus 263 BKV
-STR_Ikarus263_a_BKV_NAME		:Ikarus 263 
-STR_Ikarus263_a_BKV_NAME2	:BKV livery
-STR_Ikarus263_a_BKV_DATA		:Loading speed: {GOLD}30{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_Ikarus263_a_BKV_INFO		:Ikarus 263 {LTBLUE}- 3 doors{BLACK}
-
-# ---- Ikarus 263 CC1
-STR_Ikarus263_c_CC1_NAME		:Ikarus 263 
-STR_Ikarus263_c_CC1_NAME2	:CC two tone livery
-STR_Ikarus263_c_CC1_DATA		:Loading speed: {GOLD}20{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Ikarus263_c_CC1_INFO		:Ikarus 263 {LTBLUE}- 2 doors{BLACK}
-
-# ---- Ikarus 263 CC2
-STR_Ikarus263_c_CC2_NAME		:Ikarus 263 
-STR_Ikarus263_c_CC2_NAME2	:CC stripe livery
-STR_Ikarus263_c_CC2_DATA		:Loading speed: {GOLD}20{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Ikarus263_c_CC2_INFO		:Ikarus 263 {LTBLUE}- 2 doors{BLACK}
-
-# ---- Ikarus 280 CC1
-STR_Ikarus280_a_CC1_NAME		:Ikarus 280 
-STR_Ikarus280_a_CC1_NAME2	:CC two tone livery
-STR_Ikarus280_a_CC1_DATA		:Loading speed: {GOLD}40{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}17m, 4 doors{BLACK}{}{STRING}
-STR_Ikarus280_a_CC1_INFO		:Ikarus 280 {LTBLUE}- 4 doors{BLACK}
-
-# ---- Ikarus 280 CC2
-STR_Ikarus280_a_CC2_NAME		:Ikarus 280 
-STR_Ikarus280_a_CC2_NAME2	:CC stripe livery
-STR_Ikarus280_a_CC2_DATA		:Loading speed: {GOLD}40{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}17m, 4 doors{BLACK}{}{STRING}
-STR_Ikarus280_a_CC2_INFO		:Ikarus 280 {LTBLUE}- 4 doors{BLACK}
-
-# ---- Ikarus 280 BKV
-STR_Ikarus280_a_BKV_NAME		:Ikarus 280 
-STR_Ikarus280_a_BKV_NAME2	:BKV livery
-STR_Ikarus280_a_BKV_DATA		:Loading speed: {GOLD}40{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}17m, 4 doors{BLACK}{}{STRING}
-STR_Ikarus280_a_BKV_INFO		:Ikarus 280 {LTBLUE}- 4 doors{BLACK}
-
-# ---- Ikarus 280 Volan
-STR_Ikarus280_a_Volan_NAME		:Ikarus 280 
-STR_Ikarus280_a_Volan_NAME2	:Volán livery
-STR_Ikarus280_a_Volan_DATA		:Loading speed: {GOLD}40{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}17m, 4 doors{BLACK}{}{STRING}
-STR_Ikarus280_a_Volan_INFO		:Ikarus 280 {LTBLUE}- 4 doors{BLACK}
-
-# ---- Ikarus 280 CC1
-STR_Ikarus280_c_CC1_NAME		:Ikarus 280 
-STR_Ikarus280_c_CC1_NAME2	:CC two tone livery
-STR_Ikarus280_c_CC1_DATA		:Loading speed: {GOLD}20{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}17m, 2 doors{BLACK}{}{STRING}
-STR_Ikarus280_c_CC1_INFO		:Ikarus 280 {LTBLUE}- 2 doors{BLACK}
-
-# ---- Ikarus 280 CC2
-STR_Ikarus280_c_CC2_NAME		:Ikarus 280 
-STR_Ikarus280_c_CC2_NAME2	:CC stripe livery
-STR_Ikarus280_c_CC2_DATA		:Loading speed: {GOLD}20{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}17m, 2 doors{BLACK}{}{STRING}
-STR_Ikarus280_c_CC2_INFO		:Ikarus 280 {LTBLUE}- 2 doors{BLACK}
-
-# ---- Ikarus 280 Volan
-STR_Ikarus280_c_Volan_NAME		:Ikarus 280 
-STR_Ikarus280_c_Volan_NAME2	:Volán livery
-STR_Ikarus280_c_Volan_DATA		:Loading speed: {GOLD}20{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}17m, 2 doors{BLACK}{}{STRING}
-STR_Ikarus280_c_Volan_INFO		:Ikarus 280 {LTBLUE}- 2 doors{BLACK}
-
-# ---- Ikarus 280 CC1
-STR_Ikarus280_d_CC1_NAME		:Ikarus 280 
-STR_Ikarus280_d_CC1_NAME2	:CC two tone livery
-STR_Ikarus280_d_CC1_DATA		:Loading speed: {GOLD}40{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}17m, 4 doors{BLACK}{}{STRING}
-STR_Ikarus280_d_CC1_INFO		:Ikarus 280 {LTBLUE}- 4 doors{BLACK}
-
-# ---- Ikarus 280 CC2
-STR_Ikarus280_d_CC2_NAME		:Ikarus 280 
-STR_Ikarus280_d_CC2_NAME2	:CC stripe livery
-STR_Ikarus280_d_CC2_DATA		:Loading speed: {GOLD}40{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}17m, 4 doors{BLACK}{}{STRING}
-STR_Ikarus280_d_CC2_INFO		:Ikarus 280 {LTBLUE}- 4 doors{BLACK}
-
-# ---- Ikarus 280 BKV
-STR_Ikarus280_d_BKV_NAME		:Ikarus 280 
-STR_Ikarus280_d_BKV_NAME2	:BKV livery
-STR_Ikarus280_d_BKV_DATA		:Loading speed: {GOLD}40{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}17m, 4 doors{BLACK}{}{STRING}
-STR_Ikarus280_d_BKV_INFO		:Ikarus 280 {LTBLUE}- 4 doors{BLACK}
-
-# ---- Ikarus 280 CC1
-STR_Ikarus280_e_CC1_NAME		:Ikarus 280 
-STR_Ikarus280_e_CC1_NAME2	:CC two tone livery
-STR_Ikarus280_e_CC1_DATA		:Loading speed: {GOLD}30{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}17m, 3 doors{BLACK}{}{STRING}
-STR_Ikarus280_e_CC1_INFO		:Ikarus 280 {LTBLUE}- 3 doors{BLACK}
-
-# ---- Ikarus 280 CC2
-STR_Ikarus280_e_CC2_NAME		:Ikarus 280 
-STR_Ikarus280_e_CC2_NAME2	:CC stripe livery
-STR_Ikarus280_e_CC2_DATA		:Loading speed: {GOLD}30{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}17m, 3 doors{BLACK}{}{STRING}
-STR_Ikarus280_e_CC2_INFO		:Ikarus 280 {LTBLUE}- 3 doors{BLACK}
-
-# ---- Ikarus 280 Volan
-STR_Ikarus280_e_Volan_NAME		:Ikarus 280 
-STR_Ikarus280_e_Volan_NAME2	:Volán livery
-STR_Ikarus280_e_Volan_DATA		:Loading speed: {GOLD}30{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}17m, 3 doors{BLACK}{}{STRING}
-STR_Ikarus280_e_Volan_INFO		:Ikarus 280 {LTBLUE}- 3 doors{BLACK}
-
-# ---- Csepel-Union CC1
-STR_Csepel_Union_a_CC1_NAME		:Csepel-Union 
-STR_Csepel_Union_a_CC1_NAME2	:CC1 livery
-STR_Csepel_Union_a_CC1_DATA		:Loading speed: {GOLD}8{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Csepel_Union_a_CC1_INFO		:Csepel-Union {LTBLUE}- 2 doors{BLACK}
-
-# ---- Csepel-Union CC2
-STR_Csepel_Union_a_CC2_NAME		:Csepel-Union 
-STR_Csepel_Union_a_CC2_NAME2	:CC2 livery
-STR_Csepel_Union_a_CC2_DATA		:Loading speed: {GOLD}8{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Csepel_Union_a_CC2_INFO		:Csepel-Union {LTBLUE}- 2 doors{BLACK}
-
-# ---- Csepel-Union CC3
-STR_Csepel_Union_a_CC3_NAME		:Csepel-Union 
-STR_Csepel_Union_a_CC3_NAME2	:CC3 livery
-STR_Csepel_Union_a_CC3_DATA		:Loading speed: {GOLD}8{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Csepel_Union_a_CC3_INFO		:Csepel-Union {LTBLUE}- 2 doors{BLACK}
-
-# ---- Credo BC 9.5 CC1
-STR_Credo_BC95_a_CC1_NAME		:Credo BC 9.5 
-STR_Credo_BC95_a_CC1_NAME2	:CC1 livery
-STR_Credo_BC95_a_CC1_DATA		:Loading speed: {GOLD}22{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}9,5m, 3 doors{BLACK}{}{STRING}
-STR_Credo_BC95_a_CC1_INFO		:Credo BC {LTBLUE}- 3 doors{BLACK}
-
-# ---- Credo BC 11 CC1
-STR_Credo_BC11_a_CC1_NAME		:Credo BC 11 
-STR_Credo_BC11_a_CC1_NAME2	:CC1 livery
-STR_Credo_BC11_a_CC1_DATA		:Loading speed: {GOLD}22{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10,5m, 3 doors{BLACK}{}{STRING}
-STR_Credo_BC11_a_CC1_INFO		:Credo BC {LTBLUE}- 3 doors{BLACK}
-
-# ---- Credo Econell 10 CC1
-STR_Credo_Econell_10_a_CC1_NAME		:Credo Econell 10
-STR_Credo_Econell_10_a_CC1_NAME2	:CC1 livery
-STR_Credo_Econell_10_a_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10, 10m, 2 doors{BLACK}{}{STRING}
-STR_Credo_Econell_10_a_CC1_INFO		:Credo Econell {LTBLUE}10 - 2 doors{BLACK}
-
-# ---- Credo Econell 12 City CC1
-STR_Credo_Econell_12_a_CC1_NAME		:Credo Econell 12 City
-STR_Credo_Econell_12_a_CC1_NAME2	:CC1 livery
-STR_Credo_Econell_12_a_CC1_DATA		:Loading speed: {GOLD}40{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12 City, 12m, 3 doors{BLACK}{}{STRING}
-STR_Credo_Econell_12_a_CC1_INFO		:Credo Econell {LTBLUE}12 City - 3 doors{BLACK}
-
-# ---- Credo Econell 12 CC1
-STR_Credo_Econell_12_b_CC1_NAME		:Credo Econell 12
-STR_Credo_Econell_12_b_CC1_NAME2	:CC1 livery
-STR_Credo_Econell_12_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12, 12m, 2 doors{BLACK}{}{STRING}
-STR_Credo_Econell_12_b_CC1_INFO		:Credo Econell {LTBLUE}12 - 2 doors{BLACK}
-
-# ---- Credo Econell 13 City CC1
-STR_Credo_Econell_13_a_CC1_NAME		:Credo Econell 13 City
-STR_Credo_Econell_13_a_CC1_NAME2	:CC1 livery
-STR_Credo_Econell_13_a_CC1_DATA		:Loading speed: {GOLD}40{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}13 City, 13m, 3 doors{BLACK}{}{STRING}
-STR_Credo_Econell_13_a_CC1_INFO		:Credo Econell {LTBLUE}13 City - 3 doors{BLACK}
-
-# ---- Credo Econell 13 CC1
-STR_Credo_Econell_13_b_CC1_NAME		:Credo Econell 13
-STR_Credo_Econell_13_b_CC1_NAME2	:CC1 livery
-STR_Credo_Econell_13_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}13, 13m, 2 doors{BLACK}{}{STRING}
-STR_Credo_Econell_13_b_CC1_INFO		:Credo Econell {LTBLUE}13 - 2 doors{BLACK}
-
-# ---- Credo LC 9.5 CC1
-STR_Credo_LC95_a_CC1_NAME		:Credo LC 9.5 
-STR_Credo_LC95_a_CC1_NAME2	:CC1 livery
-STR_Credo_LC95_a_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}9,5m, 2 doors{BLACK}{}{STRING}
-STR_Credo_LC95_a_CC1_INFO		:Credo LC {LTBLUE}- 2 doors{BLACK}
-
-# ---- Credo EC 11 CC1
-STR_Credo_EC11_a_CC1_NAME		:Credo EC 11 
-STR_Credo_EC11_a_CC1_NAME2	:CC1 livery
-STR_Credo_EC11_a_CC1_DATA		:Loading speed: {GOLD}15{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10,5m, 2 doors{BLACK}{}{STRING}
-STR_Credo_EC11_a_CC1_INFO		:Credo EC {LTBLUE}- 2 doors{BLACK}
-
-# ---- Credo EC 11 CC3
-STR_Credo_EC11_a_CC3_NAME		:Credo EC 11 
-STR_Credo_EC11_a_CC3_NAME2	:CC3 livery
-STR_Credo_EC11_a_CC3_DATA		:Loading speed: {GOLD}15{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10,5m, 2 doors{BLACK}{}{STRING}
-STR_Credo_EC11_a_CC3_INFO		:Credo EC {LTBLUE}- 2 doors{BLACK}
-
-# ---- Credo EC 12 CC1
-STR_Credo_EC12_a_CC1_NAME		:Credo EC 12 
-STR_Credo_EC12_a_CC1_NAME2	:CC1 livery
-STR_Credo_EC12_a_CC1_DATA		:Loading speed: {GOLD}15{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Credo_EC12_a_CC1_INFO		:Credo EC {LTBLUE}- 2 doors{BLACK}
-
-# ---- Credo Inovell 12EC CC1
-STR_Credo_Inovell_12EC_a_CC1_NAME		:Credo Inovell 12EC
-STR_Credo_Inovell_12EC_a_CC1_NAME2	:CC1 livery
-STR_Credo_Inovell_12EC_a_CC1_DATA		:Loading speed: {GOLD}16{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12EC, 12m, 2 doors{BLACK}{}{STRING}
-STR_Credo_Inovell_12EC_a_CC1_INFO		:Credo Inovell {LTBLUE}12EC - 2 doors{BLACK}
-
-# ---- Credo IC 9.5 CC1
-STR_Credo_IC95_a_CC1_NAME		:Credo IC 9.5 
-STR_Credo_IC95_a_CC1_NAME2	:CC1 livery
-STR_Credo_IC95_a_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}9,5m, 2 doors{BLACK}{}{STRING}
-STR_Credo_IC95_a_CC1_INFO		:Credo IC {LTBLUE}- 2 doors{BLACK}
-
-# ---- Credo IC 11 CC1
-STR_Credo_IC11_a_CC1_NAME		:Credo IC 11 
-STR_Credo_IC11_a_CC1_NAME2	:CC1 livery
-STR_Credo_IC11_a_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10,5m, 2 doors{BLACK}{}{STRING}
-STR_Credo_IC11_a_CC1_INFO		:Credo IC {LTBLUE}- 2 doors{BLACK}
-
-# ---- Credo IC 12 CC1
-STR_Credo_IC12_a_CC1_NAME		:Credo IC 12 
-STR_Credo_IC12_a_CC1_NAME2	:CC1 livery
-STR_Credo_IC12_a_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Credo_IC12_a_CC1_INFO		:Credo IC {LTBLUE}- 2 doors{BLACK}
-
-# ---- Credo Inovell 12IC CC1
-STR_Credo_Inovell_12IC_a_CC1_NAME		:Credo Inovell 12IC
-STR_Credo_Inovell_12IC_a_CC1_NAME2	:CC1 livery
-STR_Credo_Inovell_12IC_a_CC1_DATA		:Loading speed: {GOLD}11{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12IC, 12m, 2 doors{BLACK}{}{STRING}
-STR_Credo_Inovell_12IC_a_CC1_INFO		:Credo Inovell {LTBLUE}12IC - 2 doors{BLACK}
-
-# ---- Credo LH 9.5 CC1
-STR_Credo_LC95_b_CC1_NAME		:Credo LH 9.5 
-STR_Credo_LC95_b_CC1_NAME2	:CC1 livery
-STR_Credo_LC95_b_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}9,5m, 2 doors{BLACK}{}{STRING}
-STR_Credo_LC95_b_CC1_INFO		:Credo LH {LTBLUE}- 2 doors{BLACK}
-
-# ---- Credo LH 11 CC1
-STR_Credo_LC11_a_CC1_NAME		:Credo LH 11 
-STR_Credo_LC11_a_CC1_NAME2	:CC1 livery
-STR_Credo_LC11_a_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10,5m, 2 doors{BLACK}{}{STRING}
-STR_Credo_LC11_a_CC1_INFO		:Credo LH {LTBLUE}- 2 doors{BLACK}
-
-# ---- Credo LH 12 CC1
-STR_Credo_LH12_a_CC1_NAME		:Credo LH 12 
-STR_Credo_LH12_a_CC1_NAME2	:CC1 livery
-STR_Credo_LH12_a_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Credo_LH12_a_CC1_INFO		:Credo LH {LTBLUE}- 2 doors{BLACK}
-
-# ---- Credo Optinell 10 CC1
-STR_Credo_Optinell_10_a_CC1_NAME		:Credo Optinell 10
-STR_Credo_Optinell_10_a_CC1_NAME2	:CC1 livery
-STR_Credo_Optinell_10_a_CC1_DATA		:Loading speed: {GOLD}11{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10, 10m, 2 doors{BLACK}{}{STRING}
-STR_Credo_Optinell_10_a_CC1_INFO		:Credo Optinell {LTBLUE}10 - 2 doors{BLACK}
-
-# ---- Credo Optinell 12 CC1
-STR_Credo_Optinell_12_a_CC1_NAME		:Credo Optinell 12
-STR_Credo_Optinell_12_a_CC1_NAME2	:CC1 livery
-STR_Credo_Optinell_12_a_CC1_DATA		:Loading speed: {GOLD}11{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12, 12m, 2 doors{BLACK}{}{STRING}
-STR_Credo_Optinell_12_a_CC1_INFO		:Credo Optinell {LTBLUE}12 - 2 doors{BLACK}
-
-# ---- Alfa Localo CC1
-STR_Alfa_Localo_a_CC1_NAME		:Alfa Localo 
-STR_Alfa_Localo_a_CC1_NAME2	:CC1 livery
-STR_Alfa_Localo_a_CC1_DATA		:Loading speed: {GOLD}30{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Volvo B7RLE, 12,5m, 3 doors{BLACK}{}{STRING}
-STR_Alfa_Localo_a_CC1_INFO		:Alfa Localo {LTBLUE}- 3 doors{BLACK}
-
-# ---- Alfa Localo BKV
-STR_Alfa_Localo_a_BKV_NAME		:Alfa Localo 
-STR_Alfa_Localo_a_BKV_NAME2	:BKV livery
-STR_Alfa_Localo_a_BKV_DATA		:Loading speed: {GOLD}30{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Volvo B7RLE, 12,5m, 3 doors{BLACK}{}{STRING}
-STR_Alfa_Localo_a_BKV_INFO		:Alfa Localo {LTBLUE}- 3 doors{BLACK}
-
-# ---- Alfa Regio 13.5 CC1
-STR_Alfa_Regio_a_CC1_NAME		:Alfa Regio 13.5 
-STR_Alfa_Regio_a_CC1_NAME2	:CC1 livery
-STR_Alfa_Regio_a_CC1_DATA		:Loading speed: {GOLD}15{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Volvo B12B, 13,5m, 2 doors{BLACK}{}{STRING}
-STR_Alfa_Regio_a_CC1_INFO		:Alfa Regio {LTBLUE}- 2 doors{BLACK}
-
-# ---- Alfa Regio 13.5 CC2
-STR_Alfa_Regio_a_CC2_NAME		:Alfa Regio 13.5 
-STR_Alfa_Regio_a_CC2_NAME2	:CC2 livery
-STR_Alfa_Regio_a_CC2_DATA		:Loading speed: {GOLD}15{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Volvo B12B, 13,5m, 2 doors{BLACK}{}{STRING}
-STR_Alfa_Regio_a_CC2_INFO		:Alfa Regio {LTBLUE}- 2 doors{BLACK}
-
-# ---- Alfa Cívis 12 CC1
-STR_Alfa_Civis_12_a_CC1_NAME		:Alfa Cívis 12 
-STR_Alfa_Civis_12_a_CC1_NAME2	:CC1 livery
-STR_Alfa_Civis_12_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Volvo B9L, 12m, 3 doors{BLACK}{}{STRING}
-STR_Alfa_Civis_12_a_CC1_INFO		:Alfa Cívis {LTBLUE}- 3 doors{BLACK}
-
-# ---- Alfa Cívis 12 CC2
-STR_Alfa_Civis_12_a_CC2_NAME		:Alfa Cívis 12 
-STR_Alfa_Civis_12_a_CC2_NAME2	:CC2 livery
-STR_Alfa_Civis_12_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Volvo B9L, 12m, 3 doors{BLACK}{}{STRING}
-STR_Alfa_Civis_12_a_CC2_INFO		:Alfa Cívis {LTBLUE}- 3 doors{BLACK}
-
-# ---- MAN Lion's City 2 CC1
-STR_MAN_LC2_12_a_CC1_NAME		:MAN Lion's City 2 
-STR_MAN_LC2_12_a_CC1_NAME2	:CC1 livery
-STR_MAN_LC2_12_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LC2_12_a_CC1_INFO		:MAN Lion's City {LTBLUE}- 3 doors{BLACK}
-
-# ---- MAN Lion's City 2 CC1
-STR_MAN_LC2_12_b_CC1_NAME		:MAN Lion's City 2 
-STR_MAN_LC2_12_b_CC1_NAME2	:CC1 livery
-STR_MAN_LC2_12_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LC2_12_b_CC1_INFO		:MAN Lion's City {LTBLUE}- 2 doors{BLACK}
-
-# ---- MAN Lion's City 2 C CC1
-STR_MAN_LC2_C_a_CC1_NAME		:MAN Lion's City 2 C
-STR_MAN_LC2_C_a_CC1_NAME2	:CC1 livery
-STR_MAN_LC2_C_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}C, 13,7m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LC2_C_a_CC1_INFO		:MAN Lion's City {LTBLUE}C - 3 doors{BLACK}
-
-# ---- MAN Lion's City 2 DD CC1
-STR_MAN_LC2_DD_a_CC1_NAME		:MAN Lion's City 2 DD
-STR_MAN_LC2_DD_a_CC1_NAME2	:CC1 livery
-STR_MAN_LC2_DD_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}DD, 13,7m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LC2_DD_a_CC1_INFO		:MAN Lion's City {LTBLUE}DD - 3 doors{BLACK}
-
-# ---- MAN Lion's City 2 DD BVG
-STR_MAN_LC2_DD_a_BVG_NAME		:MAN Lion's City 2 DD
-STR_MAN_LC2_DD_a_BVG_NAME2	:BVG livery
-STR_MAN_LC2_DD_a_BVG_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}DD, 13,7m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LC2_DD_a_BVG_INFO		:MAN Lion's City {LTBLUE}DD - 3 doors{BLACK}
-
-# ---- MAN Lion's City 3 10E CC1
-STR_MAN_LC3e_10_a_CC1_NAME		:MAN Lion's City 3 10E
-STR_MAN_LC3e_10_a_CC1_NAME2	:CC1 livery
-STR_MAN_LC3e_10_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10E, 10m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LC3e_10_a_CC1_INFO		:MAN Lion's City {LTBLUE}10E - 3 doors{BLACK}
-
-# ---- MAN Lion's City 3 10E CC2
-STR_MAN_LC3e_10_a_CC2_NAME		:MAN Lion's City 3 10E
-STR_MAN_LC3e_10_a_CC2_NAME2	:CC2 livery
-STR_MAN_LC3e_10_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10E, 10m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LC3e_10_a_CC2_INFO		:MAN Lion's City {LTBLUE}10E - 3 doors{BLACK}
-
-# ---- MAN Lion's City 3 10E BVB
-STR_MAN_LC3e_10_a_BVB_NAME		:MAN Lion's City 3 10E
-STR_MAN_LC3e_10_a_BVB_NAME2	:BVB livery
-STR_MAN_LC3e_10_a_BVB_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10E, 10m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LC3e_10_a_BVB_INFO		:MAN Lion's City {LTBLUE}10E - 3 doors{BLACK}
-
-# ---- MAN Lion's City 3 10E Roadshow
-STR_MAN_LC3e_10_a_Roadshow_NAME		:MAN Lion's City 3 10E
-STR_MAN_LC3e_10_a_Roadshow_NAME2	:Roadshow livery
-STR_MAN_LC3e_10_a_Roadshow_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10E, 10m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LC3e_10_a_Roadshow_INFO		:MAN Lion's City {LTBLUE}10E - 3 doors{BLACK}
-
-# ---- MAN Lion's City 3 10E CC1
-STR_MAN_LC3e_10_b_CC1_NAME		:MAN Lion's City 3 10E
-STR_MAN_LC3e_10_b_CC1_NAME2	:CC1 livery
-STR_MAN_LC3e_10_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10E, 10m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LC3e_10_b_CC1_INFO		:MAN Lion's City {LTBLUE}10E - 2 doors{BLACK}
-
-# ---- MAN Lion's City 3 10E CC2
-STR_MAN_LC3e_10_b_CC2_NAME		:MAN Lion's City 3 10E
-STR_MAN_LC3e_10_b_CC2_NAME2	:CC2 livery
-STR_MAN_LC3e_10_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10E, 10m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LC3e_10_b_CC2_INFO		:MAN Lion's City {LTBLUE}10E - 2 doors{BLACK}
-
-# ---- MAN Lion's City 3 10E BLT
-STR_MAN_LC3e_10_b_BLT_NAME		:MAN Lion's City 3 10E
-STR_MAN_LC3e_10_b_BLT_NAME2	:BLT livery
-STR_MAN_LC3e_10_b_BLT_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}10E, 10m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LC3e_10_b_BLT_INFO		:MAN Lion's City {LTBLUE}10E - 2 doors{BLACK}
-
-# ---- MAN Lion's City 3 12C CC1
-STR_MAN_LC3_12_a_CC1_NAME		:MAN Lion's City 3 12C
-STR_MAN_LC3_12_a_CC1_NAME2	:CC1 livery
-STR_MAN_LC3_12_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12C, 12m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LC3_12_a_CC1_INFO		:MAN Lion's City {LTBLUE}12C - 3 doors{BLACK}
-
-# ---- MAN Lion's City 3 12C CC2
-STR_MAN_LC3_12_a_CC2_NAME		:MAN Lion's City 3 12C
-STR_MAN_LC3_12_a_CC2_NAME2	:CC2 livery
-STR_MAN_LC3_12_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12C, 12m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LC3_12_a_CC2_INFO		:MAN Lion's City {LTBLUE}12C - 3 doors{BLACK}
-
-# ---- MAN Lion's City 3 12C CC3
-STR_MAN_LC3_12_a_CC3_NAME		:MAN Lion's City 3 12C
-STR_MAN_LC3_12_a_CC3_NAME2	:CC3 livery
-STR_MAN_LC3_12_a_CC3_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12C, 12m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LC3_12_a_CC3_INFO		:MAN Lion's City {LTBLUE}12C - 3 doors{BLACK}
-
-# ---- MAN Lion's City 3 12G CC1
-STR_MAN_LC3ngt_12_a_CC1_NAME		:MAN Lion's City 3 12G
-STR_MAN_LC3ngt_12_a_CC1_NAME2	:CC1 livery
-STR_MAN_LC3ngt_12_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12G, 12m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LC3ngt_12_a_CC1_INFO		:MAN Lion's City {LTBLUE}12G - 3 doors{BLACK}
-
-# ---- MAN Lion's City 3 12G CC2
-STR_MAN_LC3ngt_12_a_CC2_NAME		:MAN Lion's City 3 12G
-STR_MAN_LC3ngt_12_a_CC2_NAME2	:CC2 livery
-STR_MAN_LC3ngt_12_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12G, 12m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LC3ngt_12_a_CC2_INFO		:MAN Lion's City {LTBLUE}12G - 3 doors{BLACK}
-
-# ---- MAN Lion's City 3 12E CC1
-STR_MAN_LC3e_12_a_CC1_NAME		:MAN Lion's City 3 12E
-STR_MAN_LC3e_12_a_CC1_NAME2	:CC1 livery
-STR_MAN_LC3e_12_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12E, 12m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LC3e_12_a_CC1_INFO		:MAN Lion's City {LTBLUE}12E - 3 doors{BLACK}
-
-# ---- MAN Lion's City 3 12E CC2
-STR_MAN_LC3e_12_a_CC2_NAME		:MAN Lion's City 3 12E
-STR_MAN_LC3e_12_a_CC2_NAME2	:CC2 livery
-STR_MAN_LC3e_12_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12E, 12m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LC3e_12_a_CC2_INFO		:MAN Lion's City {LTBLUE}12E - 3 doors{BLACK}
-
-# ---- MAN Lion's City 3 12C CC1
-STR_MAN_LC3_12_b_CC1_NAME		:MAN Lion's City 3 12C
-STR_MAN_LC3_12_b_CC1_NAME2	:CC1 livery
-STR_MAN_LC3_12_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12C, 12m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LC3_12_b_CC1_INFO		:MAN Lion's City {LTBLUE}12C - 2 doors{BLACK}
-
-# ---- MAN Lion's City 3 12C CC2
-STR_MAN_LC3_12_b_CC2_NAME		:MAN Lion's City 3 12C
-STR_MAN_LC3_12_b_CC2_NAME2	:CC2 livery
-STR_MAN_LC3_12_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12C, 12m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LC3_12_b_CC2_INFO		:MAN Lion's City {LTBLUE}12C - 2 doors{BLACK}
-
-# ---- MAN Lion's City 3 12G CC1
-STR_MAN_LC3ngt_12_b_CC1_NAME		:MAN Lion's City 3 12G
-STR_MAN_LC3ngt_12_b_CC1_NAME2	:CC1 livery
-STR_MAN_LC3ngt_12_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12G, 12m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LC3ngt_12_b_CC1_INFO		:MAN Lion's City {LTBLUE}12G - 2 doors{BLACK}
-
-# ---- MAN Lion's City 3 12G CC2
-STR_MAN_LC3ngt_12_b_CC2_NAME		:MAN Lion's City 3 12G
-STR_MAN_LC3ngt_12_b_CC2_NAME2	:CC2 livery
-STR_MAN_LC3ngt_12_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12G, 12m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LC3ngt_12_b_CC2_INFO		:MAN Lion's City {LTBLUE}12G - 2 doors{BLACK}
-
-# ---- MAN Lion's City 3 12E CC1
-STR_MAN_LC3e_12_b_CC1_NAME		:MAN Lion's City 3 12E
-STR_MAN_LC3e_12_b_CC1_NAME2	:CC1 livery
-STR_MAN_LC3e_12_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12E, 12m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LC3e_12_b_CC1_INFO		:MAN Lion's City {LTBLUE}12E - 2 doors{BLACK}
-
-# ---- MAN Lion's City 3 12E CC2
-STR_MAN_LC3e_12_b_CC2_NAME		:MAN Lion's City 3 12E
-STR_MAN_LC3e_12_b_CC2_NAME2	:CC2 livery
-STR_MAN_LC3e_12_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12E, 12m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LC3e_12_b_CC2_INFO		:MAN Lion's City {LTBLUE}12E - 2 doors{BLACK}
-
-# ---- MAN Lion's City 3 18C CC1
-STR_MAN_LC3_18_a_CC1_NAME		:MAN Lion's City 3 18C
-STR_MAN_LC3_18_a_CC1_NAME2	:CC1 livery
-STR_MAN_LC3_18_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18C, 18m, 4 doors{BLACK}{}{STRING}
-STR_MAN_LC3_18_a_CC1_INFO		:MAN Lion's City {LTBLUE}18C - 4 doors{BLACK}
-
-# ---- MAN Lion's City 3 18C CC2
-STR_MAN_LC3_18_a_CC2_NAME		:MAN Lion's City 3 18C
-STR_MAN_LC3_18_a_CC2_NAME2	:CC2 livery
-STR_MAN_LC3_18_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18C, 18m, 4 doors{BLACK}{}{STRING}
-STR_MAN_LC3_18_a_CC2_INFO		:MAN Lion's City {LTBLUE}18C - 4 doors{BLACK}
-
-# ---- MAN Lion's City 3 18G CC1
-STR_MAN_LC3ngt_18_a_CC1_NAME		:MAN Lion's City 3 18G
-STR_MAN_LC3ngt_18_a_CC1_NAME2	:CC1 livery
-STR_MAN_LC3ngt_18_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18G, 18m, 4 doors{BLACK}{}{STRING}
-STR_MAN_LC3ngt_18_a_CC1_INFO		:MAN Lion's City {LTBLUE}18G - 4 doors{BLACK}
-
-# ---- MAN Lion's City 3 18G CC2
-STR_MAN_LC3ngt_18_a_CC2_NAME		:MAN Lion's City 3 18G
-STR_MAN_LC3ngt_18_a_CC2_NAME2	:CC2 livery
-STR_MAN_LC3ngt_18_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18G, 18m, 4 doors{BLACK}{}{STRING}
-STR_MAN_LC3ngt_18_a_CC2_INFO		:MAN Lion's City {LTBLUE}18G - 4 doors{BLACK}
-
-# ---- MAN Lion's City 3 18E CC1
-STR_MAN_LC3e_18_a_CC1_NAME		:MAN Lion's City 3 18E
-STR_MAN_LC3e_18_a_CC1_NAME2	:CC1 livery
-STR_MAN_LC3e_18_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18E, 18m, 4 doors{BLACK}{}{STRING}
-STR_MAN_LC3e_18_a_CC1_INFO		:MAN Lion's City {LTBLUE}18E - 4 doors{BLACK}
-
-# ---- MAN Lion's City 3 18E CC2
-STR_MAN_LC3e_18_a_CC2_NAME		:MAN Lion's City 3 18E
-STR_MAN_LC3e_18_a_CC2_NAME2	:CC2 livery
-STR_MAN_LC3e_18_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18E, 18m, 4 doors{BLACK}{}{STRING}
-STR_MAN_LC3e_18_a_CC2_INFO		:MAN Lion's City {LTBLUE}18E - 4 doors{BLACK}
-
-# ---- MAN Lion's City 3 18C CC1
-STR_MAN_LC3_18_b_CC1_NAME		:MAN Lion's City 3 18C
-STR_MAN_LC3_18_b_CC1_NAME2	:CC1 livery
-STR_MAN_LC3_18_b_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18C, 18m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LC3_18_b_CC1_INFO		:MAN Lion's City {LTBLUE}18C - 3 doors{BLACK}
-
-# ---- MAN Lion's City 3 18C CC2
-STR_MAN_LC3_18_b_CC2_NAME		:MAN Lion's City 3 18C
-STR_MAN_LC3_18_b_CC2_NAME2	:CC2 livery
-STR_MAN_LC3_18_b_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18C, 18m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LC3_18_b_CC2_INFO		:MAN Lion's City {LTBLUE}18C - 3 doors{BLACK}
-
-# ---- MAN Lion's City 3 18G CC1
-STR_MAN_LC3ngt_18_b_CC1_NAME		:MAN Lion's City 3 18G
-STR_MAN_LC3ngt_18_b_CC1_NAME2	:CC1 livery
-STR_MAN_LC3ngt_18_b_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18G, 18m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LC3ngt_18_b_CC1_INFO		:MAN Lion's City {LTBLUE}18G - 3 doors{BLACK}
-
-# ---- MAN Lion's City 3 18G CC2
-STR_MAN_LC3ngt_18_b_CC2_NAME		:MAN Lion's City 3 18G
-STR_MAN_LC3ngt_18_b_CC2_NAME2	:CC2 livery
-STR_MAN_LC3ngt_18_b_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18G, 18m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LC3ngt_18_b_CC2_INFO		:MAN Lion's City {LTBLUE}18G - 3 doors{BLACK}
-
-# ---- MAN Lion's City 3 18E CC1
-STR_MAN_LC3e_18_b_CC1_NAME		:MAN Lion's City 3 18E
-STR_MAN_LC3e_18_b_CC1_NAME2	:CC1 livery
-STR_MAN_LC3e_18_b_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18E, 18m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LC3e_18_b_CC1_INFO		:MAN Lion's City {LTBLUE}18E - 3 doors{BLACK}
-
-# ---- MAN Lion's City 3 18E CC2
-STR_MAN_LC3e_18_b_CC2_NAME		:MAN Lion's City 3 18E
-STR_MAN_LC3e_18_b_CC2_NAME2	:CC2 livery
-STR_MAN_LC3e_18_b_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18E, 18m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LC3e_18_b_CC2_INFO		:MAN Lion's City {LTBLUE}18E - 3 doors{BLACK}
-
-# ---- MAN Lion's Intercity 3 32C CC1
-STR_MAN_LIC3le_12_a_CC1_NAME		:MAN Lion's Intercity 3 32C
-STR_MAN_LIC3le_12_a_CC1_NAME2	:CC1 livery
-STR_MAN_LIC3le_12_a_CC1_DATA		:Loading speed: {GOLD}35{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}32C, 12m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LIC3le_12_a_CC1_INFO		:MAN Lion's Intercity {LTBLUE}32C - 3 doors{BLACK}
-
-# ---- MAN Lion's Intercity 3 32C CC1
-STR_MAN_LIC3le_12_b_CC1_NAME		:MAN Lion's Intercity 3 32C
-STR_MAN_LIC3le_12_b_CC1_NAME2	:CC1 livery
-STR_MAN_LIC3le_12_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}32C, 12m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LIC3le_12_b_CC1_INFO		:MAN Lion's Intercity {LTBLUE}32C - 2 doors{BLACK}
-
-# ---- MAN Lion's Intercity 3 33C CC1
-STR_MAN_LIC3le_13_a_CC1_NAME		:MAN Lion's Intercity 3 33C
-STR_MAN_LIC3le_13_a_CC1_NAME2	:CC1 livery
-STR_MAN_LIC3le_13_a_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}33C, 13m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LIC3le_13_a_CC1_INFO		:MAN Lion's Intercity {LTBLUE}33C - 2 doors{BLACK}
-
-# ---- MAN Lion's Intercity 3 34C CC1
-STR_MAN_LIC3le_14_a_CC1_NAME		:MAN Lion's Intercity 3 34C
-STR_MAN_LIC3le_14_a_CC1_NAME2	:CC1 livery
-STR_MAN_LIC3le_14_a_CC1_DATA		:Loading speed: {GOLD}35{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}34C, 14m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LIC3le_14_a_CC1_INFO		:MAN Lion's Intercity {LTBLUE}34C - 3 doors{BLACK}
-
-# ---- MAN Lion's Intercity 3 42C CC1
-STR_MAN_LIC3leu_12_a_CC1_NAME		:MAN Lion's Intercity 3 42C
-STR_MAN_LIC3leu_12_a_CC1_NAME2	:CC1 livery
-STR_MAN_LIC3leu_12_a_CC1_DATA		:Loading speed: {GOLD}21{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}42C, 12m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LIC3leu_12_a_CC1_INFO		:MAN Lion's Intercity {LTBLUE}42C - 2 doors{BLACK}
-
-# ---- MAN Lion's Intercity 3 43C CC1
-STR_MAN_LIC3leu_13_a_CC1_NAME		:MAN Lion's Intercity 3 43C
-STR_MAN_LIC3leu_13_a_CC1_NAME2	:CC1 livery
-STR_MAN_LIC3leu_13_a_CC1_DATA		:Loading speed: {GOLD}21{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}43C, 13m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LIC3leu_13_a_CC1_INFO		:MAN Lion's Intercity {LTBLUE}43C - 2 doors{BLACK}
-
-# ---- MAN Lion's Intercity 3 43C CC3
-STR_MAN_LIC3leu_13_a_CC3_NAME		:MAN Lion's Intercity 3 43C
-STR_MAN_LIC3leu_13_a_CC3_NAME2	:CC3 livery
-STR_MAN_LIC3leu_13_a_CC3_DATA		:Loading speed: {GOLD}21{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}43C, 13m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LIC3leu_13_a_CC3_INFO		:MAN Lion's Intercity {LTBLUE}43C - 2 doors{BLACK}
-
-# ---- MAN Lion's Intercity 3 43C Volan
-STR_MAN_LIC3leu_13_a_Volan_NAME		:MAN Lion's Intercity 3 43C
-STR_MAN_LIC3leu_13_a_Volan_NAME2	:Volan livery
-STR_MAN_LIC3leu_13_a_Volan_DATA		:Loading speed: {GOLD}21{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}43C, 13m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LIC3leu_13_a_Volan_INFO		:MAN Lion's Intercity {LTBLUE}43C - 2 doors{BLACK}
-
-# ---- MAN Lion's Intercity 3 44C CC1
-STR_MAN_LIC3leu_14_a_CC1_NAME		:MAN Lion's Intercity 3 44C
-STR_MAN_LIC3leu_14_a_CC1_NAME2	:CC1 livery
-STR_MAN_LIC3leu_14_a_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}44C, 14m, 3 doors{BLACK}{}{STRING}
-STR_MAN_LIC3leu_14_a_CC1_INFO		:MAN Lion's Intercity {LTBLUE}44C - 3 doors{BLACK}
-
-# ---- MAN Lion's Coach 3 CC1
-STR_MAN_LCo3_12_a_CC1_NAME		:MAN Lion's Coach 3 
-STR_MAN_LCo3_12_a_CC1_NAME2	:CC1 livery
-STR_MAN_LCo3_12_a_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LCo3_12_a_CC1_INFO		:MAN Lion's Coach {LTBLUE}- 2 doors{BLACK}
-
-# ---- MAN Lion's Coach 3 CC1
-STR_MAN_LCo3_13_a_CC1_NAME		:MAN Lion's Coach 3 
-STR_MAN_LCo3_13_a_CC1_NAME2	:CC1 livery
-STR_MAN_LCo3_13_a_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}13m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LCo3_13_a_CC1_INFO		:MAN Lion's Coach {LTBLUE}- 2 doors{BLACK}
-
-# ---- MAN Lion's Coach 3 CC2
-STR_MAN_LCo3_13_a_CC2_NAME		:MAN Lion's Coach 3 
-STR_MAN_LCo3_13_a_CC2_NAME2	:CC, gray livery
-STR_MAN_LCo3_13_a_CC2_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}13m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LCo3_13_a_CC2_INFO		:MAN Lion's Coach {LTBLUE}- 2 doors{BLACK}
-
-# ---- MAN Lion's Coach 3 CC3
-STR_MAN_LCo3_13_a_CC3_NAME		:MAN Lion's Coach 3 
-STR_MAN_LCo3_13_a_CC3_NAME2	:CC Flixbus livery
-STR_MAN_LCo3_13_a_CC3_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}13m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LCo3_13_a_CC3_INFO		:MAN Lion's Coach {LTBLUE}- 2 doors{BLACK}
-
-# ---- MAN Lion's Coach 3 CC1
-STR_MAN_LCo3_135_a_CC1_NAME		:MAN Lion's Coach 3 
-STR_MAN_LCo3_135_a_CC1_NAME2	:CC1 livery
-STR_MAN_LCo3_135_a_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}13,5m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LCo3_135_a_CC1_INFO		:MAN Lion's Coach {LTBLUE}- 2 doors{BLACK}
-
-# ---- MAN Lion's Coach 3 CC1
-STR_MAN_LCo3_14_a_CC1_NAME		:MAN Lion's Coach 3 
-STR_MAN_LCo3_14_a_CC1_NAME2	:CC1 livery
-STR_MAN_LCo3_14_a_CC1_DATA		:Loading speed: {GOLD}10{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}14m, 2 doors{BLACK}{}{STRING}
-STR_MAN_LCo3_14_a_CC1_INFO		:MAN Lion's Coach {LTBLUE}- 2 doors{BLACK}
-
-# ---- Mercedes-Benz Conecto 2 CC1
-STR_MB_Conecto2_c_a_CC1_NAME		:Mercedes-Benz Conecto 2 
-STR_MB_Conecto2_c_a_CC1_NAME2	:CC1 livery
-STR_MB_Conecto2_c_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_Conecto2_c_a_CC1_INFO		:Mercedes-Benz Conecto {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Conecto 2 CC2
-STR_MB_Conecto2_c_a_CC2_NAME		:Mercedes-Benz Conecto 2 
-STR_MB_Conecto2_c_a_CC2_NAME2	:CC2 livery
-STR_MB_Conecto2_c_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_Conecto2_c_a_CC2_INFO		:Mercedes-Benz Conecto {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Conecto 2 G CC1
-STR_MB_Conecto2_g_a_CC1_NAME		:Mercedes-Benz Conecto 2 G
-STR_MB_Conecto2_g_a_CC1_NAME2	:CC1 livery
-STR_MB_Conecto2_g_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{STRING}
-STR_MB_Conecto2_g_a_CC1_INFO		:Mercedes-Benz Conecto {LTBLUE}G - 4 doors{BLACK}
-
-# ---- Mercedes-Benz Conecto 2 G CC2
-STR_MB_Conecto2_g_a_CC2_NAME		:Mercedes-Benz Conecto 2 G
-STR_MB_Conecto2_g_a_CC2_NAME2	:CC2 livery
-STR_MB_Conecto2_g_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{STRING}
-STR_MB_Conecto2_g_a_CC2_INFO		:Mercedes-Benz Conecto {LTBLUE}G - 4 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 K CC1
-STR_MB_Citaro2_k_a_CC1_NAME		:Mercedes-Benz Citaro C2 K
-STR_MB_Citaro2_k_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_k_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 3 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_k_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}K - 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 K CC2
-STR_MB_Citaro2_k_a_CC2_NAME		:Mercedes-Benz Citaro C2 K
-STR_MB_Citaro2_k_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_k_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 3 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_k_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}K - 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 K Bernmobil
-STR_MB_Citaro2_k_a_Bernmobil_NAME		:Mercedes-Benz Citaro C2 K
-STR_MB_Citaro2_k_a_Bernmobil_NAME2	:Bernmobil livery
-STR_MB_Citaro2_k_a_Bernmobil_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 3 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_k_a_Bernmobil_INFO		:Mercedes-Benz Citaro {LTBLUE}K - 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 K CC1
-STR_MB_CitaroE_k_a_CC1_NAME		:Mercedes-Benz Citaro C2 K
-STR_MB_CitaroE_k_a_CC1_NAME2	:CC1 livery
-STR_MB_CitaroE_k_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 3 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_k_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}K - 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 K CC2
-STR_MB_CitaroE_k_a_CC2_NAME		:Mercedes-Benz Citaro C2 K
-STR_MB_CitaroE_k_a_CC2_NAME2	:CC2 livery
-STR_MB_CitaroE_k_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 3 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_k_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}K - 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 K CC1
-STR_MB_Citaro2_k_b_CC1_NAME		:Mercedes-Benz Citaro C2 K
-STR_MB_Citaro2_k_b_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_k_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 2 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_k_b_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}K - 2 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 K CC2
-STR_MB_Citaro2_k_b_CC2_NAME		:Mercedes-Benz Citaro C2 K
-STR_MB_Citaro2_k_b_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_k_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 2 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_k_b_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}K - 2 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 K CC1
-STR_MB_CitaroE_k_b_CC1_NAME		:Mercedes-Benz Citaro C2 K
-STR_MB_CitaroE_k_b_CC1_NAME2	:CC1 livery
-STR_MB_CitaroE_k_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 2 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_k_b_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}K - 2 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 K CC2
-STR_MB_CitaroE_k_b_CC2_NAME		:Mercedes-Benz Citaro C2 K
-STR_MB_CitaroE_k_b_CC2_NAME2	:CC2 livery
-STR_MB_CitaroE_k_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}K, 10m, 2 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_k_b_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}K - 2 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 CC1
-STR_MB_Citaro2_c_a_CC1_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_Citaro2_c_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_c_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_c_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 CC2
-STR_MB_Citaro2_c_a_CC2_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_Citaro2_c_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_c_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_c_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 AVA
-STR_MB_Citaro2_c_a_AVA_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_Citaro2_c_a_AVA_NAME2	:AVA livery
-STR_MB_Citaro2_c_a_AVA_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_c_a_AVA_INFO		:Mercedes-Benz Citaro {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 BLT_new
-STR_MB_Citaro2_c_a_BLT_new_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_Citaro2_c_a_BLT_new_NAME2	:BLT livery
-STR_MB_Citaro2_c_a_BLT_new_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_c_a_BLT_new_INFO		:Mercedes-Benz Citaro {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 BLT_old
-STR_MB_Citaro2_c_a_BLT_old_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_Citaro2_c_a_BLT_old_NAME2	:BLT livery
-STR_MB_Citaro2_c_a_BLT_old_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_c_a_BLT_old_INFO		:Mercedes-Benz Citaro {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 VBSH
-STR_MB_Citaro2_c_a_VBSH_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_Citaro2_c_a_VBSH_NAME2	:VBSH livery
-STR_MB_Citaro2_c_a_VBSH_DATA		:Loading speed: {GOLD}35{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_c_a_VBSH_INFO		:Mercedes-Benz Citaro {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 CC1
-STR_MB_Citaro2_c_ngt_a_CC1_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_Citaro2_c_ngt_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_c_ngt_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_c_ngt_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 CC2
-STR_MB_Citaro2_c_ngt_a_CC2_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_Citaro2_c_ngt_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_c_ngt_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_c_ngt_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 CC1
-STR_MB_CitaroE_c_a_CC1_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_CitaroE_c_a_CC1_NAME2	:CC1 livery
-STR_MB_CitaroE_c_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_c_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 CC2
-STR_MB_CitaroE_c_a_CC2_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_CitaroE_c_a_CC2_NAME2	:CC2 livery
-STR_MB_CitaroE_c_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_c_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 AAGL
-STR_MB_CitaroE_c_a_AAGL_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_CitaroE_c_a_AAGL_NAME2	:AAGL livery
-STR_MB_CitaroE_c_a_AAGL_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_c_a_AAGL_INFO		:Mercedes-Benz Citaro {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 BLT_old
-STR_MB_CitaroE_c_a_BLT_old_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_CitaroE_c_a_BLT_old_NAME2	:BLT livery
-STR_MB_CitaroE_c_a_BLT_old_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_c_a_BLT_old_INFO		:Mercedes-Benz Citaro {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 BLT_new
-STR_MB_CitaroE_c_a_BLT_new_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_CitaroE_c_a_BLT_new_NAME2	:BLT livery
-STR_MB_CitaroE_c_a_BLT_new_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_c_a_BLT_new_INFO		:Mercedes-Benz Citaro {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 BOS
-STR_MB_CitaroE_c_a_BOS_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_CitaroE_c_a_BOS_NAME2	:BOS livery
-STR_MB_CitaroE_c_a_BOS_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_c_a_BOS_INFO		:Mercedes-Benz Citaro {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 BVB
-STR_MB_CitaroE_c_a_BVB_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_CitaroE_c_a_BVB_NAME2	:BVB livery
-STR_MB_CitaroE_c_a_BVB_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_c_a_BVB_INFO		:Mercedes-Benz Citaro {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 PostAuto
-STR_MB_CitaroE_c_a_PostAuto_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_CitaroE_c_a_PostAuto_NAME2	:PostAuto livery
-STR_MB_CitaroE_c_a_PostAuto_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_c_a_PostAuto_INFO		:Mercedes-Benz Citaro {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 RBS
-STR_MB_CitaroE_c_a_RBS_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_CitaroE_c_a_RBS_NAME2	:RBS livery
-STR_MB_CitaroE_c_a_RBS_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_c_a_RBS_INFO		:Mercedes-Benz Citaro {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 RVBW
-STR_MB_CitaroE_c_a_RVBW_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_CitaroE_c_a_RVBW_NAME2	:RVBW livery
-STR_MB_CitaroE_c_a_RVBW_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_c_a_RVBW_INFO		:Mercedes-Benz Citaro {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 TPG
-STR_MB_CitaroE_c_a_TPG_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_CitaroE_c_a_TPG_NAME2	:TPG livery
-STR_MB_CitaroE_c_a_TPG_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_c_a_TPG_INFO		:Mercedes-Benz Citaro {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 VBG
-STR_MB_CitaroE_c_a_VBG_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_CitaroE_c_a_VBG_NAME2	:VBG livery
-STR_MB_CitaroE_c_a_VBG_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_c_a_VBG_INFO		:Mercedes-Benz Citaro {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 CC1
-STR_MB_Citaro2_c_b_CC1_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_Citaro2_c_b_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_c_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_c_b_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}- 2 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 CC2
-STR_MB_Citaro2_c_b_CC2_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_Citaro2_c_b_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_c_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_c_b_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}- 2 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 Sernftal
-STR_MB_Citaro2_c_b_Sernftal_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_Citaro2_c_b_Sernftal_NAME2	:Sernftal livery
-STR_MB_Citaro2_c_b_Sernftal_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_c_b_Sernftal_INFO		:Mercedes-Benz Citaro {LTBLUE}- 2 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 CC1
-STR_MB_Citaro2_c_ngt_b_CC1_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_Citaro2_c_ngt_b_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_c_ngt_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_c_ngt_b_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}- 2 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 CC2
-STR_MB_Citaro2_c_ngt_b_CC2_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_Citaro2_c_ngt_b_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_c_ngt_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_c_ngt_b_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}- 2 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 CC1
-STR_MB_CitaroE_c_b_CC1_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_CitaroE_c_b_CC1_NAME2	:CC1 livery
-STR_MB_CitaroE_c_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_c_b_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}- 2 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 CC2
-STR_MB_CitaroE_c_b_CC2_NAME		:Mercedes-Benz Citaro C2 
-STR_MB_CitaroE_c_b_CC2_NAME2	:CC2 livery
-STR_MB_CitaroE_c_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_c_b_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}- 2 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 G CC1
-STR_MB_Citaro2_g_a_CC1_NAME		:Mercedes-Benz Citaro C2 G
-STR_MB_Citaro2_g_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_g_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_g_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 4 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 G CC2
-STR_MB_Citaro2_g_a_CC2_NAME		:Mercedes-Benz Citaro C2 G
-STR_MB_Citaro2_g_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_g_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_g_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 4 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 G CC1
-STR_MB_Citaro2_g_ngt_a_CC1_NAME		:Mercedes-Benz Citaro C2 G
-STR_MB_Citaro2_g_ngt_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_g_ngt_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_g_ngt_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 4 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 G CC2
-STR_MB_Citaro2_g_ngt_a_CC2_NAME		:Mercedes-Benz Citaro C2 G
-STR_MB_Citaro2_g_ngt_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_g_ngt_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_g_ngt_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 4 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 G CC1
-STR_MB_CitaroE_g_a_CC1_NAME		:Mercedes-Benz Citaro C2 G
-STR_MB_CitaroE_g_a_CC1_NAME2	:CC1 livery
-STR_MB_CitaroE_g_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_g_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 4 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 G CC2
-STR_MB_CitaroE_g_a_CC2_NAME		:Mercedes-Benz Citaro C2 G
-STR_MB_CitaroE_g_a_CC2_NAME2	:CC2 livery
-STR_MB_CitaroE_g_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_g_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 4 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 G BBA
-STR_MB_CitaroE_g_a_BBA_NAME		:Mercedes-Benz Citaro C2 G
-STR_MB_CitaroE_g_a_BBA_NAME2	:BBA livery
-STR_MB_CitaroE_g_a_BBA_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_g_a_BBA_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 4 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 G BVB
-STR_MB_CitaroE_g_a_BVB_NAME		:Mercedes-Benz Citaro C2 G
-STR_MB_CitaroE_g_a_BVB_NAME2	:BVB livery
-STR_MB_CitaroE_g_a_BVB_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_g_a_BVB_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 4 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 G CC1
-STR_MB_Citaro2_g_b_CC1_NAME		:Mercedes-Benz Citaro C2 G
-STR_MB_Citaro2_g_b_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_g_b_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 3 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_g_b_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 G CC2
-STR_MB_Citaro2_g_b_CC2_NAME		:Mercedes-Benz Citaro C2 G
-STR_MB_Citaro2_g_b_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_g_b_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 3 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_g_b_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 G CC1
-STR_MB_Citaro2_g_ngt_b_CC1_NAME		:Mercedes-Benz Citaro C2 G
-STR_MB_Citaro2_g_ngt_b_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_g_ngt_b_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 3 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_g_ngt_b_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 G CC2
-STR_MB_Citaro2_g_ngt_b_CC2_NAME		:Mercedes-Benz Citaro C2 G
-STR_MB_Citaro2_g_ngt_b_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_g_ngt_b_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 3 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_g_ngt_b_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 G CC1
-STR_MB_CitaroE_g_b_CC1_NAME		:Mercedes-Benz Citaro C2 G
-STR_MB_CitaroE_g_b_CC1_NAME2	:CC1 livery
-STR_MB_CitaroE_g_b_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 3 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_g_b_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 G CC2
-STR_MB_CitaroE_g_b_CC2_NAME		:Mercedes-Benz Citaro C2 G
-STR_MB_CitaroE_g_b_CC2_NAME2	:CC2 livery
-STR_MB_CitaroE_g_b_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 3 doors{BLACK}{}{STRING}
-STR_MB_CitaroE_g_b_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}G - 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 CC CC1
-STR_MB_Citaro2_cc_a_CC1_NAME		:Mercedes-Benz Citaro C2 CC
-STR_MB_Citaro2_cc_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_cc_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}CC, 20m, 4 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_cc_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}CC - 4 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 CC CC2
-STR_MB_Citaro2_cc_a_CC2_NAME		:Mercedes-Benz Citaro C2 CC
-STR_MB_Citaro2_cc_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_cc_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}CC, 20m, 4 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_cc_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}CC - 4 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 CCL CC1
-STR_MB_Citaro2_ccl_a_CC1_NAME		:Mercedes-Benz Citaro C2 CCL
-STR_MB_Citaro2_ccl_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_ccl_a_CC1_DATA		:Loading speed: {GOLD}70{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}CCL, 21m, 5 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_ccl_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}CCL - 5 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 CCL CC2
-STR_MB_Citaro2_ccl_a_CC2_NAME		:Mercedes-Benz Citaro C2 CCL
-STR_MB_Citaro2_ccl_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_ccl_a_CC2_DATA		:Loading speed: {GOLD}70{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}CCL, 21m, 5 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_ccl_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}CCL - 5 doors{BLACK}
-
-# ---- Mercedes-Benz Conecto 3 CC1
-STR_MB_Conecto3_c_a_CC1_NAME		:Mercedes-Benz Conecto 3 
-STR_MB_Conecto3_c_a_CC1_NAME2	:CC1 livery
-STR_MB_Conecto3_c_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_Conecto3_c_a_CC1_INFO		:Mercedes-Benz Conecto {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Conecto 3 CC2
-STR_MB_Conecto3_c_a_CC2_NAME		:Mercedes-Benz Conecto 3 
-STR_MB_Conecto3_c_a_CC2_NAME2	:CC2 livery
-STR_MB_Conecto3_c_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_MB_Conecto3_c_a_CC2_INFO		:Mercedes-Benz Conecto {LTBLUE}- 3 doors{BLACK}
-
-# ---- Mercedes-Benz Conecto 3 G CC1
-STR_MB_Conecto3_g_a_CC1_NAME		:Mercedes-Benz Conecto 3 G
-STR_MB_Conecto3_g_a_CC1_NAME2	:CC1 livery
-STR_MB_Conecto3_g_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{STRING}
-STR_MB_Conecto3_g_a_CC1_INFO		:Mercedes-Benz Conecto {LTBLUE}G - 4 doors{BLACK}
-
-# ---- Mercedes-Benz Conecto 3 G CC2
-STR_MB_Conecto3_g_a_CC2_NAME		:Mercedes-Benz Conecto 3 G
-STR_MB_Conecto3_g_a_CC2_NAME2	:CC2 livery
-STR_MB_Conecto3_g_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}G, 18m, 4 doors{BLACK}{}{STRING}
-STR_MB_Conecto3_g_a_CC2_INFO		:Mercedes-Benz Conecto {LTBLUE}G - 4 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 LE CC1
-STR_MB_Citaro2_le_a_CC1_NAME		:Mercedes-Benz Citaro C2 LE
-STR_MB_Citaro2_le_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_le_a_CC1_DATA		:Loading speed: {GOLD}33{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LE, 12m, 3 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_le_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}LE - 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 LE CC2
-STR_MB_Citaro2_le_a_CC2_NAME		:Mercedes-Benz Citaro C2 LE
-STR_MB_Citaro2_le_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_le_a_CC2_DATA		:Loading speed: {GOLD}33{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LE, 12m, 3 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_le_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}LE - 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 LE CC1
-STR_MB_Citaro2_le_b_CC1_NAME		:Mercedes-Benz Citaro C2 LE
-STR_MB_Citaro2_le_b_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_le_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LE, 12m, 2 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_le_b_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}LE - 2 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 LE CC2
-STR_MB_Citaro2_le_b_CC2_NAME		:Mercedes-Benz Citaro C2 LE
-STR_MB_Citaro2_le_b_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_le_b_CC2_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LE, 12m, 2 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_le_b_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}LE - 2 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 Ü CC1
-STR_MB_Citaro2_u_a_CC1_NAME		:Mercedes-Benz Citaro C2 Ü
-STR_MB_Citaro2_u_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_u_a_CC1_DATA		:Loading speed: {GOLD}19{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Ü, 12m, 2 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_u_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}Ü - 2 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 Ü CC2
-STR_MB_Citaro2_u_a_CC2_NAME		:Mercedes-Benz Citaro C2 Ü
-STR_MB_Citaro2_u_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_u_a_CC2_DATA		:Loading speed: {GOLD}19{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Ü, 12m, 2 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_u_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}Ü - 2 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 LEÜ CC1
-STR_MB_Citaro2_leu_a_CC1_NAME		:Mercedes-Benz Citaro C2 LEÜ
-STR_MB_Citaro2_leu_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_leu_a_CC1_DATA		:Loading speed: {GOLD}19{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LEÜ, 12m, 2 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_leu_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}LEÜ - 2 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 LEÜ CC2
-STR_MB_Citaro2_leu_a_CC2_NAME		:Mercedes-Benz Citaro C2 LEÜ
-STR_MB_Citaro2_leu_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_leu_a_CC2_DATA		:Loading speed: {GOLD}19{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LEÜ, 12m, 2 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_leu_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}LEÜ - 2 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 LEMÜ CC1
-STR_MB_Citaro2_lemu_a_CC1_NAME		:Mercedes-Benz Citaro C2 LEMÜ
-STR_MB_Citaro2_lemu_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_lemu_a_CC1_DATA		:Loading speed: {GOLD}26{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LEMÜ, 13m, 3 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_lemu_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}LEMÜ - 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 LEMÜ CC2
-STR_MB_Citaro2_lemu_a_CC2_NAME		:Mercedes-Benz Citaro C2 LEMÜ
-STR_MB_Citaro2_lemu_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_lemu_a_CC2_DATA		:Loading speed: {GOLD}26{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LEMÜ, 13m, 3 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_lemu_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}LEMÜ - 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 LEMÜ CC1
-STR_MB_Citaro2_lemu_b_CC1_NAME		:Mercedes-Benz Citaro C2 LEMÜ
-STR_MB_Citaro2_lemu_b_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_lemu_b_CC1_DATA		:Loading speed: {GOLD}21{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LEMÜ, 13m, 2 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_lemu_b_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}LEMÜ - 2 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 LEMÜ CC2
-STR_MB_Citaro2_lemu_b_CC2_NAME		:Mercedes-Benz Citaro C2 LEMÜ
-STR_MB_Citaro2_lemu_b_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_lemu_b_CC2_DATA		:Loading speed: {GOLD}21{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LEMÜ, 13m, 2 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_lemu_b_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}LEMÜ - 2 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 GÜ CC1
-STR_MB_Citaro2_gu_a_CC1_NAME		:Mercedes-Benz Citaro C2 GÜ
-STR_MB_Citaro2_gu_a_CC1_NAME2	:CC1 livery
-STR_MB_Citaro2_gu_a_CC1_DATA		:Loading speed: {GOLD}33{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}GÜ, 18m, 3 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_gu_a_CC1_INFO		:Mercedes-Benz Citaro {LTBLUE}GÜ - 3 doors{BLACK}
-
-# ---- Mercedes-Benz Citaro C2 GÜ CC2
-STR_MB_Citaro2_gu_a_CC2_NAME		:Mercedes-Benz Citaro C2 GÜ
-STR_MB_Citaro2_gu_a_CC2_NAME2	:CC2 livery
-STR_MB_Citaro2_gu_a_CC2_DATA		:Loading speed: {GOLD}33{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}GÜ, 18m, 3 doors{BLACK}{}{STRING}
-STR_MB_Citaro2_gu_a_CC2_INFO		:Mercedes-Benz Citaro {LTBLUE}GÜ - 3 doors{BLACK}
-
-# ---- Volvo 7700 CC1
-STR_Volvo_7700_a_CC1_NAME		:Volvo 7700 
-STR_Volvo_7700_a_CC1_NAME2	:CC1 livery
-STR_Volvo_7700_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_Volvo_7700_a_CC1_INFO		:Volvo 7700 {LTBLUE}- 3 doors{BLACK}
-
-# ---- Volvo 7700 CC2
-STR_Volvo_7700_a_CC2_NAME		:Volvo 7700 
-STR_Volvo_7700_a_CC2_NAME2	:CC2 livery
-STR_Volvo_7700_a_CC2_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_Volvo_7700_a_CC2_INFO		:Volvo 7700 {LTBLUE}- 3 doors{BLACK}
-
-# ---- Volvo 7700A CC1
-STR_Volvo_7700A_a_CC1_NAME		:Volvo 7700A 
-STR_Volvo_7700A_a_CC1_NAME2	:CC1 livery
-STR_Volvo_7700A_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18m, 4 doors{BLACK}{}{STRING}
-STR_Volvo_7700A_a_CC1_INFO		:Volvo 7700A {LTBLUE}- 4 doors{BLACK}
-
-# ---- Volvo 7700A CC2
-STR_Volvo_7700A_a_CC2_NAME		:Volvo 7700A 
-STR_Volvo_7700A_a_CC2_NAME2	:CC2 livery
-STR_Volvo_7700A_a_CC2_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18m, 4 doors{BLACK}{}{STRING}
-STR_Volvo_7700A_a_CC2_INFO		:Volvo 7700A {LTBLUE}- 4 doors{BLACK}
-
-# ---- Volvo 7700A CC1
-STR_Volvo_7700A_b_CC1_NAME		:Volvo 7700A 
-STR_Volvo_7700A_b_CC1_NAME2	:CC1 livery
-STR_Volvo_7700A_b_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18m, 3 doors{BLACK}{}{STRING}
-STR_Volvo_7700A_b_CC1_INFO		:Volvo 7700A {LTBLUE}- 3 doors{BLACK}
-
-# ---- Volvo 7700 FL CC1
-STR_Volvo_7700fl_a_CC1_NAME		:Volvo 7700 FL 
-STR_Volvo_7700fl_a_CC1_NAME2	:CC1 livery
-STR_Volvo_7700fl_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 3 doors{BLACK}{}{STRING}
-STR_Volvo_7700fl_a_CC1_INFO		:Volvo 7700 {LTBLUE}- 3 doors{BLACK}
-
-# ---- Volvo 7700 FL CC1
-STR_Volvo_7700fl_b_CC1_NAME		:Volvo 7700 FL 
-STR_Volvo_7700fl_b_CC1_NAME2	:CC1 livery
-STR_Volvo_7700fl_b_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Volvo_7700fl_b_CC1_INFO		:Volvo 7700 {LTBLUE}- 2 doors{BLACK}
-
-# ---- Volvo 7700 FL Hybrid CC1
-STR_Volvo_7700fl_hybrid_a_CC1_NAME		:Volvo 7700 FL Hybrid
-STR_Volvo_7700fl_hybrid_a_CC1_NAME2	:CC1 livery
-STR_Volvo_7700fl_hybrid_a_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}Hybrid, 12m, 3 doors{BLACK}{}{STRING}
-STR_Volvo_7700fl_hybrid_a_CC1_INFO		:Volvo 7700 {LTBLUE}Hybrid - 3 doors{BLACK}
-
-# ---- Volvo 8900 LE CC1
-STR_Volvo_8900le_15_a_CC1_NAME		:Volvo 8900 LE
-STR_Volvo_8900le_15_a_CC1_NAME2	:CC1 livery
-STR_Volvo_8900le_15_a_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}LE, 15m, 2 doors{BLACK}{}{STRING}
-STR_Volvo_8900le_15_a_CC1_INFO		:Volvo 8900 {LTBLUE}LE - 2 doors{BLACK}
-
-# ---- Solaris Urbino 18 CC1
-STR_Solaris_Urbino2_18_a_CC1_NAME		:Solaris Urbino 18 
-STR_Solaris_Urbino2_18_a_CC1_NAME2	:CC1 livery
-STR_Solaris_Urbino2_18_a_CC1_DATA		:Loading speed: {GOLD}56{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18m, 4 doors{BLACK}{}{STRING}
-STR_Solaris_Urbino2_18_a_CC1_INFO		:Solaris Urbino {LTBLUE}- 4 doors{BLACK}
-
-# ---- Solaris Urbino 18 CC1
-STR_Solaris_Urbino2_18_b_CC1_NAME		:Solaris Urbino 18 
-STR_Solaris_Urbino2_18_b_CC1_NAME2	:CC1 livery
-STR_Solaris_Urbino2_18_b_CC1_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18m, 3 doors{BLACK}{}{STRING}
-STR_Solaris_Urbino2_18_b_CC1_INFO		:Solaris Urbino {LTBLUE}- 3 doors{BLACK}
-
-# ---- Solaris Urbino 18 BVG
-STR_Solaris_Urbino2_18_b_BVG_NAME		:Solaris Urbino 18 
-STR_Solaris_Urbino2_18_b_BVG_NAME2	:BVG livery
-STR_Solaris_Urbino2_18_b_BVG_DATA		:Loading speed: {GOLD}42{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}18m, 3 doors{BLACK}{}{STRING}
-STR_Solaris_Urbino2_18_b_BVG_INFO		:Solaris Urbino {LTBLUE}- 3 doors{BLACK}
-
-# ---- New Flyer D40LF CC1
-STR_Newflyer_D40LF_a_CC1_NAME		:New Flyer D40LF 
-STR_Newflyer_D40LF_a_CC1_NAME2	:CC1 livery
-STR_Newflyer_D40LF_a_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Newflyer_D40LF_a_CC1_INFO		:New Flyer {LTBLUE}- 2 doors{BLACK}
-
-# ---- New Flyer D40LF BCTransit_old
-STR_Newflyer_D40LF_a_BCTransit_old_NAME		:New Flyer D40LF 
-STR_Newflyer_D40LF_a_BCTransit_old_NAME2	:BCTransit livery
-STR_Newflyer_D40LF_a_BCTransit_old_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Newflyer_D40LF_a_BCTransit_old_INFO		:New Flyer {LTBLUE}- 2 doors{BLACK}
-
-# ---- New Flyer D40LF BCTransit_new
-STR_Newflyer_D40LF_a_BCTransit_new_NAME		:New Flyer D40LF 
-STR_Newflyer_D40LF_a_BCTransit_new_NAME2	:BCTransit livery
-STR_Newflyer_D40LF_a_BCTransit_new_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Newflyer_D40LF_a_BCTransit_new_INFO		:New Flyer {LTBLUE}- 2 doors{BLACK}
-
-# ---- New Flyer D40LF Ghost
-STR_Newflyer_D40LF_a_Ghost_NAME		:New Flyer D40LF 
-STR_Newflyer_D40LF_a_Ghost_NAME2	:Ghost livery
-STR_Newflyer_D40LF_a_Ghost_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Newflyer_D40LF_a_Ghost_INFO		:New Flyer {LTBLUE}- 2 doors{BLACK}
-
-# ---- New Flyer D40LF West_Vancouver_Transit
-STR_Newflyer_D40LF_a_West_Vancouver_Transit_NAME		:New Flyer D40LF 
-STR_Newflyer_D40LF_a_West_Vancouver_Transit_NAME2	:West Vancouver Transit livery
-STR_Newflyer_D40LF_a_West_Vancouver_Transit_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Newflyer_D40LF_a_West_Vancouver_Transit_INFO		:New Flyer {LTBLUE}- 2 doors{BLACK}
-
-# ---- New Flyer D40LF TransLink
-STR_Newflyer_D40LF_a_TransLink_NAME		:New Flyer D40LF 
-STR_Newflyer_D40LF_a_TransLink_NAME2	:TransLink livery
-STR_Newflyer_D40LF_a_TransLink_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Newflyer_D40LF_a_TransLink_INFO		:New Flyer {LTBLUE}- 2 doors{BLACK}
-
-# ---- New Flyer F40LF CC1
-STR_Newflyer_F40LF_a_CC1_NAME		:New Flyer F40LF 
-STR_Newflyer_F40LF_a_CC1_NAME2	:CC1 livery
-STR_Newflyer_F40LF_a_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Newflyer_F40LF_a_CC1_INFO		:New Flyer {LTBLUE}- 2 doors{BLACK}
-
-# ---- New Flyer F40LF BCTransit_old
-STR_Newflyer_F40LF_a_BCTransit_old_NAME		:New Flyer F40LF 
-STR_Newflyer_F40LF_a_BCTransit_old_NAME2	:BCTransit livery
-STR_Newflyer_F40LF_a_BCTransit_old_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Newflyer_F40LF_a_BCTransit_old_INFO		:New Flyer {LTBLUE}- 2 doors{BLACK}
-
-# ---- New Flyer C40LFR CC1
-STR_Newflyer_C40LFR_a_CC1_NAME		:New Flyer C40LFR 
-STR_Newflyer_C40LFR_a_CC1_NAME2	:CC1 livery
-STR_Newflyer_C40LFR_a_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Newflyer_C40LFR_a_CC1_INFO		:New Flyer {LTBLUE}- 2 doors{BLACK}
-
-# ---- New Flyer C40LFR TransLink
-STR_Newflyer_C40LFR_a_TransLink_NAME		:New Flyer C40LFR 
-STR_Newflyer_C40LFR_a_TransLink_NAME2	:TransLink livery
-STR_Newflyer_C40LFR_a_TransLink_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Newflyer_C40LFR_a_TransLink_INFO		:New Flyer {LTBLUE}- 2 doors{BLACK}
-
-# ---- New Flyer D40LFR CC1
-STR_Newflyer_D40LFR_a_CC1_NAME		:New Flyer D40LFR 
-STR_Newflyer_D40LFR_a_CC1_NAME2	:CC1 livery
-STR_Newflyer_D40LFR_a_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Newflyer_D40LFR_a_CC1_INFO		:New Flyer {LTBLUE}- 2 doors{BLACK}
-
-# ---- New Flyer D40LFR TransLink
-STR_Newflyer_D40LFR_a_TransLink_NAME		:New Flyer D40LFR 
-STR_Newflyer_D40LFR_a_TransLink_NAME2	:TransLink livery
-STR_Newflyer_D40LFR_a_TransLink_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Newflyer_D40LFR_a_TransLink_INFO		:New Flyer {LTBLUE}- 2 doors{BLACK}
-
-# ---- New Flyer XN40 CC1
-STR_Newflyer_XN40_a_CC1_NAME		:New Flyer XN40 
-STR_Newflyer_XN40_a_CC1_NAME2	:CC1 livery
-STR_Newflyer_XN40_a_CC1_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Newflyer_XN40_a_CC1_INFO		:New Flyer {LTBLUE}- 2 doors{BLACK}
-
-# ---- New Flyer XN40 Blank
-STR_Newflyer_XN40_a_Blank_NAME		:New Flyer XN40 
-STR_Newflyer_XN40_a_Blank_NAME2	:Blank livery
-STR_Newflyer_XN40_a_Blank_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Newflyer_XN40_a_Blank_INFO		:New Flyer {LTBLUE}- 2 doors{BLACK}
-
-# ---- New Flyer XN40 TransLink_old
-STR_Newflyer_XN40_a_TransLink_old_NAME		:New Flyer XN40 
-STR_Newflyer_XN40_a_TransLink_old_NAME2	:TransLink livery
-STR_Newflyer_XN40_a_TransLink_old_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Newflyer_XN40_a_TransLink_old_INFO		:New Flyer {LTBLUE}- 2 doors{BLACK}
-
-# ---- New Flyer XN40 TransLink_new
-STR_Newflyer_XN40_a_TransLink_new_NAME		:New Flyer XN40 
-STR_Newflyer_XN40_a_TransLink_new_NAME2	:TransLink livery
-STR_Newflyer_XN40_a_TransLink_new_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Newflyer_XN40_a_TransLink_new_INFO		:New Flyer {LTBLUE}- 2 doors{BLACK}
-
-# ---- New Flyer XN40 BCTransit_old
-STR_Newflyer_XN40_a_BCTransit_old_NAME		:New Flyer XN40 
-STR_Newflyer_XN40_a_BCTransit_old_NAME2	:BCTransit livery
-STR_Newflyer_XN40_a_BCTransit_old_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Newflyer_XN40_a_BCTransit_old_INFO		:New Flyer {LTBLUE}- 2 doors{BLACK}
-
-# ---- New Flyer XN40 BCTransit_new
-STR_Newflyer_XN40_a_BCTransit_new_NAME		:New Flyer XN40 
-STR_Newflyer_XN40_a_BCTransit_new_NAME2	:BCTransit livery
-STR_Newflyer_XN40_a_BCTransit_new_DATA		:Loading speed: {GOLD}28{BLACK}{}{GOLD}----------{BLACK}{}Type: {GOLD}12m, 2 doors{BLACK}{}{STRING}
-STR_Newflyer_XN40_a_BCTransit_new_INFO		:New Flyer {LTBLUE}- 2 doors{BLACK}
+STR_GEN_DATA :Loading speed: {GOLD}{COMMA}{BLACK}{}{GOLD}----------{}{BLACK}Type: {GOLD}{STRING}, {STRING}, {STRING}{BLACK}
+STR_GEN_NAME :{STRING} {STRING} {STRING} {STRING}
+STR_GEN_LIVERY :{STRING} livery
+STR_GEN_INFO :{STRING} {LTBLUE}- {STRING}{BLACK}
+
+# --- Manufacturers ---
+STR_MFR_ALFA                   :Alfa
+STR_MFR_CREDO                  :Credo
+STR_MFR_CSEPEL_UNION           :Csepel-Union
+STR_MFR_IKARUS                 :Ikarus
+STR_MFR_MAN                    :MAN
+STR_MFR_MERCEDES_BENZ          :Mercedes-Benz
+STR_MFR_MAVAG                  :Mávag
+STR_MFR_NEW_FLYER              :New Flyer
+STR_MFR_RABA                   :Rába
+STR_MFR_SOLARIS                :Solaris
+STR_MFR_VANHOOL                :VanHool
+STR_MFR_VOLVO                  :Volvo
+
+# --- Type ---
+STR_T1_211                     :211
+STR_T1_255                     :255
+STR_T1_256                     :256
+STR_T1_260                     :260
+STR_T1_263                     :263
+STR_T1_266                     :266
+STR_T1_280                     :280
+STR_T1_284                     :284
+STR_T1_30                      :30
+STR_T1_31                      :31
+STR_T1_350                     :350
+STR_T1_7700                    :7700
+STR_T1_7700A                   :7700A
+STR_T1_8900                    :8900
+STR_T1_A300                    :A300
+STR_T1_A308                    :A308
+STR_T1_AG300                   :AG300
+STR_T1_BC                      :BC
+STR_T1_C40LFR                  :C40LFR
+STR_T1_CITARO                  :Citaro
+STR_T1_CONECTO                 :Conecto
+STR_T1_CIVIS                   :Cívis
+STR_T1_D40LF                   :D40LF
+STR_T1_D40LFR                  :D40LFR
+STR_T1_E98                     :E98
+STR_T1_EC                      :EC
+STR_T1_ECONELL                 :Econell
+STR_T1_F40LF                   :F40LF
+STR_T1_IC                      :IC
+STR_T1_INOVELL                 :Inovell
+STR_T1_LC                      :LC
+STR_T1_LH                      :LH
+STR_T1_LHO                     :LHo
+STR_T1_LION_S_CITY             :Lion's City
+STR_T1_LION_S_COACH            :Lion's Coach
+STR_T1_LION_S_INTERCITY        :Lion's Intercity
+STR_T1_LOCALO                  :Localo
+STR_T1_N26                     :N26
+STR_T1_N2H                     :N2h
+STR_T1_NI56                    :NI56
+STR_T1_OPTINELL                :Optinell
+STR_T1_REGIO                   :Regio
+STR_T1_URBINO                  :Urbino
+STR_T1_XN40                    :XN40
+
+# --- Sub1 ---
+STR_S1_10                      :10
+STR_S1_11                      :11
+STR_S1_12                      :12
+STR_S1_12_CITY                 :12 City
+STR_S1_13                      :13
+STR_S1_13_CITY                 :13 City
+STR_S1_18                      :18
+STR_S1_2                       :2
+STR_S1_3                       :3
+STR_S1_9_5                     :9.5
+STR_S1_C2                      :C2
+STR_S1_FL                      :FL
+
+# --- Sub2 ---
+STR_S2_10                      :10
+STR_S2_10E                     :10E
+STR_S2_12                      :12
+STR_S2_12C                     :12C
+STR_S2_12E                     :12E
+STR_S2_12EC                    :12EC
+STR_S2_12G                     :12G
+STR_S2_12IC                    :12IC
+STR_S2_18C                     :18C
+STR_S2_18E                     :18E
+STR_S2_18G                     :18G
+STR_S2_32C                     :32C
+STR_S2_33C                     :33C
+STR_S2_34C                     :34C
+STR_S2_42C                     :42C
+STR_S2_43C                     :43C
+STR_S2_44C                     :44C
+STR_S2_C                       :C
+STR_S2_CC                      :CC
+STR_S2_CCL                     :CCL
+STR_S2_DD                      :DD
+STR_S2_G                       :G
+STR_S2_GU                      :GÜ
+STR_S2_HYBRID                  :Hybrid
+STR_S2_K                       :K
+STR_S2_LE                      :LE
+STR_S2_LEMU                    :LEMÜ
+STR_S2_LEU                     :LEÜ
+STR_S2_U                       :Ü
+
+# --- Other1 ---
+STR_O1_1_DOOR                  :1 door
+STR_O1_2_DOORS                 :2 doors
+STR_O1_3_DOORS                 :3 doors
+STR_O1_4_DOORS                 :4 doors
+STR_O1_5_DOORS                 :5 doors
+
+# --- Other2 ---
+STR_O2_10_4M                   :10,4m
+STR_O2_10_5M                   :10,5m
+STR_O2_10M                     :10m
+STR_O2_11M                     :11m
+STR_O2_12M                     :12m
+STR_O2_13_5M                   :13,5m
+STR_O2_13_7M                   :13,7m
+STR_O2_13M                     :13m
+STR_O2_14M                     :14m
+STR_O2_15M                     :15m
+STR_O2_17M                     :17m
+STR_O2_18M                     :18m
+STR_O2_20M                     :20m
+STR_O2_21M                     :21m
+STR_O2_7_9M                    :7,9m
+STR_O2_7M                      :7m
+STR_O2_8_4M                    :8,4m
+STR_O2_8_5M                    :8,5m
+STR_O2_8_7M                    :8,7m
+STR_O2_9_5M                    :9,5m
+STR_O2_VOLVO_B12B_13_5M        :Volvo B12B, 13,5m
+STR_O2_VOLVO_B7RLE_12_5M       :Volvo B7RLE, 12,5m
+STR_O2_VOLVO_B9L_12M           :Volvo B9L, 12m
+
+# --- Liveries ---
+STR_LIV_AAGL                   :AAGL
+STR_LIV_AVA                    :AVA
+STR_LIV_BBA                    :BBA
+STR_LIV_BCTRANSIT              :BCTransit
+STR_LIV_BKV                    :BKV
+STR_LIV_BLT                    :BLT
+STR_LIV_BOS                    :BOS
+STR_LIV_BVB                    :BVB
+STR_LIV_BVG                    :BVG
+STR_LIV_BERNMOBIL              :Bernmobil
+STR_LIV_BLANK                  :Blank
+STR_LIV_BRAMPTON               :Brampton
+STR_LIV_CC                     :CC
+STR_LIV_CC_FLIXBUS             :CC Flixbus
+STR_LIV_CC_STRIPE              :CC stripe
+STR_LIV_CC_TWO_TONE            :CC two tone
+STR_LIV_CC_GRAY                :CC, gray
+STR_LIV_CC1                    :CC1
+STR_LIV_CC2                    :CC2
+STR_LIV_CC3                    :CC3
+STR_LIV_GHOST                  :Ghost
+STR_LIV_KISALFOLD              :Kisalföld
+STR_LIV_MISSISSAUGA            :Mississauga
+STR_LIV_POSTAUTO               :PostAuto
+STR_LIV_RBS                    :RBS
+STR_LIV_RVBW                   :RVBW
+STR_LIV_ROADSHOW               :Roadshow
+STR_LIV_SERNFTAL               :Sernftal
+STR_LIV_SZEGED                 :Szeged
+STR_LIV_TPG                    :TPG
+STR_LIV_TORONTO                :Toronto
+STR_LIV_TRANSLINK              :TransLink
+STR_LIV_VBG                    :VBG
+STR_LIV_VBSH                   :VBSH
+STR_LIV_VOLAN                  :Volan
+STR_LIV_VOLAN                  :Volán
+STR_LIV_WEST_VANCOUVER_TRANSIT :West Vancouver Transit
+STR_LIV_YORK                   :York

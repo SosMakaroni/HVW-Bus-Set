@@ -6,7 +6,6 @@ spriteset(ss_Alfa_Civis_12_a_CC2, "src/Volvo/Alfa_Civis_12_a_CC2_8bpp.png")		{tm
 alternative_sprites(ss_Alfa_Civis_12_a_CC2, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "src/Volvo/Alfa_Civis_12_a_CC2_8bpp.png") {tmpl13_2()}
 alternative_sprites(ss_Alfa_Civis_12_a_CC2, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "src/Volvo/Alfa_Civis_12_a_CC2_8bpp.png") {tmpl13_4()}
 
-
 // Játékban grafika
 switch (FEAT_ROADVEHS, SELF, sw_Alfa_Civis_12_a_CC2, position_in_consist ) {
 	1: ss_Alfa_Civis_12_a_CC2;
@@ -17,7 +16,7 @@ switch (FEAT_ROADVEHS, SELF, sw_Alfa_Civis_12_a_CC2, position_in_consist ) {
 switch (FEAT_ROADVEHS, SELF, sw_Alfa_Civis_12_a_CC2_articulated, extra_callback_info1) {
 	0: item_Alfa_Civis_12_a_CC2;
 	1: item_Alfa_Civis_12_a_CC2_t;
-    CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
 // Modelhossz
@@ -28,86 +27,77 @@ switch (FEAT_ROADVEHS, SELF, sw_Alfa_Civis_12_a_CC2_length, position_in_consist)
 
 // Szövegek
 switch(FEAT_ROADVEHS, SELF, sw_Alfa_Civis_12_a_CC2_names, (extra_callback_info1 >> 8) & 0xFFFF) {
-	1: return string(STR_Alfa_Civis_12_a_CC2_NAME2); // Almenü 1 név
+	1: return string(STR_GEN_LIVERY, string(STR_LIV_CC2)); // Almenü 1 név
 	return CB_RESULT_NO_TEXT;
 }
 
 switch(FEAT_ROADVEHS, SELF, sw_Alfa_Civis_12_a_CC2_texts, extra_callback_info1 & 0xFF) {
-	0x11: return string(STR_Alfa_Civis_12_a_CC2_INFO); // Jármű infóban név
+	0x11: return string(STR_GEN_INFO, string(STR_MFR_ALFA), string(STR_T1_CIVIS), string(STR_O1_3_DOORS)); // Jármű infóban név (Gyártó-Típus-Ajtó)
 	0x20: sw_Alfa_Civis_12_a_CC2_names; // Vásárlási lista név
-	0x21: return string(STR_Alfa_Civis_12_a_CC2_NAME); // Elővásárlási név
+	0x21: return string(STR_GEN_NAME, string(STR_MFR_ALFA), string(STR_T1_CIVIS), string(STR_EMPTY), string(STR_EMPTY)); // Elővásárlási név
 	return CB_RESULT_NO_TEXT;
 }
 
 // Item
 item(FEAT_ROADVEHS, item_Alfa_Civis_12_a_CC2) {
-    property {
-        name:                          string(STR_Alfa_Civis_12_a_CC2_NAME);
-        climates_available:            bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
-        introduction_date:             date(2009,01,01);
-        model_life:                    20;
-        vehicle_life:                  25;
-        reliability_decay:             20;
-        cargo_allow_refit:             [PASS,TOUR];
-        loading_speed:                 42;
-        sprite_id:                     SPRITE_ID_NEW_ROADVEH;
-        speed:                    70 km/h;
-        misc_flags:                    bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
-        refit_cost:                    0;
-        running_cost_base:             RUNNING_COST_ROADVEH;
-        power:                         228 kW;
-        weight:                        12 ton;
-        cargo_capacity:                101;
-        cargo_age_period:              200;
-        sound_effect:                  SOUND_DEPARTURE_MODERN_BUS;
-        variant_group:                   item_Alfa_Civis_12_a_CC1;
-    }
+	property {
+		name:                string(STR_GEN_NAME, string(STR_MFR_ALFA), string(STR_T1_CIVIS), string(STR_EMPTY), string(STR_EMPTY));
+		climates_available:  bitmask(CLIMATE_TEMPERATE, CLIMATE_ARCTIC, CLIMATE_TROPICAL);
+		introduction_date:   date(2009,01,01);
+		model_life:          20;
+		vehicle_life:        25;
+		reliability_decay:   20;
+		cargo_allow_refit:   [PASS,TOUR];
+		loading_speed:       42;
+		sprite_id:           SPRITE_ID_NEW_ROADVEH;
+		speed:               70 km/h;
+		misc_flags:          bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+		refit_cost:          0;
+		running_cost_base:   RUNNING_COST_ROADVEH;
+		power:               228 kW;
+		weight:              12 ton;
+		cargo_capacity:      101;
+		cargo_age_period:    200;
+		sound_effect:        SOUND_DEPARTURE_MODERN_BUS;
+		badges:              ["type/bus", "power/diesel", "flag/flag_CC", "usage/city"];
+		variant_group:             item_Alfa_Civis_12_a_CC1;
+	}
+	graphics {
+		default:             sw_Alfa_Civis_12_a_CC2;
+		    // Cégszín deaktiválás, ha valós színű jármű
+		purchase:            ss_Alfa_Civis_12_a_CC2_purchase;
+		articulated_part:    sw_Alfa_Civis_12_a_CC2_articulated;
+		length:              sw_Alfa_Civis_12_a_CC2_length;
+		cost_factor:         25 * parapuco;
+		running_cost_factor: 36 * pararuco;
+		additional_text:     string(STR_GEN_DATA, 42, string(STR_EMPTY), string(STR_O2_VOLVO_B9L_12M), string(STR_O1_3_DOORS));
+		name:                sw_Alfa_Civis_12_a_CC2_texts; // Vásárlási almenü switch
+	}
 }
-if (param[2] == 0) {
- item(FEAT_ROADVEHS, item_Alfa_Civis_12_a_CC2) {
-    property {
-         badges:                        ["type/bus", "power/diesel", "flag/flag_CC", "usage/city"];
-    }
-  }
-}
-item(FEAT_ROADVEHS, item_Alfa_Civis_12_a_CC2) {
-    graphics {
-        default:                       sw_Alfa_Civis_12_a_CC2;
-        
-        purchase:                      ss_Alfa_Civis_12_a_CC2_purchase;
-        articulated_part:             sw_Alfa_Civis_12_a_CC2_articulated;
-        length:                       sw_Alfa_Civis_12_a_CC2_length;
-        cost_factor:                  25 * parapuco;
-        running_cost_factor:          36 * pararuco;
-        additional_text:              string(STR_Alfa_Civis_12_a_CC2_DATA);
-        name:                         sw_Alfa_Civis_12_a_CC2_texts;
-    }
-}
-
 // Csukló item
 item(FEAT_ROADVEHS, item_Alfa_Civis_12_a_CC2_t) {
-  property {
-      name:							string(STR_BUG);
-      climates_available:				bitmask(NO_CLIMATE);
-      introduction_date:				date(4999999,01,01);
-      cargo_allow_refit:				[PASS,TOUR];
-      loading_speed:					0;
-      cost_factor:					0;
-      running_cost_factor:			0;
-      sprite_id:						SPRITE_ID_NEW_ROADVEH;
-      misc_flags:						bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
-      refit_cost:						0;
-      running_cost_base:				RUNNING_COST_NONE;
-      power:							0 kW;
-      weight:							0 ton;
-      cargo_capacity:					0;
-      cargo_age_period:				0;
-   }
-   graphics {
-      default:						sw_Alfa_Civis_12_a_CC2;
-      
-      length:							sw_Alfa_Civis_12_a_CC2_length;
-   }
+	property {
+		name:							string(STR_BUG);
+		climates_available:			bitmask(NO_CLIMATE);
+		introduction_date:				date(4999999,01,01);
+		cargo_allow_refit:				[PASS,TOUR];
+		loading_speed:					0;
+		cost_factor:					0;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_ROADVEH;
+		misc_flags:					bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_SPRITE_STACK);
+		refit_cost:					0;
+		running_cost_base:				RUNNING_COST_NONE;
+		power:							0 kW;
+		weight:						0 ton;
+		cargo_capacity:				0;
+		cargo_age_period:				0;
+	}
+	graphics {
+		default:						sw_Alfa_Civis_12_a_CC2;
+		 // Cégszín deaktiválás, ha valós színű jármű
+		length:						sw_Alfa_Civis_12_a_CC2_length;
+	}
 }
 // ---------- Alfa_Civis_12_a_CC2 --- End
 
